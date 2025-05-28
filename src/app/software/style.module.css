@@ -1,0 +1,151 @@
+/* Add this CSS to your global styles or in a relevant CSS file */
+
+.custom-rounded-tr {
+  border-top-right-radius: 10rem; /* Adjust the radius as needed */
+}
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+/* Slide in from the left for the grey box */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-90%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from the right for the black box */
+@keyframes slideInRight {
+  from {
+    transform: translateX(90%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add animation classes */
+.slide-in-left {
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.7s ease-out forwards;
+}
+
+  .blink-effect {
+    animation: blink 1s ease-in-out;
+  }
+  
+ 
+  .discover-text{
+    font-size: 54px;
+    line-height: 60px;
+  }
+
+  .solution-text{
+    font-size: 18px;
+    line-height: 1.1;
+    color: #2775ff;
+  }
+  .solution-title{
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    color: #fff;
+  }
+  .solution-subtitle{
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+  .solution-description{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-weight: 400;
+  }
+  .box-design{
+    padding: 66px 20px;
+    position: relative;
+    z-index: 1;
+    background-color: none;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+  }
+  .main-methodology{
+    font-size: 100px;
+    color: #151515;
+    line-height: 1.1;
+  }
+  .method-title{
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .method-description{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .border-design{
+    background-color: #000;
+    border: 1px solid #d9302d;
+    box-shadow: -1px 1px 5px 7px rgba(217, 48, 45, 0.1);
+  }
+  .cost-price{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .main-methodology{
+      font-size: 36px;
+      color: #151515;
+      line-height: 1.1;
+    }
+      .solution-title{
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: 0.06em;
+        color: #fff;
+      
+    }
+
+  }
+  .bgBlack {
+    background-color: black;
+    color: #777; /* Text color for black background */
+    padding: 66px 18px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+}
+
+.bgGray {
+    background-color: #0f0f0f;
+    color: #c4c2c2; /* Text color for gray background */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 66px 20px;
+    position: relative;
+    z-index: 1;
+
+}

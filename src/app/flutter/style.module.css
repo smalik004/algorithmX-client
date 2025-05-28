@@ -1,0 +1,77 @@
+.flutter-title {
+    line-height: 64px;
+    font-size: 84px;
+    padding-bottom: 10px;
+}
+.flutter-description {
+    line-height: 34px;
+    font-size: 34px;
+}
+
+/* 3rd */
+.and-title{
+    line-height: 68px;
+    font-size: 64px;
+  }
+  .and-subtitle{
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .and-title2{
+    font-size: 24px;
+    line-height: 1.1;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  .and-description{
+    font-size: 14px;
+    margin:15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .indus-card-figure {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #514f57;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.dynamic-title1{
+    font-size: 42px;
+    line-height: 1.1;
+    padding-bottom: 30px;
+  }
+  .dynamic-subtitle1{
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .dynamic-description1{
+    font-size: 12px;
+    padding-left: 24px;
+  }
+
+@media (max-width: 768px) {
+    .flutter-title {
+        line-height: 60px;
+        font-size: 52px;
+        padding-bottom: 10px;
+    }
+    .flutter-description {
+        line-height: 34px;
+        font-size: 34px;
+    }
+}
+.box{
+  border-radius: 15px;
+    padding: 30px;
+    min-height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 2s ease;
+}
+.box:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}

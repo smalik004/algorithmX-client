@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.817" height="10.732" viewBox="0 0 22.817 10.732">
+  <g id="AR_VR" data-name="AR/VR" transform="translate(-1062 -159.454)">
+    <g id="Group_327" data-name="Group 327" transform="translate(1064.677 159.454)">
+      <path id="Path_1264" data-name="Path 1264" d="M1092.287,159.454h-16.1a.694.694,0,0,0-.694.694v9.342a.694.694,0,0,0,.694.694h5.9a.694.694,0,0,0,.473-.186l1.874-1.745,1.826,1.74a.694.694,0,0,0,.479.192h5.519a.694.694,0,0,0,.694-.694v-9.153a.694.694,0,0,0-.668-.885Zm-.721,9.343h-4.547l-2.1-2a.7.7,0,0,0-.952-.005l-2.153,2h-4.93v-7.955h14.68Z" transform="translate(-1075.497 -159.454)" fill="#fff"/>
+    </g>
+    <g id="Group_328" data-name="Group 328" transform="translate(1062 161.447)">
+      <path id="Path_1265" data-name="Path 1265" d="M1062.694,169.5a.694.694,0,0,0-.694.694v5.556a.694.694,0,0,0,1.389,0v-5.556a.7.7,0,0,0-.695-.694Z" transform="translate(-1062 -169.5)" fill="#fff"/>
+    </g>
+    <g id="Group_329" data-name="Group 329" transform="translate(1083.428 161.447)">
+      <path id="Path_1266" data-name="Path 1266" d="M1170.694,169.5a.694.694,0,0,0-.694.694v5.556a.694.694,0,0,0,1.389,0v-5.556a.7.7,0,0,0-.695-.694Z" transform="translate(-1170 -169.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,195 @@
+.background {
+    background-color: rgba(255, 255, 255, 0.1)
+   }
+   .custom-rounded-tr {
+    border-top-right-radius: 10rem; /* Adjust the radius as needed */
+  }
+
+  
+  .service-card {
+    animation-play-state: running;
+    
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  .description-text {
+    font-size: 24px; /* Default font size for smaller devices */
+    line-height:34px ;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+/*video service */
+.video{
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    line-height: 3.75rem;
+}
+.video-subtitle{
+  font-size: 1rem;
+
+}
+.video-title{
+  font-size: 20px;
+  
+  line-height: 1.4;
+  margin-bottom: 35px;
+  
+}
+.video-description{
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.number{
+  font-size: 12px;
+}
+.box-color{
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  height: max-content;
+
+
+}
+
+
+.service-card1 {
+ 
+}
+
+.service-card1:hover {
+  box-shadow: 0 0 80px 25px rgba(255, 255, 255, 0.2);
+  animation-delay: 0.2s;
+}
+
+
+.main-craft{
+  font-size: 2.2rem;
+  color: #151515;
+  
+}
+.submain-craft{
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.number1{
+  font-size: 3em;
+  line-height: 1;
+}
+.step{
+  letter-spacing: 0.01em;
+  font-size: smaller;
+}
+.craft-title{
+  font-size: 18px;
+  line-height: 1.1;
+}
+.craft-description{
+  font-size: 15px;
+ 
+}
+.responsive-hero{
+  min-height: 325px;
+      height: auto;
+      margin: 180px auto;
+}
+.hero-img-title{
+  font-size:30px ;
+  margin-bottom: 20px;
+}
+.hero-img-description{
+  font-size:15px ;
+  margin-bottom: 20px;
+}
+
+.box-title{
+  font-size: 2.2rem;
+  line-height: 1.08;
+}
+.box-description{
+  font-size:16px;
+  line-height: 1.5625rem;
+}
+.border-design{
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-left:  0.5em solid transparent;
+  border-right: 0 solid transparent;
+}
+
+.toolbox-title{
+  font-size: 2.4rem;
+  letter-spacing: 0.06em;
+  line-height: 3.75rem;
+}
+.toolbox-description{
+  font-size: 16px;
+}
+.toolbox{
+  font-size: 1.1rem;
+  padding: 1rem 0.75rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.insight{
+  font-size: 21px;
+}
+.insight-description{
+  font-family:  'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.connect{
+  font-family:  Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+  @media (min-width: 768px) {
+    .description-text {
+      font-size: 30px; /* Slightly larger for medium devices */
+      line-height: 34px;
+    }
+    .main-craft{
+      font-size: 2.2rem;
+      color: #151515;
+      
+    }
+    .responsive-hero{
+      min-height: 325px;
+          height: auto;
+          margin: 180px auto;
+    }
+    .toolbox-title{
+      font-size: 2.4rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .description-text {
+      font-size: 34px; /* Larger for bigger screens */
+      line-height: 34px;
+    }
+    .main-craft{
+      font-size: 100px;
+      color: #151515;
+      
+    }
+    .responsive-hero{
+      min-height: 350px;
+            height: auto;
+            
+    }
+    .toolbox-title{
+      font-size: 3.5rem;
+    }
+  }
+
+  .tool:hover{
+    background-color: rgb(255 255 255 / 16%);
+  }
+  /* Add the slide-up animation */
+
+/* Add other necessary styles for your service cards */
+
+

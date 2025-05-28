@@ -1,0 +1,80 @@
+/*3rd*/
+.enhanced-title{
+    font-size: 36px;
+    line-height: 42px;
+
+}
+.enhanced-description{
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+/*4t*/
+.targeted-title{
+    font-size: 4rem;
+    line-height: 1.125;
+}
+.targeted-description{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*5th*/
+.our-text{
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color:#2775ff;
+}
+.pr-text{
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+}
+.step-text{
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+.pr-title{
+    font-size: 21px;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    
+}
+.pr-description{
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+/*6th*/
+.press-title{
+font-size: 2.2rem;
+    margin-bottom: 1.8125rem;
+    font-weight: 600;
+    line-height: 1.08;
+}
+.press-description{
+    
+    font-size: 16px;
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+    .targeted-title{
+        font-size: 36px;
+        line-height: 1.125;
+    }
+}
+
+.square{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 5px solid #f7f5ef;
+    z-index: 2;
+    pointer-events: none;
+}

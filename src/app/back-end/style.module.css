@@ -1,0 +1,226 @@
+.animate-slideDown {
+  transform: translateY(-40px); /* Start above */
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.start-animation.animate-slideDown {
+  transform: translateY(0); /* End position */
+  opacity: 1;
+}
+
+/* Slide up animation */
+.animate-slideUp {
+  transform: translateY(40px); /* Start below */
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.start-animation.animate-slideUp {
+  transform: translateY(0); /* End position */
+  opacity: 1;
+}
+
+  .glow-effect {
+    position: relative;
+    box-shadow: 0 0 30px rgba(14, 14, 205, 0.9), 
+                0 0 60px rgba(14, 14, 205, 0.7), 
+                0 0 90px rgba(14, 14, 205, 0.5);
+    animation: glow-animation 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes glow-animation {
+    0% {
+      box-shadow: 0 0 30px rgba(2, 2, 230, 0.5), 
+                  0 0 60px rgba(2, 2, 230, 0.4), 
+                  0 0 90px rgba(2, 2, 230, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 50px rgba(11, 11, 191, 0.8), 
+                  0 0 100px rgba(11, 11, 191, 0.6), 
+                  0 0 150px rgba(11, 11, 191, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(4, 4, 80, 0.5), 
+                  0 0 60px rgba(4, 4, 80, 0.4), 
+                  0 0 90px rgba(4, 4, 80, 0.3);
+    }
+  }
+  /*1st*/
+  .backend{
+    font-size: 84px;
+    line-height: 96px;
+}
+.backend-description{
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: 30px;
+}
+/*2nd */
+.enhancements-text {
+    font-size: 90px;
+    color: #151515;
+    line-height: 1.1;
+}
+
+.scale-110 {
+  transform: scale(1.1);
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.scale-75 {
+  transform: scale(0);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+.multi-subtitle {
+  font-size: 40px;
+  line-height: 48px;
+}
+/*3rd */
+.card{
+  padding: 32px 28px;
+  min-height: 340px;
+  color: #f7f5ef;
+  background: #0b0b0b;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  }
+  
+  .card-title{
+    font-size: 22px;
+    line-height: 1.1;
+    
+    font-weight: 700;
+    color: #fff;
+  }
+  .card-description{
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #f7f5ef;
+  }
+  .image1 {
+    
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* 4th */
+.hero-title{
+  font-size: 40px;
+  line-height: 56px;
+}
+.hero-description{
+  font-size: 19px;
+  line-height: 30px;
+}
+/*5th*/
+.tech-title{
+  font-size: 18px;
+  line-height: 1.1;
+  color: #2775ff;
+}
+.tech-subtitle{
+  line-height: 60px;
+  letter-spacing: 0.06rem;
+  font-size: 56px;
+}
+.tech-subtitle1{
+  font-size: 22px;
+  color:#aabcf1;
+  line-height: 1.1;
+}
+.tech-description{
+  font-size: .8rem;
+}
+
+
+.box{
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #666;
+  border-radius: 8px;
+  transition: background-color 1s ease-in-out;
+}
+.box:hover {
+  background-color: #000; /* Change to black on hover */
+}
+/* 6th */
+.dynamic-title{
+  font-size: 64px;
+  line-height: 68px;
+}
+.dynamic-subtitle{
+  font-size: 20px;
+  line-height: 1.1;
+}
+.dynamic-description{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 7th */
+
+.scale-subtitle{
+  line-height: 60px;
+  letter-spacing: 0.06rem;
+  font-size: 56px;
+}
+.scale-title{
+  font-size: 18px;
+  line-height: 28px;
+}
+.scale-description{
+  font-size: 14px;
+  color: #868686;
+}
+
+
+@media (max-width: 768px) {
+  .backend {
+    font-size: 52px;
+  }
+
+  .backend-description {
+    font-size: 1.4rem;
+  }
+  .enhancements-text {
+    font-size: 36px;
+    color: #151515;
+    line-height: 1.1;
+  }
+  .multi-subtitle {
+        font-size: 40px;
+        line-height: 48px;
+      }
+      .dynamic-title{
+        font-size: 42px;
+        line-height: 68px;
+      }
+      .scale-subtitle{
+        line-height: 60px;
+        letter-spacing: 0.06rem;
+        font-size: 36px;
+      }
+      .tech-subtitle1{
+        font-size: 18px;
+        color:#aabcf1;
+        line-height: 1.1;
+      }
+      .tech-description{
+        font-size: .6rem;
+      }
+    
+}
+

@@ -1,0 +1,17 @@
+/* Add this in your global CSS or inject via Tailwind config */
+.drop-shadow-glow {
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.8));
+  }
+
+  .two-tone-icon {
+    font-family: 'Font Awesome 5 Free';  /* Make sure you're using the correct FA icon font */
+    font-weight: 900;  /* Ensure the icon is rendered correctly */
+    color: aliceblue;
+  
+  }
+  
+  .fa-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

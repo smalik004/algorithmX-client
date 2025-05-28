@@ -1,0 +1,8 @@
+.box-design{
+    align-items: center;
+    position: relative;
+    padding: 52px 40px 40px;
+    border-radius: 25px;
+    border: 1px solid #d9302d;
+    box-shadow: -1px 1px 5px 7px rgba(217, 48, 45, 0.1);
+}

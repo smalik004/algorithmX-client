@@ -1,0 +1,109 @@
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .custom-rounded-tr {
+    border-top-right-radius: 10rem; /* Adjust the radius as needed */
+  }
+  
+
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  /* styles.css */
+.custom-rounded {
+  border-radius: 20px 30px 30px 20px; /* top-left, top-right, bottom-right, bottom-left */
+}
+
+.icon-custom-rounded {
+  border-radius: 29px 29px 29px 29px; /* top-left, top-right, bottom-right, bottom-left */
+}
+/* styles.css */
+
+/* Custom class to apply a lighter and more transparent border */
+.custom-border {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 99, 132, 0.5); /* Lighter border color with opacity (pink as example) */
+}
+
+/* Example for lighter borders using shades */
+.border-purple-light {
+  border: 1px solid rgba(195, 104, 247, 0.3)
+}
+
+.border-red-light {
+  border: 1px solid rgba(247, 104, 104, 0.3);
+}
+
+.border-green-light {
+  border: 1px solid rgba(247, 104, 104, 0.3);
+}
+
+.border-blue-light {
+  border-width: 2px;
+  border-color: rgba(0, 0, 255, 0.3); /* Lighter blue with reduced opacity */
+}
+
+.border-orange-light {
+  border: 1px solid rgba(247, 104, 104, 0.3);
+}
+
+.border-yellow-light {
+  border: 1px solid rgba(247, 195, 104, 0.3);
+}
+
+.border-pink-light {
+  border: 1px solid rgba(121, 247, 104, 0.3);
+}
+.text-white-opacity-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+.description-text {
+  font-size: 24px; /* Default font size for smaller devices */
+  line-height:34px ;
+  margin: 0 auto;
+  
+}
+
+/* Medium devices (e.g., tablets) */
+@media (min-width: 768px) {
+  .description-text {
+    font-size: 30px; /* Slightly larger for medium devices */
+    line-height: 34px;
+  }
+}
+
+/* Large devices (e.g., laptops/desktops) */
+@media (min-width: 1024px) {
+  .description-text {
+    font-size: 34px; /* Larger for bigger screens */
+    line-height: 34px;
+  }
+}
+
+.box-border{
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+

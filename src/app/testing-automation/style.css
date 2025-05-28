@@ -1,0 +1,11 @@
+@keyframes border-gradient {
+    0% { border-color: red; }
+    25% { border-color: blue; }
+    50% { border-color: green; }
+    75% { border-color: yellow; }
+    100% { border-color: red; }
+  }
+  .animate-border-gradient {
+    animation: border-gradient 2s linear infinite;
+  }
+  

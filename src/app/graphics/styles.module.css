@@ -1,0 +1,331 @@
+@keyframes slideInLeft1 {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight1 {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.animate-slide-in-left1 {
+  animation: slideInLeft1 1s ease-out forwards;
+}
+
+.animate-slide-in-right1 {
+  animation: slideInRight1 1s ease-out forwards;
+}
+.custom-rounded-tr {
+    border-top-right-radius: 10rem; /* Adjust the radius as needed */
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .background {
+    background-color: rgba(255, 255, 255, 0.1)
+   }
+  
+/* Base font size for the description */
+.description-text {
+  font-size: 24px; /* Default font size for smaller devices */
+  line-height:34px ;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-text{
+  font-size: 38.4px;
+  line-height: 68px;
+}
+.sub-title{
+  font-size: 20;
+  line-height: 1.1;
+  color: #fff;
+}
+.sub-description{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hero-img-title{
+  font-size:30px ;
+  margin-bottom: 20px;
+}
+.hero-img-description{
+  font-size:15px ;
+}
+.responsive-hero{
+  min-height: 325px;
+        height: auto;
+        margin: 180px auto;
+}
+.main-scalable{
+  font-size: 56px;
+  color: #151515;
+  line-height: 1.1;
+}
+.description{
+  font-size: 40px;
+  line-height: 48px;
+}
+.box-border {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 66px 20px;
+}
+.black-box{
+  border-radius: 10px;
+  padding: 66px 20px;
+}
+
+.scale-title{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing:0.1em;
+}
+.scale-description{
+  font-size: 14px;
+  font-family:  'Open Sans', sans-serif;
+  margin-top: 15px;
+  
+}
+.card-font{
+  font-family:  'Open Sans', sans-serif;
+}
+.toolbox-title{
+  font-size: 2.4rem;
+  letter-spacing: 0.06em;
+  line-height: 3.75rem;
+}
+.toolbox-description{
+  font-size: 16px;
+}
+.toolbox{
+  font-size: 1.1rem;
+  padding: 1rem 0.75rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.margin1{
+  margin-left: 15px;
+}
+.insight{
+  font-size: 21px;
+  line-height: 1.1;
+}
+.insight-description{
+  font-size: 14px;
+  font-family:  'Open Sans', sans-serif;
+}
+
+/* Medium devices (e.g., tablets) */
+@media (min-width: 768px) {
+  .description-text {
+    font-size: 30px; /* Slightly larger for medium devices */
+    line-height: 34px;
+  }
+  .main-text{
+    font-size: 38.4px;
+    line-height: 68px;
+  }
+  .responsive-hero{
+    min-height: 325px;
+        height: auto;
+        margin: 180px auto;
+  }
+  .main-scalable{
+    font-size: 56px;
+    color: #151515;
+    line-height: 1.1;
+  }
+  .toolbox-title{
+    font-size: 2.4rem;
+  }
+  .margin1{
+    margin-left: 15px;
+  }
+  .insight-description{
+    
+  font-size: 14px;
+  font-family:  'Open Sans', sans-serif;
+  text-align: center;
+}
+  
+  
+
+}
+
+
+/* Large devices (e.g., laptops/desktops) */
+@media (min-width: 1024px) {
+  .description-text {
+    font-size: 34px; /* Larger for bigger screens */
+    line-height: 34px;
+  }
+  .main-text{
+    font-size: 58px;
+    line-height: 68px;
+  }
+  .responsive-hero{
+    min-height: 350px;
+          height: auto;
+          
+  }
+  .main-scalable{
+    font-size: 100px;
+    color: #151515;
+    line-height: 1.1;
+  }
+  .toolbox-title{
+    font-size: 3.5rem;
+  }
+  
+  
+}
+
+/* Keyframes */
+/* Keyframes for slide-in animations */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply sliding animation on left and right */
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out forwards;
+}
+
+/* Ensuring fade-in effect for the "SCALABLE" text */
+.main-scalable {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.scale-110 {
+  transform: scale(1.1);
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.scale-75 {
+  transform: scale(0.75);
+}
+
+.purple-line{
+  content: '';
+    position: absolute;
+    width: 8px;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3px;
+    background: #7202bb;
+    border-radius: 50px;
+}
+
+.tool:hover{
+  background-color: rgb(255 255 255 / 16%);
+}
+
+.connect::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+
+.connect::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.connect {
+  --offset: 1px;
+  background: #000;
+  border-radius: 50px;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  max-width: 100%;
+  overflow: hidden;
+  transition: 3s linear;
+}
+
+.connect a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

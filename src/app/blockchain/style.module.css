@@ -1,0 +1,53 @@
+.custom-rounded-tr {
+  border-top-right-radius: 10rem; /* Adjust the radius as needed */
+}
+
+
+/*3rd*/
+.solution-title {
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
+
+.solution-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.solution-description {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+/*4th*/
+.design-title {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.design-description {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .solution-title {
+    font-size: 38.4px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+  }
+
+  .solution-description {
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 500;
+  }
+
+  .design-title {
+    font-size: 38.4px;
+    line-height: 1.1;
+  }
+}

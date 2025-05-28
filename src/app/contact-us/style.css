@@ -1,0 +1,62 @@
+.contact-card{
+    border: 1px solid #2775ff;
+    box-shadow: -1px 1px 5px 7px rgba(38, 109, 234, 0.2);
+}
+.fancy1 {
+    --offset: 1px;
+    background: #000;
+    color: white;  /* Ensure text is visible */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    position: relative;
+    height: 50px;
+    width: 200px;
+    max-width: 100%;
+    overflow: hidden;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text */
+    text-transform: uppercase;
+}
+
+.fancy1::before {
+    content: '';
+    background: conic-gradient(transparent 270deg, white, transparent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate 3s linear infinite;
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+.fancy1::after {
+    content: '';
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 0; /* Keep it behind */
+}
+
+.fancy1 span {
+    position: relative;
+    z-index: 1; /* Ensure text is on top */
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

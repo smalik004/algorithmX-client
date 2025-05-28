@@ -1,0 +1,696 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Menu, X, Phone, Twitter, Instagram, Facebook, Linkedin, ChevronDown, ChevronRight, Code, Grid, Cpu, Database } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion'
+
+const menuData = {
+    'Company': { type: 'link', href: '/company' },
+    'Creative Assets': {
+      type: 'dropdown',
+      items: [
+        { name: 'Branding', href: '/creative/design-templates' },
+        { name: 'Graphics', href: '/creative/stock-photos' },
+        { name: 'Video', href: '/creative/video-assets' },
+        { name: 'Content Creation', href: '/creative/audio-resources' },
+      ]
+    },
+    '</Code>': {
+      type: 'dropdown',
+      items: [
+        { 
+          name: 'Web', 
+          href: null,
+          subItems: [
+            { name: 'Frontend Development', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Backend Development', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { 
+          name: 'CMS', 
+          href: null,
+          subItems: [
+            { name: 'Wordpress', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Magento', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'Shopify', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'Big Commerce', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'Drupal', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'HubSpot', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        {
+          name: 'Product', 
+          href: null,
+          subItems: [
+          ]
+        },
+        { 
+          name: 'AI & Automation', 
+          href: null,
+          subItems: [
+            { name: 'AI Development', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Gen AI', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'Intelligent Automation', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { 
+          name: 'Enterprise Solutions',
+          href: null,
+          subItems: [
+            { name: 'CRM', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'ERP', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { 
+          name: 'Data Analytics',
+          href: null,
+          subItems: [
+            { name: 'Business Intelligence Services', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Big Data', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { 
+          name: 'Next Gen',
+          href: null,
+          subItems: [
+            { name: 'Blockchain', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Metaverse', href: '/code/ios', icon: 'fa-apple' },
+            { name: 'Web3', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { 
+          name: 'Platform Engineering',
+          href: null,
+          subItems: [
+            { name: 'Cloud & Devops', href: '/code/android', icon: 'fa-snowflake' },
+            { name: 'Architecture Re-engineering', href: '/code/ios', icon: 'fa-apple' },
+          ]
+        },
+        { name: 'Integration & Middleware', href: '/leads/crm-tools' },
+        { name: 'Testing & Automation', href: '/leads/crm-tools' },
+        { name: 'Software Development', href: '/leads/crm-tools' },
+      ]
+    },
+    'Leads & Revenue': {
+      type: 'dropdown',
+      items: [
+        { 
+          name: 'SEO', 
+          href: null,
+          subItems: [
+            { name: 'SEO Audits', href: '/seoaudits', icon: 'fa-snowflake' },
+                                    { name: 'Local SEO', href: '/local-seo', icon: 'fa-snowflake' },
+                                    { name: 'Ecommerce SEO', href: '/ecommerce-seo', icon: 'fa-snowflake' },
+                                    { name: 'SEO Consulting', href: '/seo-consulting', icon: 'fa-snowflake' },
+                                    { name: ' Link Building', href: '/link-building', icon: 'fa-snowflake' },
+                                    { name: 'Technical SEO Audit', href: '/technical-seo-audit', icon: 'fa-snowflake' },
+                                    { name: 'National SEO', href: '/national-seo', icon: 'fa-snowflake' },
+                                    { name: 'Mobile SEO', href: '/mobile-seo', icon: 'fa-snowflake' },
+                                    { name: 'Global/International SEO', href: '/global-seo', icon: 'fa-snowflake' },
+                                    { name: 'Enterprise SEO', href: '/enterprise-seo', icon: 'fa-snowflake' },
+                                    { name: 'Amazon SEO', href: '/amazon-seo', icon: 'fa-snowflake' },
+                                    { name: 'Penalization Recovery', href: '/penalization-recovery',icon: 'fa-snowflake' },
+          ]
+        },
+        { 
+          name: 'Social Media', 
+          href: null,
+          subItems: [
+          { name: 'Social Media Audit', href: '/social-media-audit', icon: 'fa-snowflake' },
+                                  { name: 'Facebook Management', href: '/facebook-management', icon: 'fa-snowflake'},
+                                  { name: 'Instagram Management', href: '/instagram-management', icon: 'fa-snowflake'},
+                                  { name: 'Linkedin Management', href: '/linkedin-management', icon: 'fa-snowflake'},
+                                  { name: 'Twitter Management', href: '/twitter-management', icon: 'fa-snowflake'},
+                                  { name: 'Youtube Management', href: '/youtube-management', icon: 'fa-snowflake'},
+                                  { name: 'Tiktok Management', href: '/tiktok-management', icon: 'fa-snowflake'},
+                                  { name: 'Social Media Consulting', href: '/social-media-consulting', icon: 'fa-snowflake'},
+          ]
+        },
+        { 
+          name: 'PPC Advertising', 
+          href: null,
+          subItems: [
+          { name: 'Google Ads', href: '/google-ads', icon: 'fa-snowflake' },
+                                  { name: 'Bing Ads', href: '/bing-ads', icon: 'fa-snowflake'},
+                                  { name: 'Ads Audit', href: '/ads-audit', icon: 'fa-snowflake'},
+                                  { name: 'Ads Suspension Recovery', href: '/ads-suspension-recovery', icon: 'fa-snowflake'},
+                                  { name: 'Facebook Ads', href: '/facebook-ads', icon: 'fa-snowflake'},
+                                  { name: 'Instagram Ads', href: '/instagram-ads', icon: 'fa-snowflake'},
+                                  { name: 'Linkedin Ads', href: '/linkedin-ads', icon: 'fa-snowflake'},
+                                  { name: 'Landing Page Design', href: '/landing-page-design', icon: 'fa-snowflake'},
+                                  { name: 'X/Twitter Ads', href: '/twitter-ads', icon: 'fa-snowflake'},
+                                  { name: 'Youtube Ads', href: '/youtube-ads', icon: 'fa-snowflake'},
+                                  { name: 'Tiktok Ads', href: '/tiktok-ads', icon: 'fa-snowflake'},
+                                  { name: 'Snapchat Ads', href: '/snapchat-ads', icon: 'fa-snowflake'},
+                                  { name: 'Amazon Ads', href: '/amazon-ads', icon: 'fa-snowflake'},
+                                  { name: 'Display Ads', href: '/display-ads', icon: 'fa-snowflake'},
+                                  { name: 'Remarketing', href: '/remarketing', icon: 'fa-snowflake'},
+                                  { name: 'Ecommerce Advertising', href: '/ecommerce-advertising', icon: 'fa-snowflake'},
+          ]
+        },
+        { 
+          name: 'Content', 
+          href: null,
+          subItems: [
+          { name: 'Creation & Marketing', href: '/creation-and-marketing', icon: 'fa-snowflake' },
+          { name: 'SEO Copywriting', href: '/seo-copywriting', icon: 'fa-snowflake'},
+          ]
+        },
+        { name: 'App Store Optimization', href: '/leads/crm-tools' },
+        { name: 'Conversion Rate Optimization', href: '/leads/sales-funnel' },
+        { name: 'Public Relations', href: '/leads/analytics' },
+        { name: 'Franchise', href: '/leads/analytics' },
+        { name: 'Influencer', href: '/leads/analytics' },
+      ]
+    },
+    'Resources': { type: 'link', href: '/resources' },
+  }
+  
+  // Apple-style menu data for the iPad section (only used in Code section)
+  const appleMenuData = {
+    'App Development': {
+      type: 'header', // Non-clickable header
+      items: [
+            { name: 'Android Development', href: '/ipad-support', isClickable: true},
+            { name: 'iPhone/iPad Development', href: '/ipad-support', isClickable: true },
+            { name: 'Xamarin Development', href: '/ipad-support', isClickable: true },
+            { name: 'Flutter Development', href: '/ipad-support', isClickable: true },
+            { name: 'React Native Development', href: '/ipad-support', isClickable: true}
+      ]
+    },
+    'IOT ': {
+      type: 'header', // Non-clickable header
+      items: [
+        { name: 'IOT Development', href: '/ipad-support', isClickable: true },
+      ]
+    }
+  }
+  
+
+// Enhanced icon function with tech glow effect
+const getIconClass = (iconName) => {
+  if (!iconName) return 'fas fa-chevron-right tech-icon'; // Default icon with tech class
+  
+  // Check if iconName already has a prefix
+  if (iconName.startsWith('fa-')) {
+    // Determine correct prefix based on icon name
+    if (iconName === 'fa-react' || iconName === 'fa-vuejs' || 
+        iconName === 'fa-angular' || iconName === 'fa-android' || 
+        iconName === 'fa-apple') {
+      return `fab ${iconName} tech-icon`;
+    }
+    return `fas ${iconName} tech-icon`;
+  }
+  
+  return `fas fa-${iconName} tech-icon`;
+};
+
+export default function Navbar() {
+  const [activeMenu, setActiveMenu] = useState(null)
+  const [activeSubMenu, setActiveSubMenu] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [expandedMobileItems, setExpandedMobileItems] = useState({})
+  const [expandedMobileSubItems, setExpandedMobileSubItems] = useState({})
+  const navbarRef = useRef(null)
+  const menuItemRefs = useRef({})
+  const [contentHeight, setContentHeight] = useState(0)
+  const dropdownRef = useRef(null)
+  
+  // Effect for adding tech-style CSS
+  useEffect(() => {
+    // Create style element for tech-inspired CSS
+    const styleEl = document.createElement('style');
+    styleEl.setAttribute('id', 'tech-navbar-styles');
+    styleEl.innerHTML = `
+      /* Cyberpunk-inspired tech dropdown */
+      .tech-dropdown {
+        background: linear-gradient(180deg, rgba(13, 17, 32, 0.97) 0%, rgba(8, 13, 28, 0.98) 100%);
+        box-shadow: 0 10px 30px rgba(0, 45, 122, 0.25), 0 0 20px rgba(0, 56, 255, 0.1);
+        border-top: 1px solid rgba(59, 130, 246, 0.3);
+        border-bottom: 1px solid rgba(16, 185, 255, 0.2);
+        backdrop-filter: blur(10px);
+      }
+      
+      /* Neon border effect for active sections */
+      .tech-border {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .tech-border::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 0%;
+        background: linear-gradient(to bottom, #60a5fa, #3b82f6);
+        box-shadow: 0 0 8px #3b82f6;
+        transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      
+      .tech-border:hover::after {
+        height: 60%;
+      }
+      
+      .tech-border-active::after {
+        height: 70% !important;
+      }
+      
+      /* Tech icon styling */
+      .tech-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #60a5fa;
+        filter: drop-shadow(0 0 1px rgba(96, 165, 250, 0.7));
+        transition: all 0.2s ease-out;
+      }
+      
+      .tech-item:hover .tech-icon {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 3px rgba(96, 165, 250, 0.9));
+      }
+      
+      /* Tech menu item styling */
+      .tech-item {
+        position: relative;
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        overflow: hidden;
+      }
+      
+      .tech-item:hover {
+        transform: translateX(2px);
+      }
+      
+      /* Futuristic highlight effect */
+      .tech-highlight {
+        position: relative;
+      }
+      
+      .tech-highlight::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #60a5fa, #60a5fa, transparent);
+        transition: width 0.3s ease;
+      }
+      
+      .tech-highlight:hover::before {
+        width: 100%;
+      }
+      
+      /* Tech grid for columns */
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 12px;
+      }
+      
+      /* Tech card styling */
+      .tech-card {
+        background: rgba(15, 23, 42, 0.6);
+        border-radius: 6px;
+        border: 1px solid rgba(59, 130, 246, 0.15);
+        padding: 14px;
+        transition: all 0.3s ease;
+      }
+      
+      .tech-card:hover {
+        background: rgba(21, 31, 53, 0.75);
+        border-color: rgba(59, 130, 246, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 60, 255, 0.15);
+      }
+      
+      /* Tech section header */
+      .tech-section-header {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #60a5fa;
+        position: relative;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+      }
+      
+      .tech-section-header::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30px;
+        height: 1px;
+        background: linear-gradient(90deg, #60a5fa, transparent);
+      }
+      
+      /* Tech item appear animation */
+      @keyframes techSlideIn {
+        from { 
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to { 
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .tech-animate-in {
+        animation: techSlideIn 0.3s forwards;
+        animation-delay: calc(var(--tech-index) * 50ms);
+        opacity: 0;
+      }
+      
+      /* Tech glow effect */
+      .tech-glow {
+        text-shadow: 0 0 2px rgba(96, 165, 250, 0.5);
+      }
+      
+      .tech-glow:hover {
+        text-shadow: 0 0 4px rgba(96, 165, 250, 0.8);
+      }
+    `;
+    document.head.appendChild(styleEl);
+    
+    return () => {
+      // Clean up when component unmounts
+      const techStyle = document.getElementById('tech-navbar-styles');
+      if (techStyle) techStyle.remove();
+    };
+  }, []);
+  
+  // NO CHANGE IN FUNCTIONS FOR HANDLING STATE AND EVENTS - will add them later
+
+  // Find the first item with subitems in the menu (NO CHANGE) - will add it later
+
+  // NO CHANGE IN HANDLE MENU HOVER - will add it later
+  
+  // NO CHANGE IN HANDLE SUBMENU HOVER - will add it later
+
+  // NO CHANGE IN HANDLE CLOSE DROPDOWN - will add it later
+
+  // NO CHANGE IN TOGGLE MOBILE MENU - will add it later
+
+  // NO CHANGE IN MOBILE-SPECIFIC FUNCTIONS - will add them later
+
+  // Enhanced function to get dynamic animation delay for tech items
+  const getAnimationDelay = (index) => {
+    return { '--tech-index': index };
+  };
+
+  return (
+    <div 
+      ref={navbarRef} 
+      className="relative"
+      onMouseLeave={handleMouseLeave}
+    >
+      {/* NO CHANGE IN BACKDROP OVERLAY - will add it later */}
+      
+      {/* NO CHANGE IN MOBILE MENU - will add it later */}
+
+      {/* Navbar - Modified for tech styling */}
+      <nav className={`fixed top-0 left-0 right-0 z-20 transition-all duration-500 ${isOpen ? 'bg-opacity-90 backdrop-blur-md bg-[#070b15]' : 'bg-black'}`}>
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center h-16">
+            {/* NO CHANGE IN MOBILE MENU TOGGLE - will add it later */}
+            
+            {/* Left side - Navigation Items - tech-styled */}
+            <div className="hidden md:flex flex-1 justify-start">
+              <div className="flex items-center space-x-6 flex-nowrap">
+                {Object.keys(menuData).map((menuName) => (
+                  <div 
+                    key={menuName}
+                    className="relative whitespace-nowrap"
+                    onMouseEnter={() => handleMenuHover(menuName)}
+                  >
+                    {menuData[menuName].type === 'link' ? (
+                      <Link
+                        href={menuData[menuName].href}
+                        className="text-white hover:text-blue-300 px-2 py-2 text-sm font-medium tech-highlight"
+                      >
+                        {menuName}
+                      </Link>
+                    ) : (
+                      <div
+                        className={`text-white hover:text-blue-300 px-2 py-2 text-sm font-medium cursor-pointer tech-highlight ${activeMenu === menuName && isOpen ? 'text-blue-400 tech-glow' : ''}`}
+                      >
+                        {menuName}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Center - Logo - added subtle animation */}
+            <div 
+              className="flex-shrink-0 absolute left-1/2 transform -translate-x-1/2 md:static md:left-auto md:transform-none md:flex-1 md:flex md:justify-center"
+              onMouseEnter={handleCloseDropdown}
+            >
+              <Link href="/" className="text-white relative group">
+                <div className="transition-all duration-300 group-hover:scale-110">
+                  <Image 
+                    src="/images/logo5.png" 
+                    alt="Logo"
+                    width={40}
+                    height={40}
+                    priority
+                    className="relative z-10"
+                  />
+                  <div className="absolute -inset-1 bg-blue-500 rounded-full opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-300 z-0"></div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Right side - Connect Button & Social Icons - tech styled */}
+            <div 
+              className="hidden md:flex flex-1 justify-end items-center space-x-4"
+              onMouseEnter={handleCloseDropdown}
+            >
+              <div className="relative group">
+                <a href="/contact-us" className="flex items-center pr-8 pl-6 py-3 rounded-full bg-gradient-to-r from-[#0f172a] to-[#121d35] text-white border border-gray-700 hover:border-blue-400 transition-all duration-300 overflow-hidden relative z-10">
+                  <span className="text-[14px] leading-[22px] font-[400] font-[Helvetica] text-white whitespace-nowrap mr-6 group-hover:text-blue-200 transition-colors duration-300">Connect</span>
+                  <div className="absolute left-[91px] top-1/2 -translate-y-1/2 z-20">
+                    <div className="bg-blue-500 p-3.5 rounded-full transition-all duration-300 group-hover:shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                      <Phone size={15} />
+                    </div>
+                  </div>
+                  <div className="absolute bg-gradient-to-r from-blue-500/20 to-blue-600/30 w-0 h-full left-0 top-0 transition-all duration-500 group-hover:w-full -z-10"></div>
+                </a>
+              </div>
+              
+              {/* Social Icons - tech styled */}
+              <div className="flex items-center space-x-4">
+                <Link href="/twitter" className="text-white hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                  <Twitter size={16} className="hover:drop-shadow-[0_0_3px_rgba(59,130,246,0.7)]" />
+                </Link>
+                <Link href="/instagram" className="text-white hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                  <Instagram size={16} className="hover:drop-shadow-[0_0_3px_rgba(59,130,246,0.7)]" />
+                </Link>
+                <Link href="/facebook" className="text-white hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                  <Facebook size={16} className="hover:drop-shadow-[0_0_3px_rgba(59,130,246,0.7)]" />
+                </Link>
+                <Link href="/linkedin" className="text-white hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                  <Linkedin size={16} className="hover:drop-shadow-[0_0_3px_rgba(59,130,246,0.7)]" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tech-styled dropdown menu - desktop only */}
+        <div 
+          ref={dropdownRef}
+          className="fixed top-16 left-0 w-full tech-dropdown text-white z-20 shadow-xl overflow-hidden transition-all duration-500 ease-in-out md:block hidden"
+          style={{ 
+            height: isOpen ? `${contentHeight + 32}px` : '0px',
+            opacity: isOpen ? 1 : 0,
+            transform: isOpen ? 'translateY(0)' : 'translateY(-8px)',
+          }}
+        >
+          <div className="py-4 md:pl-[280px] sm:px-6">
+            {/* Enhanced Content for each menu */}
+            {Object.keys(menuData).map((menuName) => (
+              menuData[menuName].type === 'dropdown' && (
+                <div 
+                  key={menuName}
+                  ref={el => menuItemRefs.current[menuName] = el}
+                  className={`transition-all duration-500 ${activeMenu === menuName ? 'opacity-100' : 'opacity-0 hidden'}`}
+                >
+                  {/* Special styling for Code menu */}
+                  {menuName === '</Code>' ? (
+                    <div className="flex">
+                      {/* Left column - Main categories with tech styling */}
+                      <div className="w-1/4 pr-8">
+                        <ul className="space-y-3"> 
+                          {menuData[menuName].items.map((item, index) => (
+                            <li 
+                              key={item.name}
+                              onMouseEnter={() => handleSubMenuHover(item.name)}
+                              className="flex flex-col"
+                              style={getAnimationDelay(index)}
+                            >
+                              {/* Display primary item with tech styling */}
+                              {!item.subItems && item.href ? (
+                                <Link 
+                                  href={item.href}
+                                  className={`text-lg font-medium cursor-pointer tech-item tech-border tech-animate-in flex items-center gap-2 ${activeSubMenu === item.name ? 'text-blue-400 tech-border-active' : 'text-blue-500 hover:text-blue-400'}`}
+                                >
+                                  <Code size={14} className="opacity-70" />
+                                  {item.name}
+                                </Link>
+                              ) : (
+                                <div
+                                  className={`text-lg font-medium cursor-pointer tech-item tech-border tech-animate-in flex items-center gap-2 ${activeSubMenu === item.name ? 'text-blue-400 tech-border-active' : 'text-blue-500 hover:text-blue-400'}`}
+                                >
+                                  {item.name === 'Web' && <Code size={14} className="opacity-70" />}
+                                  {item.name === 'CMS' && <Grid size={14} className="opacity-70" />}
+                                  {item.name === 'Product' && <Database size={14} className="opacity-70" />}
+                                  {item.name === 'AI & Automation' && <Cpu size={14} className="opacity-70" />}
+                                  {!(item.name === 'Web' || item.name === 'CMS' || item.name === 'Product' || item.name === 'AI & Automation') && <Code size={14} className="opacity-70" />}
+                                  {item.name}
+                                </div>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      {/* Right column - Subcategory items with tech styling */}
+                      <div className="w-3/4 pl-8 border-l border-blue-900/30">
+                        {/* Tech-styled subitems */}
+                        {activeSubMenu && 
+                         menuData[menuName].items.find(item => item.name === activeSubMenu)?.subItems && (
+                          <motion.div 
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.3 }}
+                            className="tech-grid"
+                          >
+                            {menuData[menuName].items.find(item => item.name === activeSubMenu)?.subItems.map((subItem, index) => (
+                              <Link 
+                                key={subItem.name} 
+                                href={subItem.href} 
+                                className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 tech-item p-2 rounded-md hover:bg-blue-900/10 group"
+                                style={getAnimationDelay(index)}
+                              >
+                                <div className="text-blue-400 tech-icon bg-blue-900/20 p-1.5 rounded-md group-hover:bg-blue-900/30">
+                                  <i className={getIconClass(subItem.icon)}></i>
+                                </div>
+                                <span className="tech-animate-in">{subItem.name}</span>
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                        
+                        {/* Tech-styled Apple-menu for Product section */}
+                        {activeSubMenu === 'Product' && (
+                          <div className="grid grid-cols-2 gap-6">
+                            {Object.keys(appleMenuData).map((headerName, sectionIndex) => (
+                              <div key={headerName} className="tech-card" style={getAnimationDelay(sectionIndex)}>
+                                <h3 className="tech-section-header">{headerName}</h3>
+                                <ul className="space-y-3">
+                                  {appleMenuData[headerName].items.map((item, itemIndex) => (
+                                    <li key={item.name} className="tech-animate-in" style={getAnimationDelay(itemIndex + 1)}>
+                                      {item.isClickable ? (
+                                        <Link 
+                                          href={item.href}
+                                          className="text-base text-gray-200 hover:text-blue-400 tech-highlight flex items-center gap-2 group"
+                                        >
+                                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                          {item.name}
+                                        </Link>
+                                      ) : (
+                                        <span className="text-base text-gray-500">
+                                          {item.name}
+                                        </span>
+                                      )}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    /* For other menus, use enhanced tech layout */
+                    <div className="flex">
+                      {/* Left column - Categories with tech styling */}
+                      <div className="w-1/4 pr-8">
+                        <ul className="space-y-3">
+                          {menuData[menuName].items.map((item, index) => (
+                            <li 
+                              key={item.name}
+                              onMouseEnter={() => handleSubMenuHover(item.name)}
+                              className="tech-animate-in"
+                              style={getAnimationDelay(index)}
+                            >
+                              {!item.subItems ? (
+                                <Link 
+                                  href={item.href}
+                                  className="text-lg font-medium text-green-400 hover:text-blue-400 tech-item tech-border flex items-center gap-2"
+                                >
+                                  <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                                  {item.name}
+                                </Link>
+                              ) : (
+                                <div
+                                  className={`text-lg font-medium cursor-pointer tech-item tech-border flex items-center gap-2 ${activeSubMenu === item.name ? 'text-blue-400 tech-border-active' : 'text-green-400 hover:text-blue-400'}`}
+                                >
+                                  <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                                  {item.name}
+                                </div>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      {/* Right area - Subcategory items with tech styling */}
+                      <div className="w-3/4 pl-8 border-l border-green-900/30">
+                        {/* Tech-styled subitems */}
+                        {activeSubMenu && 
+                         menuData[menuName].items.find(item => item.name === activeSubMenu)?.subItems && (
+                          <motion.div 
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.3 }}
+                            className="tech-grid"
+                          >
+                            {menuData[menuName].items.find(item => item.name === activeSubMenu)?.subItems.map((subItem, index) => (
+                              <Link 
+                                key={subItem.name} 
+                                href={subItem.href}
+                                className="flex items-center space-x-3 text-gray-300 hover:text-green-400 tech-item p-2 rounded-md hover:bg-green-900/10 group"
+                                style={getAnimationDelay(index)}
+                              >
+                                <div className="text-green-400 tech-icon bg-green-900/20 p-1.5 rounded-md group-hover:bg-green-900/30">
+                                  <i className={getIconClass(subItem.icon)}></i>
+                                </div>
+                                <span className="tech-animate-in">{subItem.name}</span>
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      </nav>
+    </div>
+  )
+}

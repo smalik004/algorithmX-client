@@ -1,0 +1,174 @@
+/* Video container styles */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  /* Style for video not in view */
+  .video-not-in-view {
+    /* This creates the container for overlay */
+  }
+  
+  /* Blur and overlay effect for videos not in view */
+  .video-not-in-view::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+  }
+  
+  /* Apply blur effect to the video when not in view */
+  .video-not-in-view video {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+  }
+
+
+  /* BUTTON */
+
+
+/* BUTTON */
+.button {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: #0a0a0a;
+  text-align: center;
+
+  border-radius: .5rem;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 140px;
+  height: 36px;
+  padding: .625rem 2.5rem .625rem 1rem;
+  font-size: .875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 -3px rgba(66, 18, 9, 0.1), inset 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.button-text {
+  width: auto;
+  transition: all .5s cubic-bezier(.4,0,.2,1);
+}
+
+.arrow-area {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  transition: all .5s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+
+.arrow-container {
+  border-radius: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.default-arrows {
+  justify-content: center;
+  align-items: center;
+  transition: opacity .3s;
+  display: flex;
+}
+
+.arrow {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.arrow.arrow-0 { right: 0; }
+.arrow.arrow-1 { right: 32px; }
+.arrow.arrow-2 { right: 64px; }
+.arrow.arrow-3 { right: 96px; }
+.arrow.arrow-4 { right: 128px; }
+.arrow.arrow-5 { right: 160px; }
+.arrow.arrow-6 { right: 192px; }
+.arrow.arrow-7 { right: 224px; }
+
+/* Hover animations */
+.button:hover {
+  
+}
+
+.button:hover .button-text {
+  transform: translateX(-40px);
+  opacity: 0;
+}
+
+.button:hover .arrow-area {
+  width: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
+.button:hover .default-arrows {
+  opacity: 0;
+}
+
+.button:hover .arrow.arrow-0 {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.button:hover .arrow.arrow-1 {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.button:hover .arrow.arrow-2 {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.button:hover .arrow.arrow-3 {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+.button:hover .arrow.arrow-4 {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.button:hover .arrow.arrow-5 {
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+
+.button:hover .arrow.arrow-6 {
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+
+.button:hover .arrow.arrow-7 {
+  opacity: 1;
+  transition-delay: 0.8s;
+}

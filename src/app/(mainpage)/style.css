@@ -1,0 +1,123 @@
+.circle-style {
+    width: 20px;
+    height: 20px;
+    top: -29px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  @media (min-width: 640px) {
+    .circle-style {
+      top: -29px; /* Change for tablets */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .circle-style {
+      top: 3px; /* Change for desktops */
+    }
+  }
+  .negativemargin {
+    margin-top: -40px;
+  }
+  .your-scrollable-div {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+  }
+  
+  .your-scrollable-div::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .your-scrollable-div::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+  }
+
+  .box-design{
+    box-shadow: -1px 1px 5px 7px rgba(38, 109, 234, 0.2);
+    border-radius: 10px;
+    border: 1px solid #2775ff;
+  }
+  .box-design1{
+    box-shadow: -1px 1px 5px 7px rgba(38, 109, 234, 0.2);
+    border-radius: 50px;
+    border: 1px solid #2775ff;
+  }
+  .box-style-red{
+    border: 1px solid #d9302d;
+    box-shadow: -1px 1px 5px 7px rgba(217, 48, 45, 0.1);
+  }
+  .box-style-yellow{
+    border: 1px solid #ffca00;
+    box-shadow: -1px 1px 5px 7px rgba(255, 202, 0, 0.1);
+  }
+  .box-style-green{
+    border: 1px solid #00d748;
+    box-shadow: -1px 1px 5px 7px rgba(0, 215, 72, 0.1);
+  }
+  .box-style-blue{
+    border: 1px solid #4285f4;
+    box-shadow: -1px 1px 5px 7px rgba(66, 133, 244, 0.1);
+  }
+  .box-style-purple{
+    border: 1px solid #ea0fb4;
+    box-shadow: -1px 1px 5px 7px rgba(234, 15, 180, 0.1);
+  }
+  .text-rose{
+    --tw-text-opacity: 1;
+    color: rgb(244 63 94 / var(--tw-text-opacity, 1));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f83365 100%);
+  }
+  .box-mobile{
+    background: rgb(15, 15, 15);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.90);
+  }
+
+  .clip-path-pentagon-right {
+    clip-path: polygon(0% 50%, 20% 0%, 100% 0%, 100% 100%, 20% 100%);
+  }
+  
+  .clip-path-pentagon-left {
+    clip-path: polygon(80% 0%, 100% 50%, 80% 100%, 0% 100%, 0% 0%);
+  }
+  
+
+  @media (max-width: 1024px) {
+    .clip-path-pentagon-left,
+    .clip-path-pentagon-right {
+      clip-path: none;
+    }
+  }
+
+  .hex-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .hex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 5px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .hexagon {
+    width: 80px;
+    height: 92px;
+    background-color: transparent;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: 2px solid yellow;
+  }
+  
+  .line-color{
+    background-color: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  }
+
+  

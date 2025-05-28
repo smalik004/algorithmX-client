@@ -1,0 +1,316 @@
+
+
+  .custom-rounded-tr {
+    border-top-right-radius: 10rem; /* Adjust the radius as needed */
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .scale-110 {
+    transform: scale(1.1);
+  }
+  
+  .opacity-100 {
+    opacity: 1;
+  }
+  
+  .scale-75 {
+    transform: scale(0.75);
+  }
+  .custom-rounded {
+    border-radius: 20px 30px 30px 20px; /* top-left, top-right, bottom-right, bottom-left */
+  }
+  
+  .icon-custom-rounded {
+    border-radius: 30px 30px 30px 30px; /* top-left, top-right, bottom-right, bottom-left */
+  }
+  /* Custom class to apply a lighter and more transparent border */
+.custom-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 99, 132, 0.5); /* Lighter border color with opacity (pink as example) */
+  }
+  
+  /* Example for lighter borders using shades */
+  .border-purple-light {
+    border-width: 2px;
+    border-color: rgba(128, 0, 128, 0.3); /* Lighter purple with reduced opacity */
+  }
+  
+  .border-red-light {
+    border-width: 2px;
+    border-color: rgba(169, 34, 34, 0.3); /* Lighter red with reduced opacity */
+  }
+  
+  .border-green-light {
+    border-width: 2px;
+    border-color: rgba(0, 128, 0, 0.3); /* Lighter green with reduced opacity */
+  }
+  
+  .border-blue-light {
+    border-width: 2px;
+    border-color: rgba(0, 0, 255, 0.3); /* Lighter blue with reduced opacity */
+  }
+  
+  .border-orange-light {
+    border-width: 2px;
+    border-color: rgba(255, 165, 0, 0.3); /* Lighter orange with reduced opacity */
+  }
+  
+  .border-yellow-light {
+    border-width: 2px;
+    border-color: rgba(42, 169, 163, 0.3); /* Lighter yellow with reduced opacity */
+  }
+  
+  .border-pink-light {
+    border-width: 2px;
+    border-color: rgba(255, 105, 180, 0.3); /* Lighter pink with reduced opacity */
+  }
+  .background {
+    background-color: rgba(255, 255, 255, 0.1)
+   }
+   @media (max-width: 768px) {
+    .w-full {
+      width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+  
+    .lg\:w-1\/2 {
+      width: 100%; /* Make the left and right sections take full width on mobile */
+    }
+  
+    .p-8 {
+      padding: 4%; /* Add some padding on smaller screens */
+    }
+  
+    .text-6xl {
+      font-size: 3rem; /* Reduce font size for readability on small screens */
+    }
+  
+    .text-xl {
+      font-size: 1.25rem; /* Adjust the text size */
+    }
+  
+    .scroll-content {
+      max-height: none; /* Allow scrolling to take the full height */
+      overflow-y: scroll; /* Enable scrolling */
+    }
+  }
+  
+  /* Ensure good spacing between content sections */
+  .content-section {
+    margin-bottom: 20px; /* Space out the sections */
+  }
+
+  .title{
+    font-size: 56px;
+  }
+
+  .explore{
+    font-size: 34.8px;
+    line-height: 68px;
+  }
+  .description-text {
+    font-size: 24px; /* Default font size for smaller devices */
+    line-height:34px ;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content{
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .scroll-title{
+    font-size: 18px;
+    line-height: 1.1;
+     
+    font-weight: 700;
+    margin-bottom: 15px;
+
+  }
+  .scroll-description{
+    font-size: 14px;
+    line-height: 1.1;
+     
+
+  }
+
+  .offer{
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    line-height: 3.75rem;
+}
+.offer-subtitle{
+  font-size: 1rem;
+
+}
+.offer-title{
+  font-size: 20px;
+  
+  line-height: 1.4;
+  margin-bottom: 35px;
+  
+}
+.offer-description{
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.number{
+  font-size: 12px;
+}
+.box-color{
+  background-color: rgba(255, 255, 255, 0.06) !important;
+
+}
+
+.service-card {
+  transition: transform 0.2s ease, opacity 0.7s ease, box-shadow 0.2s ease;
+  /* Ensures the element starts at normal size */
+}
+
+.service-card:hover {
+  box-shadow: 0 0 80px 25px rgba(255, 255, 255, 0.2); /* Starts with a small shadow and grows larger */
+}
+.aligned-text{
+  font-size: 56px;
+
+}
+.aligned-subtitle{
+  font-size: 40px;
+  line-height: 48px;
+
+}
+.aligned-content{
+  font-size: 15px;
+   
+}
+
+.toolbox-title{
+  font-size: 2.4rem;
+  letter-spacing: 0.06em;
+  line-height: 3.75rem;
+}
+
+.toolbox-description{
+  font-size: 16px;
+}
+.toolbox{
+  font-size: 1.1rem;
+  padding: 1rem 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .algo-content-creation-services {
+    display: block; /* Stack sections vertically */
+  }
+  .borderb{
+    border-bottom: 1px solid gray;
+  }
+  .algo-content-creation-services .flx_left,
+  .algo-content-creation-services .flx_right {
+    width: 100%; /* Full width for both sections */
+    padding: 4rem 15px 0; /* Consistent padding for mobile */
+    display: block;
+    float: none; /* Remove floating */
+    position: relative; /* Remove sticky behavior */
+    overflow-y: visible; /* Allow full content view */
+    max-height: none; /* No height restriction */
+  }
+
+  .description-text {
+    font-size: 24px; /* Smaller for mobile */
+    line-height: 34px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .explore {
+    font-size: 34.8px;
+    line-height: 50px;
+  }
+
+  .aligned-text {
+    font-size: 56px;
+  }
+}
+
+
+
+
+  @media (min-width: 1025px) {
+    .algo-content-creation-services {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .algo-content-creation-services .flx_left {
+      width: 45%; /* Sticky left section */
+      padding: 7rem 15px 0;
+      display: inline-block;
+      float: left;
+      position: sticky;
+      top: 50px;
+      max-width: 770px;
+      height: 100%;
+      
+    }
+  
+    .algo-content-creation-services .flx_right {
+      width: 55%; /* Scrollable right section */
+      padding: 7rem 60px 0;
+      display: inline-block;
+      vertical-align: top;
+      float: right;
+      overflow-y: auto;
+      max-height: 100vh;
+      position: relative;
+    }
+    .borderb{
+      border-bottom: 1px solid gray;
+    }
+  
+    /* Hide scrollbar */
+    .flx_right::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .flx_right {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
+  
+    .description-text {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  
+    .title {
+      font-size: 85px;
+    }
+  
+    .explore {
+      font-size: 64px;
+      line-height: 68px;
+    }
+  
+    .aligned-text {
+      font-size: 100px;
+    }
+  
+    
+  }
+
+  .tool:hover{
+    background-color: rgb(255 255 255 / 16%);
+  }

@@ -1,0 +1,45 @@
+/*2nd*/
+.digital-title{
+    font-size: 40px;
+    line-height: 68px;
+}
+.digital-subtitle{
+    font-size: 21px;
+    line-height: 26px;
+}
+.digital-description{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/*3rd*/
+.crafting-title{
+    font-size: 56px;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+
+}
+.crafting-subtitle{
+    font-size: 16px;
+}
+
+.growth-title{
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 40px;
+}
+
+.growth-description{
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+@media (max-width: 768px) {
+    .crafting-title{
+        font-size: 36px;
+        letter-spacing: 0.06em;
+        line-height: 60px;
+    
+    }
+}
