@@ -1,13 +1,14 @@
-import React from 'react'
-import Navbar from './navbar'
+import React from "react";
+import Navbar from "./navbar";
+import CookieConsent from "../cookies/cookie";
 
 const page = () => {
   return (
     <div>
-       <Navbar/>
-    <CookieConsent/>
+      <Navbar />
+      <CookieConsent />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
