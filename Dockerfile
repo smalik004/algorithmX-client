@@ -12,7 +12,7 @@ COPY . .
 RUN npm install
 RUN npm run build
 
-# Step 2: Use a lightweight image to serve the app
+# Step 2: Use a lightweight image to serve the app -
 FROM node:18-alpine AS runner
 
 WORKDIR /app
