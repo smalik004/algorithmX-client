@@ -6,7 +6,7 @@ WORKDIR /app
 # Install dependencies
 COPY package*.json ./
 COPY tsconfig.json ./
-COPY next.config.js ./
+COPY next.config.mjs ./
 COPY . .
 
 RUN npm install
