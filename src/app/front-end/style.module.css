@@ -164,8 +164,8 @@ border-radius: 15px;
 
 /*5TH */
 .dynamic-title{
-  font-size: 64px;
-  line-height: 68px;
+  font-size: 50px;
+  line-height: 55px;
 }
 .dynamic-subtitle{
   font-size: 20px;
@@ -209,8 +209,8 @@ border-radius: 15px;
     line-height: 48px;
   }
   .dynamic-title{
-    font-size: 42px;
-    line-height: 68px;
+    font-size: 35px;
+    line-height: 40px;
   }
   .scale-subtitle{
     line-height: 60px;

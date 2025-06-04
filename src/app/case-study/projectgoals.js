@@ -1,7 +1,45 @@
-'use client'
-import React from 'react';
+"use client";
+import React from "react";
 
-export default function ProjectGoals() {
+export default function ProjectGoals({ data }) {
+  // Parse the stringified JSON data
+  const parseProjectGoals = () => {
+    try {
+      if (data?.projectGoals) {
+        // The data might be double-stringified, so we may need to parse twice
+        let parsed = JSON.parse(data.projectGoals);
+
+        // If it's still a string, parse again
+        if (typeof parsed === "string") {
+          parsed = JSON.parse(parsed);
+        }
+
+        // Check if parsed data is an array, if not, it might be an object containing an array
+        if (Array.isArray(parsed)) {
+          return parsed;
+        } else if (parsed && typeof parsed === "object") {
+          // If it's an object, look for an array property
+          const firstKey = Object.keys(parsed)[0];
+          if (Array.isArray(parsed[firstKey])) {
+            return parsed[firstKey];
+          }
+        }
+      }
+      return [];
+    } catch (error) {
+      console.error("Error parsing project goals:", error);
+      console.error("Raw data:", data?.projectGoals);
+      return [];
+    }
+  };
+
+  const projectGoals = parseProjectGoals();
+
+  // Debug logging
+  console.log("Parsed project goals:", projectGoals);
+  console.log("Raw data:", data?.projectGoals);
+  const imageUrl = data?.projectGoalImgURL;
+
   return (
     <div className="min-h-screen bg-black text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
@@ -15,127 +53,97 @@ export default function ProjectGoals() {
         <div className="hidden md:grid md:grid-cols-5 gap-8 relative">
           {/* Left side content boxes */}
           <div className="col-span-2 space-y-32">
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-8xl font-bold text-gray-700 ">1</div>
-              <h3 className="text-[20px] font-bold mb-4">Conceptualization of the project</h3>
-              <p className="text-gray-300">
-                We started with the customer journey mapping process, ensuring that we have a complete understanding of the roadblocks IKEA offline customers face when shopping in-store. The understanding then laid the basis for the ERP solution's feature-set and the integration choices.
-              </p>
-            </div>
-            
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-8xl font-bold text-gray-700">3</div>
-              <h3 className="text-[20px] font-bold mb-4">Integrate the facility to gather customers' information</h3>
-              <p className="text-gray-300">
-                A crucial outcome that the IKEA management team was expecting was in terms of customers' information that they could then use as marketing assets. We brainstormed and implemented solutions to gather this data efficiently.
-              </p>
-            </div>
+            {projectGoals
+              .filter((goal, index) => index % 2 === 0)
+              .map((goal) => (
+                <div key={goal.id} className="bg-black p-6 rounded-lg">
+                  <div className="text-8xl font-bold text-gray-700">
+                    {goal.id}
+                  </div>
+                  <h3 className="text-[20px] font-bold mb-4">{goal.title}</h3>
+                  <p className="text-gray-300">{goal.desc}</p>
+                </div>
+              ))}
           </div>
-          
+
           {/* Center column with phone */}
           <div className="col-span-1 flex justify-center items-center relative">
             <div className="w-64 relative z-10">
-              <img 
-                src="/images/project-goal-screen.webp" 
-                alt="IKEA Mobile App Interface" 
+              <img
+                src={imageUrl}
+                alt="Project Goal Interface"
                 className="w-full h-auto"
               />
             </div>
-            
+
             {/* Dotted lines */}
             <div className="absolute inset-0 w-full h-full">
               {/* Top-left to center - adjusted to match image */}
-              <div className="absolute top-1/2 -left-[250px] w-full h-px border-t-2 border-dashed border-gray-600" style={{ width: '250px' }}></div>
               <div
-  className="absolute top-[40%] -left-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"
-  
-></div>
+                className="absolute top-1/2 -left-[250px] w-full h-px border-t-2 border-dashed border-gray-600"
+                style={{ width: "250px" }}
+              ></div>
+              <div className="absolute top-[40%] -left-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"></div>
 
               {/* Bottom-left to center - adjusted to match image */}
-              <div className="absolute top-[46%] -left-[250px] w-full h-px border-t-2 border-dashed border-gray-600" style={{ width: '250px' }}></div>
               <div
-  className="absolute top-[50%] -left-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"
-  
-></div>
-              
+                className="absolute top-[46%] -left-[250px] w-full h-px border-t-2 border-dashed border-gray-600"
+                style={{ width: "250px" }}
+              ></div>
+              <div className="absolute top-[50%] -left-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"></div>
+
               {/* Top-right to center - adjusted to match image */}
-              <div className="absolute top-1/2 -right-[250px] w-full h-px border-t-2 border-dashed border-gray-600" style={{ width: '250px' }}></div>
               <div
-  className="absolute top-[40%] -right-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"
-  
-></div>
-              
+                className="absolute top-1/2 -right-[250px] w-full h-px border-t-2 border-dashed border-gray-600"
+                style={{ width: "250px" }}
+              ></div>
+              <div className="absolute top-[40%] -right-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"></div>
+
               {/* Bottom-right to center - adjusted to match image */}
-              <div className="absolute top-[46%] -right-[250px] w-full h-px border-t-2 border-dashed border-gray-600" style={{ width: '250px' }}></div>
               <div
-  className="absolute top-[50%] -right-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"
-  
-></div>
+                className="absolute top-[46%] -right-[250px] w-full h-px border-t-2 border-dashed border-gray-600"
+                style={{ width: "250px" }}
+              ></div>
+              <div className="absolute top-[50%] -right-[250px] h-[50px] w-px border-l-2 border-dashed border-gray-600"></div>
             </div>
           </div>
-          
+
           {/* Right side content boxes */}
           <div className="col-span-2 space-y-32">
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-8xl font-bold text-gray-700 ">2</div>
-              <h3 className="text-[20px] font-bold mb-4">Creation of an ERP solution</h3>
-              <p className="text-gray-300">
-                We worked on the creation of the ERP solution following an agile development approach. Our team of designers, developers, and deployment experts worked together to build a solution that would become the first point of contact for every IKEA walk-in customer.
-              </p>
-            </div>
-            
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-8xl font-bold text-gray-700 ">4</div>
-              <h3 className="text-[20px] font-bold mb-4">Deploy the solution across individual IKEA stores</h3>
-              <p className="text-gray-300">
-                Our deployment team worked on the launch of the ERP solution across different IKEA stores, each with their individual servers. We worked remotely on the IKEA private networks to ensure a smooth rollout process.
-              </p>
-            </div>
+            {projectGoals
+              .filter((goal, index) => index % 2 === 1)
+              .map((goal) => (
+                <div key={goal.id} className="bg-black p-6 rounded-lg">
+                  <div className="text-8xl font-bold text-gray-700">
+                    {goal.id}
+                  </div>
+                  <h3 className="text-[20px] font-bold mb-4">{goal.title}</h3>
+                  <p className="text-gray-300">{goal.desc}</p>
+                </div>
+              ))}
           </div>
         </div>
 
         {/* Mobile Layout - visible only on mobile */}
         <div className="md:hidden">
           <div className="mx-auto mb-12 w-64">
-            <img 
-              src="/images/project-goal-screen.webp" 
-              alt="IKEA Mobile App Interface" 
+            <img
+              src={imageUrl}
+              alt="Project Goal Interface"
               className="w-full h-auto"
             />
           </div>
 
           <div className="space-y-12">
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-6xl  font-bold text-gray-700 mb-4">1</div>
-              <h3 className="text-xl font-bold mb-3">Conceptualization of the project</h3>
-              <p className="text-gray-300 text-sm">
-                We started with the customer journey mapping process, ensuring that we have a complete understanding of the roadblocks IKEA offline customers face when shopping in-store. The understanding then laid the basis for the ERP solution's feature-set and the integration choices.
-              </p>
-            </div>
-            
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-6xl  font-bold text-gray-700 mb-4">2</div>
-              <h3 className="text-xl font-bold mb-3">Creation of an ERP solution</h3>
-              <p className="text-gray-300 text-sm">
-                We worked on the creation of the ERP solution following an agile development approach. Our team of designers, developers, and deployment experts worked together to build a solution that would become the first point of contact for every IKEA walk-in customer.
-              </p>
-            </div>
-            
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-6xl  font-bold text-gray-700 mb-4">3</div>
-              <h3 className="text-xl font-bold mb-3">Integrate the facility to gather customers' information</h3>
-              <p className="text-gray-300 text-sm">
-                A crucial outcome that the IKEA management team was expecting was in terms of customers' information that they could then use as marketing assets. We brainstormed and implemented solutions to gather this data efficiently.
-              </p>
-            </div>
-            
-            <div className="bg-black p-6 rounded-lg  ">
-              <div className="text-6xl  font-bold text-gray-700 mb-4">4</div>
-              <h3 className="text-xl font-bold mb-3">Deploy the solution across individual IKEA stores</h3>
-              <p className="text-gray-300 text-sm">
-                Our deployment team worked on the launch of the ERP solution across different IKEA stores, each with their individual servers. We worked remotely on the IKEA private networks to ensure a smooth rollout process.
-              </p>
-            </div>
+            {projectGoals.map((goal) => (
+              <div key={goal.id} className="bg-black p-6 rounded-lg">
+                <div className="text-6xl font-bold text-gray-700 mb-4">
+                  {goal.id}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{goal.title}</h3>
+                <p className="text-gray-300 text-sm">{goal.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

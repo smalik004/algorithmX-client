@@ -1,28 +1,42 @@
-    import React from 'react'
-    import Navbar from '../asample/naviagtion'
-import CookieConsent from '../cookies/cookie'
-  import FloatingBubblesPage from './bubble'
-    import Industries from './industries'
-    import PortfolioGrid from './newcase'
-    import GlassMirrorCard from './glass'
-    import InsightSection from '../graphics/insight'
-    import Footer from '../(mainpage)/footer'
-    const page = () => {
-    return (
-        <div>
-             <Navbar/>
-    <CookieConsent/>
-            <FloatingBubblesPage/>
-            <PortfolioGrid/>
-            
-        
-        <InsightSection/>
-       
-        <Footer/>
-        
-        
-        </div>
-    )
-    }
+"use client";
+import React, { useState, useEffect } from "react";
 
-    export default page
+import Navbar from "../asample/naviagtion";
+import CookieConsent from "../cookies/cookie";
+import FloatingBubblesPage from "./bubble";
+import PortfolioGrid from "./clientdesign";
+import InsightSection from "../graphics/insight";
+import Footer from "../(mainpage)/footer";
+import axiosHttp from "../utils/httpConfig";
+
+const Page = () => {
+  const [data, setData] = useState(null);
+
+  const fetchData = async () => {
+    try {
+      const response = await axiosHttp.get(`/clients/`);
+      console.log(" API Response Data:", response);
+      const result = response?.data?.data || null;
+      setData(result);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <Navbar />
+      <CookieConsent />
+      <FloatingBubblesPage data={data} />
+      <PortfolioGrid data={data} />
+      <InsightSection data={data} />
+      <Footer />
+    </div>
+  );
+};
+
+export default Page;

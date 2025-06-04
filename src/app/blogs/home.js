@@ -235,8 +235,8 @@ export default function BlogCarousel() {
                             "Anonymous"}
                         </p>
                         <p className="text-black text-sm">
-                          {formatDate(carouselBlogs[currentSlide]?.post_date)} •{" "}
-                          {carouselBlogs[currentSlide]?.views || 0} Views
+                          {formatDate(carouselBlogs[currentSlide]?.post_date)}{" "}
+                          {/* {carouselBlogs[currentSlide]?.views || 0} Views */}
                         </p>
                       </div>
                     </div>
@@ -335,8 +335,8 @@ export default function BlogCarousel() {
                             {blog.author_name || "Anonymous"}
                           </p>
                           <p className="text-black text-xs">
-                            {formatDate(blog.post_date)} • {blog.views || 0}{" "}
-                            Views
+                            {formatDate(blog.post_date)}
+                            {/* • {blog.views || 0}{" "} */}
                           </p>
                         </div>
                       </div>

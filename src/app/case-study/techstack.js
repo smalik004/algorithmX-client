@@ -1,29 +1,33 @@
-import React from 'react';
+import React from "react";
 
-const TechnologyStack = () => {
-  const technologies = [
-    { name: 'Node.js', id: 'nodejs', image: '/images/nodejs-tech.svg' },
-    { name: 'AeroSpike', id: 'aerospike', image: '/images/aerospike-tech.svg' },
-    { name: 'MongoDB', id: 'mongodb', image: '/images/mongodb-tech.svg' },
-    { name: 'Kafka', id: 'kafka', image: '/images/kafka-tech.svg' },
-    { name: 'Magento', id: 'magento', image: '/images/magento-tech.svg' },
-  ];
+const TechnologyStack = ({ data }) => {
+  // Get images from API response, limit to maximum 7 images
+  const techStackImages = data?.techStackURLs?.slice(0, 7) || [];
+
+  // Don't render the component if no images are available
+  if (techStackImages.length === 0) {
+    return null;
+  }
 
   return (
-    <div className='bg-black py-[80px]'>
+    <div className="bg-black py-[80px]">
       <div className="w-full max-w-6xl mx-auto px-4 py-8">
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8 text-center md:text-start">
-          The proposed solution for KFC UAE and other locations was developed using new-age and open-source technologies such as:
+          {data?.techStackTitle}
         </h2>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-6">
-          {technologies.map((tech) => (
-            <div key={tech.id} className="flex flex-col items-center">
+          {techStackImages.map((imageUrl, index) => (
+            <div key={index} className="flex flex-col items-center">
               <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
                 <img
-                  src={tech.image}
-                  alt={`${tech.name} logo`}
+                  src={imageUrl}
+                  alt={`Technology ${index + 1}`}
                   className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    // Handle image load errors gracefully
+                    e.target.style.display = "none";
+                  }}
                 />
               </div>
             </div>

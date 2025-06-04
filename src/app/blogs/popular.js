@@ -43,7 +43,7 @@ const TabsContent = () => {
               })
             : "Unknown date",
           readTime: blog.read_time || "3 min read",
-          link: `/blog/${blog.blog_id}`,
+          link: `/blogs-internal/${blog.id}`,
           image: blog.image_url || "/images/default.jpg",
           tags: blog.tags || [],
         });

@@ -99,7 +99,7 @@
 }
 /*5t*/
 .shopify-text{
-    font-size: 42px;
+    font-size: 30px;
     line-height: 1.3;
 }
 .timeline-title{
@@ -117,8 +117,8 @@
 
 @media (max-width: 768px) {
     .shopify-text1 {
-        font-size: 3.25rem; /* Should apply for screens 768px and up */
-        line-height: 64px;
+        font-size: 3rem; /* Should apply for screens 768px and up */
+        line-height: 60px;
     }
     .shopify-description1 {
         font-size: 1.4rem; /* Should apply for screens 768px and up */

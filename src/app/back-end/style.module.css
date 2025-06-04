@@ -158,8 +158,8 @@
 }
 /* 6th */
 .dynamic-title{
-  font-size: 64px;
-  line-height: 68px;
+  font-size: 45px;
+  line-height: 50px;
 }
 .dynamic-subtitle{
   font-size: 20px;
@@ -205,8 +205,8 @@
         line-height: 48px;
       }
       .dynamic-title{
-        font-size: 42px;
-        line-height: 68px;
+        font-size: 35px;
+        line-height: 40px;
       }
       .scale-subtitle{
         line-height: 60px;

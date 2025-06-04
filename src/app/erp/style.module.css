@@ -89,6 +89,10 @@
     .carousel-item {
         width: 100%;
     }
+    .dynamic-text{
+      font-size: 40px;
+      line-height: 50px;
+    }
 }
 .scroll-content::-webkit-scrollbar {
     width: 0;
