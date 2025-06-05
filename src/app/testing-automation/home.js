@@ -1,20 +1,20 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -72,18 +72,29 @@ const TestingSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            TESTING &
+            <h1
+              className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              TESTING &
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            AUTOMATION
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              AUTOMATION
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          At AlgorithmX,We transforms QA into a strategic enabler, ensuring trust, efficiency, and seamless user experiences. With advanced automation and robust testing, we minimize risks, accelerate development, and future-proof digital products for market success.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we engineer QA as a growth enabler. By embedding
+            AI-driven automation and scalable testing into your SDLC, we reduce
+            risk, accelerate delivery, and ensure every release meets the
+            demands of performance, security, and user experience. Our QA
+            approach adapts to your development velocity, so your digital
+            products ship faster and smarter.
           </p>
         </div>
       </div>

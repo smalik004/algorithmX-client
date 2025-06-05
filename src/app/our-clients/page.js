@@ -15,7 +15,7 @@ const Page = () => {
   const fetchData = async () => {
     try {
       const response = await axiosHttp.get(`/clients/`);
-      console.log(" API Response Data:", response);
+
       const result = response?.data?.data || null;
       setData(result);
     } catch (error) {

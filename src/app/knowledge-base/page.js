@@ -14,7 +14,6 @@ const Page = () => {
   const getBlogById = async () => {
     try {
       const response = await axiosHttp.get(`/glossary/glossaries`);
-      console.log("Blog API Response:", response);
 
       const blogData = response?.data?.data || null;
       setData(blogData);
@@ -26,7 +25,7 @@ const Page = () => {
   useEffect(() => {
     getBlogById();
   });
-  console.log("GET ID", data);
+
   return (
     <div>
       <Navbar />

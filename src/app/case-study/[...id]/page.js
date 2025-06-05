@@ -22,14 +22,12 @@ const Page = () => {
   const params = useParams();
   const id = params.id;
   const ClientId = Number(id);
-  console.log("GET CASE STUDY ID", ClientId);
 
   const [data, setData] = useState(null);
 
   const getClientById = async () => {
     try {
       const response = await axiosHttp.get(`/clients/${ClientId}`);
-      console.log("Blog API Response:", response);
 
       const blogData = response?.data?.data || null;
       setData(blogData);
@@ -41,7 +39,7 @@ const Page = () => {
   useEffect(() => {
     if (id) getClientById();
   }, [id]);
-  console.log("GET CASE STUDY DATA", data);
+
   return (
     <div>
       <Navbar />

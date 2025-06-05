@@ -7,7 +7,6 @@ const useFetchBlogs = () => {
   const getBlogs = async () => {
     try {
       const response = await axiosHttp.get("/blog/get-blogs?client=true");
-      console.log("Blogs API Response:", response);
 
       const allBlogs = response?.data?.data || [];
       setBlogs(allBlogs);

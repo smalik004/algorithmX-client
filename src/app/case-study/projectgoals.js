@@ -36,8 +36,7 @@ export default function ProjectGoals({ data }) {
   const projectGoals = parseProjectGoals();
 
   // Debug logging
-  console.log("Parsed project goals:", projectGoals);
-  console.log("Raw data:", data?.projectGoals);
+
   const imageUrl = data?.projectGoalImgURL;
 
   return (

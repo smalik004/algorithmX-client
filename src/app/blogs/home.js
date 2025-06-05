@@ -10,7 +10,6 @@ export default function BlogCarousel() {
   const [currentFeaturedSlide, setCurrentFeaturedSlide] = useState(0);
 
   const result = useFetchBlogs();
-  console.log("result-response", result);
 
   // Filter and set blogs when result changes
   useEffect(() => {

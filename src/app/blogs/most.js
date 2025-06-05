@@ -7,7 +7,6 @@ import useFetchBlogs from "../hooks/fetchblogs";
 
 export default function TabbedContent() {
   const result = useFetchBlogs();
-  console.log("result-response", result);
 
   // Get top 3 blogs based on views
   const top3Blogs = useMemo(() => {

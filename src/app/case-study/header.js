@@ -20,8 +20,6 @@ export default function CaseHeader({ data }) {
   const brandName = data?.brandName || "Brand";
 
   // Debug logging
-  // console.log("Video URL:", videoUrl);
-  // console.log("Data:", data);
 
   // Handle video loading errors
   // const handleVideoError = (error) => {
@@ -30,7 +28,7 @@ export default function CaseHeader({ data }) {
   // };
 
   // const handleVideoLoad = () => {
-  //   console.log("Video loaded successfully:", videoUrl);
+
   // };
 
   return (

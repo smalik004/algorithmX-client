@@ -1,62 +1,62 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
-import styles from '../front-end/style.module.css';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import styles from "../front-end/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '700',
+  subsets: ["latin"],
+  weight: "700",
   fallback: ["sans-serif"],
 });
 
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 
 const services = [
   {
-    title: 'Business Intelligence & Data Analytics',
+    title: "Business Intelligence & Analytics",
     description:
-      'Unlock operational excellence and enterprise-wide insights with our cutting-edge business intelligence systems. We transform raw, unstructured data into actionable intelligence, enabling faster, smarter, and more strategic decision-making that drives growth and innovation across your organization.',
-    image: 'images/User.png',
-    alt: 'Consultation Icon',
+      "Transform unstructured data into real-time insights. Our BI platforms power strategic decision-making with custom dashboards, KPI tracking, and automated reporting across the enterprise.",
+    image: "images/User.png",
+    alt: "Consultation Icon",
   },
   {
-    title: 'Data Engineering',
+    title: "Data Engineering",
     description:
-      'Build a robust and future-ready data ecosystem with our comprehensive data engineering solutions. From data warehouses to lake architectures, ETL development, and seamless maintenance, we design scalable frameworks that empower you to efficiently manage, process, and utilize your data for maximum impact.',
-    image: 'images/UX.png',
-    alt: 'Design Icon',
+      "Build modern data infrastructure—data lakes, warehouses, and ETL pipelines—designed for scale, governance, and seamless integration across cloud and on-prem environments.",
+    image: "images/UX.png",
+    alt: "Design Icon",
   },
   {
-    title: 'Data Security & Integration',
+    title: "Data Security & Integration",
     description:
-      'Safeguard your critical data assets with best-in-class security measures, ensuring confidentiality, integrity, and availability at every stage. Our data integration strategies unify diverse sources, enabling real-time data flow for seamless collaboration, analytics, and decision-making, ensuring your business operates with confidence and agility.',
-    image: 'images/Front.png',
-    alt: 'Custom Development Icon',
+      "Secure your data end-to-end with encryption, role-based access, and compliance controls. Our integration frameworks unify sources for clean, synchronized, and analysis-ready data.",
+    image: "images/Front.png",
+    alt: "Custom Development Icon",
   },
   {
-    title: 'Data Visualization',
+    title: "Data Visualization",
     description:
-      'Transform complex datasets into visually compelling narratives with dynamic charts, graphs, and dashboards. Our visualization solutions simplify the interpretation of intricate data, allowing business leaders to make informed, impactful decisions quickly and effectively.',
-    image: 'images/Responsive.png',
-    alt: 'Testing Icon',
+      "Enable leaders to interpret complexity at a glance. We build interactive dashboards with tools like Tableau, Power BI, and Looker—designed for clarity, speed, and real-time exploration.",
+    image: "images/Responsive.png",
+    alt: "Testing Icon",
   },
   {
-    title: 'Predictive Modeling',
+    title: "Predictive Modeling",
     description:
-      'Drive innovation and anticipate the future with our advanced predictive modeling solutions. By leveraging machine learning and historical data analysis, we uncover trends, identify opportunities, and provide actionable insights that empower you to optimize operations, reduce risks, and enhance strategic planning.',
-    image: 'images/HTML.png',
-    alt: 'Deployment Icon',
+      "Leverage ML and historical patterns to forecast demand, detect anomalies, and simulate outcomes. Our models optimize planning, reduce risk, and surface proactive insights.",
+    image: "images/HTML.png",
+    alt: "Deployment Icon",
   },
   {
-    title: 'Big Data Analytics',
+    title: "Big Data Analytics",
     description:
-      'Discover the untapped value hidden within your massive data ecosystems. Through cutting-edge analytics tools, we help you harness the transformative power of big data, enabling data-driven excellence and ensuring you remain agile and competitive in an ever-evolving business environment.',
-    image: 'images/Performance.png',
-    alt: 'Support Icon',
+      "Analyze high-velocity, high-volume data from sensors, transactions, and user behavior using platforms like Hadoop, Snowflake, and Spark. We surface patterns others miss—at scale.",
+    image: "images/Performance.png",
+    alt: "Support Icon",
   },
 ];
 
@@ -93,8 +93,14 @@ const BigDataGrid = () => {
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <span
               ref={allInOneRef}
-              className={`mb-8 ${styles["main-allinone"]} transform transition-transform duration-700 ${monsterfont.className} ${
-                isInView ? `${styles['scale-110']} ${styles['opacity-100']}` : `${styles['scale-75']} ${styles['opacity-0']}`
+              className={`mb-8 ${
+                styles["main-allinone"]
+              } transform transition-transform duration-700 ${
+                monsterfont.className
+              } ${
+                isInView
+                  ? `${styles["scale-110"]} ${styles["opacity-100"]}`
+                  : `${styles["scale-75"]} ${styles["opacity-0"]}`
               }`}
             >
               SOLUTIONS
@@ -103,11 +109,15 @@ const BigDataGrid = () => {
 
           {/* Main titles */}
           <div className="relative z-10 mt-14">
-            <h2 className={` ${styles["multi-subtitle"]} ${monsterfont1.className} text-white`}>
-            Maximize the Value of Your Data
+            <h2
+              className={` ${styles["multi-subtitle"]} ${monsterfont1.className} text-white`}
+            >
+              Maximize the Value of Your Data
             </h2>
-            <h3 className={` ${styles["multi-subtitle"]} ${monsterfont.className} text-white`}>
-            with Our Advanced Solutions.
+            <h3
+              className={` ${styles["multi-subtitle"]} ${monsterfont.className} text-white`}
+            >
+              with Our Advanced Solutions.
             </h3>
           </div>
         </div>
@@ -123,10 +133,14 @@ const BigDataGrid = () => {
                 alt={service.alt}
                 className={`${styles["image1"]} object-contain `}
               />
-              <h3 className={`${styles["card-title"]} font-helveticaneue mb-4 transition-colors duration-300 `}>
+              <h3
+                className={`${styles["card-title"]} font-helveticaneue mb-4 transition-colors duration-300 `}
+              >
                 {service.title}
               </h3>
-              <p className={`${styles["card-description"]} font-helveticaneue transition-colors duration-300 `}>
+              <p
+                className={`${styles["card-description"]} font-helveticaneue transition-colors duration-300 `}
+              >
                 {service.description}
               </p>
             </div>

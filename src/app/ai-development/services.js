@@ -1,5 +1,5 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../video/styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -46,64 +46,64 @@ const AIServices = () => {
 
   const services = [
     {
-      id: '01',
-      title: 'AI-Powered Automation',
+      id: "01",
+      title: "AI-Powered Automation",
       description: [
-        'Reduce human errors and operational costs.',
-        'Scale operations effortlessly.',
-        'Automate repetitive tasks for better resource allocation.',
+        "Cut down on repetitive tasks and reduce manual overhead",
+        "Improve accuracy and lower costs",
+        "Free up resources for strategic work",
       ],
-      image: '/images/Corporate.png',
+      image: "/images/Corporate.png",
     },
     {
-      id: '02',
-      title: 'Agentic AI',
+      id: "02",
+      title: "Agentic AI",
       description: [
-        'Autonomous decision-making and execution.',
-        'Increased operational efficiency with reduced manual input.',
-        'Real-time adaptability for enhanced agility.'
+        "Enable systems to act on your behalf",
+        "Reduce decision friction and human bottlenecks",
+        "Build agility into everyday operations",
       ],
-      image: '/images/TVC.png',
+      image: "/images/TVC.png",
     },
     {
-      id: '03',
-      title: 'Predictive Analytics & Insights',
+      id: "03",
+      title: "Predictive Analytics & Insights",
       description: [
-        'Optimize resource allocation.',
-        'Anticipate customer demands and market shifts.',
-        'Improve decision-making speed and accuracy.'
+        "Forecast trends and optimize inventory",
+        "Make faster, better-informed choices",
+        "Preempt risks and customer churn",
       ],
-      image: '/images/Music-.png',
+      image: "/images/Music-.png",
     },
     {
-      id: '04',
-      title: 'Natural Language Processing',
+      id: "04",
+      title: "Natural Language Processing",
       description: [
-        'Enhance customer experience with conversational AI.',
-        'Automate customer support and inquiries.',
-        'Extract insights from unstructured data sources.'
+        "Power smarter conversations with users",
+        "Extract meaning from messy, unstructured text.",
+        "Enhance support and search experiences.",
       ],
-      image: '/images/Infographic.png',
+      image: "/images/Infographic.png",
     },
     {
-      id: '05',
-      title: 'Computer Vision & Image Recognition',
+      id: "05",
+      title: "Computer Vision & Image Recognition",
       description: [
-        'Automate manual image processing tasks.',
-        'Improve product quality control and inspection.',
-        'Enhance user engagement with image-based data.'
+        "Automate inspection, tagging, and categorization",
+        "Enforce quality at scale",
+        "Build engaging visual tools.",
       ],
-      image: '/images/Product.png',
+      image: "/images/Product.png",
     },
     {
-      id: '06',
-      title: 'AI-Driven Decision-Making',
+      id: "06",
+      title: "AI-Driven Decision-Making",
       description: [
-        'Proactive issue resolution.',
-        'Real-time optimization of IT operations.',
-        'Enhance system reliability and performance.'
+        "Flag and fix problems before they escalate",
+        "Improve uptime, reliability, and resilience",
+        "Let your systems tell you what to do next",
       ],
-      image: '/images/Testimonial.png',
+      image: "/images/Testimonial.png",
     },
   ];
 
@@ -111,32 +111,50 @@ const AIServices = () => {
     <div className="min-h-screen bg-black p-4 md:p-8">
       <div className="max-w-6xl mx-auto" ref={scalableRef}>
         <div className="text-center mb-8 md:mb-16">
-          <h1 className={`text-white ${styles["video"]} ${monsterfont1.className} mb-4`}>
-          Future-Proof Your Business with Next-Gen AI Solutions.
-          </h1>
+          <h2
+            className={`text-white ${styles["video"]} ${monsterfont1.className} mb-4`}
+          >
+            Future-Proof Your Business with Next-Gen AI Solutions.
+          </h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
-          <p className={`text-semi-white ${styles["video-subtitle"]} ${monsterfont2.className} max-w-4xl mx-auto`}>
-          Unlock the power of AI to outsmart challenges, accelerate growth, and stay ahead of the curve. Let's redefine what's possible for your business—talk to our AI experts today!
-          </p>
+          <h2
+            className={`text-semi-white ${styles["video-subtitle"]} ${monsterfont2.className} max-w-4xl mx-auto`}
+          >
+            Turn inefficiency into opportunity, data into direction, and
+            ambition into action. Talk to our AI team and explore what’s
+            possible today.
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
-            key={service.id}
-            className={`${styles["service-card1"]} relative group rounded-lg p-7 transition-all duration-700 ${styles["box-color"]} transform flex flex-col
-              ${isInView ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
+              key={service.id}
+              className={`${
+                styles["service-card1"]
+              } relative group rounded-lg p-7 transition-all duration-700 ${
+                styles["box-color"]
+              } transform flex flex-col
+              ${
+                isInView
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-12 opacity-0"
+              }
             `}
-            style={{
-              transitionDelay: `${index * 150}ms`,
-              height: '100%'
-            }}
-          >
-              <div className={`absolute top-4 right-4 text-blue-500 ${styles["number"]} `} >
+              style={{
+                transitionDelay: `${index * 150}ms`,
+                height: "100%",
+              }}
+            >
+              <div
+                className={`absolute top-4 right-4 text-blue-500 ${styles["number"]} `}
+              >
                 {service.id}
               </div>
 
-              <h3 className={`${styles["video-title"]} text-white  ${monsterfont3.className}  transition-colors duration-300`}>
+              <h3
+                className={`${styles["video-title"]} text-white  ${monsterfont3.className}  transition-colors duration-300`}
+              >
                 {service.title}
               </h3>
               <div className="mb-6">
@@ -146,7 +164,9 @@ const AIServices = () => {
                   className="w-12 h-12 object-cover rounded-md"
                 />
               </div>
-              <ul className={`text-semi-white font-helveticaneue ${styles["video-description"]} list-disc pl-5`} >
+              <ul
+                className={`text-semi-white font-helveticaneue ${styles["video-description"]} list-disc pl-5`}
+              >
                 {service.description.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}

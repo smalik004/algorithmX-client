@@ -15,7 +15,6 @@ const Page = () => {
   const getGlossaryById = async () => {
     try {
       const response = await axiosHttp.get(`/glossary/glossaries/${blogId}`);
-      console.log("Blog API Response:", response);
 
       const blogData = response?.data?.data || null;
       setData(blogData);
@@ -27,7 +26,7 @@ const Page = () => {
   useEffect(() => {
     if (id) getGlossaryById();
   }, [id]);
-  console.log("GET ID", data);
+
   return (
     <div>
       <Navbar />

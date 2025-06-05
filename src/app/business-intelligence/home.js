@@ -1,20 +1,20 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -72,18 +72,27 @@ const BusinessIntelligenceSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            BUSINESS
+            <h1
+              className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              BUSINESS
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            INTELLIGENCE
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              INTELLIGENCE
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          At AlgorithmX, our Business Intelligence services turn data into actionable insights, enhancing efficiency, scalability, and decision-making. We streamline operations, drive innovation, and unlock business potential with AI-driven solutions.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we turn fragmented data into actionable insights. Our
+            AI-powered BI services enable faster decisions, streamlined
+            operations, and scalable business performance, empowering
+            organizations to drive measurable outcomes with confidence.
           </p>
         </div>
       </div>

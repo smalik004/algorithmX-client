@@ -1,58 +1,69 @@
-'use client'
-import React, { useState } from 'react';
-import { Award, Link, Layers, Shield } from 'lucide-react';
-import Image from 'next/image';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useState } from "react";
+import { Award, Link, Layers, Shield } from "lucide-react";
+import Image from "next/image";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '600',
-  fallback: ['sans-serif'],
+  subsets: ["latin"],
+  weight: "600",
+  fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
-  fallback: ['sans-serif'],
+  subsets: ["latin"],
+  weight: "200",
+  fallback: ["sans-serif"],
 });
 
 const IntelligentChoosePage = () => {
-  const [activeSection, setActiveSection] = useState('robustSecurity');
+  const [activeSection, setActiveSection] = useState("robustSecurity");
 
   const sections = {
     robustSecurity: {
       icon: <Shield className="w-6 h-6" />,
-      title: 'Strategic Automation Expertise',
-      description: 'We specialize in implementing intelligent automation strategies that align with your business goals. Our team brings a deep understanding of industry-specific workflows to deliver scalable, efficient automation solutions that optimize operations and drive performance.',
-      image: '/images/a1.png',
+      title: "Strategic Automation Expertise",
+      description:
+        "Deep experience mapping business goals to high-ROI automation strategies across industries like BFSI, healthcare, retail, and logistics.",
+      image: "/images/a1.png",
     },
     reliableConnectivity: {
       icon: <Link className="w-6 h-6" />,
-      title: 'Advanced AI & RPA Integration',
-      description: 'Leveraging cutting-edge technologies like AI, RPA, and machine learning, we design automation ecosystems that deliver real-time insights and autonomous decision-making. Our solutions reduce manual effort and unlock new levels of productivity.',
-      image: '/images/Why.webp',
+      title: "Advanced AI & RPA Integration",
+      description:
+        "We combine rule-based automation with cognitive AI capabilities like context understanding, exception handling, and dynamic decision-making.",
+      image: "/images/Why.webp",
     },
     prioritizingUsability: {
       icon: <Layers className="w-6 h-6" />,
-      title: 'Seamless User Experience',
-      description: 'Intelligent automation is only effective when it’s adopted by your team. That’s why we build solutions with user-centric design, ensuring simple interfaces and smooth transitions that encourage adoption and reduce training time.',
-      image: '/images/a1.png',
+      title: "Seamless User Experience",
+      description:
+        "All solutions are designed with user experience and change adoption in mind, ensuring intuitive interfaces and low-friction deployment.",
+      image: "/images/a1.png",
     },
     scalability: {
       icon: <Award className="w-6 h-6" />,
-      title: 'Continuous Improvement & Support',
-      description: 'Our partnership doesn’t end at deployment. We offer ongoing optimization, monitoring, and support to refine your automation workflows, ensuring they evolve with your business and deliver sustained value over time.',
-      image: '/images/Why.webp',
+      title: "Continuous Improvement & Support",
+      description:
+        "We offer ongoing monitoring, optimization, and support including bot tuning, retraining, and roadmap updates based on real usage data.",
+      image: "/images/Why.webp",
     },
   };
 
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="w-full max-w-[1200px] px-4 py-12">
-        <h1 className={`text-[40px] leading-[48px] ${monsterfont.className} text-white mb-4`}>
+        <h1
+          className={`text-[40px] leading-[48px] ${monsterfont.className} text-white mb-4`}
+        >
           Why Choose AlgorithmX for Intelligent Automation?
         </h1>
-        <p className={`text-[16px] leading-[20px] ${monsterfont1.className} text-semi-white mb-4`}>
-          At AlgorithmX, we empower businesses through transformative intelligent automation solutions. Our AI-driven approach integrates seamlessly into your workflows, accelerating digital transformation while maintaining a human-first experience.
+        <p
+          className={`text-[16px] leading-[20px] ${monsterfont1.className} text-semi-white mb-4`}
+        >
+          At AlgorithmX, we empower businesses through transformative
+          intelligent automation solutions. Our AI-driven approach integrates
+          seamlessly into your workflows, accelerating digital transformation
+          while maintaining a human-first experience.
         </p>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
@@ -64,12 +75,14 @@ const IntelligentChoosePage = () => {
                 onClick={() => setActiveSection(key)}
                 className={`w-full flex items-center space-x-4 p-4 rounded-lg transition-colors duration-300 ${
                   activeSection === key
-                    ? ' text-white '
-                    : 'bg-transparent text-semi-white '
+                    ? " text-white "
+                    : "bg-transparent text-semi-white "
                 }`}
               >
                 {section.icon}
-                <span className="font-semibold font-helveticaneue ">{section.title}</span>
+                <span className="font-semibold font-helveticaneue ">
+                  {section.title}
+                </span>
               </button>
             ))}
           </div>

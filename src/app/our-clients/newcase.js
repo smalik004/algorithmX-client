@@ -61,8 +61,6 @@ const transformAPIDataToGridItems = (apiData) => {
     // Use the brand RGB color directly from the API response
     const brandColor = item.brandRGB || "#6366f1"; // fallback to indigo if no color provided
 
-    console.log("item data", item);
-
     return {
       id: item.id,
       title: item.brandName || "Untitled Project",

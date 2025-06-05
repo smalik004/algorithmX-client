@@ -1,20 +1,20 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -72,18 +72,30 @@ const MetaverseSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            METAVERSE
+            <h1
+              className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              METAVERSE
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVELOPMENT
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          The Metaverse is a shared virtual reality universe where users can interact with both other users and perform a range of activities in digital spaces, such as shopping, socializing, and collaborating on work projects.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we architect full-spectrum metaverse ecosystems that
+            blend high-fidelity 3D environments with secure blockchain
+            infrastructure and decentralized identity frameworks. Our platforms
+            enable persistent virtual spaces, avatar interoperability, and
+            NFT-based digital commerce, all supported by robust AR/VR engines
+            like Unity and Unreal, smart contracts written in Solidity, and
+            cross-chain Web3 protocols.
           </p>
         </div>
       </div>

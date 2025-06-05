@@ -1,58 +1,70 @@
-'use client'
-import React, { useState } from 'react';
-import { Award, Link, Layers, Shield } from 'lucide-react';
-import Image from 'next/image';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useState } from "react";
+import { Award, Link, Layers, Shield } from "lucide-react";
+import Image from "next/image";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '600',
+  subsets: ["latin"],
+  weight: "600",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 
 const Web3DevelopmentPage = () => {
-  const [activeSection, setActiveSection] = useState('robustSecurity');
+  const [activeSection, setActiveSection] = useState("robustSecurity");
 
   const sections = {
     robustSecurity: {
       icon: <Shield className="w-6 h-6" />,
-      title: 'Secure Smart Contracts',
-      description: 'Our blockchain experts craft secure, efficient, and thoroughly audited smart contracts to ensure transparency and prevent vulnerabilities in your decentralized applications.',
-      image: '/images/a1.png'
+      title: "Seamless Interoperability",
+      description:
+        "We build cross-chain integrations using bridges, oracles (Chainlink, Pyth), and modular APIs—enabling fluid data exchange between on-chain and off-chain systems, including legacy stacks.",
+      image: "/images/a1.png",
     },
     reliableConnectivity: {
       icon: <Link className="w-6 h-6" />,
-      title: 'Seamless Decentralized Integration',
-      description: 'We build interoperable systems that connect decentralized networks with legacy platforms, enabling smooth data flow, enhanced performance, and robust connectivity across Web3 ecosystems.',
-      image: '/images/Why.webp'
+      title: "User-Centric Web3 UX",
+      description:
+        "Our teams design intuitive interfaces that abstract cryptographic complexity, streamline wallet interactions (MetaMask, WalletConnect), and simplify transaction flows for both retail and enterprise adoption.",
+      image: "/images/Why.webp",
     },
     prioritizingUsability: {
       icon: <Layers className="w-6 h-6" />,
-      title: 'Intuitive Web3 UX',
-      description: 'We design blockchain-based interfaces that are user-centric, ensuring mass adoption by simplifying wallet connections, transaction signing, and Web3 onboarding flows.',
-      image: '/images/a1.png'
+      title: "Scalable Blockchain Architectures ",
+      description:
+        "We deploy gas-optimized smart contracts and use rollups (Optimism, Arbitrum), sidechains (Polygon), and modular chains (Celestia, Cosmos SDK) to ensure scalability without sacrificing decentralization or security.",
+      image: "/images/a1.png",
     },
     scalability: {
       icon: <Award className="w-6 h-6" />,
-      title: 'Scalable Blockchain Solutions',
-      description: 'Our team builds scalable dApps using Layer-2 solutions, modular blockchain frameworks, and optimized architecture to support millions of users without compromising speed or security.',
-      image: '/images/Why.webp'
-    }
+      title: "Audited Smart Contracts",
+      description:
+        "We write deterministic, upgradeable smart contracts in Solidity and Rust, backed by formal verification, static analysis (MythX, Slither), and independent third-party audits to ensure runtime safety and protocol integrity.",
+      image: "/images/Why.webp",
+    },
   };
 
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="w-full max-w-[1200px] px-4 py-12">
-        <h1 className={`text-[40px] leading-[48px] ${monsterfont.className} text-white mb-4`}>
+        <h1
+          className={`text-[40px] leading-[48px] ${monsterfont.className} text-white mb-4`}
+        >
           Why Choose AlgorithmX as Your Web3 Development Partner?
         </h1>
-        <p className={`text-[16px] leading-[20px] ${monsterfont1.className} text-semi-white mb-4`}>
-          AlgorithmX brings deep expertise in blockchain, DeFi, NFTs, and DAOs to deliver cutting-edge decentralized solutions. Our Web3 developers focus on building secure, scalable, and user-friendly dApps that empower the future of the internet.
+        <p
+          className={`text-[16px] leading-[20px] ${monsterfont1.className} text-semi-white mb-4`}
+        >
+          AlgorithmX brings deep expertise across Layer-1 and Layer-2 protocols,
+          smart contract engineering, decentralized finance (DeFi), NFT
+          infrastructure, and DAO tooling. We architect secure, scalable, and
+          production-grade Web3 systems designed for composability,
+          interoperability, and long-term resilience.
         </p>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
@@ -62,20 +74,22 @@ const Web3DevelopmentPage = () => {
                 key={key}
                 onClick={() => setActiveSection(key)}
                 className={`w-full flex items-center space-x-4 p-4 rounded-lg transition-colors duration-300 ${
-                  activeSection === key 
-                    ? ' text-white ' 
-                    : 'bg-transparent text-semi-white '
+                  activeSection === key
+                    ? " text-white "
+                    : "bg-transparent text-semi-white "
                 }`}
               >
                 {section.icon}
-                <span className="font-semibold font-helveticaneue ">{section.title}</span>
+                <span className="font-semibold font-helveticaneue ">
+                  {section.title}
+                </span>
               </button>
             ))}
           </div>
 
           <div className="hidden md:grid md:w-2/3 rounded-lg p-8 grid-cols-2 gap-8">
             <div className="w-full h-[200px] relative">
-              <Image 
+              <Image
                 src={sections[activeSection].image}
                 alt={sections[activeSection].title}
                 fill
@@ -99,9 +113,13 @@ const Web3DevelopmentPage = () => {
             <div className="border-[1px] rounded-lg p-6">
               <div className="flex items-center space-x-4 mb-4">
                 {sections[activeSection].icon}
-                <h2 className="text-xl font-bold font-helveticaneue">{sections[activeSection].title}</h2>
+                <h2 className="text-xl font-bold font-helveticaneue">
+                  {sections[activeSection].title}
+                </h2>
               </div>
-              <p className="text-semi-white font-helveticaneue">{sections[activeSection].description}</p>
+              <p className="text-semi-white font-helveticaneue">
+                {sections[activeSection].description}
+              </p>
             </div>
           </div>
         </div>

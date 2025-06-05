@@ -20,7 +20,6 @@ const BlogCardsLayout = ({ axiosHttp }) => {
     try {
       setLoading(true);
       const response = await axiosHttp.get("/blog/get-blogs");
-      console.log("Blog API Response:", response);
 
       const blogData = response?.data?.data || [];
 

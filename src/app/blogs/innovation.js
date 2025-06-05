@@ -29,7 +29,6 @@ export default function Innovation() {
   }, []);
 
   const result = useFetchBlogs();
-  console.log("result-response", result);
 
   // Extract blogs and categories from the API response
   useEffect(() => {
@@ -41,7 +40,6 @@ export default function Innovation() {
         ...new Set(result?.map((blog) => blog.category)),
       ];
       setBlogCategories(uniqueCategories);
-      console.log("Extracted categories:", uniqueCategories);
     }
   }, [result]);
 
@@ -67,8 +65,6 @@ export default function Innovation() {
       if (!activeTab && generatedTabs.length > 0) {
         setActiveTab(generatedTabs[0].id);
       }
-
-      console.log("Generated tabs:", generatedTabs);
     }
   }, [blogCategories, allBlogs, activeTab]);
 
@@ -88,7 +84,6 @@ export default function Innovation() {
 
     // Set only unique items (no circular repetition)
     setActiveItems(uniqueItems);
-    console.log("Active items for tab", activeTab, ":", uniqueItems);
   }, [activeTab, tabs]);
 
   const getItemsToShow = () => {

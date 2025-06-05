@@ -1,57 +1,56 @@
-import React from 'react';
+import React from "react";
 import styles from "../flutter/style.module.css";
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"400",
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
-})
-const monsterfont = Montserrat ({
-  subsets : ["latin"],
-  weight :"800",
+});
+const monsterfont = Montserrat({
+  subsets: ["latin"],
+  weight: "800",
   fallback: ["sans-serif"],
-})
-
+});
 
 const timelineSteps = [
   {
     number: "1",
-    title: "Organizations Facing Disjointed Systems",
+    title: "Disconnected Enterprises",
     description:
-      "Businesses with multiple siloed applications can benefit from integration solutions to streamline workflows, reduce inefficiencies, and create a unified technology ecosystem.",
+      "To unify siloed systems (ERP, CRM, SCM) and enable seamless, real-time data orchestration.",
     color: "text-red-500",
     dotColor: "bg-red-500",
   },
   {
     number: "2",
-    title: "Growing Enterprises with Complex IT Infrastructure",
+    title: "Scaling IT Infrastructures",
     description:
-      "Companies expanding their operations or adopting new technologies require scalable middleware to ensure seamless connectivity, reliability, and consistent performance across their IT systems.",
+      "To manage SaaS adoption, hybrid clouds, and cross-platform communication with high reliability.",
     color: "text-red-400",
     dotColor: "bg-red-400",
   },
   {
     number: "3",
-    title: "Data-Driven Businesses Seeking Real-Time Insights",
+    title: "Real-Time, Data-Driven Teams",
     description:
-      "For organizations relying on real-time data, integration and middleware solutions enable efficient data flow, supporting timely decision-making and enhanced business intelligence.",
+      "To support streaming data, low-latency pipelines, and event-driven decision-making.",
     color: "text-orange-500",
     dotColor: "bg-orange-500",
   },
   {
     number: "4",
-    title: "Enterprises Looking to Modernize Legacy Systems",
+    title: "Legacy-Heavy Organizations",
     description:
-      "Companies with outdated technology stacks can leverage integration tools to bridge legacy systems with modern applications, ensuring continued compatibility and operational agility.",
+      "To modernize without full replatforming, using APIs and middleware for phased upgrades.",
     color: "text-orange-400",
     dotColor: "bg-orange-400",
   },
   {
     number: "5",
-    title: "Organizations Planning Cloud Migration",
+    title: "Cloud-Migrating Businesses",
     description:
-      "Businesses transitioning to the cloud need robust middleware and integration to ensure smooth, secure, and efficient connectivity between on-premise systems and cloud-based platforms.",
+      "To ensure secure, consistent integration between on-prem and cloud environments.",
     color: "text-yellow-500",
     dotColor: "bg-yellow-500",
   },
@@ -62,8 +61,10 @@ const IntegrationDevelopmentTimeline = () => {
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black rounded-3xl p-8 md:p-12 border border-zinc-800">
-          <h1 className={`${styles["dynamic-title1"]} ${monsterfont1.className} md:text-center `}>
-          Who Should Invest in Integration & Middleware Solutions?
+          <h1
+            className={`${styles["dynamic-title1"]} ${monsterfont1.className} md:text-center `}
+          >
+            Who Should Invest in Integration & Middleware Solutions?
           </h1>
 
           <div className="relative">
@@ -81,21 +82,33 @@ const IntegrationDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`text-[15px] leading-[18px] ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={`text-[15px] leading-[18px] ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-orange-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description1"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description1"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>
@@ -116,21 +129,33 @@ const IntegrationDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={` ${styles["dynamic-subtitle1"]}  ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={` ${styles["dynamic-subtitle1"]}  ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-yellow-500 to-yellow-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description1"]}   ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description1"]}   ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>

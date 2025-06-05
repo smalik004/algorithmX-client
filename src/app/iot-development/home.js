@@ -1,20 +1,20 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 const IOTSection = () => {
@@ -71,18 +71,29 @@ const IOTSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={`${styles["crm-text"]} ${monsterfont2.className} text-white `}>
-            IOT APP
+            <h1
+              className={`${styles["crm-text"]} ${monsterfont2.className} text-white `}
+            >
+              IOT APP
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVELOPMENT
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          AlgorithmX offers cutting-edge AI solutions, empowering businesses to innovate, optimize operations, and drive growth. Our advanced AI strategies help organizations harness the power of Gen AI, enhance efficiency, and redefine industry standards.With AI-driven predictive analytics and intelligent automation, we transform challenges into opportunities, enabling businesses to lead with confidence and set new benchmarks for success.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we engineer connected ecosystems that combine
+            intelligent devices, scalable cloud infrastructure, and AI-powered
+            automation. Our IoT solutions are built for reliability,
+            interoperability, and real-time data insight, accelerating
+            decision-making, reducing manual overhead, and transforming how
+            businesses operate across industries.
           </p>
         </div>
       </div>

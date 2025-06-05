@@ -1,20 +1,20 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -72,18 +72,31 @@ const CloudSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            CLOUD &
+            <h1
+              className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              CLOUD &
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVOPS
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVOPS
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          At AlgorithmX, As a leading Cloud Consulting Company, we drive AI-powered cloud adoption and DevOps innovation, optimizing performance, security, and cost-efficiency. Our seamless integration of AI-driven DevOps accelerates delivery and fosters continuous improvement, ensuring your business leads the digital revolution with agility and lasting value.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we help organizations modernize with cloud-native
+            architectures and AI-powered DevOps practices that prioritize speed,
+            resilience, and cost efficiency. Our cloud consulting services span
+            strategic planning, secure migration, and infrastructure-as-code
+            delivery pipelines, ensuring scalable systems that support
+            continuous deployment, observability, and long-term ROI. Whether
+            public, private, or hybrid, we design for performance, security, and
+            adaptability at scale.
           </p>
         </div>
       </div>

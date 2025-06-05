@@ -16,7 +16,6 @@ const Page = () => {
   const getBlogById = async () => {
     try {
       const response = await axiosHttp.get(`/blog/${blogId}`);
-      console.log("Blog API Response:", response);
 
       const blogData = response?.data?.data || null;
       setData(blogData);

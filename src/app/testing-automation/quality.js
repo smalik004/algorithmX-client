@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 
 const QAProcessDiagram = () => {
   const processSteps = [
     {
       rows: [
-        { icon: '🔍', text: 'Discovery & Requirement Analysis' },
-        { icon: '📋', text: 'Test Planning' },
-        { icon: '💻', text: 'Test Design & Preparation' },
-        { icon: '▶️', text: 'Test Execution' },
-        { icon: '🐞', text: 'Defect Reporting & Management' },
-        { icon: '🚀', text: 'Post-Release Testing & Support' },
-        { icon: '📊', text: 'Reporting & Analysis' },
-        { icon: '👥', text: 'User Acceptance Testing' },
-        { icon: '🔄', text: 'Regression Testing' },
-        { icon: '📈', text: 'Performance & Load Testing' }
-      ]
-    }
+        { icon: "🔍", text: "Discovery & Requirement Analysis" },
+        { icon: "📋", text: "Test Planning & Scope Definition" },
+        { icon: "💻", text: "Test Design & Data Preparation" },
+        { icon: "▶️", text: "Test Execution & Environment Control" },
+        { icon: "🐞", text: "Defect Reporting & Triage" },
+        { icon: "🚀", text: "Post-Release Validation" },
+        { icon: "📊", text: "Reporting & Analytics" },
+        { icon: "👥", text: "User Acceptance Testing (UAT)" },
+        { icon: "🔄", text: "Regression Testing" },
+        { icon: "📈", text: "Performance & Load Testing" },
+      ],
+    },
   ];
 
   return (
@@ -31,7 +31,7 @@ const QAProcessDiagram = () => {
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {step.rows.map((item, index) => (
                   <div
-                    key={index} 
+                    key={index}
                     className="border border-gray-700 rounded-lg p-4 text-center 
                                bg-black
                                flex flex-col items-center justify-center
@@ -40,8 +40,12 @@ const QAProcessDiagram = () => {
                                hover:shadow-lg hover:shadow-blue-500/50
                                hover:border-blue-500"
                   >
-                    <div className="text-3xl mb-2 transition-transform duration-300">{item.icon}</div>
-                    <p className="text-sm font-medium text-gray-200 transition-colors duration-300">{item.text}</p>
+                    <div className="text-3xl mb-2 transition-transform duration-300">
+                      {item.icon}
+                    </div>
+                    <p className="text-sm font-medium text-gray-200 transition-colors duration-300">
+                      {item.text}
+                    </p>
                   </div>
                 ))}
               </div>
