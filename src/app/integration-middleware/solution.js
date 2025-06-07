@@ -93,12 +93,12 @@ const IntegrationServices = () => {
     <div className="min-h-screen bg-black p-4 md:p-8">
       <div className="max-w-6xl mx-auto" ref={scalableRef}>
         <div className="text-center mb-8 md:mb-16">
-          <h1
+          <h2
             className={`text-white text-[2rem]  leading-[2.2rem] md:text-[3.5rem] md:leading-[3.7rem] tracking-[0.06em] ${monsterfont1.className} mb-4`}
           >
             Transformative Digital Solutions for <br /> Seamless Integration and
             Operational Excellence
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
         </div>
 

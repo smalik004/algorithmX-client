@@ -79,11 +79,11 @@ const CloudBenefits = () => {
             >
               OUR CLOUD &
             </h2>
-            <h3
+            <h2
               className={`text-[40px] leading-[48px] ${monsterfont1.className}  text-white `}
             >
               DEVOPS SERVICES
-            </h3>
+            </h2>
           </div>
         </div>
         <div className="container">

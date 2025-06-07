@@ -1,18 +1,32 @@
-import React from 'react';
+import React from "react";
 import styles from "./style.module.css";
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"400",
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
-})
-const monsterfont = Montserrat ({
-  subsets : ["latin"],
-  weight :"800",
+});
+const monsterfont = Montserrat({
+  subsets: ["latin"],
+  weight: "800",
   fallback: ["sans-serif"],
-})
+});
 
+const ReleaseDescriptionWithLink = () => (
+  <>
+    In this phase, we launch your Flutter iOS app on the App Store and Flutter
+    Android app on the{" "}
+    <Link href="/app-store" className="text-blue-300 hover:text-blue-400">
+      Google Play Store
+    </Link>
+    . Our support is not just limited to launching; we are always there to help
+    you with your ongoing maintenance needs and beyond by ensuring that your app
+    is up-to-date and tailored for changing user expectations and market needs
+    to thrive in the long run.
+  </>
+);
 
 const timelineSteps = [
   {
@@ -35,7 +49,7 @@ const timelineSteps = [
     number: "3",
     title: "Design Phase",
     description:
-      "As a leading Flutter app development company, we design detailed UI/UX solutions, creating user flows and customer journey maps. Our professional team designs interfaces to improve user experiences and make navigation effortless. Count on us to enhance your Flutter app’s aesthetics through attention to detail and a focus on the user’s needs.",
+      "As a leading Flutter app development company, we design detailed UI/UX solutions, creating user flows and customer journey maps. Our professional team designs interfaces to improve user experiences and make navigation effortless. Count on us to enhance your Flutter app's aesthetics through attention to detail and a focus on the user's needs.",
     color: "text-orange-500",
     dotColor: "bg-orange-500",
   },
@@ -58,8 +72,7 @@ const timelineSteps = [
   {
     number: "6",
     title: "Release and Support",
-    description:
-      "In this phase, we launch your Flutter iOS app on the App Store and Flutter Android app on the Google Play Store. Our support is not just limited to launching; we are always there to help you with your ongoing maintenance needs and beyond by ensuring that your app is up-to-date and tailored for changing user expectations and market needs to thrive in the long run.",
+    description: <ReleaseDescriptionWithLink />,
     color: "text-yellow-400",
     dotColor: "bg-yellow-400",
   },
@@ -70,9 +83,11 @@ const FlutterDevelopmentTimeline = () => {
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black rounded-3xl p-8 md:p-12 border border-zinc-800">
-          <h1 className={`${styles["dynamic-title1"]} ${monsterfont1.className} md:text-center `}>
+          <h2
+            className={`${styles["dynamic-title1"]} ${monsterfont1.className} md:text-center `}
+          >
             Dynamic Approach to Flutter App Development
-          </h1>
+          </h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-4">
@@ -89,21 +104,33 @@ const FlutterDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["dynamic-subtitle1"]} ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={`${styles["dynamic-subtitle1"]} ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-orange-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description1"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description1"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>
@@ -124,21 +151,33 @@ const FlutterDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={` ${styles["dynamic-subtitle1"]}  ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={` ${styles["dynamic-subtitle1"]}  ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-yellow-500 to-yellow-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description1"]}   ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description1"]}   ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>

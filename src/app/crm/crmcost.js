@@ -1,24 +1,22 @@
-import React from 'react';
-import style from './style.module.css';
-import { Montserrat } from 'next/font/google';
+import React from "react";
+import style from "./style.module.css";
+import { Montserrat } from "next/font/google";
 
-
-const monsterfont = Montserrat ({
-  subsets : ["latin"],
-  weight :"100",
+const monsterfont = Montserrat({
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
-})
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"300",
+});
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "300",
   fallback: ["sans-serif"],
-})
-const monsterfont2 = Montserrat ({
-  subsets : ["latin"],
-  weight :"500",
+});
+const monsterfont2 = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
   fallback: ["sans-serif"],
-})
-
+});
 
 const EstimationBox = ({ imageSrc, title, description }) => (
   <div className={`${style["border-design1"]} p-4`}>
@@ -27,8 +25,16 @@ const EstimationBox = ({ imageSrc, title, description }) => (
       alt={title}
       className="mx-auto mb-4 w-[50px] h-[50px] object-cover "
     />
-    <h3 className={`${style["cost-price"]}  ${monsterfont2.className} text-center `}>{title}</h3>
-    <p className={`${style["cost-description"]} font-helveticaneue  mt-4 text-white mb-[10px]`}>{description}</p>
+    <h3
+      className={`${style["cost-price"]}  ${monsterfont2.className} text-center `}
+    >
+      {title}
+    </h3>
+    <p
+      className={`${style["cost-description"]} font-helveticaneue  mt-4 text-white mb-[10px]`}
+    >
+      {description}
+    </p>
   </div>
 );
 
@@ -36,8 +42,14 @@ const CostEstimations = () => {
   return (
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto">
-        <h1 className={`${style["cost-title"]}  ${monsterfont.className} `}>Cost</h1>
-        <h2 className={`${style["cost-title"]}  ${monsterfont1.className} mb-16 `}>Estimations</h2>
+        <h2 className={`${style["cost-title"]}  ${monsterfont.className} `}>
+          Cost
+        </h2>
+        <h2
+          className={`${style["cost-title"]}  ${monsterfont1.className} mb-16 `}
+        >
+          Estimations
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Box 1 */}

@@ -114,11 +114,11 @@ const CloudGrid = () => {
             >
               Reduce Downtimes &
             </h2>
-            <h3
+            <h2
               className={` ${styles["multi-subtitle"]} ${monsterfont.className} text-white`}
             >
               Streamline Workflows
-            </h3>
+            </h2>
           </div>
         </div>
 

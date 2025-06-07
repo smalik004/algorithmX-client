@@ -109,11 +109,11 @@ const DevelopmentProcess = () => {
             >
               TO A SMARTER
             </h2>
-            <h3
+            <h2
               className={`${styles["submain-craft"]} ${monsterfont.className} text-white`}
             >
               DATA-DRIVEN STRATEGY
-            </h3>
+            </h2>
           </div>
         </div>
 

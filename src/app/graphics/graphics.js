@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -45,8 +46,19 @@ const servicesData = [
   {
     id: 4,
     title: ["CORPORATE", "ASSETS"],
-    description:
-      "As one of the best graphic design agencies, we use a rough plan to devise custom visually compelling material that fits your business needs. Our detailed and eye-catching whitepaper/PPT layouts are carefully designed to be compelling and serve as strong content marketing aids.",
+    description: (
+      <>
+        As one of the best graphic design agencies, we use a rough plan to
+        devise custom visually compelling material that fits your business
+        needs. Our detailed and eye-catching whitepaper/PPT layouts are
+        carefully designed to be compelling and serve as strong content
+        marketing aids. Visit our{" "}
+        <Link href="/branding" className="text-blue-300 hover:text-blue-300">
+          brand identity
+        </Link>{" "}
+        services for more information.
+      </>
+    ),
     image: "images/Corporate-Assets.webp",
     textGradient: "from-slate-400 to-slate-600",
   },

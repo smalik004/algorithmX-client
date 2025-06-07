@@ -1,25 +1,24 @@
 import React from "react";
-import style from '../contentcreation/style.module.css';
-import styles from '../crm/style.module.css';
+import style from "../contentcreation/style.module.css";
+import styles from "../crm/style.module.css";
 
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
-
 
 const ContentSection = () => {
   return (
@@ -76,19 +75,26 @@ const ContentSection = () => {
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
             <h1
-          className={` ${style["title"]} font-glock font-[400] tracking-[8px] text-center md:text-start text-white block`}>
-            SOFTWARE
-          </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} tracking-[8px] bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVELOPMENT
+              className={` ${style["title"]} font-glock font-[400] tracking-[8px] text-center md:text-start text-white block`}
+            >
+              SOFTWARE
+            </h1>
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} tracking-[8px] bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          AlgorithmX specializes in offering bespoke software development services, delivering custom software solutions
-          to improve productivity, align operations, and foster revenue growth for your business.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            AlgorithmX specializes in offering bespoke software development
+            services, delivering custom software solutions to improve
+            productivity, align operations, and foster revenue growth for your
+            business.
           </p>
         </div>
       </div>

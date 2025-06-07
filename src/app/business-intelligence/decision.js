@@ -140,11 +140,11 @@ const BusinessModules = () => {
             >
               MAKE DATA-DRIVEN DECISIONS WITH
             </h2>
-            <h3
+            <h2
               className={`${styles["outcome-subtitle"]} ${monsterfont1.className} text-white`}
             >
               BUSINESS INTELLIGENCE
-            </h3>
+            </h2>
           </div>
         </div>
 

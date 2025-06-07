@@ -114,11 +114,11 @@ const AIServicesGrid = () => {
             >
               AI
             </h2>
-            <h3
+            <h2
               className={` ${styles["multi-subtitle"]} ${monsterfont.className} text-white`}
             >
               DEVELOPMENT SERVICES
-            </h3>
+            </h2>
           </div>
         </div>
 

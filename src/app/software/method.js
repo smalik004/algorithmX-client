@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import { useState, useEffect, useRef } from "react";
 import styles from "../graphics/styles.module.css";
-import style from './style.module.css'
+import style from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -17,7 +17,8 @@ const monsterfont1 = Montserrat({
 const InteractiveBox = () => {
   const [activeContent, setActiveContent] = useState({
     title: "DevOps",
-    content: "DevOps is a joint approach aimed at increasing the efficiency of workflow during the software development lifecycle. Our offshore and nearshore software development services involve employing top-ranked DevOps practices, allowing your company to achieve desired levels of transparency and help in making real-time decisions for continuous deployments.",
+    content:
+      "DevOps is a joint approach aimed at increasing the efficiency of workflow during the software development lifecycle. Our offshore and nearshore software development services involve employing top-ranked DevOps practices, allowing your company to achieve desired levels of transparency and help in making real-time decisions for continuous deployments.",
   });
 
   const [activeId, setActiveId] = useState(1);
@@ -43,7 +44,7 @@ const InteractiveBox = () => {
     },
     {
       id: 3,
-      src: "/images/scrum.png", 
+      src: "/images/scrum.png",
       alt: "Icon 3",
       title: "Scrum",
       content:
@@ -51,7 +52,7 @@ const InteractiveBox = () => {
     },
     {
       id: 4,
-      src: "/images/waterfall.png", 
+      src: "/images/waterfall.png",
       alt: "Icon 4",
       title: "Waterfall",
       content:
@@ -90,34 +91,57 @@ const InteractiveBox = () => {
               ref={methodologiesRef}
               className={`absolute inset-0 flex items-center justify-center pointer-events-none`}
             >
-              <span
-                className={`mb-8 ${style["main-methodology"]} transform transition-transform duration-700 ${monsterfont.className} ${isInView ? `${styles["scale-110"]} ${styles["opacity-100"]}` : `${styles["scale-75"]} ${styles["opacity-0"]}`}`}
-              >
-                METHODOLOGIES
-              </span>
+              <h2>
+                <span
+                  className={`mb-8 ${
+                    style["main-methodology"]
+                  } transform transition-transform duration-700 ${
+                    monsterfont.className
+                  } ${
+                    isInView
+                      ? `${styles["scale-110"]} ${styles["opacity-100"]}`
+                      : `${styles["scale-75"]} ${styles["opacity-0"]}`
+                  }`}
+                >
+                  METHODOLOGIES
+                </span>
+              </h2>
             </div>
 
             {/* Main titles */}
             <div className="relative z-10">
-            <h2 className={` ${styles["description"]} ${monsterfont1.className} mt-6 md:mt-14 text-white`}>
-              WE USE
-            </h2>
-            <h2 className={`${styles["description"]} ${monsterfont.className} text-white -mt-2`}>
-              TO ACCELERATE
-            </h2>
-          </div>
+              <h2
+                className={` ${styles["description"]} ${monsterfont1.className} mt-6 md:mt-14 text-white`}
+              >
+                WE USE
+              </h2>
+              <h2
+                className={`${styles["description"]} ${monsterfont.className} text-white -mt-2`}
+              >
+                TO ACCELERATE
+              </h2>
+            </div>
           </div>
 
-          <div className={`shadow-lg text-start w-full ${style["border-design"]} mb-10`}>
+          <div
+            className={`shadow-lg text-start w-full ${style["border-design"]} mb-10`}
+          >
             <div className="grid grid-cols-4 justify-items-center">
               {icons.map((icon) => (
                 <button
                   key={icon.id}
                   onClick={() => {
-                    setActiveContent({ title: icon.title, content: icon.content });
+                    setActiveContent({
+                      title: icon.title,
+                      content: icon.content,
+                    });
                     setActiveId(icon.id);
                   }}
-                  className={`w-full transition-colors duration-300 ${activeId === icon.id ? 'bg-[rgba(217,48,45,0.1)]' : 'bg-black hover:bg-[rgba(217,48,45,0.1)]'} focus:outline-none`}
+                  className={`w-full transition-colors duration-300 ${
+                    activeId === icon.id
+                      ? "bg-[rgba(217,48,45,0.1)]"
+                      : "bg-black hover:bg-[rgba(217,48,45,0.1)]"
+                  } focus:outline-none`}
                 >
                   <div className="p-5 md:mx-[100px]">
                     <img
@@ -134,9 +158,20 @@ const InteractiveBox = () => {
             <hr className="border-red-600 w-full" />
 
             {/* Content Section */}
-            <div className="p-[20px] md:p-[70px] bg-black overflow-hidden" style={{ height: "350px" }}>
-              <h2 className={`${style["method-title"]} ${monsterfont.className}`}>{activeContent.title}</h2>
-              <p className={`${style["method-description"]} font-helveticaneue text-semi-white`}>{activeContent.content}</p>
+            <div
+              className="p-[20px] md:p-[70px] bg-black overflow-hidden"
+              style={{ height: "350px" }}
+            >
+              <h2
+                className={`${style["method-title"]} ${monsterfont.className}`}
+              >
+                {activeContent.title}
+              </h2>
+              <p
+                className={`${style["method-description"]} font-helveticaneue text-semi-white`}
+              >
+                {activeContent.content}
+              </p>
             </div>
           </div>
         </div>

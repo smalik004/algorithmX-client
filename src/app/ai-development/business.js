@@ -92,11 +92,11 @@ const AIBusinessSection = () => {
             >
               Is Your Business Ready for AI?
             </h2>
-            <h3
+            <h2
               className={`text-[21px] leading-[1.1] text-semi-white ${monsterfont1.className}`}
             >
               You don’t need AI because it’s trendy. You need it when:
-            </h3>
+            </h2>
           </div>
         </div>
 

@@ -80,11 +80,11 @@ const IntelligentServices = () => {
             {" "}
             OFFERINGS
           </p>
-          <h1
+          <h2
             className={`text-[40px] leading-[44px] md:text-[56px] md:leading-[60px] tracking-[0.06em] ${monsterfont2.className} text-white mb-2`}
           >
             INTELLIGENT AUTOMATION
-          </h1>
+          </h2>
           <h2
             className={`${styles["development-text"]} ${monsterfont.className} mb-2`}
           >

@@ -64,9 +64,9 @@ const MetaverseProcess = () => {
     <div className="min-h-screen h-full bg-black text-gray-300 p-8 ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className={`${styles["main-text"]} ${monsterfont1.className} `}>
+          <h2 className={`${styles["main-text"]} ${monsterfont1.className} `}>
             Metaverse Software Development Approach{" "}
-          </h1>
+          </h2>
           <h2
             className={`${styles["main-text"]} ${monsterfont.className}  text-white `}
           >

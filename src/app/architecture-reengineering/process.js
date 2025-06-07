@@ -188,9 +188,9 @@ const StackCardAnimation = () => {
                 {/* Brighter green grid texture */}
                 <div className="absolute inset-0 bg-[radial-gradient(#00ffcc55_1px,transparent_1px)] bg-[size:22px_22px] opacity-20 pointer-events-none rounded-3xl z-0" />
 
-                <h2 className="text-[24px] leading-[28px]  font-[700] text-white font-helveticaneue mb-4 z-10 relative">
+                <h3 className="text-[24px] leading-[28px]  font-[700] text-white font-helveticaneue mb-4 z-10 relative">
                   {card.title}
-                </h2>
+                </h3>
                 <p className="text-[16px] leading-[20px]  font-[500]  font-helveticaneue text-semi-white z-10 relative">
                   {card.description}
                 </p>

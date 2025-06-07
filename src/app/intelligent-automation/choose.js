@@ -52,11 +52,11 @@ const IntelligentChoosePage = () => {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="w-full max-w-[1200px] px-4 py-12">
-        <h1
+        <h2
           className={`text-[40px] leading-[48px] ${monsterfont.className} text-white mb-4`}
         >
           Why Choose AlgorithmX for Intelligent Automation?
-        </h1>
+        </h2>
         <p
           className={`text-[16px] leading-[20px] ${monsterfont1.className} text-semi-white mb-4`}
         >
@@ -100,9 +100,9 @@ const IntelligentChoosePage = () => {
             <div className="flex flex-col justify-center">
               <div className="flex items-center space-x-4 mb-4">
                 {sections[activeSection].icon}
-                <h2 className="text-2xl font-bold font-helveticaneue">
+                <h3 className="text-2xl font-bold font-helveticaneue">
                   {sections[activeSection].title}
-                </h2>
+                </h3>
               </div>
               <p className="text-semi-white font-helveticaneue">
                 {sections[activeSection].description}
@@ -115,9 +115,9 @@ const IntelligentChoosePage = () => {
             <div className="border-[1px] rounded-lg p-6">
               <div className="flex items-center space-x-4 mb-4">
                 {sections[activeSection].icon}
-                <h2 className="text-xl font-bold font-helveticaneue">
+                <h3 className="text-xl font-bold font-helveticaneue">
                   {sections[activeSection].title}
-                </h2>
+                </h3>
               </div>
               <p className="text-semi-white font-helveticaneue">
                 {sections[activeSection].description}

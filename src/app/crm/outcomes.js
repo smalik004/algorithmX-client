@@ -1,21 +1,22 @@
-'use client';
-import React, { useState, useRef, useEffect } from 'react';
-import styles from './style.module.css';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import styles from "./style.module.css";
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '700',
+  subsets: ["latin"],
+  weight: "700",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '700',
+  subsets: ["latin"],
+  weight: "700",
   fallback: ["sans-serif"],
 });
 
@@ -46,37 +47,49 @@ const CRMOutcomes = () => {
 
   const outcomes = [
     {
-      icon: '/images/Faster.png',
-      title: 'Faster sales cycles',
-      description: 'Streamlines your sales activities by up to 30% with automation.',
-    },
-    {
-      icon: '/images/Lead.png',
-      title: 'Lead volume growth',
-      description: 'Enables you to manage multi-channel marketing campaigns simultaneously and limitlessly.',
-    },
-    {
-      icon: '/images/Workload-Reduction.png',
-      title: 'Service Workload Reduction',
-      description: 'Empowers your customer support with productive self-assistance tools.',
-    },
-    {
-      icon: '/images/Enhanced-Conversions.png',
-      title: 'Enhanced Conversions',
+      icon: "/images/Faster.png",
+      title: "Faster sales cycles",
       description:
-        'Authorizes your business with tailored marketing and dynamic customer segmentation across various lifecycle stages.',
+        "Streamlines your sales activities by up to 30% with automation.",
     },
     {
-      icon: '/images/Customer-Retention.png',
-      title: 'Customer Retention',
+      icon: "/images/Lead.png",
+      title: "Lead volume growth",
       description:
-        'Increases customer retention rate by analyzing interactions and sales records for personalized customer engagement.',
+        "Enables you to manage multi-channel marketing campaigns simultaneously and limitlessly.",
     },
     {
-      icon: '/images/Quick-Service.png',
-      title: 'Quick Service',
+      icon: "/images/Workload-Reduction.png",
+      title: "Service Workload Reduction",
       description:
-        'Makes quick access to extensive customer information easy and convenient through intelligent workflow automation.',
+        "Empowers your customer support with productive self-assistance tools.",
+    },
+    {
+      icon: "/images/Enhanced-Conversions.png",
+      title: "Enhanced Conversions",
+      description: "Authorizes your business with ",
+      description2: (
+        <Link
+          href="/ppc-advertising"
+          className=" text-blue-300 hover:text-blue-400"
+        >
+          tailored marketing
+        </Link>
+      ),
+      description3:
+        " and dynamic customer segmentation across various lifecycle stages.",
+    },
+    {
+      icon: "/images/Customer-Retention.png",
+      title: "Customer Retention",
+      description:
+        "Increases customer retention rate by analyzing interactions and sales records for personalized customer engagement.",
+    },
+    {
+      icon: "/images/Quick-Service.png",
+      title: "Quick Service",
+      description:
+        "Makes quick access to extensive customer information easy and convenient through intelligent workflow automation.",
     },
   ];
 
@@ -87,8 +100,10 @@ const CRMOutcomes = () => {
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <span
               ref={outcomesRef}
-              className={`mb-8 ${styles['outcome-text']} ${monsterfont1.className} text-gray-600/20 transform transition-transform duration-700 ${
-                isInView ? 'scale-110 opacity-100' : 'scale-75 opacity-0'
+              className={`mb-8 ${styles["outcome-text"]} ${
+                monsterfont1.className
+              } text-gray-600/20 transform transition-transform duration-700 ${
+                isInView ? "scale-110 opacity-100" : "scale-75 opacity-0"
               } select-none`}
             >
               OUTCOMES
@@ -96,31 +111,39 @@ const CRMOutcomes = () => {
           </div>
 
           <div className="relative z-10">
-            <h2 className={`${styles['outcome-subtitle']} ${monsterfont.className} mt-16`}>AFTER CRM</h2>
-            <h3 className={`${styles['outcome-subtitle']} ${monsterfont2.className}`}>
+            <h2
+              className={`${styles["outcome-subtitle"]} ${monsterfont.className} mt-16`}
+            >
+              AFTER CRM
+            </h2>
+            <h2
+              className={`${styles["outcome-subtitle"]} ${monsterfont2.className}`}
+            >
               IMPLEMENTATION RESULTS
-            </h3>
+            </h2>
           </div>
         </div>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {outcomes.map((outcome, index) => (
             <div
               key={index}
-              className={` ${styles['border-design']} w-[350px] h-auto text-center flex flex-col items-center`}
+              className={` ${styles["border-design"]} w-[350px] h-auto text-center flex flex-col items-center`}
             >
               <img
                 src={outcome.icon}
                 alt={outcome.title}
                 className="w-[50px] h-[50px] mb-6 mt-16"
               />
-              <h3 className={`${styles['outcome-title']} ${monsterfont2.className} mb-8`}>
+              <h3
+                className={`${styles["outcome-title"]} ${monsterfont2.className} mb-8`}
+              >
                 {outcome.title}
               </h3>
-              <p className={`${styles['outcome-description']} text-semi-white`}>
+              <p className={`${styles["outcome-description"]} text-semi-white`}>
                 {outcome.description}
+                {outcome.description2}
+                {outcome.description3}
               </p>
             </div>
           ))}

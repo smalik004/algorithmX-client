@@ -50,11 +50,11 @@ const BiConsultingPage = () => {
     <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4">
       {/* Heading and Description */}
       <div className="max-w-[1200px] text-center mb-8 px-4">
-        <h1
+        <h2
           className={`text-[40px] leading-[48px] ${monsterfont.className}  text-white mb-4`}
         >
           Business Intelligence Services
-        </h1>
+        </h2>
         <p
           className={`text-[20px] leading-[24px] ${monsterfont1.className}  text-semi-white `}
         >
@@ -97,9 +97,9 @@ const BiConsultingPage = () => {
           <div className="bg-black w-full">
             <div className="flex items-start space-x-4 mb-6">
               <div>
-                <h2 className="text-[24px] leading-[26px] font-helveticaneue text-white">
+                <h3 className="text-[24px] leading-[26px] font-helveticaneue text-white">
                   {serviceDescriptions[activeService].title}
-                </h2>
+                </h3>
               </div>
             </div>
             <p className="text-semii-white text-[16px] font-helveticaneue leading-relaxed">

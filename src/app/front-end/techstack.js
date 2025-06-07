@@ -90,9 +90,9 @@ const TechStack = () => {
         >
           WE LEVERAGE
         </p>
-        <h1 className={` ${styles["tech-subtitle"]} ${monsterfont2.className}`}>
+        <h2 className={` ${styles["tech-subtitle"]} ${monsterfont2.className}`}>
           TECH STACK
-        </h1>
+        </h2>
         <h2 className={` ${styles["tech-subtitle"]} ${monsterfont.className}`}>
           EXPERTISE
         </h2>

@@ -1,10 +1,11 @@
-import React from 'react';
-import styles from '../shopify/style.module.css';
-import { Montserrat } from 'next/font/google';
+import React from "react";
+import styles from "../shopify/style.module.css";
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '700',
+  subsets: ["latin"],
+  weight: "700",
 });
 
 const timelineSteps = [
@@ -26,9 +27,13 @@ const timelineSteps = [
   },
   {
     number: "3",
-    title: "Designing",
+    title: (
+      <Link href="/graphics" className="hover:text-blue-400">
+        Designing
+      </Link>
+    ),
     description:
-      "In our BigCommerce theme development process, we carefully plan out the desired UI’s blueprint, and then the wireframes and mockups are given the finishing touches.",
+      "In our BigCommerce theme development process, we carefully plan out the desired UI's blueprint, and then the wireframes and mockups are given the finishing touches.",
     color: "text-orange-500",
     dotColor: "bg-orange-500",
   },
@@ -58,14 +63,18 @@ const timelineSteps = [
   },
 ];
 
-const  BigcommerceDevelopmentTimeline = () => {
+const BigcommerceDevelopmentTimeline = () => {
   return (
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className={`bg-black rounded-3xl p-8 md:p-12 ${styles["timeline-border"]}`}>
-          <h1 className={`${styles["shopify-text"]} ${monsterfont.className} mb-6 `}>
+        <div
+          className={`bg-black rounded-3xl p-8 md:p-12 ${styles["timeline-border"]}`}
+        >
+          <h2
+            className={`${styles["shopify-text"]} ${monsterfont.className} mb-6 `}
+          >
             Process of BigCommerce Development
-          </h1>
+          </h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-0">
@@ -82,21 +91,33 @@ const  BigcommerceDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["timeline-title"]} font-helveticaneue font-[700]`}>{step.title}</h3>
+                        <h3
+                          className={`${styles["timeline-title"]} font-helveticaneue font-[700]`}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-orange-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={`${styles["timeline-description"]} font-helveticaneue  mt-4 md:mt-6  p-4`}>
+
+                      <div
+                        className={`${styles["timeline-description"]} font-helveticaneue  mt-4 md:mt-6  p-4`}
+                      >
                         {step.description}
                       </div>
                     </div>
@@ -112,27 +133,38 @@ const  BigcommerceDevelopmentTimeline = () => {
                   <div className="absolute left-full w-[500px] h-full border-t-2 border-dashed border-zinc-700 bottom-[1px]"></div>
                 </div>
 
-
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
                   {timelineSteps.slice(4, 6).map((step, index) => (
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["shopify-title"]} font-helveticaneue font-[700]`}>{step.title}</h3>
+                        <h3
+                          className={`${styles["shopify-title"]} font-helveticaneue font-[700]`}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-yellow-500 to-yellow-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={`${styles["timeline-description"]} font-helveticaneue  mt-4 md:mt-6 p-4`}>
+
+                      <div
+                        className={`${styles["timeline-description"]} font-helveticaneue  mt-4 md:mt-6 p-4`}
+                      >
                         {step.description}
                       </div>
                     </div>

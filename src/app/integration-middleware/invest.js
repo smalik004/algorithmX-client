@@ -61,11 +61,11 @@ const IntegrationDevelopmentTimeline = () => {
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black rounded-3xl p-8 md:p-12 border border-zinc-800">
-          <h1
+          <h2
             className={`${styles["dynamic-title1"]} ${monsterfont1.className} md:text-center `}
           >
             Who Should Invest in Integration & Middleware Solutions?
-          </h1>
+          </h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-4">

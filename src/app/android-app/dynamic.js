@@ -1,18 +1,17 @@
-import React from 'react';
-import { Montserrat } from 'next/font/google';
+import React from "react";
+import { Montserrat } from "next/font/google";
 import styles from "./style.module.css";
 
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"400",
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
-})
-const monsterfont = Montserrat ({
-  subsets : ["latin"],
-  weight :"800",
+});
+const monsterfont = Montserrat({
+  subsets: ["latin"],
+  weight: "800",
   fallback: ["sans-serif"],
-})
-
+});
 
 const timelineSteps = [
   {
@@ -70,9 +69,11 @@ const DevelopmentTimeline = () => {
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black rounded-3xl p-8 md:p-12 border border-zinc-800">
-          <h1 className={`${styles["dynamic-title"]}  ${monsterfont1.className} md:text-center `}>
+          <h2
+            className={`${styles["dynamic-title"]}  ${monsterfont1.className} md:text-center `}
+          >
             Dynamic Approach to Android App Development
-          </h1>
+          </h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-4">
@@ -89,21 +90,33 @@ const DevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={` ${styles["dynamic-subtitle"]}  ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={` ${styles["dynamic-subtitle"]}  ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-yellow-700"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>
@@ -124,22 +137,34 @@ const DevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["dynamic-subtitle"]}  ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={`${styles["dynamic-subtitle"]}  ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-orange-700"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={`${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
-                        {step.description}
+
+                      <div
+                        className={`${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
+                        <p>{step.description}</p>
                       </div>
                     </div>
                   ))}

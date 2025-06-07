@@ -54,7 +54,7 @@ const BusinessDevelopment = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Side */}
           <div className="lg:w-1/2 flex flex-col justify-center md:sticky md:top-0">
-            <h1
+            <h2
               className={`${styles["left-title"]} ${monsterfont1.className} text-left`}
             >
               Benefits
@@ -64,7 +64,7 @@ const BusinessDevelopment = () => {
                 <br />
                 BI Services
               </div>
-            </h1>
+            </h2>
             <div className="flex items-center gap-8 mt-6">
               <div className="w-[4px] h-[70px] bg-[#2775ff] rounded-[10px]  "></div>{" "}
               {/* Vertical line */}

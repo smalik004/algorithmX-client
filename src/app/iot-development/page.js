@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "IoT App Development Services | Custom IoT Development Company",
+  description:
+    "Design and build connected apps that bring your devices to life. Our custom IoT app development services help you collect data, automate actions, and scale with confidence.",
+};
+
 import React from "react";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";

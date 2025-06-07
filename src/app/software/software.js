@@ -1,21 +1,22 @@
-'use client'
-import React, { useEffect, useRef, useState } from 'react';
-import styles from './style.module.css';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import styles from "./style.module.css";
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '300',
+  subsets: ["latin"],
+  weight: "300",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '600',
+  subsets: ["latin"],
+  weight: "600",
   fallback: ["sans-serif"],
 });
 
@@ -24,7 +25,8 @@ const BigDataIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 60 60"
     xmlSpace="preserve"
-    width="64" height="64"
+    width="64"
+    height="64"
   >
     <line
       className="lievo-savelinecap"
@@ -181,7 +183,8 @@ const BigDataIcon1 = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 60 60"
     xmlSpace="preserve"
-    width="64" height="64"
+    width="64"
+    height="64"
   >
     <line
       className="lievo-savelinecap"
@@ -269,52 +272,66 @@ const Blockchain1 = () => (
 
 const solutions = [
   {
-    title: 'BIG DATA',
-    description: 'Advanced software that efficiently manages and processes huge volumes of data at a fast pace.',
+    title: "BIG DATA",
+    description:
+      "Advanced software that efficiently manages and processes huge volumes of data at a fast pace.",
     icon: <BigDataIcon />,
-    direction: 'left',
+    direction: "left",
   },
   {
-    title: 'ARTIFICIAL INTELLIGENCE',
-    description: 'Powerful software that examines historical and real-time data to provide insights and spur decisions.',
-    icon:<CustomIcon />,
-    direction: 'right',
+    title: "ARTIFICIAL INTELLIGENCE",
+    description:
+      "Powerful software that examines historical and real-time data to provide insights and spur decisions.",
+    icon: <CustomIcon />,
+    direction: "right",
   },
   {
-    title: 'DATA SCIENCE',
-    description: 'Intelligent software that unveils intricate data and boosts precision via consistent learning.',
-    icon:<Blockchain/>,
-    direction: 'left',
+    title: "DATA SCIENCE",
+    description:
+      "Intelligent software that unveils intricate data and boosts precision via consistent learning.",
+    icon: <Blockchain />,
+    direction: "left",
   },
   {
-    title: 'INTERNET OF THINGS',
-    description: 'Software capable of quickly sorting, analyzing, and mining data obtained from physical items connected over the internet.',
+    title: "INTERNET OF THINGS",
+    description:
+      "Software capable of quickly sorting, analyzing, and mining data obtained from physical items connected over the internet.",
     icon: <BigDataIcon1 />,
-    direction: 'right',
+    direction: "right",
   },
   {
-    title: 'COMPUTER VISION',
-    description: 'Unique software that analyzes videos and digital images to identify and categorize objects and patterns.',
+    title: "COMPUTER VISION",
+    description: "Unique software that ",
+    description2: (
+      <Link href="/video" className="text-blue-300 hover:text-blue-400">
+        analyzes videos
+      </Link>
+    ),
+    description3:
+      " and digital images to identify and categorize objects and patterns.",
     icon: <BigDataIcon1 />,
-    direction: 'right',
+    direction: "right",
   },
   {
-    title: 'AUGMENTED REALITY',
-    description: 'Software that has the capability to superimpose virtual objects onto the actual environments.',
-    icon: <Blockchain/>,
-    direction: 'left',
+    title: "AUGMENTED REALITY",
+    description:
+      "Software that has the capability to superimpose virtual objects onto the actual environments.",
+    icon: <Blockchain />,
+    direction: "left",
   },
   {
-    title: 'VIRTUAL REALITY',
-    description: 'Software technology that creates simulated virtual environments with 3D objects and realistic audio effects.',
+    title: "VIRTUAL REALITY",
+    description:
+      "Software technology that creates simulated virtual environments with 3D objects and realistic audio effects.",
     icon: <BigDataIcon1 />,
-    direction: 'right',
+    direction: "right",
   },
   {
-    title: 'BLOCKCHAIN',
-    description: 'Software with highly protected storage of decentralized data making it easy to transact between points.',
-    icon:<Blockchain/>,
-    direction: 'left',
+    title: "BLOCKCHAIN",
+    description:
+      "Software with highly protected storage of decentralized data making it easy to transact between points.",
+    icon: <Blockchain />,
+    direction: "left",
   },
 ];
 
@@ -333,11 +350,11 @@ const BusinessSolutions = () => {
       },
       { threshold: 0.2 }
     );
-  
+
     boxRefs.current.forEach((box) => {
       if (box) observer.observe(box);
     });
-  
+
     return () => {
       boxRefs.current.forEach((box) => {
         if (box) observer.unobserve(box);
@@ -351,12 +368,22 @@ const BusinessSolutions = () => {
     <div className="min-h-screen bg-black text-white p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className={`${styles["solution-text"]} ${monsterfont.className}`}>SOLUTIONS</p>
-          <h1 className={`${styles["solution-title"]} ${monsterfont1.className}`}>SOFTWARES FOR</h1>
-          <h2 className={`${styles["solution-title"]} ${monsterfont.className}`}>ADVANCED BUSINESS PURPOSES</h2>
+          <h2 className={`${styles["solution-text"]} ${monsterfont.className}`}>
+            SOLUTIONS
+          </h2>
+          <h2
+            className={`${styles["solution-title"]} ${monsterfont1.className}`}
+          >
+            SOFTWARES FOR
+          </h2>
+          <h2
+            className={`${styles["solution-title"]} ${monsterfont.className}`}
+          >
+            ADVANCED BUSINESS PURPOSES
+          </h2>
           <div className="flex justify-center mt-4">
-          <div className="h-[2px] w-[35px] bg-[#2775ff]"></div>
-        </div>
+            <div className="h-[2px] w-[35px] bg-[#2775ff]"></div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
@@ -364,8 +391,8 @@ const BusinessSolutions = () => {
             const rowIndex = Math.floor(index / numberOfColumns);
             const colIndex = index % numberOfColumns;
             const isVisible = visibleBoxes.has(boxRefs.current[index]);
-            const bgColor = (rowIndex + colIndex) % 2 === 0 ? styles.bgBlack : styles.bgGray;
-
+            const bgColor =
+              (rowIndex + colIndex) % 2 === 0 ? styles.bgBlack : styles.bgGray;
 
             return (
               <div
@@ -373,16 +400,26 @@ const BusinessSolutions = () => {
                 ref={(el) => (boxRefs.current[index] = el)}
                 className={`relative overflow-hidden  transform transition-all duration-500 ${
                   isVisible
-                    ? solution.direction === 'left'
-                      ? styles['slide-in-left']
-                      : styles['slide-in-right']
-                    : 'opacity-0'
+                    ? solution.direction === "left"
+                      ? styles["slide-in-left"]
+                      : styles["slide-in-right"]
+                    : "opacity-0"
                 } ${bgColor}`}
               >
                 <div className="flex flex-col items-center text-center space-y-4">
                   {solution.icon}
-                  <h3 className={`${styles["solution-subtitle"]} ${monsterfont2.className} text-white`}>{solution.title}</h3>
-                  <p className={`${styles["solution-description"]} font-opensans text-semi-white`}>{solution.description}</p>
+                  <h3
+                    className={`${styles["solution-subtitle"]} ${monsterfont2.className} text-white`}
+                  >
+                    {solution.title}
+                  </h3>
+                  <p
+                    className={`${styles["solution-description"]} font-opensans text-semi-white`}
+                  >
+                    {solution.description}
+                    {solution.description2}
+                    {solution.description3}
+                  </p>
                 </div>
               </div>
             );

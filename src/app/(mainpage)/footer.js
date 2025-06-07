@@ -12,7 +12,7 @@ const monsterfont1 = Montserrat({
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black text-gray-300 overflow-hidden px-4 py-8 min-h-[400px]">
+    <footer className="relative bg-black text-gray-300 overflow-hidden px-4 py-4 min-h-[400px]">
       <div className="span1"></div>
       <div className="span1"></div>
       <div className="span1"></div>
@@ -97,57 +97,58 @@ const Footer = () => {
             >
               RESOURCES
             </h3>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col  gap-2">
               <Link
-                href="/blog"
+                href="/blogs"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Blogs
               </Link>
+
               <Link
-                href="/press-release"
+                href="/knowledge-base"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Knowledge Base
               </Link>
+
               <Link
-                href="/guides"
-                className="text-white hover:text-blue-500 transition-colors"
-              >
-                Press Release
-              </Link>
-              <Link
-                href="/ebooks"
+                href="/brand-audits"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Brand Audits
               </Link>
+
               <Link
-                href="/ebooks"
+                href="/product-audits"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Product Audits
               </Link>
+
               <Link
                 href="/ebooks"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Ebooks & Whitepapers
               </Link>
+
               <Link
-                href="/ebooks"
+                href="/press-release"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Press Release
               </Link>
+
               <Link
-                href="/ebooks"
+                href="/our-clients"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Our Clients
               </Link>
+
               <Link
-                href="/ebooks"
+                href="/impact-stories"
                 className="text-white hover:text-blue-500 transition-colors"
               >
                 Impact Stories
@@ -158,45 +159,56 @@ const Footer = () => {
           {/* Reviews section - Replacing Newsletter Subscription */}
           <div>
             <h3
-              className={`text-[16px] ${monsterfont1.className} text-white mb-6`}
+              className={`text-[16px] ${monsterfont1.className} text-white mb-[15px]`}
             >
               REVIEWS:
             </h3>
             <div className="flex flex-wrap gap-4 items-center justify-start">
               <div className="w-20 h-20 relative">
-                <img
-                  src="/images/trustpilot.png"
-                  alt="Trustpilot"
-                  className="object-contain w-full h-full"
-                />
+                <a
+                  href="https://clutch.co/profile/algorithmx-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/4 (1).png"
+                    alt="Clutch"
+                    className="object-contain w-full h-full cursor-pointer"
+                  />
+                </a>
               </div>
-              <div className="w-20 h-20 relative">
-                <img
-                  src="/images/google-reviews.png"
-                  alt="Google Reviews"
-                  className="object-contain w-full h-full"
-                />
+              <div className="w-[80px] h-[80px] relative">
+                <a
+                  href="https://www.goodfirms.co/company/algorithmx-inc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/goodfirm.png"
+                    alt="goodfirms"
+                    className="object-contain "
+                  />
+                </a>
               </div>
-              <div className="w-20 h-20 relative">
-                <img
-                  src="/images/capterra.png"
-                  alt="Capterra"
-                  className="object-contain w-full h-full"
-                />
-              </div>
-              <div className="w-20 h-20 relative">
-                <img
-                  src="/images/capterra.png"
-                  alt="Capterra"
-                  className="object-contain w-full h-full"
-                />
+              <div className="w-[60px] h-[60px] relative">
+                <a
+                  href="https://www.g2.com/products/algorithmx-inc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/g2.png"
+                    alt="g2"
+                    className="object-contain w-full h-full"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Certificates Section */}
-        <div className="mt-12 py-6 border-t border-gray-700">
+        <div className="mt-4 py-6 border-t border-gray-700">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Certificates */}
             <div>
@@ -264,8 +276,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Recognition Section */}
-        <div className="mt-12 py-6 border-t border-gray-700">
+        {/* Recognition Section 
+        <div className="mt-4 py-6 border-t border-gray-700">
           <h3
             className={`text-[16px] ${monsterfont1.className} text-white mb-6`}
           >
@@ -309,12 +321,45 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+*/}
         {/* Bottom Links */}
-        <div className="mt-12 pt-4 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-4 pt-4 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 ">
           <p className="text-[12px] font-helvveticaneue text-white">
-            ©2024 AlgorithmX. All rights reserved.
+            ©2025 AlgorithmX. All rights reserved.
           </p>
+
+          {/* Social Media Images */}
+          <div className="flex gap-4 items-center">
+            <div className="">
+              <img
+                src="/images/iso.png"
+                alt="Facebook"
+                className="w-[50px] h-[50px] object-contain"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/images/ISO9001.png"
+                alt="Twitter"
+                className="w-[50px] h-[50px] object-contain"
+              />
+            </div>
+            <div className="w-[100px] h-[100px]">
+              <img
+                src="/images/gdpr.png"
+                alt="LinkedIn"
+                className="w-[100px] h-[100px] object-contain"
+              />
+            </div>
+            <div className="w-[80px] h-[80px]">
+              <img
+                src="/images/cmmilevel3.png"
+                alt="LinkedIn"
+                className="w-[80px] h-[80px] object-contain"
+              />
+            </div>
+          </div>
+
           <div className="flex gap-6">
             <Link
               href="/privacy-policy"

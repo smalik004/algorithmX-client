@@ -72,11 +72,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-12">
-            <h1
+            <h2
               className={`text-[40px] leading-[44px] ${monsterfont.className}  text-white mb-4`}
             >
               Explore our IoT Service Offerings
-            </h1>
+            </h2>
             <p className="text-[18px] leading-[24px]  font-[500] text-semi-white font-helveticaneue">
               Deploy intelligent, AI-integrated IoT solutions that connect edge
               devices, orchestrate data pipelines, and automate operations

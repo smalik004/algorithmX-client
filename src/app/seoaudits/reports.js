@@ -84,16 +84,16 @@ const SEOReports = () => {
   return (
     <div className="bg-black text-white min-h-screen p-8 flex items-center justify-center  ">
       <div className="max-w-[1200px] mx-auto  mb-16">
-        <h1
+        <h2
           className={`text-[40px] leading-[45px] md:text-[64px] md:leading-[68px] text-center ${monsterfont.className}`}
         >
           Get Comprehensive
-        </h1>
-        <h1
+        </h2>
+        <h2
           className={`text-[35px] leading-[40px] text-center ${monsterfont1.className}`}
         >
           Reports that Drive Real Results
-        </h1>
+        </h2>
         <p
           className={`text-[16px] leading-[20px] text-center ${monsterfont2.className} text-semi-white mb-4`}
         >
@@ -118,9 +118,9 @@ const SEOReports = () => {
             {features.map((feature, index) => (
               <div key={index} className="group p-8 relative">
                 <div className="flex flex-col space-y-0">
-                  <h2 className=" text-[24px] leading-[1.1] font-helveticaneue text-start font-[400]">
+                  <h3 className=" text-[24px] leading-[1.1] font-helveticaneue text-start font-[400]">
                     {feature.title}
-                  </h2>
+                  </h3>
                   <div className="flex items-center space-x-2">
                     <div className="transition-all duration-500 group-hover:opacity-0 group-hover:-translate-x-full">
                       <LineSVG />
@@ -145,9 +145,9 @@ const SEOReports = () => {
             {features.map((feature, index) => (
               <div key={index} className="group py-8 relative">
                 <div className="flex flex-col space-y-4">
-                  <h2 className="text-[24px] leading-[1.1] font-helveticaneue text-start font-[400]">
+                  <h3 className="text-[24px] leading-[1.1] font-helveticaneue text-start font-[400]">
                     {feature.title}
-                  </h2>
+                  </h3>
                   <div className="flex items-center space-x-2">
                     <div className="transition-all duration-300 ">
                       <LineSVG />

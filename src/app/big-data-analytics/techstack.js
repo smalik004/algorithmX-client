@@ -47,11 +47,11 @@ const BigDataTechnologyToolbox = () => {
   return (
     <div className="bg-black text-white py-8 px-2 sm:py-16 sm:px-4">
       <div className="max-w-6xl mx-auto">
-        <h1
+        <h2
           className={`${styles["toolbox-title"]} text-center  ${monsterfont.className} mb-3 sm:mb-4`}
         >
           TECHNOLOGY TOOLBOX
-        </h1>
+        </h2>
 
         <div className="w-12 h-1 bg-blue-500 mx-auto mb-4 sm:mb-8"></div>
 

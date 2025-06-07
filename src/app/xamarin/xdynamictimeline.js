@@ -1,25 +1,65 @@
-import React from 'react';
+import React from "react";
 import styles from "./style.module.css";
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"400",
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
-})
-const monsterfont = Montserrat ({
-  subsets : ["latin"],
-  weight :"800",
+});
+const monsterfont = Montserrat({
+  subsets: ["latin"],
+  weight: "800",
   fallback: ["sans-serif"],
-})
+});
 
+const FirstDescriptionWithLink = () => (
+  <>
+    In this first stage, we conduct thorough discussions to understand the
+    client's vision and requirements. We then identify the competitors, target
+    audience, and latest market trends in Xamarin mobile app development for iOS
+    and{" "}
+    <Link href="/android-app" className="text-blue-300 hover:text-blue-400">
+      Android
+    </Link>
+    . Detailed documents are prepared listing the features and specifications
+    according to which we set the entire project scope, including the timeline
+    and goals.
+  </>
+);
+
+const DevelopmentDescriptionWithLink = () => (
+  <>
+    At this point, we carefully establish the Xamarin application structure,
+    choose the appropriate back-end technology stack, frameworks, and libraries,
+    implement the UI design, and integrate APIs smoothly in order to set up a
+    robust system of continuous integration and continuous delivery (CI/CD) for{" "}
+    <Link href="/iphone-app" className="text-blue-300 hover:text-blue-400">
+      iOS
+    </Link>{" "}
+    and Android platforms.
+  </>
+);
+
+const ReleaseDescriptionWithLink = () => (
+  <>
+    Upon thorough testing of the Xamarin app across several parameters, we will
+    submit it to the{" "}
+    <Link href="/app-store" className="text-blue-300 hover:text-blue-400">
+      App Store
+    </Link>{" "}
+    or Google Play Store and monitor the entire release process. We keep adding
+    new functions and features to the app using data from users' feedback and
+    analytics thus making it a smooth experience for people who use your app.
+  </>
+);
 
 const timelineSteps = [
   {
     number: "1",
     title: "Requirement Analysis",
-    description:
-      "In this first stage, we conduct thorough discussions to understand the client’s vision and requirements. We then identify the competitors, target audience, and latest market trends in Xamarin mobile app development for iOS and Android. Detailed documents are prepared listing the features and specifications according to which we set the entire project scope, including the timeline and goals.",
+    description: <FirstDescriptionWithLink />,
     color: "text-red-500",
     dotColor: "bg-red-500",
   },
@@ -42,8 +82,7 @@ const timelineSteps = [
   {
     number: "4",
     title: "Development Stage",
-    description:
-      "At this point, we carefully establish the Xamarin application structure, choose the appropriate back-end technology stack, frameworks, and libraries, implement the UI design, and integrate APIs smoothly using Xamarin.iOS/Xmaarin.Android to set up a robust system of continuous integration and continuous delivery (CI/CD).",
+    description: <DevelopmentDescriptionWithLink />,
     color: "text-orange-400",
     dotColor: "bg-orange-400",
   },
@@ -58,8 +97,7 @@ const timelineSteps = [
   {
     number: "6",
     title: "Release and Support",
-    description:
-      "Upon thorough testing of the Xamarin app across several parameters, we will submit it to the App Store or Google Play Store and monitor the entire release process. We keep adding new functions and features to the app using data from users’ feedback and analytics thus making it a smooth experience for people who use your app. ",
+    description: <ReleaseDescriptionWithLink />,
     color: "text-yellow-400",
     dotColor: "bg-yellow-400",
   },
@@ -70,9 +108,11 @@ const XamarinDevelopmentTimeline = () => {
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black rounded-3xl p-8 md:p-12 border border-zinc-800">
-          <h1 className={`${styles["dynamic-title"]}  ${monsterfont1.className} md:text-center `}>
+          <h2
+            className={`${styles["dynamic-title"]}  ${monsterfont1.className} md:text-center `}
+          >
             Dynamic Approach to Xamarin App Development
-          </h1>
+          </h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-4">
@@ -89,22 +129,34 @@ const XamarinDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["dynamic-subtitle"]} ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={`${styles["dynamic-subtitle"]} ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-orange-400 "></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
-                        {step.description}
+
+                      <div
+                        className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
+                        <p>{step.description}</p>
                       </div>
                     </div>
                   ))}
@@ -124,21 +176,33 @@ const XamarinDevelopmentTimeline = () => {
                     <div key={index} className="relative">
                       <div className="flex items-start gap-3">
                         <div className="relative">
-                          <span className={`${step.color} font-bold text-xl block mb-4`}>
+                          <span
+                            className={`${step.color} font-bold text-xl block mb-4`}
+                          >
                             {step.number}
                           </span>
-                          <div className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}></div>
+                          <div
+                            className={`hidden md:block absolute -bottom-[1.125rem] left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full ${step.dotColor} z-10`}
+                          ></div>
                         </div>
-                        <h3 className={`${styles["dynamic-subtitle"]} ${monsterfont.className}  `}>{step.title}</h3>
+                        <h3
+                          className={`${styles["dynamic-subtitle"]} ${monsterfont.className}  `}
+                        >
+                          {step.title}
+                        </h3>
                       </div>
-                      
+
                       {/* Mobile Timeline */}
                       <div className="md:hidden relative my-4">
                         <div className="w-full h-0.5 bg-gradient-to-r from-yellow-500 to-yellow-400"></div>
-                        <div className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}></div>
+                        <div
+                          className={`absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 rounded-full ${step.dotColor}`}
+                        ></div>
                       </div>
-                      
-                      <div className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}>
+
+                      <div
+                        className={` ${styles["dynamic-description"]}  ${monsterfont1.className} mt-4 md:mt-8 `}
+                      >
                         {step.description}
                       </div>
                     </div>

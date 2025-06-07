@@ -40,9 +40,9 @@ const MetaverseDevelopmentPage = () => {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="w-full max-w-[1200px] px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Why Choose AlgorithmX for Metaverse Development?
-        </h1>
+        </h2>
         <p className="text-gray-300 mb-8">
           At AlgorithmX, we're engineering the next layer of human–digital
           interaction. Our metaverse development team merges advanced 3D design,
@@ -83,9 +83,9 @@ const MetaverseDevelopmentPage = () => {
             <div className="flex flex-col justify-center">
               <div className="flex items-center space-x-4 mb-4">
                 {sections[activeSection].icon}
-                <h2 className="text-2xl font-bold">
+                <h3 className="text-2xl font-bold">
                   {sections[activeSection].title}
-                </h2>
+                </h3>
               </div>
               <p className="text-gray-300">
                 {sections[activeSection].description}
@@ -98,9 +98,9 @@ const MetaverseDevelopmentPage = () => {
             <div className=" border-[1px] border-blue-700 rounded-lg p-6">
               <div className="flex items-center space-x-4 mb-4">
                 {sections[activeSection].icon}
-                <h2 className="text-xl font-bold">
+                <h3 className="text-xl font-bold">
                   {sections[activeSection].title}
-                </h2>
+                </h3>
               </div>
               <p className="text-gray-300">
                 {sections[activeSection].description}

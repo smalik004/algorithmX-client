@@ -1,5 +1,5 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -19,68 +19,67 @@ const monsterfont3 = Montserrat({
   fallback: ["sans-serif"],
 });
 
-
 const industries = [
   {
     id: 1,
-    title: 'eCommerce',
-    iconImg: './images/shopping.png', // Replace with actual image path
+    title: "eCommerce",
+    iconImg: "./images/shopping.png", // Replace with actual image path
     color: styles["text-purple-500"],
     borderColor: styles["border-purple-light"],
   },
   {
     id: 2,
-    title: 'Healthcare',
-    iconImg: './images/Healthcare.png',
+    title: "Healthcare",
+    iconImg: "./images/Healthcare.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-yellow-light"],
   },
   {
     id: 3,
-    title: 'Media & Entertainment',
-    iconImg: './images/Media.png',
+    title: "Media & Entertainment",
+    iconImg: "./images/Media.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-purple-light"],
   },
   {
     id: 4,
-    title: 'Sports & Gambling',
-    iconImg: './images/Sports.png',
+    title: "Sports & Gambling",
+    iconImg: "./images/Sports.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-red-light"],
   },
   {
     id: 5,
-    title: 'Business Services',
-    iconImg: './images/Business-Services-1.png',
+    title: "Business Services",
+    iconImg: "./images/Business-Services-1.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-green-light"],
   },
   {
     id: 6,
-    title: 'Real Estate',
-    iconImg: './images/Real-Estate.png',
+    title: "Real Estate",
+    iconImg: "./images/Real-Estate.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-blue-light"],
   },
   {
     id: 7,
-    title: 'IT Services',
-    iconImg: './images/IT-Services.png',
+    title: "IT Services",
+    iconImg: "./images/IT-Services.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-orange-light"],
   },
   {
     id: 8,
-    title: 'Social Media',
-    iconImg: './images/Social-Media.png',
+    title: "Social Media",
+    iconImg: "./images/Social-Media.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-pink-light"],
   },
   {
     id: 9,
-    title: 'Music',
-    iconImg: './images/music.png',
+    title: "Music",
+    iconImg: "./images/music.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-yellow-light"],
   },
@@ -94,8 +93,16 @@ const IndustriesGrid = () => {
   return (
     <div className="min-h-screen bg-black p-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className={`text-white font-size-64 algo-line-height-68 text-center ${monsterfont3.className}`}>Industries</h1>
-        <h2 className={`text-white font-size-64 algo-line-height-68 text-center ${monsterfont.className} mb-16`}>We Cater</h2>
+        <h2
+          className={`text-white font-size-64 algo-line-height-68 text-center ${monsterfont3.className}`}
+        >
+          Industries
+        </h2>
+        <h2
+          className={`text-white font-size-64 algo-line-height-68 text-center ${monsterfont.className} mb-16`}
+        >
+          We Cater
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4">
           {industries.map((industry) => (
@@ -119,7 +126,11 @@ const IndustriesGrid = () => {
               <div
                 className={`w-full h-full ml-12 flex items-center justify-center bg-black border-2 ${industry.borderColor} ${styles["custom-rounded"]} transition-all duration-300 `}
               >
-                <span className={`text-white font-size-19 algo-line-height-23 font-helveticaneue font-[600] ml-4 max-w-[180px]`}>{industry.title}</span>
+                <span
+                  className={`text-white font-size-19 algo-line-height-23 font-helveticaneue font-[600] ml-4 max-w-[180px]`}
+                >
+                  {industry.title}
+                </span>
               </div>
             </button>
           ))}

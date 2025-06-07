@@ -1,20 +1,21 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '500',
+  subsets: ["latin"],
+  weight: "500",
   fallback: ["sans-serif"],
 });
 
@@ -72,18 +73,39 @@ const CMSSection = () => {
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            CMS
+            <h1
+              className={` text-[30px] text-center md:text-[85px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              CMS
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVELOPMENT
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          AlgorithmX leverages leading technologies like WordPress, Drupal, and Shopify to build user-friendly websites ensuring seamless content creation, management, and distribution. Our dynamic CMS development services create custom CMS platforms tailored for small and large enterprises.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            AlgorithmX leverages leading technologies like WordPress, Drupal,
+            and Shopify to build user-friendly websites ensuring seamless
+            content creation, management, and distribution. Our dynamic CMS
+            development services create custom CMS platforms tailored for small
+            and large enterprises. We help you{" "}
+            <Link href="/seo" className=" text-blue-300 hover:text-blue-400">
+              manage SEO effectively
+            </Link>{" "}
+            and integrate{" "}
+            <Link
+              href="/social-media"
+              className=" text-blue-300 hover:text-blue-400"
+            >
+              social media
+            </Link>{" "}
+            for maximum reach.
           </p>
         </div>
       </div>

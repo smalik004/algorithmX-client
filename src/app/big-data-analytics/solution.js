@@ -114,11 +114,11 @@ const BigDataGrid = () => {
             >
               Maximize the Value of Your Data
             </h2>
-            <h3
+            <h2
               className={` ${styles["multi-subtitle"]} ${monsterfont.className} text-white`}
             >
               with Our Advanced Solutions.
-            </h3>
+            </h2>
           </div>
         </div>
 

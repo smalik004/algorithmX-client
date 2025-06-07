@@ -1,29 +1,29 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
-const monsterfont1 = Montserrat ({
-  subsets : ["latin"],
-  weight :"700",
+const monsterfont1 = Montserrat({
+  subsets: ["latin"],
+  weight: "700",
   fallback: ["sans-serif"],
-})
-const monsterfont2 = Montserrat ({
-  subsets : ["latin"],
-  weight :"800",
+});
+const monsterfont2 = Montserrat({
+  subsets: ["latin"],
+  weight: "800",
   fallback: ["sans-serif"],
-})
-const monsterfont3 = Montserrat ({
-  subsets : ["latin"],
-  weight :"200",
+});
+const monsterfont3 = Montserrat({
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
-})
-const monsterfont4 = Montserrat ({
-  subsets : ["latin"],
-  weight :"600",
+});
+const monsterfont4 = Montserrat({
+  subsets: ["latin"],
+  weight: "600",
   fallback: ["sans-serif"],
-})
-
+});
 
 const TechGrid = () => {
   const [isInView, setIsInView] = useState(false);
@@ -55,7 +55,8 @@ const TechGrid = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60 60"
       xmlSpace="preserve"
-      width="64" height="64"
+      width="64"
+      height="64"
     >
       <line
         className="lievo-savelinecap"
@@ -70,7 +71,7 @@ const TechGrid = () => {
         x2="39.68"
         y2="17.77"
       ></line>
-  
+
       {/* Circles with Blue Stroke */}
       <path
         fill="none"
@@ -79,7 +80,7 @@ const TechGrid = () => {
         strokeMiterlimit="10"
         d="M51,15c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6s2.69-6,6-6C48.31,9,51,11.69,51,15z"
       ></path>
-  
+
       <line
         className="lievo-savelinecap"
         fill="none"
@@ -93,7 +94,7 @@ const TechGrid = () => {
         x2="39.68"
         y2="42.23"
       ></line>
-  
+
       <path
         fill="none"
         stroke="#69adff"
@@ -101,7 +102,7 @@ const TechGrid = () => {
         strokeMiterlimit="10"
         d="M51,45c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6c0-3.31,2.69-6,6-6C48.31,39,51,41.69,51,45z"
       ></path>
-  
+
       <path
         className="lievo-altstroke"
         fill="none"
@@ -206,13 +207,14 @@ const TechGrid = () => {
       />
     </svg>
   );
-  
+
   const BigDataIcon1 = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60 60"
       xmlSpace="preserve"
-      width="64" height="64"
+      width="64"
+      height="64"
     >
       <line
         className="lievo-savelinecap"
@@ -227,7 +229,7 @@ const TechGrid = () => {
         x2="39.68"
         y2="17.77"
       ></line>
-  
+
       {/* Circles with Blue Stroke */}
       <path
         fill="none"
@@ -236,7 +238,7 @@ const TechGrid = () => {
         strokeMiterlimit="10"
         d="M51,15c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6s2.69-6,6-6C48.31,9,51,11.69,51,15z"
       ></path>
-  
+
       <line
         className="lievo-savelinecap"
         fill="none"
@@ -250,7 +252,7 @@ const TechGrid = () => {
         x2="39.68"
         y2="42.23"
       ></line>
-  
+
       <path
         fill="none"
         stroke="#fff"
@@ -258,7 +260,7 @@ const TechGrid = () => {
         strokeMiterlimit="10"
         d="M51,45c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6c0-3.31,2.69-6,6-6C48.31,39,51,41.69,51,45z"
       ></path>
-  
+
       <path
         className="lievo-altstroke"
         fill="none"
@@ -297,91 +299,101 @@ const TechGrid = () => {
       />
     </svg>
   );
-  
-  
-  
-const technologies = [
-  {
-    icon:<BigDataIcon />,
-    title: "BIG DATA",
-    isGrey: false,
-    animationClass: styles['slide-in-left'] // Corrected class import
-  },
-  {
-    icon: <CustomIcon />,
-    title: "INTERNET OF THINGS",
-    isGrey: true,
-    animationClass: styles['fade-in'] // Corrected class import
-  },
-  {
-    icon:<Blockchain/>,
-    title: "BLOCKCHAIN",
-    isGrey: false,
-    animationClass: styles['slide-in-right'] // Corrected class import
-  },
-  {
-    icon:<BigDataIcon1 />,
-    title: "AUGMENTED REALITY (AR)",
-    isGrey: true,
-    animationClass: styles['slide-in-left'] // Corrected class import
-  },
-  {
-    icon: <CustomIcon />,
-    title: "VIRTUAL REALITY (VR)",
-    isGrey: false,
-    animationClass: styles['fade-in'] // Corrected class import
-  },
-  {
-    icon: <Blockchain1 />,
-    title: "ARTIFICIAL INTELLIGENCE",
-    isGrey: true,
-    animationClass: styles['slide-in-right'] // Corrected class import
-  }
-];
+
+  const technologies = [
+    {
+      icon: <BigDataIcon />,
+      title: "BIG DATA",
+      isGrey: false,
+      animationClass: styles["slide-in-left"], // Corrected class import
+    },
+    {
+      icon: <CustomIcon />,
+      title: "INTERNET OF THINGS",
+      isGrey: true,
+      animationClass: styles["fade-in"], // Corrected class import
+    },
+    {
+      icon: <Blockchain />,
+      title: (
+        <Link href="/blockchain" className="hover:text-blue-400">
+          BLOCKCHAIN
+        </Link>
+      ),
+      isGrey: false,
+      animationClass: styles["slide-in-right"], // Corrected class import
+    },
+    {
+      icon: <BigDataIcon1 />,
+      title: "AUGMENTED REALITY (AR)",
+      isGrey: true,
+      animationClass: styles["slide-in-left"], // Corrected class import
+    },
+    {
+      icon: <CustomIcon />,
+      title: "VIRTUAL REALITY (VR)",
+      isGrey: false,
+      animationClass: styles["fade-in"], // Corrected class import
+    },
+    {
+      icon: <Blockchain1 />,
+      title: "ARTIFICIAL INTELLIGENCE",
+      isGrey: true,
+      animationClass: styles["slide-in-right"], // Corrected class import
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-black p-8">
       <div className="max-w-6xl mx-auto">
-      <div className="text-center mb-16 relative pt-20 pb-15 w-full">
+        <div className="text-center mb-16 relative pt-20 pb-15 w-full">
           {/* Background "MULTIFACETED" text with zoom-in effect */}
           <div className="absolute inset-0 flex items-center justify-center">
             <span
               ref={scalableRef}
-              className={` ${styles["multi-title"]} ${monsterfont1.className} text-gray-600/20 select-none transform transition-transform duration-700 ${
-                isInView ? 'scale-110 opacity-100' : 'scale-75 opacity-0'
+              className={` ${styles["multi-title"]} ${
+                monsterfont1.className
+              } text-gray-600/20 select-none transform transition-transform duration-700 ${
+                isInView ? "scale-110 opacity-100" : "scale-75 opacity-0"
               }`}
             >
-             ADVANCED TECHNOLOGIES
+              ADVANCED TECHNOLOGIES
             </span>
           </div>
 
           {/* Main titles */}
           <div className="relative z-10 mt-20">
-            <h2 className={` ${styles["tech-subtitle"]} ${monsterfont3.className} text-white`}>
-             WE'RE
+            <h2
+              className={` ${styles["tech-subtitle"]} ${monsterfont3.className} text-white`}
+            >
+              WE'RE
             </h2>
-            <h3 className={` ${styles["tech-subtitle"]} ${monsterfont2.className} text-white`}>
-             SKILLED IN
-            </h3>
+            <h2
+              className={` ${styles["tech-subtitle"]} ${monsterfont2.className} text-white`}
+            >
+              SKILLED IN
+            </h2>
           </div>
         </div>
 
         {/* Technology Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
           {technologies.map((tech) => (
-          
             <div
-            key={tech.title}
-            className={`${
-              isInView ? tech.animationClass : ''
-            } ${tech.isGrey ? 'bg-[#0f0f0f]' : 'bg-black'} w-full h-60 p-8 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out transform hover:translate-y-[-5px] ${
-              !tech.isGrey ? styles["bordera"] : 'rounded-[10px]'
-            }`}
-          >
-            <div className="text-blue-400 ">{tech.icon}</div>
-            <h3 className={`  ${monsterfont4.className} text-white text-center text-[14px] leading-[24px] mt-[22px] tracking-[0.1em]  `}>{tech.title}</h3>
-          </div>
-          
+              key={tech.title}
+              className={`${isInView ? tech.animationClass : ""} ${
+                tech.isGrey ? "bg-[#0f0f0f]" : "bg-black"
+              } w-full h-60 p-8 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out transform hover:translate-y-[-5px] ${
+                !tech.isGrey ? styles["bordera"] : "rounded-[10px]"
+              }`}
+            >
+              <div className="text-blue-400 ">{tech.icon}</div>
+              <h3
+                className={`  ${monsterfont4.className} text-white text-center text-[14px] leading-[24px] mt-[22px] tracking-[0.1em]  `}
+              >
+                {tech.title}
+              </h3>
+            </div>
           ))}
         </div>
       </div>

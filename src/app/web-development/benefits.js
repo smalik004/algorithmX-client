@@ -1,20 +1,19 @@
-'use client'
-import React, { useEffect, useRef, useState } from 'react';
-import styles from '../crm/style.module.css';
-import style from '../erp/style.module.css';
-import { Montserrat } from 'next/font/google';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import styles from "../crm/style.module.css";
+import style from "../erp/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
-
 
 const BenefitsWebSection = () => {
   const [isInView, setIsInView] = useState(false);
@@ -44,23 +43,27 @@ const BenefitsWebSection = () => {
   const modules = [
     {
       title: "Scalability",
-      description:"Managing big data is smooth and bug-free, and scaling up is easy.",
-      imageSrc: "/images/Scalability.png" // Replace with actual image path
+      description:
+        "Managing big data is smooth and bug-free, and scaling up is easy.",
+      imageSrc: "/images/Scalability.png", // Replace with actual image path
     },
     {
-      title: 'Adaptability',
-      description: 'Your future web application will run seamlessly on all platforms with little to no downtime.',
-      imageSrc: "/images/Adaptability.png" // Replace with actual image path
+      title: "Adaptability",
+      description:
+        "Your future web application will run seamlessly on all platforms with little to no downtime.",
+      imageSrc: "/images/Adaptability.png", // Replace with actual image path
     },
     {
-      title: 'Security',
-      description: 'Established from a central location, web applications prioritize security and safety.',
-      imageSrc: "/images/Security1.png" // Replace with actual image path
+      title: "Security",
+      description:
+        "Established from a central location, web applications prioritize security and safety.",
+      imageSrc: "/images/Security1.png", // Replace with actual image path
     },
     {
-      title: 'Ease of Maintenance',
-      description: 'It is effortless to update, support, and maintain a web application.',
-      imageSrc: "/images/Ease-of-Maintenance.png" // Replace with actual image path
+      title: "Ease of Maintenance",
+      description:
+        "It is effortless to update, support, and maintain a web application.",
+      imageSrc: "/images/Ease-of-Maintenance.png", // Replace with actual image path
     },
   ];
 
@@ -70,15 +73,18 @@ const BenefitsWebSection = () => {
         <div className="text-center  relative overflow-hidden">
           {/* Background "MODULIFY" text */}
 
-
           {/* Main titles */}
           <div className="relative z-10">
-            <h2 className={`text-[64px] leading-[68px] ${monsterfont.className} mt-16 text-white`}>
+            <h2
+              className={`text-[64px] leading-[68px] ${monsterfont.className} mt-16 text-white`}
+            >
               Benefits
             </h2>
-            <h3 className={`text-[21px] leading-[1.1] text-semi-white ${monsterfont1.className}`}>
+            <h2
+              className={`text-[21px] leading-[1.1] text-semi-white ${monsterfont1.className}`}
+            >
               of Web Development
-            </h3>
+            </h2>
           </div>
         </div>
 
@@ -104,15 +110,23 @@ const ModuleCard = ({ title, description, imageSrc }) => (
         <img
           src={imageSrc || "/images/Supply-Chain-Management.png"}
           alt={title}
-          className={`w-full h-full object-contain ${style['border-design']}`}
+          className={`w-full h-full object-contain ${style["border-design"]}`}
         />
       </div>
       <div className="flex-1">
-        <h3 className={`${style['modules-title']} ${monsterfont1.className} text-white`}>{title}</h3>
-        <p className={`${style['modules-description']} text-semi-white`}>{description}</p>
+        <h3
+          className={`${style["modules-title"]} ${monsterfont1.className} text-white`}
+        >
+          {title}
+        </h3>
+        <p className={`${style["modules-description"]} text-semi-white`}>
+          {description}
+        </p>
       </div>
     </div>
-    <div className={`${style['line']} absolute bottom-0 left-6 right-6 h-px `}></div>
+    <div
+      className={`${style["line"]} absolute bottom-0 left-6 right-6 h-px `}
+    ></div>
   </div>
 );
 
