@@ -1,5 +1,6 @@
 import React from "react";
 import CTASection from "../ads-audit/ctabanner";
+import ContactForm from "../ads-audit/form";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import AdsSuspension from "./home";
@@ -20,6 +21,7 @@ const page = () => {
       <CTASection />
       <AdsProcess />
       <HeroSection />
+      <ContactForm />
       <DetailedHeroSection />
       <InsightSection />
       <Footer />

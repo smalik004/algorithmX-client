@@ -1,4 +1,6 @@
 import React from "react";
+import CTASection from "./ads-audit/ctabanner";
+import ContactForm from "./ads-audit/form";
 import Navbar from "./asample/naviagtion";
 import CookieConsent from "./cookies/cookie";
 import Footer from "./(mainpage)/footer";
@@ -21,9 +23,11 @@ const Page = () => {
       <ParticleAnimation />
       <ResponsiveGrid />
       <Hexagon />
+      <CTASection />
       <ServicesSection />
       <Roadmap />
       <DiagonalGridWithText />
+      <ContactForm />
       <PlatformPerformance />
       <ResultRow />
       <MarketingGrid />
