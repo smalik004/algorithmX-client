@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import style from "../crm/style.module.css";
 import styles from "../app-development/style.module.css";
 import { Montserrat } from "next/font/google";
@@ -78,7 +79,9 @@ const CostWeb = () => {
               className={`${style["border-design1"]} bg-black flex flex-col items-center text-center mr-[10px] ml-[10px]`}
             >
               <div className="mb-4 mt-[30px]">
-                <img
+                <Image
+                  width={56}
+                  height={56}
                   src={item.imgSrc}
                   alt={item.imgAlt}
                   className="mx-auto mb-4 w-[56px] h-[56px] object-cover"

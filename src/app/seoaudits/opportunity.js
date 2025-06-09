@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import styles from "./style.module.css";
@@ -12,23 +13,26 @@ const SEOStrategy = () => {
           {/* Top Row with Two Images */}
           <div className="flex gap-4">
             <div className="w-1/2">
-              <img
-                src="images/i2.webp"
+              <Image
+                fill
+                src="/images/i2.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
             </div>
             <div className="w-1/2">
-              <img
-                src="images/i1.webp"
+              <Image
+                fill
+                src="/images/i1.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
-            <img
-              src="images/i3.webp"
+            <Image
+              fill
+              src="/images/i3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"
             />

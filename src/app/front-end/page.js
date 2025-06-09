@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import FrontEndSection from "./home";

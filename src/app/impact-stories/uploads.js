@@ -1,5 +1,6 @@
-'use client'
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
+import Image from "next/image";
 
 export default function Uploads() {
   const [playing, setPlaying] = useState({});
@@ -10,59 +11,59 @@ export default function Uploads() {
       title: "Does your life",
       duration: "04:37",
       thumbnail: "/images/01.jpg",
-      videoUrl: "/images/rr.mp4"
+      videoUrl: "/images/rr.mp4",
     },
     {
       id: 2,
       title: "Supercharge your",
       duration: "14:37",
       thumbnail: "/images/01.jpg",
-      videoUrl: "/images/LONG.mp4"
+      videoUrl: "/images/LONG.mp4",
     },
     {
       id: 3,
       title: "Helen keller",
       duration: "10:30",
-     thumbnail: "/images/01.jpg",
-      videoUrl: "/images/LONG.mp4"
+      thumbnail: "/images/01.jpg",
+      videoUrl: "/images/LONG.mp4",
     },
     {
       id: 4,
       title: "The other virtues",
       duration: "03:23",
       thumbnail: "/images/01.jpg",
-      videoUrl: "/images/LONG.mp4"
+      videoUrl: "/images/LONG.mp4",
     },
     {
       id: 5,
       title: "You will begin",
       duration: "06:25",
       thumbnail: "/images/01.jpg",
-      videoUrl: "/images/LONG.mp4"
+      videoUrl: "/images/LONG.mp4",
     },
     {
       id: 6,
       title: "Step out on",
       duration: "05:10",
       thumbnail: "/images/01.jpg",
-      videoUrl: "/images/LONG.mp4"
+      videoUrl: "/images/LONG.mp4",
     },
   ];
 
   const handlePlay = (id) => {
-    setPlaying(prev => ({
+    setPlaying((prev) => ({
       ...prev,
-      [id]: !prev[id]
+      [id]: !prev[id],
     }));
   };
-  
+
   const handleClose = (id) => {
-    setPlaying(prev => ({
+    setPlaying((prev) => ({
       ...prev,
-      [id]: false
+      [id]: false,
     }));
   };
-  
+
   return (
     <div className="mx-auto max-w-[1300px] px-4 py-8">
       <div className="mb-8">
@@ -73,19 +74,31 @@ export default function Uploads() {
               <div className="relative overflow-hidden rounded-lg aspect-[9/16] bg-black">
                 {!playing[video.id] ? (
                   <>
-                    <img 
-                      src={video.thumbnail} 
-                      alt={video.title} 
+                    <Image
+                      fill
+                      src={video.thumbnail}
+                      alt={video.title}
                       className="w-full h-full object-cover"
                     />
-                    <div 
+                    <div
                       className="absolute inset-0 flex justify-center items-center cursor-pointer"
                       onClick={() => handlePlay(video.id)}
                     >
                       <div className="bg-black bg-opacity-30 rounded-full p-4">
                         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-80">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 text-red-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                            />
                           </svg>
                         </div>
                       </div>
@@ -108,12 +121,23 @@ export default function Uploads() {
                       controls
                       onEnded={() => handleClose(video.id)}
                     />
-                    <button 
+                    <button
                       onClick={() => handleClose(video.id)}
                       className="absolute top-2 right-2 bg-black bg-opacity-50 rounded-full p-1 text-white z-10"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M6 18L18 6M6 6l12 12"
+                        />
                       </svg>
                     </button>
                   </>
@@ -121,7 +145,9 @@ export default function Uploads() {
               </div>
               {/* Title Below Video Box */}
               <div className="text-center mt-2">
-                <h3 className="md:text-lg text-sm font-medium">{video.title}</h3>
+                <h3 className="md:text-lg text-sm font-medium">
+                  {video.title}
+                </h3>
               </div>
             </div>
           ))}

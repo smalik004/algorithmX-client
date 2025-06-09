@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./shooting.css";
 import Link from "next/link";
 
@@ -42,8 +43,10 @@ const Footer = () => {
                 ALGORITHMX
               </h2>
               <div className="w-32 h-32 relative mb-1">
-                <img
+                <Image
                   src="/images/usa.webp"
+                  width={128}
+                  height={128}
                   alt="NYC Skyline"
                   className="object-contain mt-10"
                 />
@@ -67,8 +70,10 @@ const Footer = () => {
             <div className="flex flex-col items-start ">
               <h2 className="text-xl font-bold text-white mb-2">&nbsp;</h2>
               <div className="w-32 h-32 relative mb-1">
-                <img
+                <Image
                   src="/images/india.webp"
+                  width={128}
+                  height={128}
                   alt="Taj Mahal"
                   className="object-contain mt-10"
                 />
@@ -170,8 +175,10 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/images/4 (1).png"
+                    width={80}
+                    height={80}
                     alt="Clutch"
                     className="object-contain w-full h-full cursor-pointer"
                   />
@@ -183,8 +190,10 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/images/goodfirm.png"
+                    width={80}
+                    height={80}
                     alt="goodfirms"
                     className="object-contain "
                   />
@@ -196,8 +205,10 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/images/g2.png"
+                    width={60}
+                    height={60}
                     alt="g2"
                     className="object-contain w-full h-full"
                   />
@@ -219,15 +230,19 @@ const Footer = () => {
               </h3>
               <div className="flex gap-8 items-start">
                 <div className="w-[50px] h-[50px] relative">
-                  <img
+                  <Image
                     src="/images/b-corp.png"
+                    width={50}
+                    height={50}
                     alt="B Corp Certificate"
                     className="object-contain"
                   />
                 </div>
                 <div className="w-20 h-20 relative">
-                  <img
+                  <Image
                     src="/images/nord.png"
+                    width={80}
+                    height={80}
                     alt="ISO Certificate"
                     className="object-contain"
                   />
@@ -244,29 +259,37 @@ const Footer = () => {
               </h3>
               <div className="flex flex-wrap gap-6 items-start">
                 <div className="w-24 h-20 relative">
-                  <img
+                  <Image
                     src="/images/microsoft.png"
+                    width={96}
+                    height={80}
                     alt="Microsoft"
                     className="object-contain"
                   />
                 </div>
                 <div className="w-[50px] h-[50px] relative">
-                  <img
+                  <Image
                     src="/images/aws (1).png"
+                    width={50}
+                    height={50}
                     alt="AWS Partner"
                     className="object-contain"
                   />
                 </div>
                 <div className="w-24 h-20 relative">
-                  <img
+                  <Image
                     src="/images/Mendix.png"
+                    width={96}
+                    height={80}
                     alt="Mendix"
                     className="object-contain"
                   />
                 </div>
                 <div className="w-24 h-20 relative">
-                  <img
+                  <Image
                     src="/images/gcp.png"
+                    width={96}
+                    height={80}
                     alt="Google Cloud Partner"
                     className="object-contain"
                   />
@@ -285,35 +308,35 @@ const Footer = () => {
           </h3>
           <div className="flex flex-wrap gap-8 items-center justify-between">
             <div className="w-24 h-20 relative">
-              <img
+              <Image
                 src="/images/4 (1).png"
                 alt="Clutch"
                 className="object-contain"
               />
             </div>
             <div className="w-24 h-20 relative">
-              <img
+              <Image
                 src="/images/awwwards1.png"
                 alt="Awwwards"
                 className="object-contain"
               />
             </div>
             <div className="w-24 h-20 relative">
-              <img
+              <Image
                 src="/images/inc5000.png"
                 alt="Inc 5000"
                 className="object-contain"
               />
             </div>
             <div className="w-24 h-20 relative">
-              <img
+              <Image
                 src="/images/entrepreneur.png"
                 alt="Entrepreneur of the Year"
                 className="object-contain"
               />
             </div>
             <div className="w-24 h-20 relative">
-              <img
+              <Image
                 src="/images/forbes.png"
                 alt="Forbes"
                 className="object-contain"
@@ -331,29 +354,37 @@ const Footer = () => {
           {/* Social Media Images */}
           <div className="flex gap-4 items-center">
             <div className="">
-              <img
+              <Image
                 src="/images/iso.png"
+                width={50}
+                height={50}
                 alt="Facebook"
                 className="w-[50px] h-[50px] object-contain"
               />
             </div>
             <div className="">
-              <img
+              <Image
                 src="/images/ISO9001.png"
+                width={50}
+                height={50}
                 alt="Twitter"
                 className="w-[50px] h-[50px] object-contain"
               />
             </div>
             <div className="w-[100px] h-[100px]">
-              <img
+              <Image
                 src="/images/gdpr.png"
+                width={50}
+                height={50}
                 alt="LinkedIn"
                 className="w-[100px] h-[100px] object-contain"
               />
             </div>
             <div className="w-[80px] h-[80px]">
-              <img
+              <Image
                 src="/images/cmmilevel3.png"
+                width={50}
+                height={50}
                 alt="LinkedIn"
                 className="w-[80px] h-[80px] object-contain"
               />

@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -20,7 +22,8 @@ const monsterfont2 = Montserrat({
 const BenefitsCard = ({ title, description, imageSrc }) => (
   <div className="bg-black/5 backdrop-blur-sm p-6 rounded-lg flex flex-col items-start text-start transition-transform">
     <div className="mb-4 bg-black/10 p-4 rounded-full">
-      <img
+      <Image
+        fill
         src={imageSrc}
         alt={title}
         className="w-[339px] h-[236px] object-cover rounded-md"

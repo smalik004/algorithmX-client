@@ -1,11 +1,11 @@
 // pages/index.js
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Section2() {
   return (
-    <div className='bg-black'>
+    <div className="bg-black">
       <div className="max-w-[1300px] mx-auto px-4 mt-[100px]">
         <main className="flex flex-col lg:flex-row">
           {/* Left side (75%) */}
@@ -13,7 +13,7 @@ export default function Section2() {
             {/* Hero Banner */}
             <div className="relative mb-8 overflow-hidden">
               <div className="relative">
-                <Image 
+                <Image
                   src="/images/banner-01.png"
                   alt="Kitchen Appliances"
                   width={800}
@@ -30,6 +30,7 @@ export default function Section2() {
                 <div className="w-[100%] md:w-1/3 mr-4 overflow-hidden">
                   <div className="relative h-40 md:h-48 overflow-hidden rounded-lg">
                     <Image
+                      fill
                       src={article.image}
                       alt={article.title}
                       layout="fill"
@@ -57,13 +58,28 @@ export default function Section2() {
                   </p>
                   <div className="flex mt-4">
                     <Link href="#" className="mr-2">
-                      <Image src="/facebook.svg" width={20} height={20} alt="Facebook" />
+                      <Image
+                        src="/facebook.svg"
+                        width={20}
+                        height={20}
+                        alt="Facebook"
+                      />
                     </Link>
                     <Link href="#" className="mr-2">
-                      <Image src="/twitter.svg" width={20} height={20} alt="Twitter" />
+                      <Image
+                        src="/twitter.svg"
+                        width={20}
+                        height={20}
+                        alt="Twitter"
+                      />
                     </Link>
                     <Link href="#" className="mr-2">
-                      <Image src="/link.svg" width={20} height={20} alt="Share" />
+                      <Image
+                        src="/link.svg"
+                        width={20}
+                        height={20}
+                        alt="Share"
+                      />
                     </Link>
                   </div>
                 </div>
@@ -76,16 +92,28 @@ export default function Section2() {
             {/* Categories */}
             <div className="grid grid-cols-2 gap-4 mb-8">
               <Link href="/category/tech" className="block">
-                <CategoryButton icon="/images/category-image-01.jpg" label="Tech" />
+                <CategoryButton
+                  icon="/images/category-image-01.jpg"
+                  label="Tech"
+                />
               </Link>
               <Link href="/category/style" className="block">
-                <CategoryButton icon="/images/category-image-02.jpg" label="Style" />
+                <CategoryButton
+                  icon="/images/category-image-02.jpg"
+                  label="Style"
+                />
               </Link>
               <Link href="/category/travel" className="block">
-                <CategoryButton icon="/images/category-image-01.jpg" label="Travel" />
+                <CategoryButton
+                  icon="/images/category-image-01.jpg"
+                  label="Travel"
+                />
               </Link>
               <Link href="/category/food" className="block">
-                <CategoryButton icon="/images/category-image-02.jpg" label="Food" />
+                <CategoryButton
+                  icon="/images/category-image-02.jpg"
+                  label="Food"
+                />
               </Link>
             </div>
 
@@ -93,26 +121,34 @@ export default function Section2() {
             <div className="mb-8">
               <h3 className="text-lg font-bold mb-4 text-center">Search</h3>
               <div className="relative">
-                <input 
-                  type="text" 
-                  placeholder="Search" 
+                <input
+                  type="text"
+                  placeholder="Search"
                   className="w-full p-2 pl-10 border rounded-md"
                 />
                 <div className="absolute left-3 top-3">
-                  <Image src="/search.svg" width={16} height={16} alt="Search" />
+                  <Image
+                    src="/search.svg"
+                    width={16}
+                    height={16}
+                    alt="Search"
+                  />
                 </div>
               </div>
             </div>
 
             {/* Popular on Blogar */}
             <div className="mb-8">
-              <h3 className="text-lg font-bold mb-4 text-center">Popular on Blogar</h3>
+              <h3 className="text-lg font-bold mb-4 text-center">
+                Popular on Blogar
+              </h3>
               {popularPosts.map((post, index) => (
                 <div key={index} className="flex items-start mb-4 group">
                   <div className="w-1/3 mr-4 overflow-hidden">
                     <div className="relative h-20 overflow-hidden rounded-lg">
                       <Link href={post.url}>
                         <Image
+                          fill
                           src={post.image}
                           alt={post.title}
                           layout="fill"
@@ -140,7 +176,9 @@ export default function Section2() {
 
             {/* Stay In Touch */}
             <div className="mb-8">
-              <h3 className="text-lg font-bold mb-4 text-center">Stay In Touch</h3>
+              <h3 className="text-lg font-bold mb-4 text-center">
+                Stay In Touch
+              </h3>
               <div className="flex space-x-3">
                 <SocialIcon icon="/facebook.svg" />
                 <SocialIcon icon="/instagram.svg" />
@@ -158,6 +196,7 @@ export default function Section2() {
                   <Link href="#" key={index} className="block">
                     <div className="relative h-24 overflow-hidden group rounded-lg">
                       <Image
+                        fill
                         src={post}
                         alt="Instagram post"
                         layout="fill"
@@ -177,6 +216,7 @@ export default function Section2() {
 }
 
 // Components
+
 function CategoryButton({ icon, label }) {
   return (
     <div className="flex items-center mr-4 mb-4 hover:opacity-80 transition-opacity">
@@ -190,7 +230,10 @@ function CategoryButton({ icon, label }) {
 
 function SocialIcon({ icon }) {
   return (
-    <Link href="#" className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100">
+    <Link
+      href="#"
+      className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100"
+    >
       <Image src={icon} width={16} height={16} alt="Social icon" />
     </Link>
   );
@@ -199,72 +242,72 @@ function SocialIcon({ icon }) {
 // Sample Data
 const articles = [
   {
-    category: 'FOOD',
+    category: "FOOD",
     title: "Security isn't just a technology problem it's about design, too",
-    author: 'Jane Ara',
-    date: 'Feb 17, 2024',
-    readTime: '3',
-    image: '/images/post-list-11.jpg',
-    url: '/ebooks',
+    author: "Jane Ara",
+    date: "Feb 17, 2024",
+    readTime: "3",
+    image: "/images/post-list-11.jpg",
+    url: "/ebooks",
   },
   {
-    category: 'LIFESTYLE',
+    category: "LIFESTYLE",
     title: "The 1 tool that helps remote teams collaborate better",
-    author: 'Fatima Jane',
-    date: 'Feb 17, 2024',
-    readTime: '5',
-    image: '/images/post-list-15.jpg',
-    url: '/portfolio',
+    author: "Fatima Jane",
+    date: "Feb 17, 2024",
+    readTime: "5",
+    image: "/images/post-list-15.jpg",
+    url: "/portfolio",
   },
   {
-    category: 'TRAVEL',
+    category: "TRAVEL",
     title: "Traditional design won't save us in the COVID-19 era",
-    author: 'Ezrat Ara',
-    date: 'Feb 17, 2024',
-    readTime: '3',
-    image: '/images/post-list-11.jpg',
-    url: '/blog/traditional-design-covid',
+    author: "Ezrat Ara",
+    date: "Feb 17, 2024",
+    readTime: "3",
+    image: "/images/post-list-11.jpg",
+    url: "/blog/traditional-design-covid",
   },
   {
-    category: 'DESIGN',
+    category: "DESIGN",
     title: "Get Ready To Up Your Creative Game With The New DJI Mavic Air 2",
-    author: 'John Doe',
-    date: 'Feb 17, 2024',
-    readTime: '3',
-    image: '/images/post-list-15.jpg',
-    url: '/blog/dji-mavic-air-2',
+    author: "John Doe",
+    date: "Feb 17, 2024",
+    readTime: "3",
+    image: "/images/post-list-15.jpg",
+    url: "/blog/dji-mavic-air-2",
   },
 ];
 
 const popularPosts = [
   {
     title: "The underrated design book that transformed the way I work",
-    date: 'Feb 17, 2024',
-    views: '304',
-    image: '/images/blog-sm-01.jpg',
-    url: '/blog/underrated-design-book',
+    date: "Feb 17, 2024",
+    views: "304",
+    image: "/images/blog-sm-01.jpg",
+    url: "/blog/underrated-design-book",
   },
   {
     title: "Here's what you should (and shouldn't) do when",
-    date: 'Feb 17, 2024',
-    views: '304',
-    image: '/images/blog-sm-01.jpg',
-    url: '/blog/should-shouldnt-do',
+    date: "Feb 17, 2024",
+    views: "304",
+    image: "/images/blog-sm-01.jpg",
+    url: "/blog/should-shouldnt-do",
   },
   {
     title: "How a developer and designer duo at Deutsche Bank keep remote",
-    date: 'Feb 17, 2024',
-    views: '304',
-    image: '/images/blog-sm-02.jpg',
-    url: '/blog/deutsche-bank-remote',
+    date: "Feb 17, 2024",
+    views: "304",
+    image: "/images/blog-sm-02.jpg",
+    url: "/blog/deutsche-bank-remote",
   },
 ];
 
 const instagramPosts = [
-  '/images/instagram-01.jpg',
-  '/images/instagram-02.jpg',
-  '/images/instagram-03.jpg',
-  '/images/instagram-01.jpg',
-  '/images/instagram-02.jpg',
-  '/images/instagram-03.jpg',
+  "/images/instagram-01.jpg",
+  "/images/instagram-02.jpg",
+  "/images/instagram-03.jpg",
+  "/images/instagram-01.jpg",
+  "/images/instagram-02.jpg",
+  "/images/instagram-03.jpg",
 ];

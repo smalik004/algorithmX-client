@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "./style.module.css";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -91,8 +92,10 @@ const StrategyGrid = () => {
             >
               Lead Generation
             </span>
-            <img
-              src="images/lead-generation.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/lead-generation.png"
               alt="Lead Generation"
               className="w-8 h-8"
             />
@@ -104,8 +107,10 @@ const StrategyGrid = () => {
             >
               Sales Enablement
             </span>
-            <img
-              src="images/sales.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/sales.png"
               alt="Sales Enablement"
               className="w-8 h-8"
             />
@@ -117,8 +122,10 @@ const StrategyGrid = () => {
             >
               Nurturing Customers
             </span>
-            <img
-              src="images/nuturing.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/nuturing.png"
               alt="Nurturing Customers"
               className="w-8 h-8"
             />
@@ -130,8 +137,10 @@ const StrategyGrid = () => {
             >
               Social Engagement
             </span>
-            <img
-              src="images/social.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/social.png"
               alt="Social Engagement"
               className="w-8 h-8"
             />
@@ -146,8 +155,10 @@ const StrategyGrid = () => {
             >
               Thought Leadership
             </span>
-            <img
-              src="images/leadership.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/leadership.png"
               alt="Thought Leadership"
               className="w-8 h-8"
             />
@@ -159,8 +170,10 @@ const StrategyGrid = () => {
             >
               Conversions
             </span>
-            <img
-              src="images/conversion.png"
+            <Image
+              width={32}
+              height={32}
+              src="/images/conversion.png"
               alt="Conversions"
               className="w-8 h-8"
             />
@@ -172,7 +185,13 @@ const StrategyGrid = () => {
             >
               Search Engine Optimization
             </span>
-            <img src="images/SEO-.png" alt="SEO" className="w-8 h-8" />
+            <Image
+              width={32}
+              height={32}
+              src="/images/SEO-.png"
+              alt="SEO"
+              className="w-8 h-8"
+            />
           </div>
         </div>
       </div>

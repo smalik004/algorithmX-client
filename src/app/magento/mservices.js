@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -50,7 +51,7 @@ const IntegrationDescriptionWithLink = () => (
 const MagentoServices = () => {
   const services = [
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Customization and Development",
       description:
         "One essential part of our custom Magento development services is personalizing themes, modules, workflows, and extensions to match your Magento eCommerce store's specific requirements.",
@@ -58,7 +59,7 @@ const MagentoServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/shopify-development-services-icon2.png",
+      iconSrc: "/images/shopify-development-services-icon2.png",
       title: "Extension Integration and Development",
       description:
         "At our Magento development agency, we utilize the wide range of plugins and extensions that Magento's ecosystem offers to enhance functionality as it is crucial to integrate these extensions and develop custom plugins to increase the capabilities of the platform.",
@@ -66,7 +67,7 @@ const MagentoServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/shopify-development-services-icon3.png",
+      iconSrc: "/images/shopify-development-services-icon3.png",
       title: "Performance Optimization",
       description:
         "As a dedicated Magento development company, we ensure that the Magento store runs smoothly to offer a flawless user experience which involves optimizing everything from images and codes to databases and caching systems to boost the page's loading speed and enhance overall website efficiency.",
@@ -74,14 +75,14 @@ const MagentoServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/Security.png",
+      iconSrc: "/images/Security.png",
       title: "Security",
       description: <SecurityDescriptionWithLink />,
       borderColor: "border-blue-500",
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/shopify-development-services-icon5.png",
+      iconSrc: "/images/shopify-development-services-icon5.png",
       title: "Responsive Design and Mobile Optimization",
       description:
         "Since mobile shopping is on the rise, it is vital to have a responsive and mobile-friendly Magento store that offers a seamless online shopping experience to users. Our expert Magento development services include creating and designing themes that adjust smoothly on any resolution or screen size.",
@@ -89,14 +90,14 @@ const MagentoServices = () => {
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/Integration.png",
+      iconSrc: "/images/Integration.png",
       title: "Integration",
       description: <IntegrationDescriptionWithLink />,
       borderColor: "border-pink-500",
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/shopify-development-services-icon7.png",
+      iconSrc: "/images/shopify-development-services-icon7.png",
       title: "Migration and Upgrades",
       description:
         "As a leading Magento development company, we specialize in migration from Magento 1 to Magento 2 and transitioning to newer Magento versions. We provide professional assistance in meticulously carrying out the whole process, safeguarding data security, and reducing downtime.",
@@ -104,7 +105,7 @@ const MagentoServices = () => {
       glowColor: styles.shadoworange,
     },
     {
-      iconSrc: "images/shopify-development-services-icon8.png",
+      iconSrc: "/images/shopify-development-services-icon8.png",
       title: "Support and Maintenance",
       description:
         "After launching the Magento store, AlgorithmX provides continuous assistance in maintenance and upkeep of your ecommerce Magento store by resolving issues in time and performing routine updates to guarantee its smooth functioning.",
@@ -146,7 +147,9 @@ const MagentoServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

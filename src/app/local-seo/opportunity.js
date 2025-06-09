@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../seoaudits/style.module.css";
 
 const LocalStrategy = () => {
@@ -11,8 +12,9 @@ const LocalStrategy = () => {
           <div className="flex gap-4">
             {/* First Image */}
             <div className="w-1/2">
-              <img
-                src="images/i2.webp"
+              <Image
+                fill
+                src="/images/i2.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
@@ -20,8 +22,9 @@ const LocalStrategy = () => {
 
             {/* Second Image */}
             <div className="w-1/2">
-              <img
-                src="images/i1.webp"
+              <Image
+                fill
+                src="/images/i1.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
@@ -30,8 +33,9 @@ const LocalStrategy = () => {
 
           {/* Bottom Image - Full Width */}
           <div className="w-full">
-            <img
-              src="images/i3.webp"
+            <Image
+              fill
+              src="/images/i3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"
             />

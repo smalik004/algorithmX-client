@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../video/styles.module.css";
 import style from "../graphics/styles.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont1 = Montserrat({
   subsets: ["latin"],
@@ -156,7 +157,8 @@ const FranchiseServices = () => {
                 {service.title}
               </h3>
               <div className="mb-6">
-                <img
+                <Image
+                  fill
                   src={service.image}
                   alt={service.title}
                   className="w-12 h-12 object-cover rounded-md"

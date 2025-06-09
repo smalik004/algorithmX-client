@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";

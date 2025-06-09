@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from "../graphics/styles.module.css";
 import style from "./style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -144,7 +145,9 @@ const InteractiveBox = () => {
                   } focus:outline-none`}
                 >
                   <div className="p-5 md:mx-[100px]">
-                    <img
+                    <Image
+                      width={50}
+                      height={50}
                       src={icon.src}
                       alt={icon.alt}
                       className="w-[50px] h-[50px] mx-auto"

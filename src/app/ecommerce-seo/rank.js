@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -16,8 +17,9 @@ const EcommerceRankSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
-            <img
-              src="images/Entire Product Line.webp"
+            <Image
+              fill
+              src="/images/Entire Product Line.webp"
               alt="Local SEO visualization showing map interface across devices"
               className="w-full h-auto"
             />

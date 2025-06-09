@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import style from "./style.module.css";
 import { Montserrat_Alternates } from "next/font/google";
 

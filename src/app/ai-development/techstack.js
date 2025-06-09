@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -52,8 +53,9 @@ const AITechGrid = () => {
               >
                 OBJECTIFY
               </span>
-              <img
-                src="images/automative.png"
+              <Image
+                fill
+                src="/images/automative.png"
                 alt="Lead Generation"
                 className="w-[40px] h-[40px]"
               />
@@ -65,8 +67,9 @@ const AITechGrid = () => {
               >
                 LEXOPEDIA
               </span>
-              <img
-                src="images/communications.png"
+              <Image
+                fill
+                src="/images/communications.png"
                 alt="Sales Enablement"
                 className="w-[40px] h-[40px]"
               />
@@ -78,8 +81,9 @@ const AITechGrid = () => {
               >
                 REELCRAFT
               </span>
-              <img
-                src="images/constructions.png"
+              <Image
+                fill
+                src="/images/constructions.png"
                 alt="Nurturing Customers"
                 className="w-[40px] h-[40px]"
               />

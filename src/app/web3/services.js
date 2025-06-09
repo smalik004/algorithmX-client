@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../front-end/style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -20,21 +21,21 @@ const services = [
     title: "dApps Development",
     description:
       "We build secure, gas-optimized dApps using Solidity, Rust, and Web3.js across chains like Ethereum, Polygon, and Solana. Our dApps feature modular architecture, smart contract integration, and intuitive frontends—designed for resilience, composability, and user trust.",
-    image: "images/User.png",
+    image: "/images/User.png",
     alt: "Consultation Icon",
   },
   {
     title: "Smart Contract Development",
     description:
       "From design to audit, we develop robust smart contracts that execute with deterministic accuracy. We implement EVM-compatible logic, upgradable contracts, and rigorous formal verification to eliminate vulnerabilities and ensure compliance.",
-    image: "images/UX.png",
+    image: "/images/UX.png",
     alt: "Design Icon",
   },
   {
     title: "Decentralized Exchange & Liquidity Pool",
     description:
       "We build DEX platforms with AMM protocols, cross-chain bridging, staking modules, and governance layers. Our liquidity engine supports real-time asset swaps, impermanent loss mitigation, and multi-token yield strategies securely and transparently.",
-    image: "images/Front.png",
+    image: "/images/Front.png",
     alt: "Custom Development Icon",
   },
 ];
@@ -107,7 +108,9 @@ const Web3ServicesGrid = () => {
               key={index}
               className={`${styles["card"]} hover:bg-[#1c1c1e]  hover:border-[#1c1c1e;] border border-zinc-800 group transition-colors duration-1000 ease-in-out `}
             >
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={`${styles["image1"]} object-contain `}

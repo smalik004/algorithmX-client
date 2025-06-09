@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function DynamicCaseStudy({ data }) {
   // Fallback values in case data is not provided
@@ -13,7 +14,8 @@ function DynamicCaseStudy({ data }) {
         <div className="relative w-full md:w-1/2 mb-8 md:mb-0">
           <div className="bg-yellow-400 absolute h-24 w-[360px] md:w-[500px] mt-[150px] md:mt-[190px] md:-ml-[24px]"></div>
           <div className="relative z-10 mx-auto p-[20px]">
-            <img
+            <Image
+              fill
               src={data.brandLogoURL || data.brandImageURL}
               alt={`${data.brandName} brand logo`}
               className="md:w-[400px] md:h-[400px] w-full h-full shadow-lg object-contain"

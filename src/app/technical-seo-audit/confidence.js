@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../seoaudits/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -13,8 +14,9 @@ const TechnicalStrategy = () => {
           <div className="flex gap-4">
             {/* First Image */}
             <div className="w-1/2">
-              <img
-                src="images/In-Depth-Technical-SEO-Audits.webp"
+              <Image
+                fill
+                src="/images/In-Depth-Technical-SEO-Audits.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
@@ -22,8 +24,9 @@ const TechnicalStrategy = () => {
 
             {/* Second Image */}
             <div className="w-1/2">
-              <img
-                src="images/In-Depth-Technical-SEO-Audits-2.webp"
+              <Image
+                fill
+                src="/images/In-Depth-Technical-SEO-Audits-2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
@@ -32,8 +35,9 @@ const TechnicalStrategy = () => {
 
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
-            <img
-              src="images/In-Depth-Technical-SEO-Audits-3.webp"
+            <Image
+              fill
+              src="/images/In-Depth-Technical-SEO-Audits-3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"
             />

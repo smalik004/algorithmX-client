@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function CaseStudies() {
   return (
     <div className="bg-black py-16 px-4 md:px-8 ">
@@ -67,7 +68,8 @@ export default function CaseStudies() {
                 className="group block relative"
               >
                 <div className="overflow-hidden rounded-lg">
-                  <img
+                  <Image
+                    fill
                     src="/images/case-study-dominos.webp"
                     alt="Domino's Pizza sliced into pieces"
                     className="w-full h-64 object-cover"
@@ -88,7 +90,8 @@ export default function CaseStudies() {
                 className="group block relative"
               >
                 <div className="overflow-hidden rounded-lg">
-                  <img
+                  <Image
+                    fill
                     src="/images/case-study-dominos.webp"
                     alt="Pizza Hut pepperoni pizza with cheese pull"
                     className="w-full h-64 object-cover"

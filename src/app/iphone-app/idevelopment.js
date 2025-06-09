@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import styles from "./style.module.css";
 import Link from "next/link";
@@ -81,7 +82,9 @@ const IosServicesGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div key={index} className={`bg-black ${styles["box"]} `}>
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={` object-contain rounded-lg  ${styles["indus-card-figure"]}  `}

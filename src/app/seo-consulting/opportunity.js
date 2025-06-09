@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ConsultingStrategy = () => {
   return (
@@ -10,8 +11,9 @@ const ConsultingStrategy = () => {
           <div className="flex gap-4">
             {/* First Image */}
             <div className="w-1/2">
-              <img
-                src="images/consulting1.webp"
+              <Image
+                fill
+                src="/images/consulting1.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
@@ -19,8 +21,9 @@ const ConsultingStrategy = () => {
 
             {/* Second Image */}
             <div className="w-1/2">
-              <img
-                src="images/consulting2.webp"
+              <Image
+                fill
+                src="/images/consulting2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
@@ -30,8 +33,9 @@ const ConsultingStrategy = () => {
           {/* Bottom Image - Full Width */}
 
           <div className="w-full flex justify-center items-center">
-            <img
-              src="images/consulting3.webp"
+            <Image
+              fill
+              src="/images/consulting3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"
             />

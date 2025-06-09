@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import styles from "./styles.module.css";
 import Link from "next/link";
@@ -17,11 +18,14 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-center max-w-7xl w-full">
           {/* Image on left */}
           <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0 gap-2">
-            <img
-              src="images/Essential.webp" // Replace with your image path
-              alt="Image"
-              className="w-4/5 h-auto  shadow-lg" // Reduced image width
-            />
+            <div className="relative w-4/5 aspect-[4/3] shadow-lg">
+              <Image
+                fill
+                src="/images/Essential.webp"
+                alt="Image"
+                className="object-contain rounded"
+              />
+            </div>
           </div>
 
           {/* Text on right */}
@@ -78,12 +82,15 @@ export default function Home() {
           </div>
 
           {/* Image on right */}
-          <div className="w-full md:w-1/2 flex justify-center order-first md:order-none mb-2 md:mb-0">
-            <img
-              src="images/Digital.webp" // Replace with your image path
-              alt="Image"
-              className="w-4/5 h-auto  shadow-lg" // Reduced image width
-            />
+          <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0 gap-2">
+            <div className="relative w-4/5 aspect-[4/3] shadow-lg">
+              <Image
+                fill
+                src="/images/Digital.webp"
+                alt="Image"
+                className="object-contain rounded"
+              />
+            </div>
           </div>
         </div>
       </div>

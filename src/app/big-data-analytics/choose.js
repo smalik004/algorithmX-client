@@ -92,9 +92,10 @@ const BigDataChoosePage = () => {
           <div className="hidden md:grid md:w-2/3 rounded-lg p-8 grid-cols-2 gap-8">
             <div className="w-full h-[200px] relative">
               <Image
+                width={500}
+                height={200}
                 src={sections[activeSection].image}
                 alt={sections[activeSection].title}
-                fill
                 className="object-cover rounded-lg w-full]"
               />
             </div>

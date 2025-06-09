@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -34,8 +35,9 @@ const ConsultingSolutionSection = () => {
 
           {/* Right Section - Image */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
-            <img
-              src="images/SEO-Solutions-for-Every-Business.webp"
+            <Image
+              fill
+              src="/images/SEO-Solutions-for-Every-Business.webp"
               alt="Local SEO visualization showing map interface across devices"
               className="w-full h-auto"
             />

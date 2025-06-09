@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -13,42 +14,42 @@ const monsterfont = Montserrat({
 const carouselData = [
   {
     id: "erp-consulting",
-    icon: "images/erp-consultant-services.png",
+    icon: "/images/erp-consultant-services.png",
     title: "ERP Consulting Services",
     description:
       "AlgorithmX's team of expert ERP consultants carefully analyze your business environment and understand your strategic business needs and goals. With our ERP consulting services, we work on creating and implementing necessary strategies to deploy ERP software.",
   },
   {
     id: "custom-erp",
-    icon: "images/custom-erp-solutions.png",
+    icon: "/images/custom-erp-solutions.png",
     title: "Custom ERP Solutions",
     description:
       "We offer custom ERP software development services for businesses of all sizes and industries. By building robust and flexible systems, we provide essential data analytics that can be accessed through mobile phones, web or any other in-house platforms.",
   },
   {
     id: "erp-implementation",
-    icon: "images/Erp.png",
+    icon: "/images/Erp.png",
     title: "ERP Implementation Services",
     description:
       "Our team at AlgorithmX offers exceptional ERP implementation services where we manage the deployment process for your personalized servers, networks, and data management programs from beginning to end, guaranteeing your data remains intact as it is essential to properly implement the high-quality ERP business solutions to deliver their potential.",
   },
   {
     id: "erp-development",
-    icon: "images/erp-application.png",
+    icon: "/images/erp-application.png",
     title: "ERP Application Development",
     description:
       "Being the top ERP development company in USA, expert ERP developers leverage the most advanced programming languages and industry technologies when they build customized cloud ERP solutions that meet your specific business needs for all platforms.",
   },
   {
     id: "managed-erp",
-    icon: "images/manege-erp.png",
+    icon: "/images/manege-erp.png",
     title: "Managed ERP Services",
     description:
       "Free up resources and time for focusing on core operations by using our ERP managed services. Our talented ERP software consultants offer management, monitoring, assistance, for your ERP system, thereby addressing, resolving and averting any issues effectively.",
   },
   {
     id: "staff-augmentation",
-    icon: "images/staff-augmentation.png",
+    icon: "/images/staff-augmentation.png",
     title: "Staff Augmentation",
     description: "If you're not sure about outsourcing your custom ",
     description2: (
@@ -178,7 +179,9 @@ const Carousel = () => {
                 className={`bg-black bg-opacity-50 p-6 md:p-14  w-full h-fit-content ${styles["box-border"]}`}
               >
                 <div className="flex flex-col items-center space-y-4">
-                  <img
+                  <Image
+                    width={48}
+                    height={48}
                     src={item.icon}
                     alt={item.title}
                     className="w-12 h-12 object-contain mt-6"

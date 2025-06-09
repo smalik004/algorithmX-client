@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -40,7 +41,7 @@ const SEOTitleWithLink = () => (
 const HubspotServices = () => {
   const services = [
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: <WebsiteTitleWithLink />,
       description:
         "Our HubSpot development company creates visually appealing and user-friendly websites that align with your brand identity. We ensure responsive design, fast loading times, and seamless navigation for an optimal user experience.",
@@ -48,7 +49,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/shopify-development-services-icon2.png",
+      iconSrc: "/images/shopify-development-services-icon2.png",
       title: "HubSpot CMS Implementation",
       description: "AlgorithmX offers exceptional ",
       description2: (
@@ -62,7 +63,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/shopify-development-services-icon3.png",
+      iconSrc: "/images/shopify-development-services-icon3.png",
       title: "Analytics and Reporting",
       description:
         "At our premier HubSpot development company, we put in place monitoring tools and software for tracking performance, conversion metrics, and user-behavior of the website. Our process includes analyzing data, generating reports, and offering suggestions on how best to improve website's efficiency consistently.",
@@ -70,7 +71,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/shopify-development-services-icon4.png",
+      iconSrc: "/images/shopify-development-services-icon4.png",
       title: "Template Customization",
       description:
         "Our experienced and certified HubSpot developer modifies HubSpot templates and designs customized templates from the ground up to cater to specific functionality and design specifications, adjusting styles, modules, and layouts to align with your brand's identity and content approach.",
@@ -78,7 +79,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon5.png",
+      iconSrc: "/images/shopify-development-services-icon5.png",
       title: <CROTitleWithLink />,
       description:
         "We use methods such as A/B testing, heat mapping, and analysis to identify and execute strategies to increase conversion rates of your website at our HubSpot development agency, which includes improving elements like landing page, form, call-to-action (CTA) and user journey, ultimately heightening conversion rates.",
@@ -86,7 +87,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/shopify-development-services-icon6.png",
+      iconSrc: "/images/shopify-development-services-icon6.png",
       title: <SEOTitleWithLink />,
       description:
         "AlgorithmX's HubSpot development services employ SEO strategies to improve website visibility and boost rankings on search engine results (SERPs) by optimizing on-page elements, conducting keyword research, and structuring content for search engines.",
@@ -94,7 +95,7 @@ const HubspotServices = () => {
       glowColor: styles.shadowlightgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon7.png",
+      iconSrc: "/images/shopify-development-services-icon7.png",
       title: "Content Strategy and Creation",
       description:
         "We offer custom HubSpot development solutions where we craft a content plan that resonates with your business's target audience and goals. Part of it involves producing engaging content like blog posts, articles, infographics, and videos to educate, draw, and convert your website visitors.",
@@ -102,7 +103,7 @@ const HubspotServices = () => {
       glowColor: styles.shadoworange,
     },
     {
-      iconSrc: "images/shopify-development-services-icon8.png",
+      iconSrc: "/images/shopify-development-services-icon8.png",
       title: "Integration with HubSpot CRM and Marketing Tools",
       description:
         "Our HubSpot CRM development services include integrating the website with HubSpot's CRM and marketing automation software to simplify lead generation, nurturing, and customer relationship management, ensuring improved coordination between Marketing and sales teams resulting in seamless data synchronization.",
@@ -138,7 +139,9 @@ const HubspotServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

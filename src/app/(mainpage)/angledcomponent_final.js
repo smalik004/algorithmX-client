@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const DiagonalGridWithText = () => {
   // Array of image URLs or icons
@@ -17,7 +18,6 @@ const DiagonalGridWithText = () => {
 
   return (
     <div className="min-h-screen bg-black w-full overflow-y-scroll flex flex-col md:flex-row ">
-      
       {/* Left Section: Centered Grid Container */}
       <div className="w-full p-4 flex-1 flex items-center justify-center xxl:w-4/5 my-10 md:h-auto overflow-y ">
         <div className="transform rotate-45 xxl:w-4/5 xxl:h-4/5  ">
@@ -43,29 +43,31 @@ const DiagonalGridWithText = () => {
       <div className="w-full text-white py-4 px-6 flex-1 flex items-center justify-center md:w-1/2 ">
         <div className="container px-10  mt-3 max-w-screen-sm text-center md:text-left">
           {/* Added max-width and alignment */}
-          <h2 className="text-3xl md:text-4xl ">
-            Empowered by Cutting-Edge
-          </h2>
+          <h2 className="text-3xl md:text-4xl ">Empowered by Cutting-Edge</h2>
           <h1 className="text-2xl md:text-3xl font-extrabold mb-5">
             Tech Stack
           </h1>
 
           <p className=" text-sm md:text-md mb-4">
-            At AlgorithmX, our tech stack is designed to deliver powerful and scalable solutions. We leverage
-            powerful technologies like Java, Kotlin, Flutter, React-Native, and Android SDK for seamless app and
-            website development. Our creative processes are powered by Adobe Creative Cloud and Webflow, ensuring
-            visually stunning and user-friendly designs.
+            At AlgorithmX, our tech stack is designed to deliver powerful and
+            scalable solutions. We leverage powerful technologies like Java,
+            Kotlin, Flutter, React-Native, and Android SDK for seamless app and
+            website development. Our creative processes are powered by Adobe
+            Creative Cloud and Webflow, ensuring visually stunning and
+            user-friendly designs.
           </p>
           <p className="text-sm md:text-md">
-            To drive marketing excellence, we utilize tools like Google Analytics, SEMrush, and Moz for in-depth
-            insights and optimization. Platforms like HubSpot streamline our CRM and marketing automation, while
-            Midjourney and ChatGPT enhance our content creation, and Hootsuite facilitates social media management.
-            With Gartner PPC and Google Search Console, we ensure your digital presence is always at its peak.
+            To drive marketing excellence, we utilize tools like Google
+            Analytics, SEMrush, and Moz for in-depth insights and optimization.
+            Platforms like HubSpot streamline our CRM and marketing automation,
+            while Midjourney and ChatGPT enhance our content creation, and
+            Hootsuite facilitates social media management. With Gartner PPC and
+            Google Search Console, we ensure your digital presence is always at
+            its peak.
           </p>
         </div>
       </div>
     </div>
-    
   );
 };
 

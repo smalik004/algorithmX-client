@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function ProjectGoals({ data }) {
   // Parse the stringified JSON data
@@ -68,7 +69,8 @@ export default function ProjectGoals({ data }) {
           {/* Center column with phone */}
           <div className="col-span-1 flex justify-center items-center relative">
             <div className="w-64 relative z-10">
-              <img
+              <Image
+                fill
                 src={imageUrl}
                 alt="Project Goal Interface"
                 className="w-full h-auto"
@@ -126,7 +128,8 @@ export default function ProjectGoals({ data }) {
         {/* Mobile Layout - visible only on mobile */}
         <div className="md:hidden">
           <div className="mx-auto mb-12 w-64">
-            <img
+            <Image
+              fill
               src={imageUrl}
               alt="Project Goal Interface"
               className="w-full h-auto"

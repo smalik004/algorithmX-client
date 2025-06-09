@@ -14,6 +14,7 @@ export default function Section1() {
             <div className="relative mb-8 overflow-hidden">
               <div className="relative">
                 <Image
+                  fill
                   src="/images/banner-01.png"
                   alt="Kitchen Appliances"
                   width={800}
@@ -30,6 +31,7 @@ export default function Section1() {
                 <div className="w-[100%] md:w-1/3 mr-4 overflow-hidden">
                   <div className="relative h-40 md:h-48 overflow-hidden rounded-lg">
                     <Image
+                      fill
                       src={article.image}
                       alt={article.title}
                       layout="fill"
@@ -58,6 +60,7 @@ export default function Section1() {
                   <div className="flex mt-4">
                     <Link href="#" className="mr-2">
                       <Image
+                        fill
                         src="/facebook.svg"
                         width={20}
                         height={20}
@@ -66,6 +69,7 @@ export default function Section1() {
                     </Link>
                     <Link href="#" className="mr-2">
                       <Image
+                        fill
                         src="/twitter.svg"
                         width={20}
                         height={20}
@@ -74,6 +78,7 @@ export default function Section1() {
                     </Link>
                     <Link href="#" className="mr-2">
                       <Image
+                        fill
                         src="/link.svg"
                         width={20}
                         height={20}
@@ -127,6 +132,7 @@ export default function Section1() {
                 />
                 <div className="absolute left-3 top-3">
                   <Image
+                    fill
                     src="/search.svg"
                     width={16}
                     height={16}
@@ -147,6 +153,7 @@ export default function Section1() {
                     <div className="relative h-20 overflow-hidden rounded-lg">
                       <Link href={post.url}>
                         <Image
+                          fill
                           src={post.image}
                           alt={post.title}
                           layout="fill"
@@ -194,6 +201,7 @@ export default function Section1() {
                   <Link href="#" key={index} className="block">
                     <div className="relative h-24 overflow-hidden group rounded-lg">
                       <Image
+                        fill
                         src={post}
                         alt="Instagram post"
                         layout="fill"
@@ -217,7 +225,7 @@ function CategoryButton({ icon, label }) {
   return (
     <div className="flex items-center mr-4 mb-4 hover:opacity-80 transition-opacity">
       <div className="w-10 h-10 rounded-full overflow-hidden mr-2">
-        <Image src={icon} width={40} height={40} alt={label} />
+        <Image fill src={icon} width={40} height={40} alt={label} />
       </div>
       <span className="text-sm">{label}</span>
     </div>
@@ -230,7 +238,7 @@ function SocialIcon({ icon }) {
       href="#"
       className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100"
     >
-      <Image src={icon} width={16} height={16} alt="Social icon" />
+      <Image fill src={icon} width={16} height={16} alt="Social icon" />
     </Link>
   );
 }

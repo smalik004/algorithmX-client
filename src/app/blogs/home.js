@@ -89,7 +89,8 @@ export default function BlogCarousel() {
                     index === currentSlide ? "opacity-100" : "opacity-0"
                   }`}
                 >
-                  <img
+                  <Image
+                    fill
                     src={blog.image_url || "/images/gallery-post-01.jpg"}
                     alt={blog.image_alt || `Carousel slide ${index + 1}`}
                     className="w-full h-full object-cover"
@@ -124,7 +125,8 @@ export default function BlogCarousel() {
 
                 <div className="flex items-center mt-6 flex-wrap">
                   <div className="w-8 h-8 rounded-full overflow-hidden mr-3 bg-gray-300">
-                    <img
+                    <Image
+                      fill
                       src="/api/placeholder/32/32"
                       alt="Author"
                       className="w-full h-full object-cover"
@@ -184,7 +186,8 @@ export default function BlogCarousel() {
                   index === currentSlide ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <img
+                <Image
+                  fill
                   src={blog.image_url || "/images/gallery-post-01.jpg"}
                   alt={blog.image_alt || `Carousel slide ${index + 1}`}
                   className="w-full h-full object-cover"
@@ -222,7 +225,8 @@ export default function BlogCarousel() {
 
                     <div className="flex items-center mt-6">
                       <div className="w-8 h-8 rounded-full overflow-hidden mr-3 bg-gray-300">
-                        <img
+                        <Image
+                          fill
                           src="/api/placeholder/32/32"
                           alt="Author"
                           className="w-full h-full object-cover"
@@ -303,7 +307,8 @@ export default function BlogCarousel() {
                   <div className="flex flex-col sm:flex-row h-full">
                     <div className="sm:w-2/5 h-40 sm:h-auto relative overflow-hidden">
                       <div className="w-full h-full transform group-hover:scale-105 transition-transform duration-500">
-                        <img
+                        <Image
+                          fill
                           src={blog.image_url || "/images/post-images-1.jpg"}
                           alt={blog.image_alt || "Featured post"}
                           className="w-full h-full object-cover rounded-full p-[10px]"
@@ -323,7 +328,8 @@ export default function BlogCarousel() {
                       </div>
                       <div className="flex items-center mt-4">
                         <div className="w-6 h-6 rounded-full overflow-hidden mr-3 bg-gray-300">
-                          <img
+                          <Image
+                            fill
                             src="/api/placeholder/24/24"
                             alt="Author"
                             className="w-full h-full object-cover"

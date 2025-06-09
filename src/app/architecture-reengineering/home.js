@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../crm/style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -26,14 +27,18 @@ const AIOptmmizationSection = () => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/3">
             <div className="relative">
-              <img
-                src="images/architecture.avif"
+              <Image
+                width={800}
+                height={800}
+                src="/images/architecture.avif"
                 alt="Branding process with color swatches"
                 className={`w-4/5  h-auto shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%] `}
               />
               {/* Rectangular image below the main image (hidden on phones) */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={800}
+                height={800}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-4/5 h-auto shadow-lg mx-auto"
               />
@@ -67,8 +72,10 @@ const AIOptmmizationSection = () => {
           {/* Right side - Branding and description */}
           <div className="w-full md:w-2/3 flex flex-col  space-y-2">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={80}
+              height={70}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />

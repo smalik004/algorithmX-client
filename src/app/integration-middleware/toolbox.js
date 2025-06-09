@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../video/styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -15,33 +16,33 @@ const monsterfont1 = Montserrat({
 
 const IntegrationTechnologyToolbox = () => {
   const tools = [
-    { id: "ps", name: "TenserFlow", image: "images/Adobe-Target.png" },
-    { id: "ai", name: "PyTorch", image: "images/Amplitude.png" },
-    { id: "ae", name: "OpenAi Model", image: "images/Crazy-Egg.png" },
+    { id: "ps", name: "TenserFlow", image: "/images/Adobe-Target.png" },
+    { id: "ai", name: "PyTorch", image: "/images/Amplitude.png" },
+    { id: "ae", name: "OpenAi Model", image: "/images/Crazy-Egg.png" },
     {
       id: "id",
       name: "Google CloudAI",
-      image: "images/Google-Analytics (1).png",
+      image: "/images/Google-Analytics (1).png",
     },
-    { id: "canva", name: "Tableau", image: "images/Google-Optimize.png" },
+    { id: "canva", name: "Tableau", image: "/images/Google-Optimize.png" },
     {
       id: "figma",
       name: "Power BI",
-      image: "images/Google-PageSpeed-Insights.png",
+      image: "/images/Google-PageSpeed-Insights.png",
     },
-    { id: "cs", name: "Looker", image: "images/GTmetrix.png" },
-    { id: "stock", name: "Hadoop", image: "images/Hotjar.png" },
-    { id: "kis", name: "Snowflake", image: "images/Kissmetrics.png" },
-    { id: "mix", name: "AWS", image: "images/Mixpanel.png" },
-    { id: "opt", name: "Azure", image: "images/Optimizely.png" },
-    { id: "pin", name: "Kubernetes", image: "images/Pingdom.png" },
-    { id: "pow", name: "Docker", image: "images/Power BI.png" },
-    { id: "qua", name: "Reactjs", image: "images/Qualaroo.png" },
-    { id: "tab", name: "Next.js", image: "images/Tableau.png" },
-    { id: "js", name: "Javascript", image: "images/Tableau.png" },
-    { id: "ht", name: "HTML5", image: "images/Tableau.png" },
-    { id: "an", name: "Angular", image: "images/Pingdom.png" },
-    { id: "css", name: "CSS3", image: "images/Pingdom.png" },
+    { id: "cs", name: "Looker", image: "/images/GTmetrix.png" },
+    { id: "stock", name: "Hadoop", image: "/images/Hotjar.png" },
+    { id: "kis", name: "Snowflake", image: "/images/Kissmetrics.png" },
+    { id: "mix", name: "AWS", image: "/images/Mixpanel.png" },
+    { id: "opt", name: "Azure", image: "/images/Optimizely.png" },
+    { id: "pin", name: "Kubernetes", image: "/images/Pingdom.png" },
+    { id: "pow", name: "Docker", image: "/images/Power BI.png" },
+    { id: "qua", name: "Reactjs", image: "/images/Qualaroo.png" },
+    { id: "tab", name: "Next.js", image: "/images/Tableau.png" },
+    { id: "js", name: "Javascript", image: "/images/Tableau.png" },
+    { id: "ht", name: "HTML5", image: "/images/Tableau.png" },
+    { id: "an", name: "Angular", image: "/images/Pingdom.png" },
+    { id: "css", name: "CSS3", image: "/images/Pingdom.png" },
   ];
 
   return (
@@ -75,7 +76,9 @@ const IntegrationTechnologyToolbox = () => {
                 >
                   {/* Image part (1/3) */}
                   <div className="md:w-1/5 ">
-                    <img
+                    <Image
+                      width={48}
+                      height={48}
                       src={tool.image}
                       alt={tool.name}
                       className="w-12 h-12  object-contain md:ml-2"

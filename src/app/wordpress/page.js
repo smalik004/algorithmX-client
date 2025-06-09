@@ -4,6 +4,7 @@ export const metadata = {
     "Transform your website with our professional WordPress development services. We craft custom, responsive sites that are both visually appealing and functionally robust. Get started with your ideal WordPress solution today!",
 };
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import WordPressSection from "./home";

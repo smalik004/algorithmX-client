@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont1 = Montserrat({
@@ -46,9 +47,9 @@ const DiagonalGridWithText = () => {
     { path: "/images/Insta.png", border: "#336791" }, // PostgreSQL - blue
     { path: "/images/iOS.png", border: "#4479A1" }, // MySQL - blue
     { path: "/images/java.png", border: "#DC382D" }, // Redis - red
-    { path: "/images/Javascript.png", border:  "#F7DF1E"  }, // GraphQL - pink
+    { path: "/images/Javascript.png", border: "#F7DF1E" }, // GraphQL - pink
     { path: "/images/Kubernets.png", border: "#4285F4" }, // Firebase - yellow
-    { path: "/images/MailChimp.png", border: "#F7DF1E"  }, // Git - orange
+    { path: "/images/MailChimp.png", border: "#F7DF1E" }, // Git - orange
     { path: "/images/Meta.png", border: "#D24939" }, // Jenkins - red
     { path: "/images/Moz.png", border: "#F24E1E" }, // Figma - orange
     { path: "/images/MSSQL.png", border: "#007ACC" }, // VSCode - blue
@@ -66,7 +67,9 @@ const DiagonalGridWithText = () => {
                 className="w-10 h-10 md:w-12 md:h-12 p-2 flex items-center justify-center relative overflow-hidden hover:bg-gray-800"
                 style={{ border: `1px solid ${imageData.border}` }}
               >
-                <img
+                <Image
+                  width={40}
+                  height={40}
                   src={imageData.path}
                   alt={`Icon ${index}`}
                   className="w-full h-full"
@@ -80,24 +83,37 @@ const DiagonalGridWithText = () => {
       {/* Right Section: Text Block */}
       <div className="w-full text-white py-4 px-6 flex-1 flex items-center justify-center md:w-1/2 ">
         <div className="container px-10 mt-3 max-w-screen-sm text-center md:text-left">
-          <h2 className={`text-[36px] leading-[42px] ${monsterfont1.className} text-white`}>
+          <h2
+            className={`text-[36px] leading-[42px] ${monsterfont1.className} text-white`}
+          >
             Empowered by Cutting-Edge
           </h2>
-          <h1 className={`text-[36px] leading-[42px] ${monsterfont2.className} bg-black text-white mb-5`}>
+          <h1
+            className={`text-[36px] leading-[42px] ${monsterfont2.className} bg-black text-white mb-5`}
+          >
             Tech Stack
           </h1>
 
-          <p className={`text-[15px] leading-[24px] font-opensans font-[400] text-semi-white mt-[20px]`}>
-            At AlgorithmX, our tech stack is designed to deliver powerful and scalable solutions. We leverage
-            powerful technologies like Java, Kotlin, Flutter, React-Native, and Android SDK for seamless app and
-            website development. Our creative processes are powered by Adobe Creative Cloud and Webflow, ensuring
-            visually stunning and user-friendly designs.
+          <p
+            className={`text-[15px] leading-[24px] font-opensans font-[400] text-semi-white mt-[20px]`}
+          >
+            At AlgorithmX, our tech stack is designed to deliver powerful and
+            scalable solutions. We leverage powerful technologies like Java,
+            Kotlin, Flutter, React-Native, and Android SDK for seamless app and
+            website development. Our creative processes are powered by Adobe
+            Creative Cloud and Webflow, ensuring visually stunning and
+            user-friendly designs.
           </p>
-          <p className={`text-[15px] leading-[24px] font-opensans font-[400] text-semi-white mt-[20px]`}>
-            To drive marketing excellence, we utilize tools like Google Analytics, SEMrush, and Moz for in-depth
-            insights and optimization. Platforms like HubSpot streamline our CRM and marketing automation, while
-            Midjourney and ChatGPT enhance our content creation, and Hootsuite facilitates social media management.
-            With Gartner PPC and Google Search Console, we ensure your digital presence is always at its peak.
+          <p
+            className={`text-[15px] leading-[24px] font-opensans font-[400] text-semi-white mt-[20px]`}
+          >
+            To drive marketing excellence, we utilize tools like Google
+            Analytics, SEMrush, and Moz for in-depth insights and optimization.
+            Platforms like HubSpot streamline our CRM and marketing automation,
+            while Midjourney and ChatGPT enhance our content creation, and
+            Hootsuite facilitates social media management. With Gartner PPC and
+            Google Search Console, we ensure your digital presence is always at
+            its peak.
           </p>
         </div>
       </div>

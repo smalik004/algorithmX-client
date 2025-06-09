@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -45,7 +46,7 @@ const ThemeDescriptionWithLink = () => (
 const ShopifyServices = () => {
   const services = [
     {
-      iconSrc: "images/Store-Setup.png",
+      iconSrc: "/images/Store-Setup.png",
       title: "Shopify Store Setup",
       description:
         "The team at our custom Shopify development company is well experienced in characteristics of Shopify. They understand the specific needs of your business and create an online Shopify store that aligns perfectly with your brand's objectives.",
@@ -53,7 +54,7 @@ const ShopifyServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/Apps-Integration.png",
+      iconSrc: "/images/Apps-Integration.png",
       title: "Shopify Apps Integration & Configuration",
       description:
         "AlgorithmX's off shore Shopify web development services cover everything, from setting up payment gateways to implementing custom features, integrating third-party apps or connecting APIs.",
@@ -61,7 +62,7 @@ const ShopifyServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/Store-Design.png",
+      iconSrc: "/images/Store-Design.png",
       title: "Shopify Store Design and Development",
       description:
         "We provide extraordinary Shopify development services for businesses by partnering with your company behind the scenes, configuring your store, and getting it market-ready without any hitches.",
@@ -69,7 +70,7 @@ const ShopifyServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/Payment-and-shipping.png",
+      iconSrc: "/images/Payment-and-shipping.png",
       title: "Payment & Shipping Zones Set-Up",
       description:
         "Our premier Shopify development company assists in reducing logistics expenses and ensuring efficient order fulfillment with our shipping zones set-up service. Also, our payment system is designed to make transactions smooth and easy for customers.",
@@ -77,14 +78,14 @@ const ShopifyServices = () => {
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/Theme-Development.png",
+      iconSrc: "/images/Theme-Development.png",
       title: "Theme Development",
       description: <ThemeDescriptionWithLink />,
       borderColor: "border-pink-500",
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/Product-and-inventory.png",
+      iconSrc: "/images/Product-and-inventory.png",
       title: "Product & Inventory Set-Up",
       description:
         "At our custom Shopify development agency, AlgorithmX, we provide product and inventory set-up service that grants you the ability to easily showcase your desired items in your store, seamlessly control your inventory, and effortlessly tweak and make your stock levels.",
@@ -92,14 +93,14 @@ const ShopifyServices = () => {
       glowColor: styles.shadowlightgreen,
     },
     {
-      iconSrc: "images/Shopify-SEO.png",
+      iconSrc: "/images/Shopify-SEO.png",
       title: "Shopify SEO Implementation",
       description: <SEODescriptionWithLink />,
       borderColor: "border-white-500",
       glowColor: styles.shadoworange,
     },
     {
-      iconSrc: "images/Shopify-Migrations.png",
+      iconSrc: "/images/Shopify-Migrations.png",
       title: "Shopify Migrations",
       description:
         "The expert professionals at our leading Shopify development company in USA ensure that your store migrates smoothly from old systems to Shopify without downtime (minimum) disruptions.",
@@ -135,7 +136,9 @@ const ShopifyServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

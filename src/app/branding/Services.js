@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont1 = Montserrat({
   subsets: ["latin"],
@@ -173,7 +174,9 @@ const ServicesSection = () => {
               style={{ background: service.gradient }}
             >
               <div className="space-y-4">
-                <img
+                <Image
+                  width={64}
+                  height={64}
                   src={service.image}
                   alt={service.title}
                   className="w-16 h-16"

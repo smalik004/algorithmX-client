@@ -24,7 +24,7 @@ const servicesData = [
     title: ["DISPLAY BANNERS"],
     description:
       "AlgorithmX offers innovative banner design services that support your marketing efforts. Whether you need Static or dynamic HTML banners, we have got you covered.",
-    image: "images/Display-banners.webp",
+    image: "/images/Display-banners.webp",
     textGradient: "from-amber-600 to-amber-800",
   },
   {
@@ -32,7 +32,7 @@ const servicesData = [
     title: ["EMAIL", "TEMPLATE"],
     description:
       "Our dedicated designing team designs professional and customized email templates that align with your brand identity and ensure effective communication, therefore increasing engagement.",
-    image: "images/Email-template.webp",
+    image: "/images/Email-template.webp",
     textGradient: "from-blue-400 to-blue-600",
   },
   {
@@ -40,7 +40,7 @@ const servicesData = [
     title: ["SOCIAL", "MEDIA"],
     description:
       "The detailed planning of our experienced graphic designers injects fresh air into your social media content's universe, helping your audience grow fast through well-designed engaging posts that grab attention.",
-    image: "images/Social-Media.webp",
+    image: "/images/Social-Media.webp",
     textGradient: "from-cyan-400 to-cyan-600",
   },
   {
@@ -59,7 +59,7 @@ const servicesData = [
         services for more information.
       </>
     ),
-    image: "images/Corporate-Assets.webp",
+    image: "/images/Corporate-Assets.webp",
     textGradient: "from-slate-400 to-slate-600",
   },
   {
@@ -67,7 +67,7 @@ const servicesData = [
     title: ["INFO-", "GRAPHICS"],
     description:
       "AlgorithmX's affordable web design services extend to generating designed content such as brand graphics, infographics, and data visualizations to be used on websites, original documents, reports, and presentations.",
-    image: "images/Inforgraphics.webp",
+    image: "/images/Inforgraphics.webp",
     textGradient: "from-teal-400 to-teal-600",
   },
   {
@@ -75,7 +75,7 @@ const servicesData = [
     title: ["PRINT", "MEDIA"],
     description:
       "Get precisely designed packaging for a range of products such as posters, book covers, magazines, trade show graphics, stickers, and many more, that matches your brand voice as part of our offshore creative design services.",
-    image: "images/Print-Media.webp",
+    image: "/images/Print-Media.webp",
     textGradient: "from-purple-400 to-purple-600",
   },
 ];

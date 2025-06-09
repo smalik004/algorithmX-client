@@ -241,7 +241,8 @@ const TabsContent = () => {
             {currentDisplayItem && (
               <Link href={currentDisplayItem.link}>
                 <div className="rounded-xl overflow-hidden aspect-square flex items-center justify-center">
-                  <img
+                  <Image
+                    fill
                     src={currentDisplayItem.image}
                     alt={currentDisplayItem.title}
                     className="w-full h-auto object-cover"
@@ -262,7 +263,8 @@ const TabsContent = () => {
             >
               {/* Image */}
               <div className="mb-4 rounded-xl overflow-hidden">
-                <img
+                <Image
+                  fill
                   src={item.image}
                   alt={item.title}
                   className="w-full h-auto object-cover"

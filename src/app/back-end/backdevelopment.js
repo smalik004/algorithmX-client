@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -26,42 +27,42 @@ const services = [
     title: "Server-Side Scripting",
     description:
       "In order to manage dynamic content generation and communication with databases, our specialized back end developer develops server-side scripts using languages like Ruby, PHP, Python, or Node.js.",
-    image: "images/Server.png",
+    image: "/images/Server.png",
     alt: "Consultation Icon",
   },
   {
     title: "Database Management",
     description:
       "Our back end development company utilizes technologies like PostgreSQL, MySQL, SQLite, or MongoDB to establish and administer databases to efficiently store web data and recover it.",
-    image: "images/Database.png",
+    image: "/images/Database.png",
     alt: "Design Icon",
   },
   {
     title: "User Authentication and Authorization",
     description:
       "AlgorithmX offers an expert back end developer who uses encryption, hashing, and session handling techniques to develop user authentication and authorization systems in order to control access to website data and safeguard confidential information.",
-    image: "images/User-Authentication.png",
+    image: "/images/User-Authentication.png",
     alt: "Custom Development Icon",
   },
   {
     title: "Web Services/API Development",
     description:
       "Our on demand back end web development solutions include building APIs and web services that facilitate communication between websites and other external systems, enabling third-party services integration or development of mobile applications.",
-    image: "images/Web-Services.png",
+    image: "/images/Web-Services.png",
     alt: "Testing Icon",
   },
   {
     title: "Security and Compliance",
     description:
       "We enforce security measures to prevent frequent internet threats like cross-site scripting (XSS) and SQL injection and ensure adherence to data protection laws such as GDPR or HIPAA.",
-    image: "images/Security.png",
+    image: "/images/Security.png",
     alt: "Deployment Icon",
   },
   {
     title: "Data Analysis and Insights",
     description:
       "As part of our back end development services, we employ data analysis and processing features leveraging techniques like data mining, machine learning algorithms, and predictive analytics to derive valuable insights from user engagement on websites in order to tailor content and make informed business choices.",
-    image: "images/Data.png",
+    image: "/images/Data.png",
     alt: "Support Icon",
   },
 ];
@@ -134,7 +135,9 @@ const BackServicesGrid = () => {
               key={index}
               className={`${styles["card"]} hover:bg-[#1c1c1e]  hover:border-[#1c1c1e;] border border-zinc-800 group transition-colors duration-1000 ease-in-out  `}
             >
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={`${styles["image1"]} object-contain `}

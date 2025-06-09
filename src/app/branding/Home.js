@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 
 import { Montserrat } from "next/font/google";
@@ -23,14 +24,18 @@ const GraphicsSection = () => {
           <div className="w-full md:w-1/2">
             <div className="relative">
               {/* Main Image */}
-              <img
-                src="images/Branding.webp"
+              <Image
+                width={800}
+                height={800}
+                src="/images/Branding.webp"
                 alt="Branding process with color swatches"
                 className={`w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]}  `}
               />
               {/* Rectangular Image */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={800}
+                height={800}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
               />
@@ -64,20 +69,22 @@ const GraphicsSection = () => {
           {/* Right side - BRANDING and description */}
           <div className="w-full md:w-1/2 flex flex-col md:items-start items-center text-center ">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={48}
+              height={48}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-[94px] md:h-[70px] object-cover rounded-full shadow-lg hidden md:block"
             />
             <h1
-  className={`text-4xl md:text-[85px] md:leading-[90px] md:tracking-[8px] ${monsterfont1.className} bg-clip-text text-transparent`}
-  style={{
-    backgroundImage: "linear-gradient(90deg, #ffbd12 0, #e03d3d 53.72%, #cd21e9 101.11%)"
-  }}
->
-  BRANDING
-</h1>
-
+              className={`text-4xl md:text-[85px] md:leading-[90px] md:tracking-[8px] ${monsterfont1.className} bg-clip-text text-transparent`}
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #ffbd12 0, #e03d3d 53.72%, #cd21e9 101.11%)",
+              }}
+            >
+              BRANDING
+            </h1>
           </div>
         </div>
         {/* Description below */}
@@ -85,7 +92,10 @@ const GraphicsSection = () => {
           <p
             className={`text-semi-white ${styles["description-text"]} ${monsterfont1.className} text-center`}
           >
-            AlgorithmX develops unforgettable brand identities that deeply connect with your target audience, boost brand awareness, and foster customer loyalty. Our brand-building services involve crafting brand narratives, logos, and guidelines to guarantee impactful messaging.
+            AlgorithmX develops unforgettable brand identities that deeply
+            connect with your target audience, boost brand awareness, and foster
+            customer loyalty. Our brand-building services involve crafting brand
+            narratives, logos, and guidelines to guarantee impactful messaging.
           </p>
         </div>
       </div>

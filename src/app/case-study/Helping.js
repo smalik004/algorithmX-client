@@ -94,6 +94,7 @@ export default function KFCOptimizations({ data }) {
             <div className="relative md:w-[400px] md:h-[300px] h-[200px] w-[300px] rounded-lg overflow-hidden">
               {accordionData[activeIndex] && (
                 <Image
+                  fill
                   src={accordionData[activeIndex].image}
                   alt={accordionData[activeIndex].title}
                   layout="fill"

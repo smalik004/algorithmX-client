@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../seoaudits/style.module.css";
 
 const LinkStrategy = () => {
@@ -11,8 +12,9 @@ const LinkStrategy = () => {
           <div className="flex gap-4">
             {/* First Image */}
             <div className="w-1/2">
-              <img
-                src="images/link1.webp"
+              <Image
+                fill
+                src="/images/link1.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
@@ -20,8 +22,9 @@ const LinkStrategy = () => {
 
             {/* Second Image */}
             <div className="w-1/2">
-              <img
-                src="images/link2.webp"
+              <Image
+                fill
+                src="/images/link2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
@@ -30,8 +33,9 @@ const LinkStrategy = () => {
 
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
-            <img
-              src="images/link3.webp"
+            <Image
+              fill
+              src="/images/link3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-[495px] h-[251px] object-cover"
             />

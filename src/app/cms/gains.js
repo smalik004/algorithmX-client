@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "../android-app/style.module.css";
 import style from "../front-end/style.module.css";
+import Image from "next/image";
 
 const monsterfont1 = Montserrat({
   subsets: ["latin"],
@@ -135,7 +136,9 @@ const CMSServicesGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div key={index} className={`bg-black ${styles["box"]} `}>
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={` object-contain rounded-lg  ${styles["indus-card-figure"]}  `}

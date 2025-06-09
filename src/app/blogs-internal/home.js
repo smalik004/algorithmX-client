@@ -363,7 +363,8 @@ export default function Home({ data }) {
               {/* Image at the top */}
               <div className="relative h-40">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-black opacity-80"></div>
-                <img
+                <Image
+                  fill
                   src={data.image_url || "/images/ai11.avif"}
                   alt={data.image_alt || "Blog image"}
                   className="w-full h-full object-cover object-center"

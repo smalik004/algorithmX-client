@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../contentcreation/style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -27,14 +28,16 @@ const FranchiseSection = () => {
           <div className="w-full md:w-2/5">
             <div className="relative">
               {/* Main Image */}
-              <img
-                src="images/Franchise.webp"
+              <Image
+                fill
+                src="/images/Franchise.webp"
                 alt="Branding process with color swatches"
                 className={`w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%]   `}
               />
               {/* Rectangular Image */}
-              <img
-                src="images/a3.png"
+              <Image
+                fill
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
               />
@@ -68,24 +71,24 @@ const FranchiseSection = () => {
           {/* Right side - Graphics and description */}
           <div className="w-full md:w-3/5  md:items-start items-center text-center md:text-left">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              fill
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-          <div>
-        <span
-          className={` ${styles["title"]} ${monsterfont2.className} tracking-wider text-white block`}
-      >
-        FRANCHISE
-  </span>
-  <span
-    className={`  ${styles["title"]} ${monsterfont1.className} tracking-wider bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent ml-2`}
-  >
-   MARKETING
-  </span>
-</div>
-
+            <div>
+              <span
+                className={` ${styles["title"]} ${monsterfont2.className} tracking-wider text-white block`}
+              >
+                FRANCHISE
+              </span>
+              <span
+                className={`  ${styles["title"]} ${monsterfont1.className} tracking-wider bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent ml-2`}
+              >
+                MARKETING
+              </span>
+            </div>
           </div>
         </div>
         {/* Description below */}
@@ -93,7 +96,10 @@ const FranchiseSection = () => {
           <p
             className={`text-semi-white  ${styles["description-text"]} ${monsterfont1.className} text-center`}
           >
-          AlgorithmX is a premier franchise marketing agency that boosts the development of franchises by implementing customized marketing strategies crafted to enhance the brand’s reach and establish a strong market presence across diverse locations.
+            AlgorithmX is a premier franchise marketing agency that boosts the
+            development of franchises by implementing customized marketing
+            strategies crafted to enhance the brand’s reach and establish a
+            strong market presence across diverse locations.
           </p>
         </div>
       </div>

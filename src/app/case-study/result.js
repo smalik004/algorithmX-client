@@ -1,5 +1,6 @@
 "use client";
 import { useState, useMemo } from "react";
+import Image from "next/image";
 
 export default function KFCResults({ data }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -70,7 +71,8 @@ export default function KFCResults({ data }) {
           {/* Image section - right side for both mobile and desktop */}
           <div className="w-full md:w-1/2 flex items-center justify-center">
             <div className=" w-full max-w-sm aspect-[5/4] ">
-              <img
+              <Image
+                fill
                 src={
                   results[activeIndex]?.image ||
                   "https://placehold.co/400x600/000000/ffffff?text=KFC+App"

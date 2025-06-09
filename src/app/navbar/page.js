@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Navbar from "./navbar";
 import CookieConsent from "../cookies/cookie";
 

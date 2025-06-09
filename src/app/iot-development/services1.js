@@ -118,9 +118,10 @@ export default function Home() {
                 >
                   <div className="relative h-full w-full bg-gray-800 flex items-center justify-center">
                     <Image
+                      width={800}
+                      height={400}
                       src={service.image}
                       alt={service.title}
-                      fill
                       className="object-cover"
                     />
                   </div>

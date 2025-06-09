@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../crm/style.module.css";
 import style from "../erp/style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -118,13 +118,17 @@ const AIBusinessSection = () => {
 const ModuleCard = ({ title, description, imageSrc }) => (
   <div className="pt-6 pl-6 pr-6 bg-black relative">
     <div className="flex items-start gap-4 mb-4">
-      <div className="">
-        <img
+      <div className="relative w-[50px] h-[50px]">
+        {" "}
+        {/* fixed height or responsive height */}
+        <Image
+          fill
           src={imageSrc || "/images/Supply-Chain-Management.png"}
           alt={title}
-          className={`w-full h-full object-contain ${style["border-design"]}`}
+          className={`object-contain ${style["border-design"]}`}
         />
       </div>
+
       <div className="flex-1">
         <h3
           className={`${style["modules-title"]} ${monsterfont1.className} text-white`}

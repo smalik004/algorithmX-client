@@ -457,7 +457,8 @@ export default function Navbar() {
             >
               <Link href="/" className="text-white relative group">
                 <div className="transition-all duration-300 group-hover:scale-110">
-                  <Image 
+                  <Image
+fill 
                     src="/images/logo5.png" 
                     alt="Logo"
                     width={40}

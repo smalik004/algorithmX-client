@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -89,7 +90,9 @@ const WebDevServices = () => {
   const services = [
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/UX-UI-Design.png"
           alt="UX/UI Design"
           className="w-[50px] h-[50px]"
@@ -101,7 +104,9 @@ const WebDevServices = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/Architecture.png"
           alt="Architecture"
           className="w-[50px] h-[50px]"
@@ -113,7 +118,9 @@ const WebDevServices = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/Front-End-Development.png"
           alt="Front-End Development"
           className="w-[50px] h-[50px]"
@@ -125,7 +132,9 @@ const WebDevServices = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/Back-End-Development.png"
           alt="Back-End Development"
           className="w-[50px] h-[50px]"
@@ -136,7 +145,9 @@ const WebDevServices = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/Integration-and-Testing.png"
           alt="Integration & Testing"
           className="w-[50px] h-[50px]"
@@ -148,7 +159,9 @@ const WebDevServices = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={50}
+          height={50}
           src="/images/Support-and-Update.png"
           alt="Support & Update"
           className="w-[50px] h-[50px]"

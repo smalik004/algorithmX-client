@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 // Helper function to parse JSON strings safely
 const parseJSONSafely = (jsonString, fallback = []) => {
   try {
@@ -303,7 +303,8 @@ const PortfolioGrid = ({ data = [] }) => {
                     {/* Logo Image */}
                     <div className="w-10 h-10 md:w-12 md:h-12 mb-2 md:mb-3">
                       {item.logoImage ? (
-                        <img
+                        <Image
+                          fill
                           src={item.logoImage}
                           alt={item.title}
                           className="w-full h-full object-contain"
@@ -332,7 +333,8 @@ const PortfolioGrid = ({ data = [] }) => {
                     {/* Same Logo Image at the top with animation */}
                     <div className="w-10 h-10 md:w-12 md:h-12 mt-1 md:mt-0 mb-2 md:mb-4">
                       {item.logoImage ? (
-                        <img
+                        <Image
+                          fill
                           src={item.logoImage}
                           alt={item.title}
                           className="w-full h-full object-contain transition-all duration-300 ease-out"
@@ -369,7 +371,8 @@ const PortfolioGrid = ({ data = [] }) => {
                         <div className="absolute inset-0 rounded-full bg-white blur-md opacity-80 scale-110 z-0"></div>
                       )}
                       {item.characterImage ? (
-                        <img
+                        <Image
+                          fill
                           src={item.characterImage}
                           alt="Character"
                           className="w-full h-full object-contain transition-all duration-300 ease-out relative z-10"

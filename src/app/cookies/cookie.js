@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function CookieConsent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,11 +69,14 @@ export default function CookieConsent() {
         onClick={togglePopup}
         className="fixed bottom-4 left-4 bg-white rounded-full px-[8px] py-[4px] shadow-lg flex items-center space-x-1 hover:bg-gray-50 transition-colors z-50"
       >
-        <img
+        <Image
           src="/images/Cookie-seul-normal300.avif"
           alt="Cookie"
+          width={20}
+          height={20}
           className="w-5 h-5"
         />
+
         <span className="font-xs text-black">Cookies</span>
       </button>
 
@@ -102,7 +106,8 @@ export default function CookieConsent() {
                   </div>
                   <div className="ml-2 flex-shrink-0">
                     <div className="flex">
-                      <img
+                      <Image
+                        fill
                         src="/images/persos site-44.avif"
                         alt="Cookie Face"
                         className="w-[80px] h-[60px] object-contain"
@@ -159,7 +164,8 @@ export default function CookieConsent() {
                     </p>
                   </div>
                   <div className="ml-2">
-                    <img
+                    <Image
+                      fill
                       src="/images/persos site -module.avif"
                       alt="Cookie Face"
                       className="w-[80px] h-[60px] object-contain"
@@ -250,7 +256,8 @@ export default function CookieConsent() {
                     </p>
                   </div>
                   <div className="flex">
-                    <img
+                    <Image
+                      fill
                       src="/images/persos site -module.avif"
                       alt="Chocolate Cookie"
                       className="w-[80px] h-[60px] object-contain -mr-1"

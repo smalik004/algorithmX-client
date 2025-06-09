@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import style from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -20,7 +21,9 @@ const monsterfont2 = Montserrat({
 
 const EstimationBox = ({ imageSrc, title, description }) => (
   <div className={`${style["border-design1"]} p-4`}>
-    <img
+    <Image
+      width={50}
+      height={50}
       src={imageSrc}
       alt={title}
       className="mx-auto mb-4 w-[50px] h-[50px] object-cover "
@@ -54,14 +57,14 @@ const CostEstimations = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Box 1 */}
           <EstimationBox
-            imageSrc="images/price-1.svg"
+            imageSrc="/images/price-1.svg"
             title="From $15,000"
             description="A CRM with standard functionality and minimal customization, meant for about 10 users."
           />
 
           {/* Box 2 */}
           <EstimationBox
-            imageSrc="images/price-2.svg"
+            imageSrc="/images/price-2.svg"
             title="Up to $250,000"
             description="A heavily customized CRM with industry-specific functionality and advanced analytics features, meant for over 1,000 users in diverse roles."
           />

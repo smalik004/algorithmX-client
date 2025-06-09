@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -52,8 +53,9 @@ const SEOStrategyGrid = () => {
               >
                 Automotive
               </span>
-              <img
-                src="images/automative.png"
+              <Image
+                fill
+                src="/images/automative.png"
                 alt="Lead Generation"
                 className="w-[40px] h-[40px]"
               />
@@ -65,8 +67,9 @@ const SEOStrategyGrid = () => {
               >
                 Communications
               </span>
-              <img
-                src="images/communications.png"
+              <Image
+                fill
+                src="/images/communications.png"
                 alt="Sales Enablement"
                 className="w-[40px] h-[40px]"
               />
@@ -78,8 +81,9 @@ const SEOStrategyGrid = () => {
               >
                 Constructions
               </span>
-              <img
-                src="images/constructions.png"
+              <Image
+                fill
+                src="/images/constructions.png"
                 alt="Nurturing Customers"
                 className="w-[40px] h-[40px]"
               />
@@ -91,8 +95,9 @@ const SEOStrategyGrid = () => {
               >
                 Govt. Education
               </span>
-              <img
-                src="images/govt education.png"
+              <Image
+                fill
+                src="/images/govt education.png"
                 alt="Social Engagement"
                 className="w-[40px] h-[40px]"
               />
@@ -106,8 +111,9 @@ const SEOStrategyGrid = () => {
               >
                 Energy & Power
               </span>
-              <img
-                src="images/energy power.png"
+              <Image
+                fill
+                src="/images/energy power.png"
                 alt="Lead Generation"
                 className="w-[40px] h-[40px]"
               />
@@ -119,8 +125,9 @@ const SEOStrategyGrid = () => {
               >
                 Financial Service
               </span>
-              <img
-                src="images/financial service.png"
+              <Image
+                fill
+                src="/images/financial service.png"
                 alt="Sales Enablement"
                 className="w-[40px] h-[40px]"
               />
@@ -132,8 +139,9 @@ const SEOStrategyGrid = () => {
               >
                 Food & Beverage
               </span>
-              <img
-                src="images/food and beverages.png"
+              <Image
+                fill
+                src="/images/food and beverages.png"
                 alt="Nurturing Customers"
                 className="w-[40px] h-[40px]"
               />
@@ -145,8 +153,9 @@ const SEOStrategyGrid = () => {
               >
                 Life Science
               </span>
-              <img
-                src="images/life sciences.png"
+              <Image
+                fill
+                src="/images/life sciences.png"
                 alt="Social Engagement"
                 className="w-[40px] h-[40px]"
               />
@@ -161,8 +170,9 @@ const SEOStrategyGrid = () => {
               >
                 Media & Entertainment
               </span>
-              <img
-                src="images/media entertainment.png"
+              <Image
+                fill
+                src="/images/media entertainment.png"
                 alt="Thought Leadership"
                 className="w-[40px] h-[40px]"
               />
@@ -174,8 +184,9 @@ const SEOStrategyGrid = () => {
               >
                 Travel Agency
               </span>
-              <img
-                src="images/Travel agency.png"
+              <Image
+                fill
+                src="/images/Travel agency.png"
                 alt="Conversions"
                 className="w-[40px] h-[40px]"
               />
@@ -187,8 +198,9 @@ const SEOStrategyGrid = () => {
               >
                 Public Safety
               </span>
-              <img
-                src="images/public safety.png"
+              <Image
+                fill
+                src="/images/public safety.png"
                 alt="SEO"
                 className="w-[40px] h-[40px]"
               />

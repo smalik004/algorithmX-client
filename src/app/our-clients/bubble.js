@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 // Component for the video popup
 const VideoPopup = ({
@@ -235,7 +236,8 @@ const FloatingBubbles = ({ bubbleConfig = [] }) => {
           onMouseLeave={() => setHoveredBubble(null)}
         >
           <div className="relative w-full h-full rounded-full overflow-hidden">
-            <img
+            <Image
+              fill
               src={bubble.logo.img || null}
               alt={bubble.logo.name || "Company Logo"}
               className="w-full h-full object-contain p-2 rounded-full"

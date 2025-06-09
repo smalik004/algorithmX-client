@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCut, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import style from "../crm/style.module.css";
@@ -98,7 +99,9 @@ const CostEstimation = () => {
             >
               <div className="mb-4 mt-[30px]">
                 {item.iconType === "image" ? (
-                  <img
+                  <Image
+                    width={42}
+                    height={50}
                     src="/images/mobile.svg"
                     alt="Mobile app icon"
                     className="mx-auto mb-4 w-[42px] h-[50px] object-cover"

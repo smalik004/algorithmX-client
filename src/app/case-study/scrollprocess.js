@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const MobileUISwitcher = ({ data }) => {
   const [mouseX, setMouseX] = useState(0.5);
@@ -121,7 +122,8 @@ const MobileUISwitcher = ({ data }) => {
                 >
                   <div className="rounded-3xl overflow-hidden relative">
                     {/* Light version (prototype) */}
-                    <img
+                    <Image
+                      fill
                       src={screen.light}
                       alt={`${data.productType} prototype ${index + 1}`}
                       className="w-full h-auto"
@@ -138,7 +140,8 @@ const MobileUISwitcher = ({ data }) => {
                         pointerEvents: "none",
                       }}
                     >
-                      <img
+                      <Image
+                        fill
                         src={screen.dark}
                         alt={`${data.productType} wireframe ${index + 1}`}
                         className="w-full h-auto"

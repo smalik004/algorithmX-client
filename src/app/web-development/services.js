@@ -4,6 +4,7 @@ import styles from "../app-development/style.module.css";
 import style from "../android-app/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -200,9 +201,11 @@ const WebAppServices = () => {
               </div>
               <div className="flex items-start gap-4 mb-4">
                 <div className="">
-                  <img
-                    src={service.image}
-                    alt={service.alt}
+                  <Image
+                    width={100}
+                    height={100}
+                    src={service.image || "/images/faq_15_icon.png"}
+                    alt={service.title || "Service icon"}
                     className={`w-full h-full object-contain ${style["border-design"]}`}
                   />
                 </div>

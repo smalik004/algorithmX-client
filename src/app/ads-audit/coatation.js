@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -18,21 +19,29 @@ const TestimonialSection = () => {
       {/* Quote Content */}
       <div className="max-w-3xl mx-auto z-10 mt-[80px]">
         <blockquote className="text-white text-[26px] leading-[44px] -tracking-[0.025em] font-opensans font-[100] italic text-center">
-          Whether you've invested your spend in Google, Bing or another search engine, we leave no stone unturned in our fight to produce the best PPC results to get you noticed. We make you more money. We make you famous by combining research, analysis and audience personas to ensure you get a bespoke plan that actually works.
+          Whether you've invested your spend in Google, Bing or another search
+          engine, we leave no stone unturned in our fight to produce the best
+          PPC results to get you noticed. We make you more money. We make you
+          famous by combining research, analysis and audience personas to ensure
+          you get a bespoke plan that actually works.
         </blockquote>
       </div>
       <div className="mt-6">
-          <button className={`${monsterfont.className} text-[12px] leading-[20px]`}>
-            TALK TO US 
-          </button>
-        </div>
+        <button
+          className={`${monsterfont.className} text-[12px] leading-[20px]`}
+        >
+          TALK TO US
+        </button>
+      </div>
 
       {/* Profile Section */}
       <div className="mt-[100px] flex flex-col items-center">
         <div className="w-20 h-20 rounded-full overflow-hidden">
-          <img 
+          <Image
+            width={80}
+            height={80}
             src="/images/pexels-photo-262391.jpeg"
-            alt="Profile" 
+            alt="Profile"
             className="w-full h-full object-cover border-[2px] rounded-full"
           />
         </div>

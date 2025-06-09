@@ -4,6 +4,7 @@ export const metadata = {
     "Our Drupal development agency offers custom themes, modules, and migration services. Improve your website's functionality and reach now. ",
 };
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import DrupalSection from "./home";

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Image from "next/image";
 
 const AboutSection = ({ data }) => {
   // Get images from API data
@@ -101,6 +102,7 @@ const AboutSection = ({ data }) => {
               >
                 <div className="relative h-96 w-full">
                   <Image
+                    fill
                     src={imageUrl}
                     alt={`${data?.brandName || "Product"} Interface ${
                       index + 1

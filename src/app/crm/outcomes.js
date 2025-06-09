@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -130,7 +131,9 @@ const CRMOutcomes = () => {
               key={index}
               className={` ${styles["border-design"]} w-[350px] h-auto text-center flex flex-col items-center`}
             >
-              <img
+              <Image
+                width={50}
+                height={50}
                 src={outcome.icon}
                 alt={outcome.title}
                 className="w-[50px] h-[50px] mb-6 mt-16"

@@ -164,6 +164,7 @@ export default function Innovation() {
         <Link href="/graphics" className="block relative mb-[10px]">
           <div className="w-full h-[11rem] relative overflow-hidden">
             <Image
+              fill
               src="/images/banner-03.png"
               alt="Kitchen Appliances"
               fill
@@ -246,6 +247,7 @@ export default function Innovation() {
                     <div className="h-64 relative overflow-hidden">
                       <div className="relative h-full transform group-hover:scale-105 transition duration-300">
                         <Image
+                          fill
                           src={item.image}
                           alt={item.title}
                           fill

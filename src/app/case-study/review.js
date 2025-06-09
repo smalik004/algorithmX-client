@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function TestimonialSection({ data }) {
   return (
@@ -7,7 +8,8 @@ export default function TestimonialSection({ data }) {
         {/* Left side - Profile (30%) */}
         <div className="w-full md:w-1/3 flex flex-col items-center justify-center mb-8 md:mb-0">
           <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-            <img
+            <Image
+              fill
               src={data?.clientImgURL}
               alt={data?.clientName}
               className="w-full h-full object-cover"
@@ -23,7 +25,8 @@ export default function TestimonialSection({ data }) {
         <div className="relative md:w-2/3 text-white text-lg md:text-xl lg:text-2xl">
           {/* Background Logo */}
           <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-            <img
+            <Image
+              fill
               src={data?.brandLogoURL}
               alt="Company Logo"
               className="w-48 h-auto"
@@ -31,7 +34,8 @@ export default function TestimonialSection({ data }) {
           </div>
 
           <div className="flex items-start relative z-10">
-            <img
+            <Image
+              fill
               src="/images/quot-icon.webp"
               alt="Opening quote"
               className="w-6 h-auto mr-2"
@@ -42,7 +46,8 @@ export default function TestimonialSection({ data }) {
                 {data?.clientTestimonial}
               </p>
 
-              <img
+              <Image
+                fill
                 src="/images/quot-icon.webp"
                 alt="Closing quote"
                 className="w-6 h-auto inline-block ml-2 rotate-180 align-text-bottom"

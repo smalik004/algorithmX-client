@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -22,7 +23,7 @@ const monsterfont2 = Montserrat({
 const DrupalServices = () => {
   const services = [
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: (
         <Link href="/website-development" className=" hover:text-blue-400">
           Website Development
@@ -42,7 +43,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Theme Development",
       description:
         "AlgorithmX offers custom Drupal theme development where we create personalized themes that are not just aesthetic but also focus on adaptability, enhanced performance, and accessibility.",
@@ -50,7 +51,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "E-Commerce Development",
       description:
         "Being a top Drupal web development company, we harness the capabilities of Drupal ecommerce development features such as shipping functionality, third-party integrations, and payment gateways to succeed in a competitive online marketplace.",
@@ -58,7 +59,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Module Development",
       description:
         "Enhance the growth, security, and creativity in the digital space by using sustainable and personalized modules to amplify the features of Drupal websites as part of our custom Drupal website development services.",
@@ -66,7 +67,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Extension Development",
       description:
         "Our Drupal web development services include Drupal extension development that improves security, optimizes performance, and enhances efficiency ensuring growth.",
@@ -74,7 +75,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "API Integration",
       description:
         "AlgorithmX's Drupal development services offer Drupal API integration to increase a website's functionality and usability, smoothly connecting apps, services or platforms.",
@@ -82,7 +83,7 @@ const DrupalServices = () => {
       glowColor: styles.shadowlightgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Migration and Upgradation",
       description:
         "As a leading Drupal development agency in USA, we are experts at transferring your CMS from other platforms to Drupal or updating the older Drupal version to a newer one. Using our exceptional Drupal migration and upgrading services, it is extremely to achieve this.",
@@ -90,7 +91,7 @@ const DrupalServices = () => {
       glowColor: styles.shadoworange,
     },
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Support & Maintenance",
       description:
         "With our advanced Drupal development services, we provide consistent support and maintenance to boost your website performance and keep it up to date with the most recent security updates.",
@@ -126,7 +127,9 @@ const DrupalServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

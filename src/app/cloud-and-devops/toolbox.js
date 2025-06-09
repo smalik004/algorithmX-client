@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../video/styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -15,18 +16,18 @@ const monsterfont1 = Montserrat({
 
 const CloudTechnologyToolbox = () => {
   const tools = [
-    { id: "ps", name: "Google Cloud", image: "images/Adobe-Target.png" },
-    { id: "ai", name: "Jenkins", image: "images/Amplitude.png" },
-    { id: "ae", name: "Selenium", image: "images/Crazy-Egg.png" },
-    { id: "id", name: "sonarQube", image: "images/Google-Analytics (1).png" },
-    { id: "canva", name: "AWS", image: "images/Google-Optimize.png" },
+    { id: "ps", name: "Google Cloud", image: "/images/Adobe-Target.png" },
+    { id: "ai", name: "Jenkins", image: "/images/Amplitude.png" },
+    { id: "ae", name: "Selenium", image: "/images/Crazy-Egg.png" },
+    { id: "id", name: "sonarQube", image: "/images/Google-Analytics (1).png" },
+    { id: "canva", name: "AWS", image: "/images/Google-Optimize.png" },
     {
       id: "figma",
       name: "Azure",
-      image: "images/Google-PageSpeed-Insights.png",
+      image: "/images/Google-PageSpeed-Insights.png",
     },
-    { id: "cs", name: "GitHub", image: "images/GTmetrix.png" },
-    { id: "stock", name: "GitLab", image: "images/Hotjar.png" },
+    { id: "cs", name: "GitHub", image: "/images/GTmetrix.png" },
+    { id: "stock", name: "GitLab", image: "/images/Hotjar.png" },
   ];
 
   return (
@@ -60,7 +61,9 @@ const CloudTechnologyToolbox = () => {
                 >
                   {/* Image part (1/3) */}
                   <div className="md:w-1/5 ">
-                    <img
+                    <Image
+                      width={48}
+                      height={48}
                       src={tool.image}
                       alt={tool.name}
                       className="w-12 h-12  object-contain md:ml-2"

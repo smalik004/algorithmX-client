@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import BlogCarousel from "./home";

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../front-end/style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -20,42 +21,42 @@ const services = [
     title: "Virtual World Development",
     description:
       "Design and develop AR/VR-powered virtual environments tailored to industries like gaming, education, and healthcare using Unity, Unreal Engine, and WebXR.",
-    image: "images/User.png",
+    image: "/images/User.png",
     alt: "Consultation Icon",
   },
   {
     title: "NFT Integration",
     description:
       "Implement custom NFT frameworks (ERC-721, Solana, BSC) for minting, trading, and managing digital assets across decentralized platforms and marketplaces like OpenSea.",
-    image: "images/UX.png",
+    image: "/images/UX.png",
     alt: "Design Icon",
   },
   {
     title: "Blockchain-Based Identity",
     description:
       "Deploy decentralized identity layers using smart contracts and verifiable credentials to manage user authentication and ownership across the metaverse.",
-    image: "images/Front.png",
+    image: "/images/Front.png",
     alt: "Custom Development Icon",
   },
   {
     title: "Social VR",
     description:
       "Build immersive social environments with multi-user voice, avatar interaction, and event hosting capabilities using custom-built VR infrastructure.",
-    image: "images/Responsive.png",
+    image: "/images/Responsive.png",
     alt: "Testing Icon",
   },
   {
     title: "Metaverse Integration Solutions",
     description:
       "Integrate real-time crypto transactions, asset management, and blockchain dashboards with seamless API and node monitoring support across Ethereum and Solana networks.",
-    image: "images/HTML.png",
+    image: "/images/HTML.png",
     alt: "Deployment Icon",
   },
   {
     title: "Metaverse App Development",
     description:
       "Develop cross-platform metaverse applications with service-oriented architecture (SOA), data pipelines, and ecosystem tool integrations—optimized for scale and performance.",
-    image: "images/Performance.png",
+    image: "/images/Performance.png",
     alt: "Support Icon",
   },
 ];
@@ -128,7 +129,9 @@ const MetaverseServicesGrid = () => {
               key={index}
               className={`${styles["card"]} hover:bg-[#1c1c1e]  hover:border-[#1c1c1e;] border border-zinc-800 group transition-colors duration-1000 ease-in-out `}
             >
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={`${styles["image1"]} object-contain `}

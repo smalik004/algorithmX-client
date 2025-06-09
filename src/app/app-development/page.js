@@ -5,6 +5,7 @@ export const metadata = {
     "AlgorithmX helps you Boost your online visibility with our SEO audit services. Our experts will analyze your website and provide actionable recommendations.",
 };
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import MobileSection from "./home";

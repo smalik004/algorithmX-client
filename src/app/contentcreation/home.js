@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -27,14 +28,18 @@ const ContentSection = () => {
           <div className="w-full md:w-1/2">
             <div className="relative">
               {/* Main Image */}
-              <img
-                src="images/Content-Creation.webp"
+              <Image
+                width={800}
+                height={800}
+                src="/images/Content-Creation.webp"
                 alt="Branding process with color swatches"
                 className={`w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%]   `}
               />
               {/* Rectangular Image */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={800}
+                height={800}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
               />
@@ -68,24 +73,25 @@ const ContentSection = () => {
           {/* Right side - Graphics and description */}
           <div className="w-full md:w-1/2  md:items-start items-center text-center md:text-left">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={48}
+              height={48}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-          <div>
-        <span
-          className={` ${styles["title"]} ${monsterfont2.className} tracking-[8px] text-white block`}
-      >
-    CONTENT
-  </span>
-  <span
-    className={`  ${styles["title"]} ${monsterfont1.className} tracking-[8px] bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent ml-2`}
-  >
-    CREATION
-  </span>
-</div>
-
+            <div>
+              <span
+                className={` ${styles["title"]} ${monsterfont2.className} tracking-[8px] text-white block`}
+              >
+                CONTENT
+              </span>
+              <span
+                className={`  ${styles["title"]} ${monsterfont1.className} tracking-[8px] bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent ml-2`}
+              >
+                CREATION
+              </span>
+            </div>
           </div>
         </div>
         {/* Description below */}
@@ -93,7 +99,10 @@ const ContentSection = () => {
           <p
             className={`text-semi-white  ${styles["description-text"]} ${monsterfont1.className} text-center`}
           >
-          AlgorithmX excels in digital content creation services that engage your audience. Our content creation specialists produce high-quality content for various platforms and channels that align with your brand voice.
+            AlgorithmX excels in digital content creation services that engage
+            your audience. Our content creation specialists produce high-quality
+            content for various platforms and channels that align with your
+            brand voice.
           </p>
         </div>
       </div>

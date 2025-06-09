@@ -1,28 +1,29 @@
-'use client'
-import { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+"use client";
+import { useState, useEffect, useRef } from "react";
+import Head from "next/head";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ShortsHome() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(null);
   const videoRefs = useRef([]);
-  
+
   // Sample data for carousel items - reduced to 2 items
   const carouselItems = [
     {
       id: 1,
       videoUrl: "/images/rr.mp4",
       category: "Design, Development",
-      title: "Success is something of which we all want more."
+      title: "Success is something of which we all want more.",
     },
     {
       id: 2,
       videoUrl: "/images/rr.mp4",
       category: "Marketing, Strategy",
-      title: "Innovation drives progress and shapes our future."
-    }
+      title: "Innovation drives progress and shapes our future.",
+    },
   ];
 
   const nextSlide = () => {
@@ -32,21 +33,24 @@ export default function ShortsHome() {
 
   const prevSlide = () => {
     setDirection("left");
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + carouselItems.length) % carouselItems.length);
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + carouselItems.length) % carouselItems.length
+    );
   };
 
   useEffect(() => {
     // Set up video event listeners for the current video
     const currentVideo = videoRefs.current[currentIndex];
-    
+
     if (currentVideo) {
       // Reset and play the current video
       currentVideo.currentTime = 0;
-      
+
       const playPromise = currentVideo.play();
-      
+
       if (playPromise !== undefined) {
-        playPromise.catch(error => {
+        playPromise.catch((error) => {
           console.error("Video play error:", error);
         });
       }
@@ -56,12 +60,12 @@ export default function ShortsHome() {
         setDirection("right");
         nextSlide();
       };
-      
-      currentVideo.addEventListener('ended', handleVideoEnd);
-      
+
+      currentVideo.addEventListener("ended", handleVideoEnd);
+
       // Clean up
       return () => {
-        currentVideo.removeEventListener('ended', handleVideoEnd);
+        currentVideo.removeEventListener("ended", handleVideoEnd);
       };
     }
   }, [currentIndex]);
@@ -70,26 +74,31 @@ export default function ShortsHome() {
     <div className="relative overflow-hidden w-full h-screen ">
       <Head>
         <title>Video Carousel</title>
-        <meta name="description" content="Animated video carousel with text overlays" />
+        <meta
+          name="description"
+          content="Animated video carousel with text overlays"
+        />
       </Head>
-      
+
       {/* Videos */}
       <div className="absolute inset-0">
         {carouselItems.map((item, index) => (
-          <div 
+          <div
             key={item.id}
             className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
-              index === currentIndex ? 'z-10' : 'z-0'
+              index === currentIndex ? "z-10" : "z-0"
             } ${
-              index === currentIndex ? 'translate-x-0' : 
-              (direction === "right" && index < currentIndex) || (direction === "left" && index > currentIndex) 
-                ? '-translate-x-full' 
-                : 'translate-x-full'
+              index === currentIndex
+                ? "translate-x-0"
+                : (direction === "right" && index < currentIndex) ||
+                  (direction === "left" && index > currentIndex)
+                ? "-translate-x-full"
+                : "translate-x-full"
             }`}
           >
             <div className="absolute inset-0 bg-black/50 z-10"></div>
             <video
-              ref={el => videoRefs.current[index] = el}
+              ref={(el) => (videoRefs.current[index] = el)}
               className="w-full h-full object-cover"
               src={item.videoUrl}
               muted
@@ -112,7 +121,7 @@ export default function ShortsHome() {
             >
               {carouselItems[currentIndex].category}
             </motion.div>
-            
+
             <motion.h1
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -132,7 +141,12 @@ export default function ShortsHome() {
             >
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                  <img src="/avatar.jpg" alt="Author" className="w-full h-full object-cover" />
+                  <Image
+                    fill
+                    src="/avatar.jpg"
+                    alt="Author"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <span className="ml-3 text-white">Post by - Paul Flavius</span>
               </div>
@@ -152,7 +166,7 @@ export default function ShortsHome() {
                 setCurrentIndex(index);
               }}
               className={`w-4 h-4 transition-colors ${
-                index === currentIndex ? 'bg-white' : 'bg-white/50'
+                index === currentIndex ? "bg-white" : "bg-white/50"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -161,16 +175,16 @@ export default function ShortsHome() {
       </div>
 
       {/* Navigation arrows - adjusted for mobile */}
-      <button 
-        onClick={prevSlide} 
+      <button
+        onClick={prevSlide}
         className="absolute left-4 top-[70%] md:top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors md:left-6"
         aria-label="Previous slide"
       >
         <ChevronLeft size={24} />
       </button>
-      
-      <button 
-        onClick={nextSlide} 
+
+      <button
+        onClick={nextSlide}
         className="absolute right-4 top-[70%] md:top-1/2 transform -translate-y-1/2 z-10 p-2 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors md:right-6"
         aria-label="Next slide"
       >

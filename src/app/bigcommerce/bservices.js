@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -22,7 +23,7 @@ const monsterfont2 = Montserrat({
 const BigcommerceServices = () => {
   const services = [
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Custom BigCommerce development",
       description:
         "We offer BigCommerce store development services focused on creativity and functionality, resulting in personalized success of brands. By leveraging a customized approach, we create attractive designs and strong solutions that transform website visitors into regular customers.",
@@ -30,7 +31,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/shopify-development-services-icon2.png",
+      iconSrc: "/images/shopify-development-services-icon2.png",
       title: "Headless BigCommerce development",
       description:
         "AlgorithmX is a leading BigCommerce development company in USA where we elevate your brand by incorporating high-quality vendors with crucial e-commerce features, thereby enabling sales across platforms like self-service kiosks, websites, mobile apps, and integrated commerce systems.",
@@ -38,7 +39,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/shopify-development-services-icon3.png",
+      iconSrc: "/images/shopify-development-services-icon3.png",
       title: "BigCommerce UI/UX design",
       description:
         "Partner with our best BigCommerce website development agency to brighten up your online store using top-notch BigCommerce UI/UX designs that inspire and encourage customers to buy from you. Our expert BigCommerce developers create compelling interfaces that effortlessly lead customers, offering a memorable user journey on all devices.",
@@ -46,7 +47,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/shopify-development-services-icon4.png",
+      iconSrc: "/images/shopify-development-services-icon4.png",
       title: "Migration and Replatforming",
       description: (
         <>
@@ -64,7 +65,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon5.png",
+      iconSrc: "/images/shopify-development-services-icon5.png",
       title: "Testing and Quality Assurance",
       description:
         "We perform thorough testing of BigCommerce websites as part of our BigCommerce development services to ensure the highest functionality and buyer satisfaction, establishing benchmarks through in-depth analysis of checkout processes and evaluation of payment gateways for a memorable user experience.",
@@ -72,7 +73,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/shopify-development-services-icon6.png",
+      iconSrc: "/images/shopify-development-services-icon6.png",
       title: "Performance Optimization",
       description:
         "Our excellent ecommerce solutions with BigCommerce development include fine-tuning every element to achieve peak efficiency and lightning-fast responsiveness, enhancing your digital platforms. We ensure swift and seamless interactions by conducting in-depth analysis and simplifying processes, resulting in optimized load times and database inquiries.",
@@ -80,7 +81,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadowlightgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon7.png",
+      iconSrc: "/images/shopify-development-services-icon7.png",
       title: "Ongoing Maintenance & Support",
       description: (
         <>
@@ -101,7 +102,7 @@ const BigcommerceServices = () => {
       glowColor: styles.shadoworange,
     },
     {
-      iconSrc: "images/shopify-development-services-icon8.png",
+      iconSrc: "/images/shopify-development-services-icon8.png",
       title: (
         <Link href="/app-development" className="hover:text-blue-400">
           Mobile App Development
@@ -141,7 +142,9 @@ const BigcommerceServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

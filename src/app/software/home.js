@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import style from "../contentcreation/style.module.css";
 import styles from "../crm/style.module.css";
 
@@ -28,14 +29,18 @@ const ContentSection = () => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/3">
             <div className="relative">
-              <img
-                src="images/Software.webp"
+              <Image
+                width={800}
+                height={800}
+                src="/images/Software.webp"
                 alt="Branding process with color swatches"
                 className={`w-4/5 md:w-full  h-auto shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%] `}
               />
               {/* Rectangular image below the main image (hidden on phones) */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={800}
+                height={800}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-4/5 md:w-full  h-auto shadow-lg mx-auto"
               />
@@ -69,8 +74,10 @@ const ContentSection = () => {
           {/* Right side - Branding and description */}
           <div className="w-full md:w-2/3 flex flex-col">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={48}
+              height={48}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />

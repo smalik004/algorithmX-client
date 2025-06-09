@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../video/styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -20,14 +21,18 @@ const SEOSection = () => {
           <div className="w-full md:w-1/2 ">
             <div className="relative md:ml-16">
               {/* Main Image */}
-              <img
-                src="images/seo.webp"
+              <Image
+                width={290}
+                height={400}
+                src="/images/seo.webp"
                 alt="Branding process with color swatches"
                 className={` w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]}`}
               />
               {/* Rectangular Image */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={290}
+                height={400}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
               />
@@ -61,8 +66,10 @@ const SEOSection = () => {
           {/* Right side - Graphics and description */}
           <div className="w-full md:w-1/2 flex flex-col md:items-start items-center text-center md:text-left">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={48}
+              height={48}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
@@ -78,7 +85,9 @@ const SEOSection = () => {
           <p
             className={`text-semi-white ${styles["description-text"]} ${monsterfont1.className} mx-auto  text-center`}
           >
-         At AlgorithmX, we offer extraordinary SEO services to amplify your business’s online presence with increased traffic, higher rankings, and improved ROI.
+            At AlgorithmX, we offer extraordinary SEO services to amplify your
+            business’s online presence with increased traffic, higher rankings,
+            and improved ROI.
           </p>
         </div>
       </div>

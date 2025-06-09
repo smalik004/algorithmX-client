@@ -1,20 +1,21 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import Image from "next/image";
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -26,14 +27,18 @@ const ERPContentSection = () => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/3">
             <div className="relative">
-              <img
-                src="images/ERP.webp"
+              <Image
+                width={800}
+                height={800}
+                src="/images/ERP.webp"
                 alt="Branding process with color swatches"
                 className={`w-3/5  h-auto shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%] `}
               />
               {/* Rectangular image below the main image (hidden on phones) */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={800}
+                height={800}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-3/5 h-auto shadow-lg mx-auto"
               />
@@ -67,24 +72,35 @@ const ERPContentSection = () => {
           {/* Right side - Branding and description */}
           <div className="w-full md:w-2/3 flex flex-col  space-y-2">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={48}
+              height={48}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={`${styles["crm-text"]} ${monsterfont2.className} text-white`}>
+            <h1
+              className={`${styles["crm-text"]} ${monsterfont2.className} text-white`}
+            >
               ERP
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-             DEVELOPMENT
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          AlgorithmX is a leading provider of top-notch ERP development services where we build a centralized 
-          platform for your business’s optimal performance. Our custom ERP development solutions cover everything from HR and finance to CRM, and supply chain, unifying your processes.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            AlgorithmX is a leading provider of top-notch ERP development
+            services where we build a centralized platform for your business’s
+            optimal performance. Our custom ERP development solutions cover
+            everything from HR and finance to CRM, and supply chain, unifying
+            your processes.
           </p>
         </div>
       </div>

@@ -1,17 +1,18 @@
-'use client'
+"use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function OutdoorTabs() {
   const [activeTab, setActiveTab] = useState("Hiking");
- 
+
   const tabs = [
     { name: "Hiking", imageSrc: "/images/hiking.png", alt: "Hiking icon" },
     { name: "Desert", imageSrc: "/images/desert.png", alt: "Desert icon" },
     { name: "Forest", imageSrc: "/images/forest.png", alt: "Forest icon" },
     { name: "Camping", imageSrc: "/images/forest.png", alt: "Camping icon" },
-    { name: "Beach", imageSrc: "/images/hiking.png", alt: "Beach icon" }
+    { name: "Beach", imageSrc: "/images/hiking.png", alt: "Beach icon" },
   ];
- 
+
   // Use different layouts for mobile and desktop
   return (
     <>
@@ -27,13 +28,16 @@ export default function OutdoorTabs() {
               }`}
             >
               <div className="rounded-full p-1">
-                <img
+                <Image
+                  fill
                   src={tab.imageSrc}
                   alt={tab.alt}
                   className="w-12 h-12"
                 />
               </div>
-              <span className="text-base text-black font-medium ml-4">{tab.name}</span>
+              <span className="text-base text-black font-medium ml-4">
+                {tab.name}
+              </span>
             </button>
           ))}
         </div>
@@ -51,13 +55,16 @@ export default function OutdoorTabs() {
               }`}
             >
               <div className="rounded-full p-2">
-                <img
+                <Image
+                  fill
                   src={tab.imageSrc}
                   alt={tab.alt}
                   className="w-[80px] h-[70px]"
                 />
               </div>
-              <span className="text-base sm:text-lg text-black font-medium">{tab.name}</span>
+              <span className="text-base sm:text-lg text-black font-medium">
+                {tab.name}
+              </span>
             </button>
           ))}
         </div>

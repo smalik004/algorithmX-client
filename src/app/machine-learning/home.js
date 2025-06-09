@@ -1,20 +1,21 @@
 import React from "react";
-import styles from '../crm/style.module.css';
-import { Montserrat } from 'next/font/google';
+import Image from "next/image";
+import styles from "../crm/style.module.css";
+import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
-  subsets: ['latin'],
-  weight: '200',
+  subsets: ["latin"],
+  weight: "200",
   fallback: ["sans-serif"],
 });
 const monsterfont1 = Montserrat({
-  subsets: ['latin'],
-  weight: '100',
+  subsets: ["latin"],
+  weight: "100",
   fallback: ["sans-serif"],
 });
 const monsterfont2 = Montserrat({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
   fallback: ["sans-serif"],
 });
 
@@ -26,14 +27,16 @@ const MachineSection = () => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/3">
             <div className="relative">
-              <img
-                src="images/ml.jpg"
+              <Image
+                fill
+                src="/images/ml.jpg"
                 alt="Branding process with color swatches"
                 className={`w-4/5  h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%] `}
               />
               {/* Rectangular image below the main image (hidden on phones) */}
-              <img
-                src="images/a3.png"
+              <Image
+                fill
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-4/5 h-auto shadow-lg mx-auto"
               />
@@ -67,23 +70,37 @@ const MachineSection = () => {
           {/* Right side - Branding and description */}
           <div className="w-full md:w-2/3 flex flex-col  space-y-2">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              fill
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-24 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
-            <h1 className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}>
-            ML & AI
+            <h1
+              className={` text-[30px] text-center md:text-[75px]  md:tracking-[8px] md:text-start text-white ${monsterfont2.className} `}
+            >
+              ML & AI
             </h1>
-            <h1 className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}>
-            DEVELOPMENT
+            <h1
+              className={`${styles["development-text"]} ${monsterfont.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent `}
+            >
+              DEVELOPMENT
             </h1>
           </div>
         </div>
         {/* Description below branding */}
         <div className="mt-8 md:mt-12 text-center">
-          <p className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}>
-          At AlgorithmX, we harness the power of Machine Learning and Artificial Intelligence to drive intelligent automation and scalable innovation. By integrating advanced model evaluation techniques, automated pipelines, and continuous learning systems, we deliver high-accuracy, low-latency AI solutions. Our approach minimizes risks, enhances operational efficiency, and ensures seamless deployment—future-proofing businesses for success in the AI-driven era.
+          <p
+            className={`${styles["crm-description"]} ${monsterfont.className} text-semi-white `}
+          >
+            At AlgorithmX, we harness the power of Machine Learning and
+            Artificial Intelligence to drive intelligent automation and scalable
+            innovation. By integrating advanced model evaluation techniques,
+            automated pipelines, and continuous learning systems, we deliver
+            high-accuracy, low-latency AI solutions. Our approach minimizes
+            risks, enhances operational efficiency, and ensures seamless
+            deployment—future-proofing businesses for success in the AI-driven
+            era.
           </p>
         </div>
       </div>

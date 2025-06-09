@@ -1,7 +1,8 @@
-'use client';
-import React, { useState, useEffect } from 'react';
+"use client";
+import React, { useState, useEffect } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -24,50 +25,94 @@ const monsterfont3 = Montserrat({
   fallback: ["sans-serif"],
 });
 
-
 // Define the Icons object with image paths
 const Icons = {
   Business: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/business.png" alt="Business" className="max-w-full max-h-full object-contain " />
+      <Image
+        width={48}
+        height={48}
+        src="/images/business.png"
+        alt="Business"
+        className="max-w-full max-h-full object-contain "
+      />
     </div>
   ),
   Marketing: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/Marketing.png" alt="Marketing" className="max-w-full max-h-full object-contain" />
+      <Image
+        width={48}
+        height={48}
+        src="/images/Marketing.png"
+        alt="Marketing"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   ),
   Communication: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/Close.png" alt="Communication" className="max-w-full max-h-full object-contain" />
+      <Image
+        width={48}
+        height={48}
+        src="/images/Close.png"
+        alt="Communication"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   ),
   Deadlines: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/Meeting.png" alt="Deadlines" className="max-w-full max-h-full object-contain" />
+      <Image
+        width={48}
+        height={48}
+        src="/images/Meeting.png"
+        alt="Deadlines"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   ),
   Results: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/Future.png" alt="Results" className="max-w-full max-h-full object-contain" />
+      <Image
+        width={48}
+        height={48}
+        src="/images/Future.png"
+        alt="Results"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   ),
   Expectations: () => (
     <div className="w-12 h-12 ">
-      <img src="/images/Exceeding.png" alt="Expectations" className="max-w-full max-h-full object-contain" />
+      <Image
+        width={48}
+        height={48}
+        src="/images/Exceeding.png"
+        alt="Expectations"
+        className="max-w-full max-h-full object-contain"
+      />
     </div>
   ),
 };
 
-
 // Define FeatureCard component
 const FeatureCard = ({ Icon, title, description, isHighlighted }) => (
-  <div className={`bg-black p-8 rounded-[10px] py-16 px-5   text-center shadow-md transform transition-transform duration-300 hover:-translate-y-2 ${isHighlighted ? styles['box-border'] : 'bg-dark'}`}>
+  <div
+    className={`bg-black p-8 rounded-[10px] py-16 px-5   text-center shadow-md transform transition-transform duration-300 hover:-translate-y-2 ${
+      isHighlighted ? styles["box-border"] : "bg-dark"
+    }`}
+  >
     <div className="mb-4 flex justify-center items-center">
       <Icon />
     </div>
-    <h3 className= {`algo-line-height-24 letter-spacing-100 font-size-14 text-white ${monsterfont2.className} mt-4`}>{title}</h3>
-    <p className={`font-size-14 text-semi-white font-opensans mt-4`}>{description}</p>
+    <h3
+      className={`algo-line-height-24 letter-spacing-100 font-size-14 text-white ${monsterfont2.className} mt-4`}
+    >
+      {title}
+    </h3>
+    <p className={`font-size-14 text-semi-white font-opensans mt-4`}>
+      {description}
+    </p>
   </div>
 );
 
@@ -88,7 +133,7 @@ export default function MarketingFeatures() {
         threshold: 0.1,
       }
     );
-    const barcodeSection = document.querySelector('.barcode-section');
+    const barcodeSection = document.querySelector(".barcode-section");
     if (barcodeSection) {
       barcodeObserver.observe(barcodeSection);
     }
@@ -104,7 +149,7 @@ export default function MarketingFeatures() {
         threshold: 0.1,
       }
     );
-    const leftColumn = document.querySelector('.left-column');
+    const leftColumn = document.querySelector(".left-column");
     if (leftColumn) {
       leftObserver.observe(leftColumn);
     }
@@ -120,7 +165,7 @@ export default function MarketingFeatures() {
         threshold: 0.1,
       }
     );
-    const rightColumn = document.querySelector('.right-column');
+    const rightColumn = document.querySelector(".right-column");
     if (rightColumn) {
       rightObserver.observe(rightColumn);
     }
@@ -141,8 +186,14 @@ export default function MarketingFeatures() {
   return (
     <div className="bg-black min-h-screen w-full py-16 relative overflow-hidden">
       {/* Barcode Background Effect */}
-      <div className={`absolute top-0 left-0 w-full h-32 flex justify-center items-center barcode-section }`}>
-        <div className={`flex space-x-4 transform transition-all duration-1000 ${isBarcodeVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
+      <div
+        className={`absolute top-0 left-0 w-full h-32 flex justify-center items-center barcode-section }`}
+      >
+        <div
+          className={`flex space-x-4 transform transition-all duration-1000 ${
+            isBarcodeVisible ? "scale-100 opacity-100" : "scale-0 opacity-0"
+          }`}
+        >
           {[...Array(26)].map((_, i) => (
             <div key={i} className="w-4 h-28 bg-[#151515]" />
           ))}
@@ -156,16 +207,18 @@ export default function MarketingFeatures() {
           <h2 className={`font-size-40 ${monsterfont.className} text-white `}>
             WHAT MAKES
             <br />
-            <span className={`${monsterfont1.className}`}>
-            US BETTER?
-            </span>
+            <span className={`${monsterfont1.className}`}>US BETTER?</span>
           </h2>
         </div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-8">
           {/* Left Column - Animate from left */}
-          <div className={`left-column flex flex-col gap-8 opacity-0 ${leftColumnVisible ? styles['animate-slide-in-left'] : ''} h-full`}>
+          <div
+            className={`left-column flex flex-col gap-8 opacity-0 ${
+              leftColumnVisible ? styles["animate-slide-in-left"] : ""
+            } h-full`}
+          >
             <div className="flex-1">
               <FeatureCard
                 Icon={Icons.Business}
@@ -205,7 +258,11 @@ export default function MarketingFeatures() {
           </div>
 
           {/* Right Column - Animate from right */}
-          <div className={`right-column flex flex-col gap-8 opacity-0 ${rightColumnVisible ? styles['animate-slide-in-right'] : ''} h-full`}>
+          <div
+            className={`right-column flex flex-col gap-8 opacity-0 ${
+              rightColumnVisible ? styles["animate-slide-in-right"] : ""
+            } h-full`}
+          >
             <div className="flex-1">
               <FeatureCard
                 Icon={Icons.Communication}

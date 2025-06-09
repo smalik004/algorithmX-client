@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont1 = Montserrat({
@@ -16,7 +17,9 @@ const CloudStrategy = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Card 1 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/images/icons-clouds-new-1.png"
               alt="Backlink Analysis"
               className="w-12 h-12 mr-4"
@@ -34,7 +37,9 @@ const CloudStrategy = () => {
           </div>
           {/* Card 2 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Manual Review"
               className="w-12 h-12 mr-4"
@@ -52,7 +57,9 @@ const CloudStrategy = () => {
           </div>
           {/* Card 3 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Removal Requests"
               className="w-12 h-12 mr-4"
@@ -70,7 +77,9 @@ const CloudStrategy = () => {
           </div>
           {/* Card 4 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
-            <img
+            <Image
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Link Disavow"
               className="w-12 h-12 mr-4"

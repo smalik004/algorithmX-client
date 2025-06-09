@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -39,41 +40,41 @@ const services = [
     title: "User Interface (UI) Design",
     description:
       "We are a top front end web development company focused on designing the visual layout and aesthetics of a website or app in order to create a user-friendly and visually pleasing user interface.",
-    image: "images/User.png",
+    image: "/images/User.png",
     alt: "Consultation Icon",
   },
   {
     title: "UX Testing and Optimization",
     description: <UXDescriptionWithLink />,
-    image: "images/UX.png",
+    image: "/images/UX.png",
     alt: "Design Icon",
   },
   {
     title: "Front-End Frameworks",
     description:
       "In our front end web development services, we use front end frameworks, such as Angular, React.js, or Vue.js, to simplify development, improve code organization and streamline building complex and advanced user interfaces with ease.",
-    image: "images/Front.png",
+    image: "/images/Front.png",
     alt: "Custom Development Icon",
   },
   {
     title: <ResponsiveWebDesignTitle />,
     description:
       "Our progressive web app development includes designing websites that adjust and operate seamlessly on various devices and all screen sizes to maintain a uniform user experience.",
-    image: "images/Responsive.png",
+    image: "/images/Responsive.png",
     alt: "Testing Icon",
   },
   {
     title: "HTML/CSS/JS Development",
     description:
       "We pride ourselves on our Xamarin app development services as we ensure your apps deliver the best performance possible by providing constant technical support and maintaining the software at all times according to industry trends and standards.",
-    image: "images/HTML.png",
+    image: "/images/HTML.png",
     alt: "Deployment Icon",
   },
   {
     title: "Performance Optimization",
     description:
       "AlgorithmX's front end development involves excellent optimization of assets and front end codes to enhance the website's efficiency and speed by reducing file sizes, employing lazy load functionality for resources and leveraging caching methods.",
-    image: "images/Performance.png",
+    image: "/images/Performance.png",
     alt: "Support Icon",
   },
 ];
@@ -146,7 +147,9 @@ const FrontServicesGrid = () => {
               key={index}
               className={`${styles["card"]} hover:bg-[#1c1c1e]  hover:border-[#1c1c1e;] border border-zinc-800 group transition-colors duration-1000 ease-in-out `}
             >
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={`${styles["image1"]} object-contain `}

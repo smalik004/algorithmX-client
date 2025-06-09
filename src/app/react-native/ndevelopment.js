@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import styles from "./style.module.css";
 import Link from "next/link";
@@ -80,7 +81,9 @@ const NativeServicesGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.slice(0, 3).map((service, index) => (
             <div key={index} className={`bg-black ${styles["box"]} `}>
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={service.image}
                 alt={service.alt}
                 className={` object-contain rounded-lg  ${styles["indus-card-figure"]}  `}
@@ -102,7 +105,9 @@ const NativeServicesGrid = () => {
           <div
             className={`bg-black ${styles["box"]} col-span-1 md:col-span-2 lg:col-span-3 md:text-center`}
           >
-            <img
+            <Image
+              width={32}
+              height={32}
               src={services[3].image}
               alt={services[3].alt}
               className={`object-contain rounded-lg mx-auto ${styles["indus-card-figure"]}`}

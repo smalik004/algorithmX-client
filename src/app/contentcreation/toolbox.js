@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -13,28 +14,28 @@ const monsterfont1 = Montserrat({
 
 const TechnologyToolbox = () => {
   const tools = [
-    { id: "ps", name: "Adobe Font", image: "images/Adobe-Font.png" },
-    { id: "ai", name: "Creative Cloud", image: "images/creative-cloud.png" },
-    { id: "ae", name: "Ahrefs", image: "images/Ahrefs.png" },
-    { id: "id", name: "ChatGPT", image: "images/Chatgpt.png" },
-    { id: "canva", name: "Claude", image: "images/Claude.png" },
+    { id: "ps", name: "Adobe Font", image: "/images/Adobe-Font.png" },
+    { id: "ai", name: "Creative Cloud", image: "/images/creative-cloud.png" },
+    { id: "ae", name: "Ahrefs", image: "/images/Ahrefs.png" },
+    { id: "id", name: "ChatGPT", image: "/images/Chatgpt.png" },
+    { id: "canva", name: "Claude", image: "/images/Claude.png" },
     {
       id: "figma",
       name: "Google Analytics",
-      image: "images/Google-Analytics.png",
+      image: "/images/Google-Analytics.png",
     },
-    { id: "cs", name: "Google Font", image: "images/Google-Font.png" },
-    { id: "stock", name: "Grammerly", image: "images/Grammerly.png" },
+    { id: "cs", name: "Google Font", image: "/images/Google-Font.png" },
+    { id: "stock", name: "Grammerly", image: "/images/Grammerly.png" },
     {
       id: "sketch",
       name: "Hemingway Editor",
-      image: "images/Hemingway-Editor.png",
+      image: "/images/Hemingway-Editor.png",
     },
-    { id: "word", name: "Microsoft Word", image: "images/Microsoft-Word.png" },
-    { id: "oa", name: "Originality AI", image: "images/Originality-AI.png" },
-    { id: "per", name: "Perplexity", image: "images/Perplexity.png" },
-    { id: "scr", name: "Scrivener", image: "images/Scrivener.png" },
-    { id: "sem", name: "SEMrush", image: "images/SEMrush.png" },
+    { id: "word", name: "Microsoft Word", image: "/images/Microsoft-Word.png" },
+    { id: "oa", name: "Originality AI", image: "/images/Originality-AI.png" },
+    { id: "per", name: "Perplexity", image: "/images/Perplexity.png" },
+    { id: "scr", name: "Scrivener", image: "/images/Scrivener.png" },
+    { id: "sem", name: "SEMrush", image: "/images/SEMrush.png" },
   ];
 
   return (
@@ -69,7 +70,9 @@ const TechnologyToolbox = () => {
                 >
                   {/* Image part (1/3) */}
                   <div className="md:w-1/5 ">
-                    <img
+                    <Image
+                      width={48}
+                      height={48}
                       src={tool.image}
                       alt={tool.name}
                       className="w-12 h-12  object-contain md:ml-2"

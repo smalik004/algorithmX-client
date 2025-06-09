@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 // Montserrat fonts
 const monsterfont = Montserrat({
@@ -100,7 +101,9 @@ const AppGrid = () => {
               >
                 <div className="mb-2">
                   {/* Render image instead of icon */}
-                  <img
+                  <Image
+                    width={50}
+                    height={50}
                     src={service.image}
                     alt={service.title}
                     className="w-[50px] h-auto object-contain"

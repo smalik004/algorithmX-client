@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -15,14 +16,14 @@ const monsterfont1 = Montserrat({
 
 const TechnologyToolbox = () => {
   const tools = [
-    { id: "ps", name: "Premier Pro", image: "images/Premiere-pro.png" },
-    { id: "ai", name: "Animate", image: "images/Animate.png" },
-    { id: "ae", name: "After Effects", image: "images/After-effects.png" },
-    { id: "id", name: "Auto Desk", image: "images/Autodesk.png" },
-    { id: "canva", name: "Cinema 4D", image: "images/Cinema-4D.png" },
-    { id: "figma", name: "Final Cut Pro", image: "images/Final.png" },
-    { id: "cs", name: "Maya", image: "images/maya.png" },
-    { id: "stock", name: "Moho", image: "images/Moho.png" },
+    { id: "ps", name: "Premier Pro", image: "/images/Premiere-pro.png" },
+    { id: "ai", name: "Animate", image: "/images/Animate.png" },
+    { id: "ae", name: "After Effects", image: "/images/After-effects.png" },
+    { id: "id", name: "Auto Desk", image: "/images/Autodesk.png" },
+    { id: "canva", name: "Cinema 4D", image: "/images/Cinema-4D.png" },
+    { id: "figma", name: "Final Cut Pro", image: "/images/Final.png" },
+    { id: "cs", name: "Maya", image: "/images/maya.png" },
+    { id: "stock", name: "Moho", image: "/images/Moho.png" },
   ];
 
   return (
@@ -55,7 +56,9 @@ const TechnologyToolbox = () => {
                 >
                   {/* Image part (1/3) */}
                   <div className="md:w-1/5 ">
-                    <img
+                    <Image
+                      width={48}
+                      height={48}
                       src={tool.image}
                       alt={tool.name}
                       className="w-12 h-12  object-contain md:ml-2"

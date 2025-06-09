@@ -44,7 +44,8 @@ export default function TabbedContent() {
               >
                 <div className="relative mb-[40px] md:mb-0 md:h-[540px] h-64 w-full overflow-hidden rounded-lg group">
                   <div className="relative h-full w-full">
-                    <img
+                    <Image
+                      fill
                       src={top3Blogs[0].image_url}
                       alt={top3Blogs[0].image_alt || top3Blogs[0].title}
                       className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -63,7 +64,8 @@ export default function TabbedContent() {
 
                   <div className="flex items-center mt-4">
                     <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
-                      <img
+                      <Image
+                        fill
                         src="/api/placeholder/40/40"
                         alt="Author"
                         className="object-cover w-full h-full"
@@ -102,7 +104,8 @@ export default function TabbedContent() {
                 >
                   <div className="relative h-64 w-full overflow-hidden rounded-lg group">
                     <div className="relative h-full w-full">
-                      <img
+                      <Image
+                        fill
                         src={blog.image_url}
                         alt={blog.image_alt || blog.title}
                         className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"

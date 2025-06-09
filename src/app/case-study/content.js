@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function DominosHeroSection({ data }) {
   return (
@@ -7,7 +8,8 @@ export default function DominosHeroSection({ data }) {
       <div className="relative w-full h-[400px] max-w-[1300px] mx-auto">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
-          <img
+          <Image
+            fill
             src={data?.solutionImgURL}
             alt="Background"
             className="w-full h-full object-cover"

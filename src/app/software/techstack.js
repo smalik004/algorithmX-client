@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import style from "../front-end/style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -106,7 +107,13 @@ const SoftwareTechStack = () => {
                     key={itemIndex}
                     className={`${style["box"]} inline-flex items-center gap-1 hover:bg-black transition-colors`}
                   >
-                    <img src={item.icon} alt={item.name} className="w-6 h-6" />
+                    <Image
+                      width={24}
+                      height={24}
+                      src={item.icon}
+                      alt={item.name}
+                      className="w-6 h-6"
+                    />
                     <span
                       className={`${style["tech-description"]} ${monsterfont.className} text-semi-white`}
                     >

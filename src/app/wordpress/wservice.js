@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -40,7 +41,7 @@ const MigrationDescriptionWithLink = () => (
 const WordPressServices = () => {
   const services = [
     {
-      iconSrc: "images/shopify-development-services-icon1.png",
+      iconSrc: "/images/shopify-development-services-icon1.png",
       title: "Custom Theme Development",
       description:
         "Our WordPress development company designs appealing themes unique to your brand's style and needs. Our best WordPress developers make layouts, graphics, and user interfaces, ensuring they work proficiently on all devices.",
@@ -48,7 +49,7 @@ const WordPressServices = () => {
       glowColor: styles.shadowred,
     },
     {
-      iconSrc: "images/shopify-development-services-icon2.png",
+      iconSrc: "/images/shopify-development-services-icon2.png",
       title: "Plugin Development",
       description:
         "AlgorithmX's WordPress plugin development services involve crafting custom plugins to improve WordPress's capabilities including simple features like contact forms and super complex ones like management systems and ecommerce solutions.",
@@ -56,7 +57,7 @@ const WordPressServices = () => {
       glowColor: styles.shadowyellow,
     },
     {
-      iconSrc: "images/shopify-development-services-icon3.png",
+      iconSrc: "/images/shopify-development-services-icon3.png",
       title: "Website Customization",
       description:
         "We are a leading WordPress website development company offering custom WordPress development services to adjust plugins and themes based on your business requirements, such as refining design components, improving performance and introducing additional functionalities.",
@@ -64,7 +65,7 @@ const WordPressServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/shopify-development-services-icon4.png",
+      iconSrc: "/images/shopify-development-services-icon4.png",
       title: "E-commerce Solutions",
       description:
         "AlgorithmX excels at providing customized WordPress web solutions and developing ecommerce websites leveraging platforms such as WordPress, where we set up product listings, order management systems, and payment gateways, creating a memorable shopping experience for customers.",
@@ -72,7 +73,7 @@ const WordPressServices = () => {
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon5.png",
+      iconSrc: "/images/shopify-development-services-icon5.png",
       title: "WordPress Maintenance and Support",
       description:
         "Being one of the top WordPress development companies, we constantly maintain WordPress sites to ensure their high performance, security, and optimization. Our support services include resolving glitches, monitoring security threats and keeping regular backups.",
@@ -80,7 +81,7 @@ const WordPressServices = () => {
       glowColor: styles.shadowpink,
     },
     {
-      iconSrc: "images/SEO.png",
+      iconSrc: "/images/SEO.png",
       title: <SEOTitleWithLink />,
       description:
         "Our WordPress development company offers comprehensive SEO services to improve your website's visibility in search engines, including keyword research, on-page optimization, and content strategy.",
@@ -88,14 +89,14 @@ const WordPressServices = () => {
       glowColor: styles.shadowblue,
     },
     {
-      iconSrc: "images/Migration.png",
+      iconSrc: "/images/Migration.png",
       title: "Migration",
       description: <MigrationDescriptionWithLink />,
       borderColor: "border-green-500",
       glowColor: styles.shadowgreen,
     },
     {
-      iconSrc: "images/shopify-development-services-icon8.png",
+      iconSrc: "/images/shopify-development-services-icon8.png",
       title: "Custom Development Solutions",
       description:
         "AlgorithmX's expert enterprise WordPress development services offer personalized development to cater to every client's needs which involves creating intricate web applications using WordPress, integrating third-party systems and constructing personalized functionalities.",
@@ -131,7 +132,9 @@ const WordPressServices = () => {
                          transition-all duration-300`}
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

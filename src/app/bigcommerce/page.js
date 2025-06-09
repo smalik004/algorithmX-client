@@ -4,6 +4,7 @@ export const metadata = {
     "AlgorithmX is a BigCommerce development agency offering custom themes, integrations, and migration services. Improve your online store's performance and reach now. ",
 };
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import BigCommerceSection from "./home";

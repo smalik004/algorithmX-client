@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 const monsterfont3 = Montserrat({
@@ -11,29 +12,33 @@ const MarketingServices = () => {
   const services = [
     {
       title: "Branding",
-      description: "Enhances brand recognition, boosts customer engagement, and increases conversion rates, driving effective business growth and market visibility.",
-      image: "images/Branding (1).webp",
-      imageOnLeft: true
+      description:
+        "Enhances brand recognition, boosts customer engagement, and increases conversion rates, driving effective business growth and market visibility.",
+      image: "/images/Branding (1).webp",
+      imageOnLeft: true,
     },
     {
       title: "App Development",
-      description: "The company's digital presence enhances app visibility, improves user engagement, and drives downloads, supporting growth and market penetration effectively.",
-      image: "images/App-development.webp",
-      imageOnLeft: true
+      description:
+        "The company's digital presence enhances app visibility, improves user engagement, and drives downloads, supporting growth and market penetration effectively.",
+      image: "/images/App-development.webp",
+      imageOnLeft: true,
     },
     {
       title: "SEO & PPC",
-      description: "Enhanced visibility and increased traffic through SEO and PPC led to improved conversions, contributing to significant business growth and broader market reach.",
-      image: "images/seo-and-ppc.webp",
+      description:
+        "Enhanced visibility and increased traffic through SEO and PPC led to improved conversions, contributing to significant business growth and broader market reach.",
+      image: "/images/seo-and-ppc.webp",
       bgColor: "bg-blue-900",
-      imageOnLeft: false
+      imageOnLeft: false,
     },
     {
       title: "Content Marketing",
-      description: "Engaging content built trust, increased conversions, fostering customer loyalty, driving substantial business growth and relationships.",
-      image: "images/content-marketing.webp",
-      imageOnLeft: false
-    }
+      description:
+        "Engaging content built trust, increased conversions, fostering customer loyalty, driving substantial business growth and relationships.",
+      image: "/images/content-marketing.webp",
+      imageOnLeft: false,
+    },
   ];
 
   return (
@@ -45,25 +50,46 @@ const MarketingServices = () => {
               {/* Mobile Layout */}
               <div className="lg:hidden flex flex-col gap-4">
                 <div className="relative w-full aspect-video overflow-hidden">
-                  <img 
-                    src={service.image} 
+                  <Image
+                    fill
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-black p-6">
-                  <h2 className={`text-[21px] leading-[1.1] ${monsterfont3.className} text-white mb-[15px]`}>{service.title}</h2>
-                  <p className={`text-[16px] leading-[26px] font-helvetica text-[#9f9f9f] `}>{service.description}</p>
+                  <h2
+                    className={`text-[21px] leading-[1.1] ${monsterfont3.className} text-white mb-[15px]`}
+                  >
+                    {service.title}
+                  </h2>
+                  <p
+                    className={`text-[16px] leading-[26px] font-helvetica text-[#9f9f9f] `}
+                  >
+                    {service.description}
+                  </p>
                 </div>
               </div>
 
               {/* Desktop Layout */}
               <div className="hidden lg:flex items-center justify-between relative">
                 {/* Content Section */}
-                <div className={`w-1/2 ${service.imageOnLeft ? 'order-2' : 'order-1'}`}>
+                <div
+                  className={`w-1/2 ${
+                    service.imageOnLeft ? "order-2" : "order-1"
+                  }`}
+                >
                   <div className="bg-black p-8">
-                    <h2 className={`text-[21px] leading-[1.1] ${monsterfont3.className} text-white mb-[15px]`}>{service.title}</h2>
-                    <p className={`text-[14px] leading-[24px] font-helveticaneue text-[#9f9f9f] `}>{service.description}</p>
+                    <h2
+                      className={`text-[21px] leading-[1.1] ${monsterfont3.className} text-white mb-[15px]`}
+                    >
+                      {service.title}
+                    </h2>
+                    <p
+                      className={`text-[14px] leading-[24px] font-helveticaneue text-[#9f9f9f] `}
+                    >
+                      {service.description}
+                    </p>
                   </div>
                 </div>
 
@@ -72,7 +98,9 @@ const MarketingServices = () => {
                   <button className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white transform transition-transform hover:scale-110">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className={`h-6 w-6 ${service.imageOnLeft ? 'rotate-180' : ''}`}
+                      className={`h-6 w-6 ${
+                        service.imageOnLeft ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -88,13 +116,20 @@ const MarketingServices = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className={`w-1/2 ${service.imageOnLeft ? 'order-1' : 'order-2'}`}>
-                  <div className={`overflow-hidden relative aspect-[4/3] ${
-                    service.imageOnLeft 
-                      ? 'clip-path-pentagon-left'
-                      : 'clip-path-pentagon-right'
-                  }`}>
-                    <img
+                <div
+                  className={`w-1/2 ${
+                    service.imageOnLeft ? "order-1" : "order-2"
+                  }`}
+                >
+                  <div
+                    className={`overflow-hidden relative aspect-[4/3] ${
+                      service.imageOnLeft
+                        ? "clip-path-pentagon-left"
+                        : "clip-path-pentagon-right"
+                    }`}
+                  >
+                    <Image
+                      fill
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover"

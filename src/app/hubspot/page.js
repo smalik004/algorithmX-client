@@ -5,6 +5,7 @@ export const metadata = {
     "AlgorithmX helps you with custom HubSpot development. Get Increased leads, conversions, and ROI from our Experienced team and tailored solutions.",
 };
 import React from "react";
+import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import HubSpotSection from "./home";

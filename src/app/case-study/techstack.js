@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const TechnologyStack = ({ data }) => {
   // Get images from API response, limit to maximum 7 images
@@ -20,7 +21,8 @@ const TechnologyStack = ({ data }) => {
           {techStackImages.map((imageUrl, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-                <img
+                <Image
+                  fill
                   src={imageUrl}
                   alt={`Technology ${index + 1}`}
                   className="max-w-full max-h-full object-contain"

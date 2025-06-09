@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 import styles from "../front-end/style.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -51,7 +52,9 @@ const CRMSystem = () => {
   const services = [
     {
       icon: (
-        <img
+        <Image
+          width={80}
+          height={80}
           src="/images/CRM-migration.png"
           alt="CRM Migration"
           className="w-[80px] h-[80px]"
@@ -63,7 +66,9 @@ const CRMSystem = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={80}
+          height={80}
           src="/images/CRM-testing.png"
           alt="CRM Testing"
           className="w-[80px] h-[80px]"
@@ -75,7 +80,9 @@ const CRMSystem = () => {
     },
     {
       icon: (
-        <img
+        <Image
+          width={80}
+          height={80}
           src="/images/CRM-improvement.png"
           alt="CRM Improvement"
           className="w-[80px] h-[80px]"

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../shopify/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
@@ -61,7 +62,7 @@ const MagentoFeatures = () => {
     {
       title: "Responsive Design",
       description: <ResponsiveDescriptionWithLink />,
-      icon: "images/Responsive.png",
+      icon: "/images/Responsive.png",
     },
     {
       title: "Community",

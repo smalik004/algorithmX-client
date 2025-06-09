@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../video/styles.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -20,14 +21,18 @@ const SocialMediaSection = () => {
           <div className="w-full md:w-1/2 ">
             <div className="relative md:ml-16">
               {/* Main Image */}
-              <img
-                src="images/Social-Media.webp"
+              <Image
+                width={290}
+                height={400}
+                src="/images/Social-Media.webp"
                 alt="Branding process with color swatches"
                 className={` w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]}`}
               />
               {/* Rectangular Image */}
-              <img
-                src="images/a3.png"
+              <Image
+                width={290}
+                height={400}
+                src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
               />
@@ -61,15 +66,17 @@ const SocialMediaSection = () => {
           {/* Right side - Graphics and description */}
           <div className="w-full md:w-1/2 flex flex-col md:items-start items-center text-center md:text-left">
             {/* Cylindrical image above branding (hidden on phones) */}
-            <img
-              src="images/g1.png"
+            <Image
+              width={80}
+              height={70}
+              src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"
             />
             <h1
               className={`text-4xl sm:4xl md:text-8xl ${monsterfont.className} text-white  bg-clip-text text-transparent font-light`}
             >
-            SOCIAL
+              SOCIAL
             </h1>
             <h1
               className={`text-4xl sm:4xl md:text-8xl ${monsterfont1.className} bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent font-light`}
@@ -83,7 +90,10 @@ const SocialMediaSection = () => {
           <p
             className={`text-semi-white ${styles["description-text"]} ${monsterfont1.className} mx-auto  text-center`}
           >
-        AlgorithmX offers top-notch social media marketing services where we create captivating content, formulate strong marketing campaigns, and manage your social media handles to reflect your brand’s voice and increase visibility.
+            AlgorithmX offers top-notch social media marketing services where we
+            create captivating content, formulate strong marketing campaigns,
+            and manage your social media handles to reflect your brand’s voice
+            and increase visibility.
           </p>
         </div>
       </div>

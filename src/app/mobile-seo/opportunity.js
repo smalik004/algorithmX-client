@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const MobileStrategy = () => {
   return (
@@ -10,8 +11,9 @@ const MobileStrategy = () => {
           <div className="flex gap-4">
             {/* First Image */}
             <div className="w-1/2">
-              <img
-                src="images/mobile1.webp"
+              <Image
+                fill
+                src="/images/mobile1.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
               />
@@ -19,8 +21,9 @@ const MobileStrategy = () => {
 
             {/* Second Image */}
             <div className="w-1/2">
-              <img
-                src="images/mobile2.webp"
+              <Image
+                fill
+                src="/images/mobile2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
               />
@@ -29,8 +32,9 @@ const MobileStrategy = () => {
 
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
-            <img
-              src="images/mobile3.webp"
+            <Image
+              fill
+              src="/images/mobile3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"
             />

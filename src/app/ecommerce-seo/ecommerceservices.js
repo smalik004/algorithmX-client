@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "../seoaudits/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const monsterfont = Montserrat({
   subsets: ["latin"],
@@ -150,7 +151,8 @@ const EcommerceServices = () => {
                                     }
                                 `}
               >
-                <img
+                <Image
+                  fill
                   src={tab.img}
                   alt={tab.label}
                   className="w-[46px] h-[46px] mb-2"

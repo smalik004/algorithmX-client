@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import styles from "./style.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -23,63 +24,63 @@ const industries = [
   {
     id: 1,
     title: "eCommerce",
-    iconImg: "./images/shopping.png", // Replace with actual image path
+    iconImg: "/images/shopping.png", // Replace with actual image path
     color: styles["text-purple-500"],
     borderColor: styles["border-purple-light"],
   },
   {
     id: 2,
     title: "Healthcare",
-    iconImg: "./images/Healthcare.png",
+    iconImg: "/images/Healthcare.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-yellow-light"],
   },
   {
     id: 3,
     title: "Media & Entertainment",
-    iconImg: "./images/Media.png",
+    iconImg: "/images/Media.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-purple-light"],
   },
   {
     id: 4,
     title: "Sports & Gambling",
-    iconImg: "./images/Sports.png",
+    iconImg: "/images/Sports.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-red-light"],
   },
   {
     id: 5,
     title: "Business Services",
-    iconImg: "./images/Business-Services-1.png",
+    iconImg: "/images/Business-Services-1.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-green-light"],
   },
   {
     id: 6,
     title: "Real Estate",
-    iconImg: "./images/Real-Estate.png",
+    iconImg: "/images/Real-Estate.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-blue-light"],
   },
   {
     id: 7,
     title: "IT Services",
-    iconImg: "./images/IT-Services.png",
+    iconImg: "/images/IT-Services.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-orange-light"],
   },
   {
     id: 8,
     title: "Social Media",
-    iconImg: "./images/Social-Media.png",
+    iconImg: "/images/Social-Media.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-pink-light"],
   },
   {
     id: 9,
     title: "Music",
-    iconImg: "./images/music.png",
+    iconImg: "/images/music.png",
     color: styles["text-purple-500"],
     borderColor: styles["border-yellow-light"],
   },
@@ -115,7 +116,9 @@ const IndustriesGrid = () => {
               <div
                 className={`absolute left-2 z-10 ${styles["icon-custom-rounded"]} p-4 bg-black ${industry.color} border-2 ${industry.borderColor}`}
               >
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   src={industry.iconImg}
                   alt={industry.title}
                   className="w-8 h-8"

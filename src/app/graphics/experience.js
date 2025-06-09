@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import styles from "./styles.module.css";
 
@@ -26,8 +27,10 @@ const ResponsiveHero = () => {
                           z-10
                           transform md:translate-y-[-50%] "
             >
-              <img
-                src="images/Experience-AlgorithmX-Today-2.webp"
+              <Image
+                width={100}
+                height={100}
+                src="/images/Experience-AlgorithmX-Today-2.webp"
                 alt="placeholder"
                 className="w-full h-full object-cover"
               />
