@@ -24,11 +24,11 @@ const Page = () => {
       <ParticleAnimation />
       <ResponsiveGrid />
       <Hexagon />
-      <CTASection />
+
       <ServicesSection />
       <Roadmap />
       <DiagonalGridWithText />
-      <ContactForm />
+
       <PlatformPerformance />
       <ResultRow />
       <MarketingGrid />

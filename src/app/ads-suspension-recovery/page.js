@@ -19,10 +19,10 @@ const page = () => {
       <CookieConsent />
       <AdsSuspension />
       <WhatSection />
-      <CTASection />
+
       <AdsProcess />
       <HeroSection />
-      <ContactForm />
+
       <DetailedHeroSection />
       <InsightSection />
       <Footer />

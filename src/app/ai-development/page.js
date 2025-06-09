@@ -5,7 +5,6 @@ export const metadata = {
 };
 
 import React from "react";
-import Image from "next/image";
 import CTASection from "../ads-audit/ctabanner";
 import ContactForm from "../ads-audit/form";
 import Navbar from "../asample/naviagtion";
@@ -26,11 +25,11 @@ const page = () => {
       <CookieConsent />
       <AISection />
       <AIServicesGrid />
-      <CTASection />
+
       <AIBusinessSection />
       <AIServices />
       <AIDesignProcess />
-      <ContactForm />
+
       <IndustriesGrid />
       <AIInsightSection />
       <Footer />

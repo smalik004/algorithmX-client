@@ -19,9 +19,9 @@ const page = () => {
       <AdsAudit />
       <PPCAuditSection />
       <ServicesAccordion />
-      <CTASection />
+
       <TestimonialSection />
-      <ContactForm />
+
       <PPCAudit />
       <InsightSection />
       <Footer />
