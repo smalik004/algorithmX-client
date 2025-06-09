@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import useFetchBlogs from "../hooks/fetchblogs";
+import Image from "next/image";
 
 export default function BlogCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);

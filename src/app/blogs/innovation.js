@@ -167,7 +167,6 @@ export default function Innovation() {
               fill
               src="/images/banner-03.png"
               alt="Kitchen Appliances"
-              fill
               className="object-cover"
             />
           </div>
@@ -250,7 +249,6 @@ export default function Innovation() {
                           fill
                           src={item.image}
                           alt={item.title}
-                          fill
                           className="object-contain"
                           onError={(e) => {
                             e.target.src = "/images/default-blog.jpg"; // Fallback image
