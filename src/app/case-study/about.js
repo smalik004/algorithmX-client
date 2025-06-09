@@ -106,7 +106,6 @@ const AboutSection = ({ data }) => {
                     alt={`${data?.brandName || "Product"} Interface ${
                       index + 1
                     }`}
-                    fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                     style={{ objectFit: "contain" }}
                     className=""
