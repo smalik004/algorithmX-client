@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Image from "next/image";
 
 const AboutSection = ({ data }) => {
   // Get images from API data
