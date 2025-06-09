@@ -4,7 +4,6 @@ export const metadata = {
     " Looking for top-notch Web Development Services? Get our custom website solutions. We are the leading Website Development Company in USA, delivering reliable services.",
 };
 import React from "react";
-import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import WebSection from "./home";
