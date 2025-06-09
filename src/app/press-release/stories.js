@@ -221,7 +221,6 @@ export default function TopStories() {
                     fill
                     src={featuredArticle.image}
                     alt={featuredArticle.title}
-                    fill
                     className="object-cover"
                   />
                 </div>
