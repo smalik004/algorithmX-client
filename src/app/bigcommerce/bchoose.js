@@ -78,7 +78,7 @@ const BigcommerceFeatures = () => {
           Choose
         </h2>
         <h2
-          className={`text-[40px] md:text-[48px] md:leading-[68px] ${monsterfont.className} mb-16`}
+          className={`text-[40px] md:text-[48px] text-center md:leading-[68px] ${monsterfont.className} mb-16`}
         >
           BigCommerce?
         </h2>
