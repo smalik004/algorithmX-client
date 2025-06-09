@@ -83,7 +83,6 @@ export default function Featuredarticle1() {
                 fill
                 src="/images/explore-image-10.jpg"
                 alt="Snow-capped mountain range"
-                fill
                 style={{ objectFit: "cover" }}
               />
             </div>
