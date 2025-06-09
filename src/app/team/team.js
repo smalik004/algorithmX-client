@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function TeamPage() {
   const [isLoaded, setIsLoaded] = useState(false);
