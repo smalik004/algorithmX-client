@@ -95,7 +95,6 @@ const DAppDevelopmentPage = () => {
                 fill
                 src={sections[activeSection].image}
                 alt={sections[activeSection].title}
-                fill
                 className="object-cover rounded-lg w-full]"
               />
             </div>
