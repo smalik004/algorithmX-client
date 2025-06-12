@@ -5,7 +5,7 @@ import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
 import FloatingBubblesPage from "./bubble";
 import PortfolioGrid from "./clientdesign";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
 import axiosHttp from "../utils/httpConfig";
 

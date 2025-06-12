@@ -47,10 +47,10 @@ const FeaturesSection = () => {
             >
               <div className="mb-4 w-12 h-12 relative">
                 <Image
-                  fill
+                 width={48}
+                 height={48}
                   src={feature.imageUrl}
                   alt=""
-                  layout="fill"
                   objectFit="contain"
                   className="rounded"
                 />

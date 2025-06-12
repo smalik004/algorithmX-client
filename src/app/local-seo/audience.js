@@ -16,7 +16,8 @@ const LocalAudienceSection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/local-seo-audience-1.webp"
               alt="Local SEO visualization showing map interface across devices"
               className="w-full h-auto"

@@ -54,7 +54,8 @@ const SEOStrategyGrid = () => {
                 Automotive
               </span>
               <Image
-                fill
+                width={40}
+                height={40}
                 src="/images/automative.png"
                 alt="Lead Generation"
                 className="w-[40px] h-[40px]"
@@ -68,7 +69,8 @@ const SEOStrategyGrid = () => {
                 Communications
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/communications.png"
                 alt="Sales Enablement"
                 className="w-[40px] h-[40px]"
@@ -82,7 +84,8 @@ const SEOStrategyGrid = () => {
                 Constructions
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/constructions.png"
                 alt="Nurturing Customers"
                 className="w-[40px] h-[40px]"
@@ -96,7 +99,8 @@ const SEOStrategyGrid = () => {
                 Govt. Education
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/govt education.png"
                 alt="Social Engagement"
                 className="w-[40px] h-[40px]"
@@ -112,7 +116,8 @@ const SEOStrategyGrid = () => {
                 Energy & Power
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/energy power.png"
                 alt="Lead Generation"
                 className="w-[40px] h-[40px]"
@@ -126,7 +131,8 @@ const SEOStrategyGrid = () => {
                 Financial Service
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/financial service.png"
                 alt="Sales Enablement"
                 className="w-[40px] h-[40px]"
@@ -140,7 +146,8 @@ const SEOStrategyGrid = () => {
                 Food & Beverage
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/food and beverages.png"
                 alt="Nurturing Customers"
                 className="w-[40px] h-[40px]"
@@ -154,7 +161,8 @@ const SEOStrategyGrid = () => {
                 Life Science
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/life sciences.png"
                 alt="Social Engagement"
                 className="w-[40px] h-[40px]"
@@ -171,7 +179,8 @@ const SEOStrategyGrid = () => {
                 Media & Entertainment
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/media entertainment.png"
                 alt="Thought Leadership"
                 className="w-[40px] h-[40px]"
@@ -185,7 +194,8 @@ const SEOStrategyGrid = () => {
                 Travel Agency
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/Travel agency.png"
                 alt="Conversions"
                 className="w-[40px] h-[40px]"
@@ -199,7 +209,8 @@ const SEOStrategyGrid = () => {
                 Public Safety
               </span>
               <Image
-                fill
+                width={40}
+height={40}
                 src="/images/public safety.png"
                 alt="SEO"
                 className="w-[40px] h-[40px]"

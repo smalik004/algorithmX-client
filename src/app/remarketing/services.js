@@ -162,7 +162,8 @@ const CampaignTabs = () => {
               </div>
               <div className="order-first md:order-last">
                 <Image
-                  fill
+                  width={100}
+                  height={224}
                   src={tab.content.image}
                   alt={tab.title}
                   className="w-full rounded-lg shadow-lg"

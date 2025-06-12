@@ -15,7 +15,8 @@ const TechnicalStrategy = () => {
             {/* First Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+                height={224}
                 src="/images/In-Depth-Technical-SEO-Audits.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
@@ -25,7 +26,8 @@ const TechnicalStrategy = () => {
             {/* Second Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+                height={202}
                 src="/images/In-Depth-Technical-SEO-Audits-2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
@@ -36,7 +38,8 @@ const TechnicalStrategy = () => {
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
             <Image
-              fill
+              width={100}
+              height={251}
               src="/images/In-Depth-Technical-SEO-Audits-3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"

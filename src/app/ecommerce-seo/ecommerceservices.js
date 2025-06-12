@@ -152,7 +152,8 @@ const EcommerceServices = () => {
                                 `}
               >
                 <Image
-                  fill
+                width={46}
+                height={46}
                   src={tab.img}
                   alt={tab.label}
                   className="w-[46px] h-[46px] mb-2"

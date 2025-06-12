@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from "react";
-import styles from "../contentcreation/style.module.css";
+import styles from "../contentcreation-services/style.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont1 = Montserrat({

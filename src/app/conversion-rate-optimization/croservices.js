@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faClipboard, faCogs, faChartBar, faLaptop, faRocket, faMobileAlt, faWrench, faTasks, faLifeRing, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import styles from '../crm/style.module.css';
+import styles from '../crm-development-services/style.module.css';
 import { Montserrat } from 'next/font/google';
 
 const monsterfont = Montserrat({

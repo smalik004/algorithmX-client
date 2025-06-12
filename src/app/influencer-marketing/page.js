@@ -7,8 +7,10 @@ import InfluencerModules from './services'
 import EssentialSection from './marketing'
 import DecodeSection from './decode'
 import WhoStrategy from './who'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +20,12 @@ const page = () => {
       <InfluencerSection/>
       <InfluencerMasterySection/>
       <InfluencerModules/>
+      <CTASectionBanner/>
       <EssentialSection/>
       <DecodeSection/>
       <WhoStrategy/>
       <InsightSection/>
+      <ContactForm/>
       <Footer/>
       
     </div>

@@ -15,8 +15,11 @@ import SEOStrategyGrid from "./techstack";
 import SEOFactors from "./seofactor";
 import SEOReports from "./reports";
 import SEOChecklist from "./profiling";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -26,11 +29,14 @@ const page = () => {
       <SEOAuditSection />
       <AuditServices />
       <SEOStrategy />
+      <CTASection/>
       <SEOStrategyGrid />
       <SEOFactors />
+      <CTASectionBanner/>
       <SEOReports />
       <SEOChecklist />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

@@ -18,7 +18,8 @@ const SeoStrategy = () => {
           {/* Card 1 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
             <Image
-              fill
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Backlink Analysis"
               className="w-12 h-12 mr-4"
@@ -39,7 +40,8 @@ const SeoStrategy = () => {
           {/* Card 2 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
             <Image
-              fill
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Manual Review"
               className="w-12 h-12 mr-4"
@@ -60,7 +62,8 @@ const SeoStrategy = () => {
           {/* Card 3 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
             <Image
-              fill
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Removal Requests"
               className="w-12 h-12 mr-4"
@@ -81,7 +84,8 @@ const SeoStrategy = () => {
           {/* Card 4 */}
           <div className="bg-black border border-white p-4 flex text-xs items-center">
             <Image
-              fill
+              width={48}
+              height={48}
               src="/images/Re-assessment.svg"
               alt="Link Disavow"
               className="w-12 h-12 mr-4"

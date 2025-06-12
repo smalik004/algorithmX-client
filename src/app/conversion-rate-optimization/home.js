@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../video/styles.module.css";
+import styles from "../video-services/styles.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont1 = Montserrat({
@@ -24,14 +24,16 @@ const VideoSection = () => {
             <div className="relative md:ml-[250px]">
               {/* Main Image */}
               <Image
-                fill
+                width={290}
+                height={400}
                 src="/images/CRO.webp"
                 alt="Branding process with color swatches"
                 className={` w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%]`}
               />
               {/* Rectangular Image */}
               <Image
-                fill
+                width={290}
+                height={400}
                 src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
@@ -67,7 +69,8 @@ const VideoSection = () => {
           <div className="w-full md:w-1/2 flex flex-col md:items-start items-center text-center md:text-left md:ml-[100px]">
             {/* Cylindrical image above branding (hidden on phones) */}
             <Image
-              fill
+              width={80}
+                height={70}
               src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"

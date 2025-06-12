@@ -192,7 +192,8 @@ const Card = ({
           <div className="relative flex-1 min-h-[200px] md:min-h-0  ">
             <div className="relative w-full h-full">
               <Image
-                fill
+                width={100}
+                height={100}
                 src={src}
                 alt={title}
                 className="object-cover w-full h-full"

@@ -5,11 +5,14 @@ import PPCContentSection from './home'
 import PPCServices from './services'
 import PPCServicesSection from './offer'
 import UnlockSuccess from './unlock'
-import ResponsiveHero from '../graphics/experience'
+import ResponsiveHero from '../graphics-services/experience'
 import PPCServicesGrid from './leverage'
 import PPCTechnologyToolbox from './ppctoolbox'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner'
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -19,11 +22,14 @@ const page = () => {
         <PPCContentSection/>
         <PPCServices/>
         <PPCServicesSection/>
+        <CTASection/>
         <UnlockSuccess/>
         <ResponsiveHero/>
+        <CTASectionBanner/>
         <PPCServicesGrid/>
         <PPCTechnologyToolbox/>
         <InsightSection/>
+        <ContactForm/>
         <Footer/>
     </div>
   )

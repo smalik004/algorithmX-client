@@ -13,7 +13,8 @@ const LinkStrategy = () => {
             {/* First Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+                height={224}
                 src="/images/link1.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
@@ -23,7 +24,8 @@ const LinkStrategy = () => {
             {/* Second Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+                height={202}
                 src="/images/link2.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
@@ -34,7 +36,8 @@ const LinkStrategy = () => {
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
             <Image
-              fill
+              width={495}
+              height={251}
               src="/images/link3.webp"
               alt="SEO Analytics"
               className="rounded-lg w-[495px] h-[251px] object-cover"

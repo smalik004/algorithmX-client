@@ -7,8 +7,10 @@ import ServicesAccordion from './services'
 import ResponsiveExperience from '../google-ads/experience'
 import TechnologyToolbox from './toolbox'
 import InstagramServices from './benefits'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 
 const page = () => {
@@ -19,10 +21,12 @@ const page = () => {
     <InstagramAds/>
     <InstaBoostAds/>
     <ServicesAccordion/>
+    <CTASection/>
     <ResponsiveExperience/>
     <TechnologyToolbox/>
     <InstagramServices/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

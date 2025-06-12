@@ -17,7 +17,8 @@ const ConsultingWorthySection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Social-Media-Strategy (1).webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"
@@ -50,7 +51,8 @@ const ConsultingWorthySection = () => {
           {/* Right Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Social-Listening (1).webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"

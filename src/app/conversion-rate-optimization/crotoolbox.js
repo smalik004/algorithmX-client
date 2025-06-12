@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../video/styles.module.css";
+import styles from "../video-services/styles.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({
@@ -76,7 +76,8 @@ const CROTechnologyToolbox = () => {
                   {/* Image part (1/3) */}
                   <div className="md:w-1/5 ">
                     <Image
-                      fill
+                      width={48}
+                      height={48}
                       src={tool.image}
                       alt={tool.name}
                       className="w-12 h-12  object-contain md:ml-2"

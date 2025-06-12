@@ -8,8 +8,11 @@ import GlobalSEOBenefits from './benefits'
 import GlobalTargetingSection from './targeting'
 import GlobalRevenueSection from './revenue'
 import GlobalReachSection from './ready'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner'
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -19,11 +22,14 @@ const page = () => {
     <SEOGlobalSection/>
     <GlobalServices/>
     <GlobalStrategy/>
+    <CTASection/>
     <GlobalSEOBenefits/>
     <GlobalTargetingSection/>
+    <CTASectionBanner/>
     <GlobalRevenueSection/>
     <GlobalReachSection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

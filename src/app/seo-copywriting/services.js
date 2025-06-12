@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "../iphone-app/style.module.css";
-import style from "../graphics/styles.module.css";
+import style from "../graphics-services/styles.module.css";
 import Image from "next/image";
 
 const monsterfont1 = Montserrat({
@@ -110,7 +110,8 @@ const CopywritingServicesGrid = () => {
               className="bg-black p-6 rounded-lg hover:bg-zinc-800 border border-zinc-800 group transition-colors duration-1000 ease-in-out"
             >
               <Image
-                fill
+                width={100}
+                height={100}
                 src={service.image}
                 alt={service.alt}
                 className={` object-contain rounded-lg  ${styles["indus-card-figure"]}  `}

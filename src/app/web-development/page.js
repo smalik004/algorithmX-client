@@ -13,8 +13,11 @@ import WebDevelopmentProcess from "./devlop";
 import WebAccordion from "./best";
 import CostWeb from "./cost";
 import WebTechStack from "./techstack";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 const page = () => {
   return (
     <div>
@@ -23,11 +26,14 @@ const page = () => {
       <WebSection />
       <WebAppServices />
       <BenefitsWebSection />
+      <CTASection/>
       <WebDevelopmentProcess />
       <WebAccordion />
+      <CTASectionBanner/>
       <CostWeb />
       <WebTechStack />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

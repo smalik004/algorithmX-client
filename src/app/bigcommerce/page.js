@@ -7,12 +7,14 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
+import CTASection from "./ctabanner";
+import ContactForm from "./ctaform";
 import BigCommerceSection from "./home";
 import BigcommerceServices from "./bservices";
 import BigcommerceFeatures from "./bchoose";
 import QualityBanner from "./bquality";
 import BigcommerceDevelopmentTimeline from "./btimeline";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
 
 const page = () => {
@@ -23,9 +25,10 @@ const page = () => {
       <BigCommerceSection />
       <BigcommerceServices />
       <BigcommerceFeatures />
+      <CTASection/>
       <QualityBanner />
       <BigcommerceDevelopmentTimeline />
-      <InsightSection />
+      <ContactForm/>
       <Footer />
     </div>
   );

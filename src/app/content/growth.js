@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../graphics/styles.module.css";
+import styles from "../graphics-services/styles.module.css";
 import style from "./style.module.css";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";

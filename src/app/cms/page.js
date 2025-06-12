@@ -8,14 +8,17 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
+import CTASection from "./ctabanner";
+import ContactForm from "./ctaform";
 import CMSSection from "./home";
 import ContentMarketingCMS from "./utilize";
 import CMSServicesGrid from "./gains";
 import CMSServices from "./how";
-import IndustriesGrid from "../branding/industries";
+import IndustriesGrid from "../branding-services/industries";
 import CMSTechStack from "./techstack";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASectionBanner from "./ctabanner2";
 
 const page = () => {
   return (
@@ -24,11 +27,13 @@ const page = () => {
       <CookieConsent />
       <CMSSection />
       <ContentMarketingCMS />
+      <CTASection/>
       <CMSServicesGrid />
       <CMSServices />
+      <CTASectionBanner/>
       <IndustriesGrid />
       <CMSTechStack />
-      <InsightSection />
+      <ContactForm/>
       <Footer />
     </div>
   );

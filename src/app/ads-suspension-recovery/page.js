@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import CTASection from "../ads-audit/ctabanner";
 
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
@@ -9,8 +8,10 @@ import WhatSection from "./what";
 import AdsProcess from "./diffrent";
 import HeroSection from "./proactive";
 import DetailedHeroSection from "./detailed";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "../ads-audit/ctaform";
 
 const page = () => {
   return (
@@ -19,12 +20,11 @@ const page = () => {
       <CookieConsent />
       <AdsSuspension />
       <WhatSection />
-
+      <CTASectionBanner/>
       <AdsProcess />
       <HeroSection />
-
       <DetailedHeroSection />
-      <InsightSection />
+      <ContactForm/>
       <Footer />
     </div>
   );

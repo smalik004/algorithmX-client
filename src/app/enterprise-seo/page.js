@@ -8,8 +8,10 @@ import EnterpriseSEOBenefits from './benefits'
 import EnterpriseMarketingSection from './marketing'
 import EnterpriseRevenueSection from './revenue'
 import EnterpriseReachSection from './quantifyng'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from '../ads-audit/ctabanner'
+import ContactForm from './ctaform'
 
 
 const page = () => {
@@ -20,11 +22,13 @@ return (
     <SEOEnterpriseSection/>
     <EnterpriseServices/>
     <EnterpriseStrategy/>
+    <CTASection/>
     <EnterpriseSEOBenefits/>
     <EnterpriseMarketingSection/>
     <EnterpriseRevenueSection/>
     <EnterpriseReachSection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
 )

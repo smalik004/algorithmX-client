@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../shopify/style.module.css";
+import styles from "../shopify-development-services/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
 

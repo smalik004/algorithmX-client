@@ -7,8 +7,10 @@ import TiktokGrowHeroSection from './connect'
 import TiktokSmoothScrollStack from './solutions'
 import TiktokCarousel from './strategies'
 import TiktokWorthySection from './impact'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +20,12 @@ const page = () => {
     <TiktokSection/>
     <TiktokHeroSection/>
     <TiktokGrowHeroSection/>
+    <CTASectionBanner/>
     <TiktokSmoothScrollStack/>
     <TiktokCarousel/>
     <TiktokWorthySection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

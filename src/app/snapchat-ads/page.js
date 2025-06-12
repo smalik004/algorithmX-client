@@ -6,8 +6,10 @@ import SnapchatBoostAds from './engage'
 import ServicesAccordion from './services'
 import ResponsiveExperience from '../google-ads/experience'
 import SnapchatServices from './benefits'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 
 const page = () => {
@@ -18,9 +20,11 @@ const page = () => {
     <SnapchatAds/>
     <SnapchatBoostAds/>
     <ServicesAccordion/>
+    <CTASection/>
     <ResponsiveExperience/>
     <SnapchatServices/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
 
     </div>

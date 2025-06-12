@@ -22,12 +22,12 @@ const menuData = {
   "Creative Assets": {
     type: "dropdown",
     items: [
-      { name: "Branding", href: "/branding", icon: "fa-pen-nib" },
-      { name: "Graphics", href: "/graphics", icon: "fa-image" },
-      { name: "Video", href: "/video", icon: "fa-video" },
+      { name: "Branding", href: "/branding-services", icon: "fa-pen-nib" },
+      { name: "Graphics", href: "/graphics-services", icon: "fa-image" },
+      { name: "Video", href: "/video-services", icon: "fa-video" },
       {
         name: "Content Creation",
-        href: "/contentcreation",
+        href: "/contentcreation-services",
         icon: "fa-microphone",
       },
     ],
@@ -35,14 +35,14 @@ const menuData = {
   "</Code>": {
     type: "dropdown",
     items: [
-      {
+{
         name: "Web",
         href: null,
         subItems: [
-          { name: "Frontend Development", href: "/front-end", icon: "fa-code" },
+          { name: "Frontend Development", href: "/front-end-development-services", icon: "fa-code" },
           {
             name: "Backend Development",
-            href: "/back-end",
+            href: "/back-end-development-services",
             icon: "fa-database",
           },
         ],
@@ -51,26 +51,26 @@ const menuData = {
         name: "CMS",
         href: null,
         subItems: [
-          { name: "Wordpress", href: "/wordpress", icon: "fa-wordpress" },
-          { name: "Magento", href: "/magento", icon: "fa-shopping-cart" },
-          { name: "Shopify", href: "/shopify", icon: "fa-store" },
-          { name: "Big Commerce", href: "/bigcommerce", icon: "fa-store" },
-          { name: "Drupal", href: "/drupal", icon: "fa-droplet" },
-          { name: "HubSpot", href: "/hubspot", icon: "fa-hubspot" },
+          { name: "Wordpress", href: "/wordpress-development-services", icon: "fa-wordpress" },
+          { name: "Magento", href: "/magento-development-services", icon: "fa-shopping-cart" },
+          { name: "Shopify", href: "/shopify-development-services", icon: "fa-store" },
+          { name: "Big Commerce", href: "/bigcommerce-development-services", icon: "fa-store" },
+          { name: "Drupal", href: "/drupal-development-services", icon: "fa-droplet" },
+          { name: "HubSpot", href: "/hubspot-development-services", icon: "fa-hubspot" },
         ],
       },
       {
         name: "Product",
         href: null,
         subItems: [
-          { name: "Andriod", href: "/android-app", icon: "fa-android" },
-          { name: "Ios", href: "/iphone-app", icon: "fa-apple" },
-          { name: "Flutter", href: "/flutter", icon: "fa-flutter" },
-          { name: "React Native", href: "/react-native", icon: "fa-react" }, // Use fa-react for React Native
-          { name: "Xamarin", href: "/xamarin", icon: "fa-tint" }, // Use fa-xamarin for Xamarin
+          { name: "Andriod", href: "/android-app-development-services", icon: "fa-android" },
+          { name: "Ios", href: "/iphone-app-development-services", icon: "fa-apple" },
+          { name: "Flutter", href: "/flutter-development-services", icon: "fa-flutter" },
+          { name: "React Native", href: "/react-native-development-services", icon: "fa-react" }, // Use fa-react for React Native
+          { name: "Xamarin", href: "/xamarin-development-services", icon: "fa-tint" }, // Use fa-xamarin for Xamarin
           {
             name: "IoT Development",
-            href: "/iot-development",
+            href: "/iot-development-services",
             icon: "fa-snowflake",
           }, // Use fa-iot for IoT
         ],
@@ -81,12 +81,12 @@ const menuData = {
         subItems: [
           {
             name: "AI Development",
-            href: "/ai-development",
+            href: "/ai-development-services",
             icon: "fa-university",
           },
           {
             name: "Intelligent Automation",
-            href: "/intelligent-automation",
+            href: "/intelligent-automation-development-services",
             icon: "fa-gears",
           },
         ],
@@ -95,8 +95,8 @@ const menuData = {
         name: "Enterprise Solutions",
         href: null,
         subItems: [
-          { name: "CRM", href: "/crm", icon: "fa-users" },
-          { name: "ERP", href: "/erp", icon: "fa-network-wired" },
+          { name: "CRM", href: "/crm-development-services", icon: "fa-users" },
+          { name: "ERP", href: "/erp-development-services", icon: "fa-network-wired" },
         ],
       },
       {
@@ -105,12 +105,12 @@ const menuData = {
         subItems: [
           {
             name: "Business Intelligence Services",
-            href: "/business-intelligence",
+            href: "/business-intelligence-development-services",
             icon: "fa-chart-line",
           },
           {
             name: "Big Data",
-            href: "/big-data-analytics",
+            href: "/big-data-analytics-solutions",
             icon: "fa-database",
           },
         ],
@@ -119,13 +119,13 @@ const menuData = {
         name: "Next Gen",
         href: null,
         subItems: [
-          { name: "Blockchain", href: "/blockchain", icon: "fa-cubes" },
+          { name: "Blockchain", href: "/blockchain-development-services", icon: "fa-cubes" },
           {
             name: "Metaverse",
-            href: "/metaverse-development",
+            href: "/metaverse-development-services",
             icon: "fa-vr-cardboard",
           },
-          { name: "Web3", href: "/web3", icon: "fa-globe" },
+          { name: "Web3", href: "/web3-development-services", icon: "fa-globe" },
         ],
       },
       {
@@ -134,29 +134,29 @@ const menuData = {
         subItems: [
           {
             name: "Cloud & Devops",
-            href: "/cloud-and-devops",
+            href: "/cloud-and-devops-development-services",
             icon: "fa-cloud",
           },
           {
             name: "Architecture Re-engineering",
-            href: "/architecture-reengineering",
+            href: "/architecture-reengineering-development-services",
             icon: "fa-drafting-compass",
           },
         ],
       },
       {
         name: "Integration & Middleware",
-        href: "/integration-middleware",
+        href: "/integration-middleware-services",
         icon: "fa-plug",
       },
       {
         name: "Testing & Automation",
-        href: "/testing-automation",
+        href: "/testing-automation-services",
         icon: "fa-vial",
       },
       {
         name: "Software Development",
-        href: "/software",
+        href: "/software-development-services",
         icon: "fa-laptop-code",
       },
     ],

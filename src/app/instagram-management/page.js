@@ -8,8 +8,10 @@ import InstagramMarketingSection from './services'
 import SmoothScrollStack from './solutions'
 import InstagramCarousel from './works'
 import InstagramWorthySection from './worthy'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -19,11 +21,13 @@ const page = () => {
     <InstagramSection/>
     <InstagramHeroSection/>
     <InstagramGrowHeroSection/>
+    <CTASectionBanner/>
     <InstagramMarketingSection/>
     <SmoothScrollStack/>
     <InstagramCarousel/>
     <InstagramWorthySection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

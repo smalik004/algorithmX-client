@@ -16,8 +16,11 @@ import LocalAudienceSection from "./audience";
 import SeoResults from "./result";
 import LocalBusinessSection from "./audience2";
 import Deliverables from "./client";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -27,12 +30,15 @@ const page = () => {
       <SEOLocalSection />
       <LocalServices />
       <LocalStrategy />
+      <CTASection/>
       <LocalSEOBenefits />
       <LocalAudienceSection />
       <SeoResults />
+      <CTASectionBanner/>
       <LocalBusinessSection />
       <Deliverables />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

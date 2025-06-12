@@ -15,8 +15,11 @@ import NationalSEOBenefits from "./benefits";
 import NationalMarketingSection from "./marketing";
 import NationalRevenueSection from "./revenue";
 import NationalRiseSection from "./rise";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -26,11 +29,14 @@ const page = () => {
       <SEONationalSection />
       <NationalServices />
       <NationalStrategy />
+      <CTASection/>
       <NationalSEOBenefits />
       <NationalMarketingSection />
+      <CTASectionBanner/>
       <NationalRevenueSection />
       <NationalRiseSection />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

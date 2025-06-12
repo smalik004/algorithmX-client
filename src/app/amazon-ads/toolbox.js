@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../graphics/styles.module.css";
+import styles from "../graphics-services/styles.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({

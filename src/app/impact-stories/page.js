@@ -6,6 +6,8 @@ import VideoGallery from './recent';
 import TopVideo from './topvideo';
 import Uploads from './uploads';
 import Footer from '../(mainpage)/footer';
+import ContactForm from './ctaform';
+import CTASection from './ctabanner';
 
 
 
@@ -16,8 +18,10 @@ const Page = () => {
     <CookieConsent/>
       <ShortsHome/>
       <VideoGallery/>
+      {/* <CTASection/> */}
       <TopVideo/>
       <Uploads/>
+      <ContactForm/>
       <Footer/>
     </div>
   );

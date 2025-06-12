@@ -7,8 +7,11 @@ import ServicesAccordion from './services'
 import ResponsiveExperience from './experience'
 import TechnologyToolbox from './toolbox'
 import GoogleServices from './benefits'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASectionBanner from '../ads-audit/ctabanner2'
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +21,12 @@ const page = () => {
     <GoogleAds/>
     <Targeted/>
     <ServicesAccordion/>
+    <CTASection/>
     <ResponsiveExperience/>
     <TechnologyToolbox/>
     <GoogleServices/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
 
     </div>

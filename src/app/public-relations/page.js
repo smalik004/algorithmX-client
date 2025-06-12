@@ -8,8 +8,11 @@ import PublicTargetedSection from './targeted'
 import PRProcessVisualization from './prprocess'
 import PublicPressSection from './press'
 import PublicSeizeSection from './seize'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner'
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -19,11 +22,14 @@ const page = () => {
       <PublicContentSection/>
         <PublicServices/>
         <PublicEnhancedSection/>
+        <CTASection/>
         <PublicTargetedSection/>
         <PRProcessVisualization/>
-        <PublicPressSection/>
+        <PublicPressSection/>'
+        <CTASectionBanner/>
         <PublicSeizeSection/>
         <InsightSection/>
+        <ContactForm/>
         <Footer/>
 
     </div>

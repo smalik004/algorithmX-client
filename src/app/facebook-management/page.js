@@ -8,7 +8,7 @@ import MarketingSection from './boost'
 import SmoothScrollStack from './sticky1'
 import FacebookImplementation from './choose'
 import BusinessSection from './business'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
 
 

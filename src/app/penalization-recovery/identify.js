@@ -14,7 +14,8 @@ const HandlingPenaltyAlerts = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 relative p-4">
           <Image
-            fill
+            width={100}
+           height={100}
             src="/images/Identify-the-Penalty-Cause-Restore-Your-Site.webp"
             alt="Alert"
             className="mx-auto w-3/4 h-auto object-contain md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-3/4 md:h-3/4 md:rotate-12"

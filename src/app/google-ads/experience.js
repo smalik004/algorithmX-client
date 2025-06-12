@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../graphics/styles.module.css";
+import styles from "../graphics-services/styles.module.css";
 
 const ResponsiveHero = () => {
   return (
@@ -21,7 +21,8 @@ const ResponsiveHero = () => {
                           transform md:translate-y-[-50%] "
             >
               <Image
-                fill
+                width={100}
+                height={100}
                 src="/images/Experience-AlgorithmX-Today-2.webp"
                 alt="placeholder"
                 className="w-full h-full object-cover"

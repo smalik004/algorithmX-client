@@ -5,8 +5,10 @@ import NFTSection from './home';
 import NFTServicesGrid from './services';
 import NFTHeroSection from './leverage';
 import Trust from './trust';
-import IndustriesGrid from '../branding/industries';
+import IndustriesGrid from '../branding-services/industries';
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner';
+import ContactForm from './ctaform';
 
 const page = () => {
   return (
@@ -16,8 +18,10 @@ const page = () => {
         <NFTSection/>
         <NFTServicesGrid/>
         <NFTHeroSection/>
+        <CTASection/>
         <Trust/>
       <IndustriesGrid/>
+      <ContactForm/>
       <Footer/>
     </div>
   )

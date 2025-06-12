@@ -21,7 +21,8 @@ const BenefitsCard = ({ title, description, imageSrc }) => (
   <div className="bg-black/5 backdrop-blur-sm p-6 rounded-lg flex flex-col items-start text-start transition-transform">
     <div className="mb-4 bg-black/10 p-4 rounded-full">
       <Image
-        fill
+        width={339}
+        height={236}
         src={imageSrc}
         alt={title}
         className="w-[339px] h-[236px] object-cover rounded-md"

@@ -59,7 +59,8 @@ const ComplimentarySection = () => {
           {/* Right Section - Image */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/complimentary-img.webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"

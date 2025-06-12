@@ -31,7 +31,6 @@ const Page = () => {
       <ServicesSection />
       <Roadmap />
       <DiagonalGridWithText />
-      <CTASectionBanner/>
       <PlatformPerformance />
       <ResultRow />
       <MarketingGrid />

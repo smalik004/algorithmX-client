@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../asample/naviagtion'
 import CookieConsent from '../cookies/cookie';
+import CTASection from './ctabanner';
+import ContactForm from './ctaform';
 import Aboutus from './aboutus';
 import AboutSection from'./aboutsection';
 import PrinciplesSection from './principles';
@@ -15,7 +17,9 @@ const Page = () => {
         <AboutSection/>
         <Aboutus/>
         <Vision/>
+        <CTASection/>
         <PrinciplesSection/>
+        <ContactForm/>
         <Footer/>
         
     </div>

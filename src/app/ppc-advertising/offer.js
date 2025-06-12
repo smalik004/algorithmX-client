@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Montserrat } from "next/font/google";
 import styles from "../seo/style.module.css";
-import style from "../graphics/styles.module.css";
+import style from "../graphics-services/styles.module.css";
 import Image from "next/image";
 const monsterfont1 = Montserrat({
   subsets: ["latin"],

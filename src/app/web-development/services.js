@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../app-development/style.module.css";
-import style from "../android-app/style.module.css";
+import style from "../android-app-development-services/style.module.css";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";

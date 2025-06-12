@@ -2,7 +2,7 @@
     import { DropletIcon, Scissors, ShoppingCart, MousePointer } from 'lucide-react';
     import React, { useEffect, useRef, useState } from 'react';
     import { Montserrat } from 'next/font/google';
-    import style from "../graphics/styles.module.css"
+    import style from "../graphics-services/styles.module.css"
 
     const monsterfont1 = Montserrat ({
     subsets : ["latin"],

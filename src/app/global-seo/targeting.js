@@ -16,7 +16,8 @@ const GlobalTargetingSection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Precise-Targeting-with-Custom-Strategy.webp"
               alt="Local SEO visualization showing map interface across devices"
               className="w-full h-auto"

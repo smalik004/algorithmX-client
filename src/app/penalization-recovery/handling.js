@@ -34,7 +34,8 @@ const PenaltyAndWarningAlerts = () => {
           <div className="w-full md:w-1/2 relative p-4 flex justify-center items-center">
             <div className="border-4 border-white transform md:rotate-12 ">
               <Image
-                fill
+                width={400}
+                height={300}
                 src="/images/Handling-Google-Warning-Alerts.webp"
                 alt="Alert"
                 className="w-full h-auto object-contain"
@@ -51,7 +52,8 @@ const PenaltyAndWarningAlerts = () => {
           <div className="w-full md:w-1/2 relative p-4 flex justify-center items-center">
             <div className="border-4 border-white transform md:rotate-12 ">
               <Image
-                fill
+                width={400}
+                height={100}
                 src="/images/Identify-the-Penalty-Cause-Restore-Your-Site.webp"
                 alt="Penalty Cause"
                 className="w-[400px] h-auto object-contain"

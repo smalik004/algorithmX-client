@@ -28,7 +28,8 @@ const TwitterGrowHeroSection = () => {
             <div className="transform md:-rotate-12 ">
               <div className="w-[320px] h-[330px] md:w-[400px] md:h-[400px]  overflow-hidden border-4 border-white ">
                 <Image
-                  fill
+                  width={100}
+                  height={100}
                   src="/images/Multimedia on X.webp"
                   alt="Network diagram showing audience connection"
                   className="w-full h-auto object-cover "

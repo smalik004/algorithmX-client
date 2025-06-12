@@ -7,8 +7,10 @@ import TwitterGrowHeroSection from './multimedia'
 import TwitterSmoothScrollStack from './solution'
 import TwitterServicesGrid from './business'
 import TwitterBusinessSection from './grow'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 
 const page = () => {
@@ -19,10 +21,12 @@ const page = () => {
     <TwitterSection/>
     <TwitterHeroSection/>
     <TwitterGrowHeroSection/>
+    <CTASection/>
     <TwitterSmoothScrollStack/>
     <TwitterServicesGrid/>
     <TwitterBusinessSection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

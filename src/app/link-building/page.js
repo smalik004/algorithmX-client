@@ -14,8 +14,11 @@ import LinkBenefits from "./benefit";
 import LinkBuildingSection from "./linkbuilding";
 import LinkProcess from "./buildingtimeline";
 import LinkTrafficSection from "./traffic";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -25,11 +28,14 @@ const page = () => {
       <SEOLinkSection />
       <LinkServices />
       <LinkStrategy />
+      <CTASection/>
       <LinkBenefits />
       <LinkBuildingSection />
+      <CTASectionBanner/>
       <LinkProcess />
       <LinkTrafficSection />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

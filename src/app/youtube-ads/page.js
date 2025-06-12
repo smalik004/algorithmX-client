@@ -7,8 +7,10 @@ import ServicesAccordion from './services'
 import ResponsiveExperience from '../google-ads/experience'
 import TechnologyToolbox from './toolbox'
 import YoutubeServices from './benefits'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +20,12 @@ const page = () => {
     <YoutubeAds/>
     <YoutubeBoostAds/>
     <ServicesAccordion/>
+    <CTASectionBanner/>
     <ResponsiveExperience/>
     <TechnologyToolbox/>
     <YoutubeServices/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

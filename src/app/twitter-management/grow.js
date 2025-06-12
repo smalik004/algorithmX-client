@@ -17,7 +17,8 @@ const TwitterBusinessSection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Grow-Your-Business-with-Tweets.webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"

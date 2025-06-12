@@ -16,7 +16,8 @@ const YoutubeBusinessSection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Why-Your-Company-Needs-a-YouTube-Channel.webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"

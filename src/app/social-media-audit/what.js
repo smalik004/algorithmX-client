@@ -18,7 +18,8 @@ const WhatSection = () => {
           <div className="w-full lg:w-1/3 relative">
             <div className="relative">
               <Image
-                fill
+                width={100}
+                height={224}
                 src="/images/what-social-media.webp"
                 alt="Local SEO visualization showing map interface across devices"
                 className="w-full h-auto relative z-1"

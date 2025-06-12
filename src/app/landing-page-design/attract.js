@@ -34,7 +34,8 @@ const LandingSection = () => {
           {/* Right Section - Content */}
           <div className="w-full lg:w-1/2">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Attract-the-right-customer-with-the-right-message.webp"
               alt="Google Penguin Penalty Recovery"
               className="w-full h-auto"

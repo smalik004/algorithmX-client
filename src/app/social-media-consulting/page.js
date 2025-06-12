@@ -7,8 +7,10 @@ import ConsultingSmoothScrollStack from './how'
 import ConsultingWorthySection from './strategy'
 import ConsultingImplementation from './customized'
 import ConsultingStayingSection from './staying'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 
 
@@ -20,10 +22,12 @@ const page = () => {
     <SocialConsultingSection/>
     <MarketingSection/>
     <ConsultingSmoothScrollStack/>
+    <CTASection/>
     <ConsultingWorthySection/>
     <ConsultingImplementation/>
     <ConsultingStayingSection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

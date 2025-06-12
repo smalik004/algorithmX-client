@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import styles from "../erp/style.module.css";
+import styles from "../erp-development-services/style.module.css";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 
@@ -174,7 +174,8 @@ const TiktokCarousel = () => {
               >
                 <div className="flex flex-col items-center space-y-4">
                   <Image
-                    fill
+                    width={48}
+                    height={48}
                     src={item.icon}
                     alt={item.title}
                     className="w-12 h-12 object-contain mt-6"

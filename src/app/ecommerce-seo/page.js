@@ -7,6 +7,9 @@ export const metadata = {
 import React from "react";
 import Navbar from "../asample/naviagtion";
 import CookieConsent from "../cookies/cookie";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 import EcommerceSEOSection from "./home";
 import EcommerceServices from "./ecommerceservices";
 import EcommerceStrategy from "./opportunity";
@@ -15,7 +18,7 @@ import EcommerceRankSection from "./rank";
 import EcommerceImplementation from "./implement";
 import EcommerceCodeSection from "./code";
 import DeliverablesSection from "./client";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
 
 const page = () => {
@@ -26,12 +29,15 @@ const page = () => {
       <EcommerceSEOSection />
       <EcommerceServices />
       <EcommerceStrategy />
+      <CTASection/> 
       <EcommerceSEOBenefits />
       <EcommerceRankSection />
       <EcommerceImplementation />
+      <CTASectionBanner/>
       <EcommerceCodeSection />
       <DeliverablesSection />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

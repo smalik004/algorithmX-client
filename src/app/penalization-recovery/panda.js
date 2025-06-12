@@ -15,7 +15,8 @@ const PenalizationSection = () => {
           {/* Left Section - Image */}
           <div className="w-full lg:w-1/3">
             <Image
-              fill
+              width={100}
+              height={100}
               src="/images/Google-Panda-Penalty-Recovery.webp"
               alt="Local SEO visualization showing map interface across devices"
               className="w-full h-auto"

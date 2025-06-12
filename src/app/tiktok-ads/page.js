@@ -7,8 +7,10 @@ import ServicesAccordion from './services'
 import ResponsiveExperience from '../google-ads/experience'
 import TechnologyToolbox from './toolbox'
 import TiktokServices from './benefits'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +20,12 @@ const page = () => {
     <TiktokAds/>
     <TiktokBoostAds/>
     <ServicesAccordion/>
+    <CTASection/>
     <ResponsiveExperience/>
     <TechnologyToolbox/>
     <TiktokServices/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

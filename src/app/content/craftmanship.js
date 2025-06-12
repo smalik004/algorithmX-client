@@ -1,6 +1,6 @@
     'use client'
     import React, { useEffect, useRef, useState } from 'react';
-    import styles from "../video/styles.module.css";
+    import styles from "../video-services/styles.module.css";
     import { Montserrat } from 'next/font/google';
     import style from './style.module.css'
 

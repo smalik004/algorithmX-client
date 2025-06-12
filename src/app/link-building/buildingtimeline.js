@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../graphics/styles.module.css";
+import styles from "../graphics-services/styles.module.css";
 import { Montserrat } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

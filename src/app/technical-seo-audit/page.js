@@ -14,8 +14,10 @@ import TechnicalStrategy from "./confidence";
 import TechnicalBenefits from "./benefit";
 import TechnicalLeaveSection from "./leave";
 import TechnicalIdentifySection from "./identify";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -25,10 +27,12 @@ const page = () => {
       <TechnicalSEOSection />
       <TechnicalServices />
       <TechnicalStrategy />
+      <CTASection/>
       <TechnicalBenefits />
       <TechnicalLeaveSection />
       <TechnicalIdentifySection />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

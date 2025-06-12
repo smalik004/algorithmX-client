@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../shopify/style.module.css';
+import styles from '../shopify-development-services/style.module.css';
 import { Montserrat } from 'next/font/google';
 
 const monsterfont = Montserrat({

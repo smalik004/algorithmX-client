@@ -6,8 +6,10 @@ import LandingServices from './research'
 import ServicesPage from './services'
 import LandingPageBenefits from './benefits'
 import LandingSection from './attract'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer'
+import CTASection from './ctabanner'
+import ContactForm from './ctaform'
 const page = () => {
   return (
     <div>
@@ -16,9 +18,11 @@ const page = () => {
     <LandingDesign/>
     <LandingServices/>
     <ServicesPage/>
+    <CTASection/>
     <LandingPageBenefits/>
     <LandingSection/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )

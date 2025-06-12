@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
-import style from "../android-app/style.module.css";
+import style from "../android-app-development-services/style.module.css";
 import { Montserrat } from "next/font/google";
 
 const monsterfont = Montserrat({

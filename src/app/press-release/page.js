@@ -10,6 +10,8 @@ import ReviewsSection from './reviews';
 
 
 import Footer from '../(mainpage)/footer';
+import CTASection from './ctabanner';
+import ContactForm from './ctaform';
 const Page = () => {
   return (
     <div >
@@ -18,9 +20,11 @@ const Page = () => {
         <FeaturedHome/>
         <TrendingTopicTech/>
         <TopStories/>
+        <CTASection/>
         <FeaturedVideo/>
         <Section2/>
         <ReviewsSection/>
+        <ContactForm/>
        <Footer/>
       
         

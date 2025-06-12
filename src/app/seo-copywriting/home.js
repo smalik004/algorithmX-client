@@ -1,6 +1,6 @@
 import React from 'react';
 import { Montserrat } from 'next/font/google';
-import styles from "../android-app/style.module.css";
+import styles from "../android-app-development-services/style.module.css";
 
 const monsterfont1 = Montserrat ({
   subsets : ["latin"],

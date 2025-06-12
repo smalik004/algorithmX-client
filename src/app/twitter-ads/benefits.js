@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../video/styles.module.css";
+import styles from "../video-services/styles.module.css";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 const monsterfont1 = Montserrat({
@@ -105,7 +105,8 @@ const TwitterServices = () => {
               </h3>
               <div className="mb-6">
                 <Image
-                  fill
+                  width={48}
+                  height={48}
                   src={service.image}
                   alt={service.title}
                   className="w-12 h-12 object-cover rounded-md"

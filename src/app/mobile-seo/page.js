@@ -15,8 +15,11 @@ import MobileSEOBenefits from "./benefits";
 import MobileMarketingSection from "./speed";
 import MobileRevenueSection from "./revenue";
 import MobileReachSection from "./reach";
-import InsightSection from "../graphics/insight";
+import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
+import CTASection from "./ctabanner";
+import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -26,11 +29,14 @@ const page = () => {
       <SEOMobileSection />
       <MobileServices />
       <MobileStrategy />
+      <CTASection/>
       <MobileSEOBenefits />
       <MobileMarketingSection />
+      <CTASectionBanner/>
       <MobileRevenueSection />
       <MobileReachSection />
-      <InsightSection />
+      
+      <ContactForm/>
       <Footer />
     </div>
   );

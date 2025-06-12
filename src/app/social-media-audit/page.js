@@ -7,8 +7,10 @@ import SocialMediaAudit from './key'
 import SocialCommitment from './commitment'
 import ComplimentarySection from './complimentary'
 import Accordion from './chosee'
-import InsightSection from '../graphics/insight'
+import InsightSection from '../graphics-services/insight'
 import Footer from '../(mainpage)/footer';
+import CTASectionBanner from './ctabanner2'
+import ContactForm from './ctaform'
 
 const page = () => {
   return (
@@ -18,10 +20,12 @@ const page = () => {
     <MediaSection/>
     <WhatSection/>
     <SocialMediaAudit/>
+    <CTASectionBanner/>
     <SocialCommitment/>
     <ComplimentarySection/>
     <Accordion/>
     <InsightSection/>
+    <ContactForm/>
     <Footer/>
     </div>
   )
