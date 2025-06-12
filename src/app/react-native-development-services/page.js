@@ -32,7 +32,7 @@ const page = () => {
       <TechGrid />
       <NativeDevelopmentTimeline />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

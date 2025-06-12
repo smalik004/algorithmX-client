@@ -25,7 +25,7 @@ const page = () => {
     <TechnologyToolbox/>
     <TiktokServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

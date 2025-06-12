@@ -27,7 +27,7 @@ const page = () => {
       <CTASectionBanner/>
       <QAProcessDiagram />
       <TestingChoosePage />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

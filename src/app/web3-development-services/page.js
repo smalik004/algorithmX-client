@@ -25,7 +25,7 @@ const page = () => {
       <Web3ServicesGrid />
       <CTASection/>
       <Web3DevelopmentPage />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

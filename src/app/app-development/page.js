@@ -36,7 +36,7 @@ const page = () => {
       <CTASectionBanner/>
       <AppTechStack />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

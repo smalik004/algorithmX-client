@@ -23,7 +23,7 @@ const page = () => {
       <DAppDevelopmentPage/>
       <DAppTechStack/>
       <IndustriesGrid/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer/>
     </div>
   )

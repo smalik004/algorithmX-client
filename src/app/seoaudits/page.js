@@ -36,7 +36,7 @@ const page = () => {
       <SEOReports />
       <SEOChecklist />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -29,7 +29,7 @@ import Footer from '../(mainpage)/footer';
         <CTASectionBanner/>
         <AmazonReachSection/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
         </div>
     )

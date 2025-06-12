@@ -29,7 +29,7 @@ const page = () => {
         <CTASectionBanner/>
         <PublicSeizeSection/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
 
     </div>

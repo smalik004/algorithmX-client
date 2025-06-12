@@ -28,7 +28,7 @@ const page = () => {
       <CTASection/>
       <QualityBanner />
       <BigcommerceDevelopmentTimeline />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

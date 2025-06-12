@@ -29,7 +29,7 @@ const page = () => {
       <CTASection/>
       <QualityBanner />
       <MagentoDevelopmentTimeline />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

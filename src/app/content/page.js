@@ -26,7 +26,7 @@ const page = () => {
         <ContentFeatures />
         <ServicesSection/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
     </div>
   )

@@ -25,7 +25,7 @@ const page = () => {
       <DecodeSection/>
       <WhoStrategy/>
       <InsightSection/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer/>
       
     </div>

@@ -28,7 +28,7 @@ const page = () => {
         <TechnologyToolbox/>
         <AmazonServices/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
 
     </div>

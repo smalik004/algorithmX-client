@@ -28,7 +28,7 @@ const page = () => {
       <MLProcess/>
     <IndustriesGrid/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

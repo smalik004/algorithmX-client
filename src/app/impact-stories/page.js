@@ -21,7 +21,7 @@ const Page = () => {
       {/* <CTASection/> */}
       <TopVideo/>
       <Uploads/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer/>
     </div>
   );

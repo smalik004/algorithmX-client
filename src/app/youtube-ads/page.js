@@ -25,7 +25,7 @@ const page = () => {
     <TechnologyToolbox/>
     <YoutubeServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

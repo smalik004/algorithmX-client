@@ -37,7 +37,7 @@ const page = () => {
       <ConsultingPartner />
       <ConsultingSolutionSection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

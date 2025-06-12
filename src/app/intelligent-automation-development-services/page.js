@@ -29,7 +29,7 @@ const page = () => {
       <CTASectionBanner/>
       <IntelligentBenefits />
       <IntelligentInsightSection />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

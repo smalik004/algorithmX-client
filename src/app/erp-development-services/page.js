@@ -33,7 +33,7 @@ const page = () => {
       <Solution />
       <ERPProcess />
       <DynamicSolutionsHero />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -32,7 +32,7 @@ const page = () => {
       <TechnicalLeaveSection />
       <TechnicalIdentifySection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

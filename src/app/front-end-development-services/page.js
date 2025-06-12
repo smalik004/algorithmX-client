@@ -32,7 +32,7 @@ const page = () => {
       <TechStack />
       <FrontDesignProcess />
       <WebDevServices />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -37,7 +37,7 @@ const page = () => {
       <EcommerceCodeSection />
       <DeliverablesSection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

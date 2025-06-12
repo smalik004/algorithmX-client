@@ -33,7 +33,7 @@ const page = () => {
       <CTASectionBanner/>
       <IoTTechStack />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -30,7 +30,7 @@ const page = () => {
         <CTASectionBanner/>
         <ElevateSection/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
     </div>
   )

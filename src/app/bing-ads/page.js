@@ -25,7 +25,7 @@ const page = () => {
     <TechnologyToolbox/>
     <BingServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

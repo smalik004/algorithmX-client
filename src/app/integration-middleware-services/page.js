@@ -31,7 +31,7 @@ const page = () => {
       <IntegrationDevelopmentTimeline />
       <IntegrationBenefits />
       <IntegrationTechnologyToolbox />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -37,7 +37,7 @@ const page = () => {
       <CTASectionBanner/>
       <CRMDevelopmentTimeline />
       <CostEstimations />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

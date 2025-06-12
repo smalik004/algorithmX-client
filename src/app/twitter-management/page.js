@@ -26,7 +26,7 @@ const page = () => {
     <TwitterServicesGrid/>
     <TwitterBusinessSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

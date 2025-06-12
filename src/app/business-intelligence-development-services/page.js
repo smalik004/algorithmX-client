@@ -29,7 +29,7 @@ const page = () => {
       <CTASection/>
       <BusinessDevelopment />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

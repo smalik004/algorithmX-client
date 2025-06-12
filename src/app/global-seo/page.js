@@ -29,7 +29,7 @@ const page = () => {
     <GlobalRevenueSection/>
     <GlobalReachSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

@@ -28,7 +28,7 @@ const page = () => {
       <CTASectionBanner/>
       <QualityBanner />
       <ShopifyDevelopmentTimeline />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

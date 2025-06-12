@@ -26,7 +26,7 @@ const page = () => {
     <TechnologyToolbox/>
     <InstagramServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

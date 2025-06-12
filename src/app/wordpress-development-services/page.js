@@ -27,7 +27,7 @@ const page = () => {
       <CTASectionBanner/>
       <QualityBanner />
       <WordPressDevelopmentTimeline />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

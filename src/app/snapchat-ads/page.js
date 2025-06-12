@@ -24,7 +24,7 @@ const page = () => {
     <ResponsiveExperience/>
     <SnapchatServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
 
     </div>

@@ -30,7 +30,7 @@ const page = () => {
       <CloudStrategy />
       <CloudBenefits />
       <CloudTechnologyToolbox />
-      <ContactForm/>
+      {/* <ContactForm/> */}
     </div>
   );
 };

@@ -28,7 +28,7 @@ const page = () => {
       <BigDataChoosePage />
       <BigDataTechnologyToolbox />
       <BigDataInsightSection />
-      <ContactForm/>
+      {/* <ContactForm/> */}
     </div>
   );
 };

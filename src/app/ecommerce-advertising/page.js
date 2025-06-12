@@ -24,7 +24,7 @@ const page = () => {
     <TechnologyToolbox/>
     <EcommerceServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

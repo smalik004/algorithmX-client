@@ -26,7 +26,7 @@ const page = () => {
     <TechnologyToolbox/>
     <GoogleServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
 
     </div>

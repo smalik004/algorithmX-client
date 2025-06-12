@@ -30,7 +30,7 @@ const page = () => {
     <RemarketingSection/>
     <AudienceSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

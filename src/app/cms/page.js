@@ -33,7 +33,7 @@ const page = () => {
       <CTASectionBanner/>
       <IndustriesGrid />
       <CMSTechStack />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -31,7 +31,7 @@ const page = () => {
     <LinkedinContent/>
     <BusinessSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

@@ -18,7 +18,7 @@ const Page = () => {
         <CTASectionBanner/>
        <Featuredarticle/>
        <LatestArticle/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
        <Footer/>
       
         

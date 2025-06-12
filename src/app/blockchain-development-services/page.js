@@ -30,7 +30,7 @@ const page = () => {
       <CTASection/>
       <BlockchainHero />
       <BlockTechStack />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

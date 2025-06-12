@@ -31,7 +31,7 @@ const page = () => {
       <TechGrid />
       <IosDevelopmentTimeline />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

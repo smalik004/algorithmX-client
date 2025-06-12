@@ -28,7 +28,7 @@ return (
     <EnterpriseRevenueSection/>
     <EnterpriseReachSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
 )

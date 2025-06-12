@@ -27,7 +27,7 @@ const page = () => {
     <InstagramCarousel/>
     <InstagramWorthySection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

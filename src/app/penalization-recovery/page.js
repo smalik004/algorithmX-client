@@ -23,7 +23,7 @@ import ContactForm from './ctaform'
         <PenguinSection/>
         <PenaltyAndWarningAlerts/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
        
         

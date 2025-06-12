@@ -24,7 +24,7 @@ const Page = () => {
         <FeaturedVideo/>
         <Section2/>
         <ReviewsSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
        <Footer/>
       
         

@@ -36,7 +36,7 @@ const page = () => {
       <NationalRevenueSection />
       <NationalRiseSection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -27,7 +27,7 @@ const page = () => {
     <ConsultingImplementation/>
     <ConsultingStayingSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

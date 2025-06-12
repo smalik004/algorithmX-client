@@ -34,7 +34,7 @@ const page = () => {
       <CTASectionBanner/>
       <TechnologyToolbox />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -31,7 +31,7 @@ const page = () => {
       <TechGrid />
       <FlutterDevelopmentTimeline />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

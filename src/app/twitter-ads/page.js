@@ -26,7 +26,7 @@ const page = () => {
     <TechnologyToolbox/>
     <TwitterServices/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

@@ -36,7 +36,7 @@ const page = () => {
       <MobileRevenueSection />
       <MobileReachSection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

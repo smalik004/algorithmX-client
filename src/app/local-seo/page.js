@@ -38,7 +38,7 @@ const page = () => {
       <LocalBusinessSection />
       <Deliverables />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

@@ -25,7 +25,7 @@ const page = () => {
     <PRProcessVisualization/>
     <CROTechnologyToolbox/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

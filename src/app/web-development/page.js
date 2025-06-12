@@ -33,7 +33,7 @@ const page = () => {
       <CostWeb />
       <WebTechStack />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

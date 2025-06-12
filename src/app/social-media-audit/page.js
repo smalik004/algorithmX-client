@@ -25,7 +25,7 @@ const page = () => {
     <ComplimentarySection/>
     <Accordion/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

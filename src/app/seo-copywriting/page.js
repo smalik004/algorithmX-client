@@ -24,7 +24,7 @@ const page = () => {
     <CopywritingMarketingApproach/>
     <CopywritingMarketingImpact/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

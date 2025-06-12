@@ -24,7 +24,7 @@ const page = () => {
       <AdsProcess />
       <HeroSection />
       <DetailedHeroSection />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

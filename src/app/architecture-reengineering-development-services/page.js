@@ -29,7 +29,7 @@ const page = () => {
       <StackCardAnimation />
       <CTASectionBanner/>
       <AREPage />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

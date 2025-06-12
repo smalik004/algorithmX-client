@@ -25,7 +25,7 @@ const page = () => {
     <TiktokCarousel/>
     <TiktokWorthySection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

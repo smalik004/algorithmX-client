@@ -35,7 +35,7 @@ const page = () => {
       <LinkProcess />
       <LinkTrafficSection />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

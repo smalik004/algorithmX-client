@@ -31,7 +31,7 @@ const page = () => {
       <BackEndTechStack />
       <BackDesignProcess />
       <BackWebDevServices />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

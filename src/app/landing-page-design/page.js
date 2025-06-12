@@ -22,7 +22,7 @@ const page = () => {
     <LandingPageBenefits/>
     <LandingSection/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )

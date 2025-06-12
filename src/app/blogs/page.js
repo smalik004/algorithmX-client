@@ -25,7 +25,7 @@ const Page = () => {
       <TabbedContent />
       {/* <Section1 /> */}
       {/* <FeaturedContent /> */}
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

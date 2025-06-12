@@ -29,7 +29,7 @@ const page = () => {
       <ServicesGrid/>
       <SEOTechnologyToolbox/>
       <InsightSection/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer/>
     </div>
   )

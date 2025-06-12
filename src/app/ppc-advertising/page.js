@@ -29,7 +29,7 @@ const page = () => {
         <PPCServicesGrid/>
         <PPCTechnologyToolbox/>
         <InsightSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
     </div>
   )

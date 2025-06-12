@@ -32,7 +32,7 @@ const page = () => {
       <CTASectionBanner/>
       <XamarinDevelopmentTimeline />
       <IndustriesGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

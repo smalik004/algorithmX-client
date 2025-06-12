@@ -33,7 +33,7 @@ const page = () => {
       <CTASectionBanner/>
       <Home />
       <TechnologyToolbox />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

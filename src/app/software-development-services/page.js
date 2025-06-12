@@ -35,7 +35,7 @@ const page = () => {
       <SoftwareTechStack />
       <CostEstimation />
       
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </div>
   );

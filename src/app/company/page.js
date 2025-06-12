@@ -19,7 +19,7 @@ const Page = () => {
         <Vision/>
         <CTASection/>
         <PrinciplesSection/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <Footer/>
         
     </div>

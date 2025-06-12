@@ -23,7 +23,7 @@ const page = () => {
     <DevelopmentTimeline/>
     <TechnologyToolbox/>
     <InsightSection/>
-    <ContactForm/>
+    {/* <ContactForm/> */}
     <Footer/>
     </div>
   )
