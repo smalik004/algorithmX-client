@@ -16,7 +16,7 @@ import CloudDesignProcess from "./process";
 import CloudStrategy from "./streamlined";
 import CloudBenefits from "./choose";
 import CloudTechnologyToolbox from "./toolbox";
-import InsightSection from "../graphics-services/insight";
+ 
 
 const page = () => {
   return (

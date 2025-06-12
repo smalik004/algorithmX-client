@@ -15,7 +15,7 @@ import MobileSEOBenefits from "./benefits";
 import MobileMarketingSection from "./speed";
 import MobileRevenueSection from "./revenue";
 import MobileReachSection from "./reach";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

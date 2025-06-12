@@ -18,7 +18,7 @@ import ServicesGrid from "./development";
 import DevelopmentTimeline from "./dynamic";
 import IndustriesGrid from "./industries";
 import TechGrid from "./technologies";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 const page = () => {
   return (

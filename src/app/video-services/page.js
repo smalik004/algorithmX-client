@@ -14,7 +14,7 @@ import DevelopmentProcess from "./craftmanship";
 import TechnologyToolbox from "./toolbox";
 import ResponsiveHero from "../graphics-services/experience";
 import Home from "./digital";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

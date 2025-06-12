@@ -14,7 +14,7 @@ import IosServicesGrid from "./idevelopment";
 import IosDevelopmentTimeline from "./dynamictimeline";
 import TechGrid from "../android-app-development-services/technologies";
 import IndustriesGrid from "../android-app-development-services/industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

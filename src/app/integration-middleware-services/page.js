@@ -14,7 +14,7 @@ import IntegrationServices from "./solution";
 import IntegrationBenefits from "./choose";
 import IntegrationTechnologyToolbox from "./toolbox";
 import IntegrationDevelopmentTimeline from "./invest";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

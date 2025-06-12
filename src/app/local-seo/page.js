@@ -16,7 +16,7 @@ import LocalAudienceSection from "./audience";
 import SeoResults from "./result";
 import LocalBusinessSection from "./audience2";
 import Deliverables from "./client";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

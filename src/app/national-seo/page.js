@@ -15,7 +15,7 @@ import NationalSEOBenefits from "./benefits";
 import NationalMarketingSection from "./marketing";
 import NationalRevenueSection from "./revenue";
 import NationalRiseSection from "./rise";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

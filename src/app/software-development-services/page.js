@@ -14,7 +14,7 @@ import BusinessSolutions from "./software";
 import SoftwareServices from "./discover";
 import SoftwareDevelopmentTimeline from "./timeline";
 import SoftwareTechStack from "./techstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

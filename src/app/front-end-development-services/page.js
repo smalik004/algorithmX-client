@@ -15,7 +15,7 @@ import WebDevServices from "./fullscale";
 import HeroSection from "./consistency";
 import TechStack from "./techstack";
 import FrontDesignProcess from "./fdynamic";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

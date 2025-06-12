@@ -10,7 +10,8 @@ const FranchiseStrategy = () => {
           <div className="flex gap-4">
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+              height={224}
                 src="/images/i2.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-full h-[224px] object-cover"
@@ -18,7 +19,8 @@ const FranchiseStrategy = () => {
             </div>
             <div className="w-1/2">
               <Image
-                fill
+                width={100}
+              height={202}
                 src="/images/g13.jpg"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-full h-[202px] object-cover mt-3"
@@ -27,7 +29,8 @@ const FranchiseStrategy = () => {
           </div>
           <div className="w-full flex justify-center items-center">
             <Image
-              fill
+              width={100}
+              height={251}
               src="/images/g11.jpg"
               alt="SEO Analytics"
               className="rounded-lg w-full h-[251px] object-cover"

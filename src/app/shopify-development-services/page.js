@@ -13,7 +13,7 @@ import ShopifyServices from "./sservices";
 import QualityBanner from "./quality";
 import ShopifySection from "./home";
 import ShopifyDevelopmentTimeline from "./stimeline";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

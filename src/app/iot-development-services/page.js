@@ -12,7 +12,7 @@ import IOTSection from "./home";
 import IndustriesGrid from "../branding-services/industries";
 import IoTDevelopmentPage from "./choose1";
 import IoTTechStack from "./techstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import Home from "./services1";
 import StackCardAnimation from "./stack";

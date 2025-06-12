@@ -155,7 +155,8 @@ const ModuleCard = ({ title, description, imageSrc }) => (
     <div className="flex items-start gap-4  pb-[40px]">
       <div className="">
         <Image
-          fill
+          width={100}
+              height={100}
           src={imageSrc || "/images/Supply-Chain-Management.png"}
           alt={title}
           className={`w-full h-full object-contain ${style["border-design"]}`}

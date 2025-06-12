@@ -13,7 +13,7 @@ import WebDevelopmentProcess from "./devlop";
 import WebAccordion from "./best";
 import CostWeb from "./cost";
 import WebTechStack from "./techstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

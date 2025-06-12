@@ -18,7 +18,8 @@ const WhoStrategy = () => {
             {/* First Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={252}
+              height={224}
                 src="/images/Influencer-Marketing-Agency-252x224.webp"
                 alt="SEO Team Meeting"
                 className="rounded-lg w-[252px] h-[224px] object-cover"
@@ -28,7 +29,8 @@ const WhoStrategy = () => {
             {/* Second Image */}
             <div className="w-1/2">
               <Image
-                fill
+                width={252}
+              height={202}
                 src="/images/Influencer-Marketing-Agency-252x202.webp"
                 alt="SEO Strategy Diagram"
                 className="rounded-lg w-[252px] h-[202px] object-cover mt-3"
@@ -39,7 +41,8 @@ const WhoStrategy = () => {
           {/* Bottom Image - Full Width */}
           <div className="w-full flex justify-center items-center">
             <Image
-              fill
+              width={495}
+              height={251}
               src="/images/Influencer-Marketing-Agency-495x251.webp"
               alt="SEO Analytics"
               className="rounded-lg w-[495px] h-[251px] object-cover"

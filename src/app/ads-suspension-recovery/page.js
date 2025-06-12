@@ -8,7 +8,7 @@ import WhatSection from "./what";
 import AdsProcess from "./diffrent";
 import HeroSection from "./proactive";
 import DetailedHeroSection from "./detailed";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "../ads-audit/ctaform";

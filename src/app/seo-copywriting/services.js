@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
-import styles from "../iphone-app/style.module.css";
+import styles from "../iphone-app-development-services/style.module.css";
 import style from "../graphics-services/styles.module.css";
 import Image from "next/image";
 

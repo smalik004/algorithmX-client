@@ -16,7 +16,7 @@ import BlockchainSolutions from "./blocksolution";
 import BlockServices from "./blockservices";
 import BlockchainHero from "./blockdesign";
 import BlockTechStack from "./blocktechstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

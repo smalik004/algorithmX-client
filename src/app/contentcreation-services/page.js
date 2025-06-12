@@ -16,7 +16,7 @@ import Offer from "./offer";
 import IndustriesGrid from "../branding-services/industries";
 import TechnologyToolbox from "./toolbox";
 import StrategyGrid from "./strategy";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 

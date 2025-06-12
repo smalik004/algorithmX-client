@@ -12,7 +12,7 @@ import TestingSection from "./home";
 import TestingServices from "./testing";
 import QAProcessDiagram from "./quality";
 import TestingChoosePage from "./choose";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

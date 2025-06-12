@@ -19,7 +19,7 @@ import CRMTechStack from "./crmtechstack";
 import CRMDevelopmentTimeline from "./crmtimeline";
 import CRMOutcomes from "./outcomes";
 import CostEstimations from "./crmcost";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

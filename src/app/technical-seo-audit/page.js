@@ -14,7 +14,7 @@ import TechnicalStrategy from "./confidence";
 import TechnicalBenefits from "./benefit";
 import TechnicalLeaveSection from "./leave";
 import TechnicalIdentifySection from "./identify";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

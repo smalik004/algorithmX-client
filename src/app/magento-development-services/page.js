@@ -13,7 +13,7 @@ import MagentoServices from "./mservices";
 import MagentoFeatures from "./mchoose";
 import QualityBanner from "./mquality";
 import MagentoDevelopmentTimeline from "./mtimeline";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

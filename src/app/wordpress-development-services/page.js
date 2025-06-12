@@ -11,7 +11,7 @@ import WordPressServices from "./wservice";
 import WordpressFeatures from "./wchoose";
 import QualityBanner from "./wquality";
 import WordPressDevelopmentTimeline from "./wtimeline";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

@@ -158,7 +158,8 @@ const FranchiseServices = () => {
               </h3>
               <div className="mb-6">
                 <Image
-                  fill
+                  width={48}
+              height={48}
                   src={service.image}
                   alt={service.title}
                   className="w-12 h-12 object-cover rounded-md"

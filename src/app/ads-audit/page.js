@@ -6,9 +6,9 @@ import PPCAuditSection from "./what";
 import ServicesAccordion from "./include";
 import TestimonialSection from "./coatation";
 import PPCAudit from "./happens";
-import InsightSection from "../graphics-services/insight";
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
+import ContactForm from "./ctaform";
 
 const page = () => {
   return (
@@ -23,7 +23,7 @@ const page = () => {
       <TestimonialSection />
 
       <PPCAudit />
-      
+      <ContactForm/>
       <Footer />
     </div>
   );

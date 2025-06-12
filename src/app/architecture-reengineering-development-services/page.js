@@ -14,7 +14,7 @@ import AIOptmmizationSection from "./home";
 import AiOptmizationServices from "./solutions";
 import StackCardAnimation from "./process";
 import AREPage from "./choose";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 

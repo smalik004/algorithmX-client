@@ -14,7 +14,7 @@ import DrupalServices from "./dservices";
 import DrupalFeatures from "./dchoose";
 import QualityBanner from "./quality";
 import DrupalDevelopmentTimeline from "./dtimeline";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

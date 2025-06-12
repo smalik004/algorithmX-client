@@ -15,7 +15,7 @@ import NativeServicesGrid from "./ndevelopment";
 import TechGrid from "../android-app-development-services/technologies";
 import NativeDevelopmentTimeline from "./ndynamictimeline";
 import IndustriesGrid from "../android-app-development-services/industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

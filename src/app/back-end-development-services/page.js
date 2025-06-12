@@ -16,7 +16,7 @@ import BackEndTechStack from "./btechstack";
 import BackDesignProcess from "./bdynamic";
 import BackServicesGrid from "./backdevelopment";
 import BackWebDevServices from "./bfullscale";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

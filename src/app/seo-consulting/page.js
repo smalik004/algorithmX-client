@@ -16,7 +16,7 @@ import ConsultingBenefits from "./choose";
 import ConsultingBrandSection from "./brand";
 import ConsultingSolutionSection from "./solution";
 import ConsultingPartner from "./partner";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

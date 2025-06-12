@@ -14,7 +14,7 @@ import LinkBenefits from "./benefit";
 import LinkBuildingSection from "./linkbuilding";
 import LinkProcess from "./buildingtimeline";
 import LinkTrafficSection from "./traffic";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import CTASectionBanner from "./ctabanner2";

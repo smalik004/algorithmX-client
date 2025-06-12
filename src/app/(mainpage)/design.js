@@ -104,10 +104,10 @@ const GridItem = ({ image, text }) => {
     App: "/app-development",
     Web: "/web-development",
     CMS: "/cms",
-    CRM: "/crm",
-    ERP: "/erp",
-    Blockchain: "/blockchain",
-    Software: "/software",
+    CRM: "/crm-development-services",
+    ERP: "/erp-development-services",
+    Blockchain: "/blockchain-development-services",
+    Software: "/software-development-services",
   };
 
   return (

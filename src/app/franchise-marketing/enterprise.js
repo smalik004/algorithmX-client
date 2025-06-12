@@ -107,7 +107,8 @@ const FranchiseEnterprise = () => {
             >
               <div className="flex-shrink-0">
                 <Image
-                  fill
+                  width={48}
+              height={48}
                   src={service.iconSrc}
                   alt={service.title}
                   className="w-12 h-12 object-contain"

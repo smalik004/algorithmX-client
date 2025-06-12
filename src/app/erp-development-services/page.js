@@ -15,7 +15,7 @@ import ERPContentSection from "./home.js";
 import ERPTechStack from "./erptechstack";
 import Solution from "./erpsolution";
 import DynamicSolutionsHero from "./dynamic";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 import ContactForm from "./ctaform";

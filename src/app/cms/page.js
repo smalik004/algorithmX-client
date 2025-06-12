@@ -16,7 +16,7 @@ import CMSServicesGrid from "./gains";
 import CMSServices from "./how";
 import IndustriesGrid from "../branding-services/industries";
 import CMSTechStack from "./techstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 

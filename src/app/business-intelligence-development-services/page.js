@@ -15,7 +15,7 @@ import BiConsultingPage from "./services";
 import BusinessModules from "./decision";
 import BusinessDevelopment from "./offer";
 import IndustriesGrid from "../branding-services/industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

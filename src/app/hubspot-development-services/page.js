@@ -13,7 +13,7 @@ import HubspotServices from "./hservices";
 import HubSpotFeatures from "./hchoose";
 import QualityBanner from "./hquality";
 import HubspotDevelopmentTimeline from "./htimeline";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

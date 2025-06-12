@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import axiosHttp from "../../app/utils/httpConfig";
+import axiosHttp from "../utils/httpConfig";
 import { useForm } from "react-hook-form";
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../branding/style.module.css";
+import styles from "../branding-services/style.module.css";
 
 import { Montserrat } from "next/font/google";
 

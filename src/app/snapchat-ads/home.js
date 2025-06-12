@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../back-end/style.module.css";
+import styles from "../back-end-development-services/style.module.css";
 import { Montserrat } from 'next/font/google';
 
 const monsterfont1 = Montserrat ({

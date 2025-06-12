@@ -18,7 +18,7 @@ import EcommerceRankSection from "./rank";
 import EcommerceImplementation from "./implement";
 import EcommerceCodeSection from "./code";
 import DeliverablesSection from "./client";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

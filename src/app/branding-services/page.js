@@ -16,7 +16,7 @@ import BrandingProcess from "./process";
 import LogoTypes from "./logo";
 import MarketingFeatures from "./better";
 import IndustriesGrid from "./industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASectionBanner from "./ctabanner2";
 

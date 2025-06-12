@@ -29,14 +29,16 @@ const FranchiseSection = () => {
             <div className="relative">
               {/* Main Image */}
               <Image
-                fill
+                width={290}
+              height={400}
                 src="/images/Franchise.webp"
                 alt="Branding process with color swatches"
                 className={`w-[290px] h-auto md:h-[400px] shadow-lg mx-auto ${styles["custom-rounded-tr"]} filter grayscale-[30%] sepia-[20%]   `}
               />
               {/* Rectangular Image */}
               <Image
-                fill
+                width={290}
+              height={100}
                 src="/images/a3.png"
                 alt="Rectangular Branding Image"
                 className="w-[290px] h-auto shadow-lg mx-auto mt-1"
@@ -72,7 +74,8 @@ const FranchiseSection = () => {
           <div className="w-full md:w-3/5  md:items-start items-center text-center md:text-left">
             {/* Cylindrical image above branding (hidden on phones) */}
             <Image
-              fill
+              width={48}
+              height={48}
               src="/images/g1.png"
               alt="Cylindrical Branding Icon"
               className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full shadow-lg hidden md:block"

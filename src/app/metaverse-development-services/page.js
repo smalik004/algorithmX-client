@@ -15,7 +15,7 @@ import MetaverseDevelopmentPage from "./choose";
 import MetaverseTechStack from "./techstack";
 import MetaverseProcess from "./process";
 import IndustriesGrid from "../branding-services/industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

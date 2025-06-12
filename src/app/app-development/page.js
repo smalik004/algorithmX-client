@@ -18,7 +18,7 @@ import AppDevelopmentProcess from "./devlop";
 import Accordion from "./practices";
 import CostMob from "./cost";
 import AppTechStack from "./techstack";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 
 const page = () => {

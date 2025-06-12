@@ -13,7 +13,7 @@ import XamarinServicesGrid from "./xdevelopment";
 import TechGrid from "../android-app-development-services/technologies";
 import XamarinDevelopmentTimeline from "./xdynamictimeline";
 import IndustriesGrid from "../android-app-development-services/industries";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";

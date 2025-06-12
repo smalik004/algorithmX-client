@@ -11,7 +11,7 @@ import CookieConsent from "../cookies/cookie";
 import Web3Section from "./home";
 import Web3ServicesGrid from "./services";
 import Web3DevelopmentPage from "./choose";
-import InsightSection from "../graphics-services/insight";
+ 
 import Footer from "../(mainpage)/footer";
 import CTASection from "./ctabanner";
 import ContactForm from "./ctaform";
