@@ -33,7 +33,7 @@ const Page = () => {
       <CookieConsent />
       <FloatingBubblesPage data={data} />
       <PortfolioGrid data={data} />
-      <InsightSection data={data} />
+      
       <Footer />
     </div>
   );
