@@ -325,28 +325,28 @@ const menuData = {
     type: "dropdown",
     items: [
       { name: "Blogs", href: "/blogs", icon: "fa-pen-nib" },
-      { name: "Ebook", href: "/ebooks", icon: "fa-image" },
-      {
-        name: "Audits",
-        href: null,
-        subItems: [
-          {
-            name: "Brand Audits",
-            href: "/brand-audits",
-            icon: "fa-pencil-alt",
-          },
-          {
-            name: "Product Audits",
-            href: "/product-audits",
-            icon: "fa-keyboard",
-          },
-        ],
-      },
+      // { name: "Ebook", href: "/ebooks", icon: "fa-image" },
+      // {
+      //   name: "Audits",
+      //   href: null,
+      //   subItems: [
+      //     {
+      //       name: "Brand Audits",
+      //       href: "/brand-audits",
+      //       icon: "fa-pencil-alt",
+      //     },
+      //     {
+      //       name: "Product Audits",
+      //       href: "/product-audits",
+      //       icon: "fa-keyboard",
+      //     },
+      //   ],
+      // },
       { name: "Our Clients", href: "/our-clients", icon: "fa-image" },
-      { name: "Guides", href: "/guides", icon: "fa-image" },
-      { name: "Impact Stories", href: "/impact-stories", icon: "fa-image" },
+      // { name: "Guides", href: "/guides", icon: "fa-image" },
+      // { name: "Impact Stories", href: "/impact-stories", icon: "fa-image" },
       { name: "Knowledge Base", href: "/knowledge-base", icon: "fa-image" },
-      { name: "Press Release", href: "/press-release", icon: "fa-image" },
+      // { name: "Press Release", href: "/press-release", icon: "fa-image" },
     ],
   },
 };
