@@ -35,7 +35,7 @@ const Page = () => {
       <ResultRow />
       <MarketingGrid />
       <Reviews />
-      <CTAFormSection/>
+      
       <Footer />
     </div>
   );
