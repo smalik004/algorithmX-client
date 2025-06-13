@@ -200,10 +200,10 @@ const TabsContent = () => {
                   <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
 
                   <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
-                    <span className="font-medium">{item.author}</span>
+                    {/* <span className="font-medium">{item.author}</span> */}
                     <div className="flex items-center gap-2 text-gray-500">
-                      <span>{item.date}</span>
-                      <span>•</span>
+                      {/* <span>{item.date}</span> */}
+                      <span></span>
                       <span>{item.readTime}</span>
                     </div>
                   </div>

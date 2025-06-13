@@ -63,18 +63,18 @@ export default function TabbedContent() {
                   </h2>
 
                   <div className="flex items-center mt-4">
-                    <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+                    {/* <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
                       <Image
                         fill
                         src="/api/placeholder/40/40"
                         alt="Author"
                         className="object-cover w-full h-full"
                       />
-                    </div>
+                    </div> */}
                     <div className="ml-3">
-                      <p className="text-sm text-black font-medium">
+                      {/* <p className="text-sm text-black font-medium">
                         {top3Blogs[0].author_name || "Author"}
-                      </p>
+                      </p> */}
                       <p className="text-xs text-gray-500">
                         {new Date(top3Blogs[0].post_date).toLocaleDateString(
                           "en-US",

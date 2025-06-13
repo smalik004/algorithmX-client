@@ -228,7 +228,7 @@ export default function BlogCarousel() {
                     </h2>
 
                     <div className="flex items-center mt-6">
-                      <div className="w-8 h-8 rounded-full overflow-hidden mr-3 bg-gray-300">
+                      {/* <div className="w-8 h-8 rounded-full overflow-hidden mr-3 bg-gray-300">
                         <Image
                           width={100}
                           height={100}
@@ -236,12 +236,12 @@ export default function BlogCarousel() {
                           alt="Author"
                           className="w-full h-full object-cover"
                         />
-                      </div>
+                      </div> */}
                       <div>
-                        <p className="text-black font-medium">
+                        {/* <p className="text-black font-medium">
                           {carouselBlogs[currentSlide]?.author_name ||
                             "Anonymous"}
-                        </p>
+                        </p> */}
                         <p className="text-black text-sm">
                           {formatDate(carouselBlogs[currentSlide]?.post_date)}{" "}
                           {/* {carouselBlogs[currentSlide]?.views || 0} Views */}
@@ -333,7 +333,7 @@ export default function BlogCarousel() {
                         </h4>
                       </div>
                       <div className="flex items-center mt-4">
-                        <div className="w-6 h-6 rounded-full overflow-hidden mr-3 bg-gray-300">
+                        {/* <div className="w-6 h-6 rounded-full overflow-hidden mr-3 bg-gray-300">
                           <Image
                             width={200}
                             height={200}
@@ -341,11 +341,11 @@ export default function BlogCarousel() {
                             alt="Author"
                             className="w-full h-full object-cover"
                           />
-                        </div>
+                        </div> */}
                         <div>
-                          <p className="text-black text-xs">
+                          {/* <p className="text-black text-xs">
                             {blog.author_name || "Anonymous"}
-                          </p>
+                          </p> */}
                           <p className="text-black text-xs">
                             {formatDate(blog.post_date)}
                             {/* • {blog.views || 0}{" "} */}
