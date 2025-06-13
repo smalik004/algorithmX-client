@@ -1,6 +1,7 @@
 //home-page
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Head from "next/head";
 
 export default function Home({ data }) {

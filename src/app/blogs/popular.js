@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import useFetchBlogs from "../hooks/fetchblogs";
+import Image from "next/image";
 
 const TabsContent = () => {
   const result = useFetchBlogs(); // API call
@@ -242,7 +243,8 @@ const TabsContent = () => {
               <Link href={currentDisplayItem.link}>
                 <div className="rounded-xl overflow-hidden aspect-square flex items-center justify-center">
                   <Image
-                    fill
+                    width={100}
+                    height={100}
                     src={currentDisplayItem.image}
                     alt={currentDisplayItem.title}
                     className="w-full h-auto object-cover"
@@ -264,7 +266,8 @@ const TabsContent = () => {
               {/* Image */}
               <div className="mb-4 rounded-xl overflow-hidden">
                 <Image
-                  fill
+                  width={100}
+                  height={100}
                   src={item.image}
                   alt={item.title}
                   className="w-full h-auto object-cover"

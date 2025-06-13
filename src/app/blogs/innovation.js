@@ -251,7 +251,7 @@ export default function Innovation() {
                           alt={item.title}
                           className="object-contain"
                           onError={(e) => {
-                            e.target.src = "/images/default-blog.jpg"; // Fallback image
+                            e.target.src = ""; // Fallback image
                           }}
                         />
                       </div>

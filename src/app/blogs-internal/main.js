@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import axiosHttp from "../utils/httpConfig";
 const BlogCardsLayout = ({ axiosHttp }) => {
   const [blogs, setBlogs] = useState([]);

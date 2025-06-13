@@ -12,13 +12,13 @@ export default function CompactPopup() {
     email: "",
     description: "",
     phone: "",
+    countryCode: "+91",
   });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  // Sample testimonials data
   const testimonials = [
     {
       name: "César M Melgoza",
@@ -86,7 +86,7 @@ export default function CompactPopup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading
+    setLoading(true);
 
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = "Name is required";
@@ -98,7 +98,7 @@ export default function CompactPopup() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      setLoading(false); // Stop loading on error
+      setLoading(false);
       return;
     }
 
@@ -109,17 +109,28 @@ export default function CompactPopup() {
         body: JSON.stringify(formData),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
         setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          description: "",
+          phone: "",
+          countryCode: "+91",
+        });
         setTimeout(closePopup, 2000);
       } else {
         console.error("Failed to send");
+        alert("Failed to send email. Please try again.");
       }
     } catch (err) {
       console.error("Error:", err);
+      alert("Something went wrong. Please try again later.");
     }
 
-    setLoading(false); // Stop loading when done
+    setLoading(false);
   };
 
   const handleInputChange = (e) => {
@@ -136,6 +147,13 @@ export default function CompactPopup() {
         [name]: undefined,
       }));
     }
+  };
+
+  const handleCountryCodeChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      countryCode: e.target.value,
+    }));
   };
 
   const closePopup = () => {
@@ -307,8 +325,9 @@ export default function CompactPopup() {
                         <select
                           id="countryCode"
                           name="countryCode"
+                          value={formData.countryCode}
+                          onChange={handleCountryCodeChange}
                           className="w-full px-2 py-2 text-sm bg-transparent border-0 border-b border-b-gray-500 text-white placeholder:text-[12px] focus:outline-none focus:ring-0 focus:border-b-gray-300 [&>option]:text-black"
-                          defaultValue="+91"
                         >
                           <option value="+91">+91</option>
                           <option value="+1">+1</option>
