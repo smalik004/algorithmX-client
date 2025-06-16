@@ -102,7 +102,8 @@ const BlogCardsLayout = ({ axiosHttp }) => {
             <div className="w-full h-48 overflow-hidden">
               {blog.image ? (
                 <Image
-                  fill
+                  width={100}
+                  height={100}
                   src={blog.image}
                   alt={blog.title || "Blog post"}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
