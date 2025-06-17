@@ -339,6 +339,7 @@ export default function Home({ data }) {
                 )}
 
                 <div
+                  style={{ color: "white" }}
                   className="text-lg !text-white space-y-6 [&>p]:mb-6 [&>p]:!text-white [&>ul]:space-y-2 [&>ul]:list-disc [&>ul]:pl-6 [&>ul>li]:!text-white [&>ol]:space-y-2 [&>ol]:list-decimal [&>ol]:pl-6 [&>ol>li]:!text-white [&>div]:mb-4 [&>div]:!text-white [&>h1]:!text-white [&>h2]:!text-white [&>h3]:!text-white [&>h4]:!text-white [&>h5]:!text-white [&>h6]:!text-white [&>span]:!text-white [&>a]:!text-white [&>strong]:!text-white [&>em]:!text-white [&>blockquote]:!text-white [&>pre]:!text-white [&>code]:!text-white [&_*]:!text-white [&_p]:!text-white [&_span]:!text-white [&_div]:!text-white [&_h1]:!text-white [&_h2]:!text-white [&_h3]:!text-white [&_h4]:!text-white [&_h5]:!text-white [&_h6]:!text-white [&_a]:!text-white [&_strong]:!text-white [&_em]:!text-white [&_blockquote]:!text-white [&_pre]:!text-white [&_code]:!text-white [&_li]:!text-white [&_ul]:!text-white [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:!text-white [&_ol]:list-decimal [&_ol]:pl-6 [&_table]:!text-white [&_th]:!text-white [&_td]:!text-white [&_tr]:!text-white [&_thead]:!text-white [&_tbody]:!text-white [&_label]:!text-white [&_input]:!text-white [&_textarea]:!text-white [&_select]:!text-white [&_option]:!text-white [&_button]:!text-white [&_small]:!text-white [&_mark]:!text-white [&_del]:!text-white [&_ins]:!text-white [&_sub]:!text-white [&_sup]:!text-white"
                   dangerouslySetInnerHTML={{ __html: section.content }}
                 />
